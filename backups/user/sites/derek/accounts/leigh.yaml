@@ -1,0 +1,14 @@
+email: leigh.howells@gmail.com
+fullname: 'Leigh Howells'
+title: Administrator
+state: enabled
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+language: en
+hashed_password: $2y$10$6/PAgKgfVnX2/DNhQl0Nselm6.Po4zuc41rHX.Poe/fBuxMut./Te
+login_attempts: {  }
+twofa_secret: 6VAFTA2YAYM2A7LCHDSD25JERBG4SN54

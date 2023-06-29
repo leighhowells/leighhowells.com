@@ -1,0 +1,74 @@
+{% embed 'partials/base.html.twig' %}
+
+  {% block content %}
+
+    {{ page.content }}
+
+    <div class="pageContainer">
+      <div class="page-width">
+
+          <ul class="grid articleList" >
+
+
+            {% set collection = page.collection() %}
+            <div class="col-1/4">
+              {% for child in collection.slice(0,2) %}
+                <li class="articleList_item" >
+                  <article class="article">
+                    <h3><a href="{{ child.url }}">{{ child.title }}</a></h3>
+                    <a href="{{ child.url }}">{{ child.summary }}</a>
+                  </article>
+                </li>
+              {% endfor %}
+            </div>
+
+            {% set collection = page.collection() %}
+            <div class="col-1/4">
+              {% for child in collection.slice(2,2) %}
+                <li class="articleList_item" >
+                  <article class="article">
+                    <h3><a href="{{ child.url }}">{{ child.title }}</a></h3>
+                    <a href="{{ child.url }}">{{ child.summary }}</a>
+                  </article>
+                </li>
+              {% endfor %}
+            </div>
+
+            {% set collection = page.collection() %}
+            <div class="col-1/4">
+              {% for child in collection.slice(4,2) %}
+                <li class="articleList_item" >
+                  <article class="article">
+                    <h3><a href="{{ child.url }}">{{ child.title }}</a></h3>
+                    <a href="{{ child.url }}">{{ child.summary }}</a>
+                  </article>
+                </li>
+              {% endfor %}
+            </div>
+
+            {% set collection = page.collection() %}
+            <div class="col-1/4">
+              {% for child in collection.slice(6,2) %}
+                <li class="articleList_item" >
+                  <article class="article">
+                    <h3><a href="{{ child.url }}">{{ child.title }}</a></h3>
+                    <a href="{{ child.url }}">{{ child.summary }}</a>
+                  </article>
+                </li>
+              {% endfor %}
+            </div>
+
+
+
+
+
+            {% if config.plugins.pagination.enabled and collection.params.pagination %}
+              {% include 'partials/pagination.html.twig' with {'base_url':page.url, 'pagination':collection.params.pagination} %}
+            {% endif %}
+
+          </ul>
+        </div>
+    </div>
+
+  {% endblock %}
+{% endembed %}

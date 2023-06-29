@@ -1,0 +1,37 @@
+/*  Information
+------------------------------------------------------------------------------------------------------------------*/
+/*  IE7 Styles for University of Northampton
+    By Leigh Howells (Headscape) leigh.howells@headscape.co.uk 2010
+------------------------------------------------------------------------------------------------------------------*/
+
+#sField								{ width: 115px !important; }
+#sButton							{ font-family: Verdana, Arial, Helvetica, sans-serif; margin-right: 0px !important; font-size: 0.7em !important; padding-left: 0 !important; }
+.secName							{ height:60px; margin: 0 0 0 0; width:200px; padding: 20px 0 20px 20px; color: #009FC2; }
+
+.tHome .finderhome h3 				{ margin: 0 0 15px -10px; border: 1px solid #fff; }
+#sButton 							{ padding-top: 9px; padding-right:5px; font-family: Arial, Helvetica, sans-serif; }
+#sButtonCourse						{ padding-left: 0 !important; ;}
+#sFieldCourse						{ width: 120px !important; }
+.tHome .finderhome #crsList			{ padding-top: 8px !important; }
+.wt3 								{ padding:6px 0; }
+
+.goButton							{ float: left; }
+.tHome .linkImage 					{ display: block; margin-left: 10px !important; margin-top: 10px;}
+.tHome .linkImage 					{ position: relative; left: 0px; }
+.linkImage 							{ position: relative; left: 0px; }
+#tabPanel ul li a 					{ padding:5px 12px 11px; }
+
+#contentCol ul.pgInation li.pgBack	{ margin-right: 5px; padding: 2px 0 1px 14px; }
+#contentCol ul.pgInation li.pgNext	{ padding: 2px 14px 1px 2px; }
+
+.tHome .opendays 					{ height: auto; }
+.tHome .prospectus					{ height: 100px; }
+
+#courseFilter input					{ margin: -18px 0 0 0; }
+
+.tHome #bannerImage .caption 		{ top:223px; }
+
+#contentCol fieldset button			{ height: 30px; padding: 7px 0 11px 0; }
+#contentCol fieldset .butRight		{ padding: 6px 15px 11px 5px;height: 30px; } 
+
+.removeCriteria						{ margin: -20px 10px 0 0px; }

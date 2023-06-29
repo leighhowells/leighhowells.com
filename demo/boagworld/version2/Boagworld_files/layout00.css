@@ -1,0 +1,409 @@
+/* @override 
+	http://localhost:8888/wp-content/themes/boagworldV3/css/layout.css
+	http://192.168.2.2:8888/wp-content/themes/boagworldV3/css/layout.css
+	http://boagworld-air.local:8888/wp-content/themes/boagworldV3/css/layout.css
+	http://hello.boagworld.com/wp-content/themes/boagworldV3/css/layout.css
+	--
+*/
+
+
+/*
+Site: Boagworld
+Type: Layout
+Version: 3.0
+Author: Paul Boag
+URL: http://boagworld.com
+
+
+### TABLE OF CONTENTS ############################
+
+    BASE
+    NAVIGATION
+    HEADER
+    FOOTER
+    HOME SPECIFIC
+    SINGLE SPECIFIC
+    SIDEBAR
+
+################################################*/
+
+/* @group BASE */
+
+body {
+	margin:0 auto;
+	max-width:960px;
+	overflow-x: hidden;
+}
+
+
+
+#branding hgroup, footer .people h1, aside.side h1 {
+	position: absolute;
+	left:-5000em;
+	top:-5000em;
+}
+
+#primary {
+	width:74.4%;
+	padding-left:25.6%;
+}
+
+audio {
+	width:100%;
+}
+
+#main, #branding {
+	position: relative;
+	margin:0 1.2% 1.2% 1.2%;
+}
+
+aside.side {
+	width:23.4%;
+	position: absolute;
+	top:0;
+	left:0;
+	margin-right:1%;
+}
+
+p {
+	margin:1em 0;
+}
+
+form, form div {
+	display: inline;
+}
+
+
+
+/* @end */
+
+/* @group NAVIGATION */
+
+#menu-main-menu {
+	display: table;
+	width:100%;
+	margin-bottom: 20px;
+}
+
+#menu-main-menu li {
+	display: table-cell;
+	text-align: center;
+}
+
+header nav {
+	text-align: center;
+	padding:10px 0 20px 0;
+}
+
+div.nav-next a {
+	float: right;
+}
+
+div.nav-previous a {
+	float: left;
+}
+
+nav#nav-below {
+	margin-bottom: 150px;
+}
+
+body.archive article, .search article {
+	clear: both;
+}
+
+nav a {
+	padding:10px;
+}
+
+/* @end */
+
+/* @group HEADER */
+
+#featuredPost header, body.single header.entry-header, body.page header.entry-header {
+	width:65.71%;
+	padding-right:8.57%;
+	text-align: right;
+}
+
+body.single header.entry-header, body.page header.entry-header {
+	height: 210px;
+	vertical-align: middle;
+}
+
+#featuredPost article header, #featuredPost article section, body.single header.entry-header, body.single #summary, body.page header.entry-header, body.page #summary  {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+
+#featuredPost article section, body.single #summary, body.page #summary {
+	width:34.28%;
+	margin:0;
+	padding-left:3.2%;
+}
+
+#featuredPost {
+	height:235px;
+	display: table-cell;
+	vertical-align: middle;
+	
+}
+
+div#posts {
+	margin-top: -11px;
+	padding-top:30px;
+}
+
+#firstTime {
+	padding: 10px;
+	margin-bottom: -20px;
+	position: relative;
+	z-index: 100000;
+}
+
+/* @end */
+
+/* @group FOOTER */
+
+footer .people img, footer .people a {
+	display: block;
+}
+
+
+
+footer {
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+footer .people li {
+	display: inline-block;
+	padding-right:1.715%;
+
+}
+footer .people li:last-child {
+	padding:0;
+}
+
+
+
+#footerCTA li {
+	display: inline;
+}
+
+#footerCTA {
+	text-align: center;
+}
+
+footer form label {
+	position:absolute;
+	top: -5000em;
+}
+
+.people {
+	margin-bottom: 10px;
+}
+
+/* @end */
+
+/* @group HOME */
+
+#otherPosts, #secondary, #communityModules {
+	display: table;
+	width:100%;
+}
+
+#otherPosts article, #secondary section, #communityModules section {
+	display: table-cell;
+	height:10px;
+}
+
+#secondary section, #otherPosts article {
+	width:25%;
+	padding-right:3%;
+}
+
+#secondary section {
+
+	padding:0 1.5%;
+	border-right: 1px solid #E1E1E1;
+}
+
+#secondary section#popularPosts {
+	padding: 0;
+}
+
+#secondary section#popularPosts li a, #secondary section#popularPosts h1 {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+#secondary section#popularPosts a.CTA {
+	margin: 0 5%;
+}
+
+#secondary section:first-child {
+	border-left: 1px solid #E1E1E1;
+}
+
+#secondary section#popularPosts, #otherPosts article:last-child {
+	padding-right:0;
+	width:22.5%;
+}
+
+.innerWrap {
+	min-height: 330px;
+	display: block;
+}
+
+#popularPosts span.innerWrap ul {
+	margin-top:1em;
+	display: table;
+	height: 100%;
+}
+
+
+#secondary #popularPosts h1 {
+	min-height: 0;
+}
+
+#secondary p {
+	min-height: 150px;
+}
+
+#secondary p.audioPlayer {
+	min-height: 0;
+}
+
+
+/* @group COMMUNITY */
+
+
+
+#communityModules section {
+	padding: 10px;
+	width: 50%;
+}
+
+#communityModules {
+	display: table;
+	border-spacing: 20px 0;
+}
+
+
+/* @end */
+
+#otherPosts {
+	margin-top:-31px;
+	padding-bottom:70px;
+	margin-bottom:-40px;
+	
+}
+
+#secondary {
+	margin-top: 40px;
+}
+
+
+/* @end */
+
+/* @group SINGLE */
+
+#callsToAction ul.tabNavigation li {
+	display: inline-block;	
+}
+
+#callsToAction ul.tabNavigation li a {
+	display: inline-block;
+	padding: 10px;
+}
+
+body.single div#primary {
+	width:70%;
+	padding-left:30%;
+}
+
+body.single section.entry-content {
+	margin-top: 40px;
+}
+
+body.single article, body.page article, body.archive #content, .search #content {
+	margin-top: 40px;
+}
+
+body.single aside.side {
+	margin-top: 0;
+}
+
+.description {
+	border-bottom: 1px dotted #4B3A30;
+	cursor: help;
+}
+
+
+#callsToAction .intro {
+	margin-bottom: -35px;
+	padding-bottom: 55px;
+}
+
+section#sharing section {
+	display:inline-block;
+	width: 47.5%;
+	vertical-align: top;
+}
+
+section#othersharing {
+	padding-top: 5px;
+}
+
+
+section#sharing section:first-child {
+	padding-right:3%;
+}
+
+section#sharing #tweetbox iframe {
+	width: 100% !important;
+	height: 230px !important;
+}
+
+iframe.fb_ltr {
+	width: 100% !important;
+}
+
+/* @end */
+
+/* @group SIDEBAR */
+
+
+.intro {
+	padding-top: 32px;
+}
+
+/* @end */
+
+/* @group SEARCH */
+
+
+body.search h1.page-title {
+	margin-bottom: 20px;
+}
+
+body.search #nav-above {
+	margin-top: -20px;
+}
+
+body.search #content {
+	min-height: 800px;
+}
+
+body.search-no-results #content {
+	min-height:600px;
+}
+
+
+body.search-no-results #main aside.searchHelp {
+	margin-top: 95px;
+}
+
+/* @end */
+

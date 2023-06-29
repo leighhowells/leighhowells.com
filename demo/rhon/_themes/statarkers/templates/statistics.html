@@ -1,0 +1,91 @@
+<section class="home-banner">
+	
+	<div class="constrain">
+		
+		<div class="introBlock">
+		    <nav role="breadcrumbs" class="breadcrumbs">
+			    <ul>
+			        <li><a href="{{ _site_url }}" style="color: white;">{{ _home_url_title }}</a></li>&raquo;&nbsp;&nbsp;
+			        {{ nav:breadcrumbs include_home="no" }}
+			            {{ if is_current }}
+			                <li>{{ title }}</li>	
+			            {{ else }}
+			                <li><a href="{{ url }}" style="color: white;">{{ title }}</a>&nbsp;&nbsp;&nbsp;&raquo;</li>
+			            {{ endif }}
+			        {{ /nav:breadcrumbs }}
+			    </ul>
+			</nav>		
+		
+		  <header class="article__header">
+		    {{ if alt_title }}
+		    <h1 class="article__heading">{{ alt_title }}</h1>
+		    {{ else }}
+		    <h1 style="color: white; font-size: 3.5em;" class="article__heading">{{ title }}</h1>
+		    {{ endif }}
+		    
+		    {{ if author || date || categories_list || tags_list }}
+		    <div class="article__meta">
+		
+		      {{ if author|not_empty }}
+		      {{ member:profile member="{author}" }}
+		      <p class="article__author">Posted by: {{ first_name }} {{ last_name }}</p>
+		      {{ /member:profile }}
+		      {{ endif }}
+		 
+	 
+		      {{ if date }}
+	            <p class="article__date" style="padding-top: 15px; margin-bottom:0;"><time datetime="{{ datestamp format="y-d-m" }}">{{ date }}</time></p>
+	          {{ endif }}
+		
+		      {{ if categories_list && !tags_list }}
+		      <p class="article__tax"><b>Category:</b> {{ categories_url_list }}</p>
+		      {{ endif }}
+		
+		      {{ if !categories_list && tags_list }}
+		      <p class="article__tax" style="font-size:0.9em;" >{{ tags_url_list }}</p>
+		      {{ endif }}
+		      
+		    {{ if author }}
+		    	<strong>By {{ author }}</strong>
+		    {{ endif }}<br/>
+			<br/>
+		
+		    </div><!-- END .article__meta -->
+		    {{ endif }}
+		  </header>
+		</div>
+	</div>
+	  
+</section>   
+
+<div class="constrain">  
+
+  {{ content }}
+
+<section class="articles">
+
+{{ entries:listing folder="diseases" sort_by="title" }}
+
+    {{ if first }}
+    <ul class="articleList" style="padding-left:0; list-style: none;">
+    {{ endif }}
+    
+    
+      <li class="articleList__item">
+        <article class="article">
+	      
+          <h3 style="margin-top:0;"><a href="{{ url }}">{{ title }}</a></h3>
+          
+          {{ summary|smartypants|markdown }}
+        
+        </article>
+      </li>
+        
+    {{ if last }}
+    </ul>
+    {{ endif }}
+ 
+  
+{{ /entries:listing }}
+
+</section>

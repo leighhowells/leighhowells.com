@@ -1,0 +1,227 @@
+/* 
+=============================================================================
+
+	basicPrint.css
+	v1.0
+	2008/01/21
+
+	Headscape
+	Written by Ed Merritt (ed.merritt@headscape.co.uk)
+
+	This stylesheet combined with basic.css to provide styling for printed pages. 
+
+=============================================================================
+*/
+#search,
+#navigationContainer,
+#pageDescription,
+#accessibility {
+  display: none;
+}
+body {
+  font: 12pt Georgia, "Times New Roman", Times, serif;
+}
+body,
+#container {
+  text-align: left;
+  width: auto;
+  border: 0;
+  margin: 0 5%;
+  padding: 0;
+  float: none !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  page-break-after: avoid;
+}
+p,
+blockquote,
+img {
+  page-break-inside: avoid;
+}
+/* 
+=============================================================================
+
+	Print.css
+
+=============================================================================
+*/
+a {
+  text-decoration: none;
+  color: #000;
+}
+a img {
+  border: none;
+}
+li {
+  list-style: none;
+}
+q {
+  quotes: '' '';
+}
+acronym {
+  border-bottom: 1px dotted;
+}
+.meta {
+  display: none !important;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+/*= Main Panels --------------------------------------------------------------------------------------------------------------------------*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  background: none;
+  width: 100%;
+}
+#mainColumn h2,
+#mainColumn h3 {
+  clear: left;
+}
+#mainColumn .featureList ul {
+  overflow: hidden;
+  width: 100%;
+}
+#mainColumn .featureList ul li {
+  float: left;
+  margin: 0 15px 15px 0;
+}
+#mainColumn .featureList li a,
+#mainColumn .featureList li .polSurround {
+  display: block;
+}
+#mainColumn .featureList.widerList {
+  float: left;
+  clear: left;
+}
+.rsList .listItem {
+  clear: both;
+  display: block;
+  padding: 15px 0;
+  border-top: 4px solid #eee;
+}
+.rsList .lThumb {
+  float: right;
+  margin: 0 0 15px 15px;
+}
+.entry-title {
+  display: block;
+  font-size: 15px;
+}
+.lDate,
+.lCategory,
+.lContact,
+.lAddress {
+  display: block;
+  font-weight: bold;
+}
+#mainColumn .featureDetails b {
+  padding-right: 15px;
+}
+#mainColumn .wysiwyg ul li,
+#mainColumn ul.downloads li {
+  margin-left: 20px;
+  list-style: disc;
+}
+.mapOptions {
+  overflow: hidden;
+  width: 100%;
+  padding: 15px 0;
+}
+.mapOptions label {
+  float: left;
+}
+.tNeutering #container #content .casestudy .image {
+  float: right;
+  width: 30%;
+  margin: 0 0 20px 4%;
+  text-align: center;
+}
+.tNeutering #container #content .casestudy .image img {
+  width: 100%;
+}
+.tNeutering #container #content .casestudy .image .caption {
+  display: block;
+  margin: 8px;
+}
+.tNeutering #container #pageHeader .breadcrumbs li {
+  display: inline;
+}
+.tDonateLanding #container #content .carousel .slides {
+  width: 100% !important;
+}
+.tDonateLanding #container #content .carousel .slides li {
+  display: none !important;
+}
+.tDonateLanding #container #content .carousel .slides li:first-child {
+  display: block !important;
+}
+.tDonateLanding #container #content .colWrap .colHalf .image .imagecaption {
+  display: block;
+}
+.tRehomingThankYouPage .formsummary th,
+.tRehomingThankYouPage .formsummary td {
+  padding: 0 15px 15px 0;
+}
+#footer {
+  clear: both;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 4px solid #eee;
+}
+#tools,
+.donateOverlay,
+#loginstatuscontainer,
+#search,
+#pNavigation,
+#pNavigationToggle,
+#mainFeature,
+#pinking,
+#tripticList,
+.arrowNext,
+.arrowPrev,
+#footerTop,
+.featureDetails h4,
+#branding h2,
+#branding h3,
+#sNavigation,
+#breadcrumbs,
+#leftColumn,
+.inlineVideo,
+.tWhatWeDo h1,
+.listItems h5,
+#mainColumn #animalHeroes .featureImage2,
+#mainColumn #animalHeroes p.more a,
+.vidIcon,
+#footer .more-social-media-tools,
+.tHome .listItems a img,
+.polaroidContent,
+#mainColumn form input[type=submit],
+#mapKey,
+#cookiesBar,
+.tNeutering #headerBar,
+.tNeutering #container #pageHeader .introvideo,
+.tNeutering #container #content .casestudy .image .video,
+.tNeutering #container #contentFooter .listItems a img,
+.tNeutering #container #content #newsletterSignUp,
+.tNeutering #container #contentFooter .ctas,
+.tDonateLanding #container #content .intro img,
+.tDonateLanding #container #content .socialshare,
+.tDonateLanding #container #content .maincta.button,
+.flex-control-nav,
+.flex-direction-nav,
+.tDonateLanding #container #content #newsletterSignUp,
+.tDonateLanding #container #content .colWrap .colHalf #signUp {
+  display: none !important;
+}

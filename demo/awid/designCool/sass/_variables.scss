@@ -1,0 +1,73 @@
+// ==================================
+// SCSS VARIABLES
+// ==================================
+
+// INTERFACE
+
+$black: rgb(0, 0, 0);
+$grey: lighten($black, 50%);
+$lightGrey: lighten($black, 90%);
+$lighterGrey: lighten($black, 90%);
+$white: rgb(255, 255, 255);
+$lightBeige: #F3F2E7;
+$lightBeige2: #F4F3EC;
+$panelGrey: #94948F;
+
+/*$lightBeige: #efefef;
+$lightBeige2: #ededed;  */
+
+// AWID PALETTE
+
+$palettePink: #D60270;
+$paletteBrown: #6D3321;
+$paletteBlue: #00bce2;
+$paletteOrange: #e87511;
+$paletteGreen: #7fba00;
+$palettePurple: #59118e;
+$paletteRed: #CE1126;
+$paletteGrey: #818286;
+
+$twitterBlue: #00ACED;
+
+$highlightA: $paletteBrown;
+$highlightB: $lightGrey;
+$highlightC: $palettePink;
+
+
+
+/* Mix base grey with a hint of palette Brown REMOVED */
+/*$darkGrey: lighten($black, 24%)-($paletteBrown*0.1);*/
+
+/* Mix base grey with a hint of palette Brown ADDED */
+$darkGrey: lighten($black, 20%)+($paletteBrown*0.18);
+$backgroundBeige: #B3B4AE+($paletteBrown*0.14);
+/*$backgroundBeige: #B3B4AE;*/
+/*$backgroundBeige: #cccccc;*/
+
+$tileCategory: $darkGrey*2;
+
+// LINKS
+
+$normal: #000000;
+$hover: $palettePink;
+$active: $palettePink;
+$visited: $palettePink;
+$focus: $palettePink;
+
+$mainNavHighlight: #ccc;
+$mainNavText: #333;
+
+
+// RESPONSIVE
+
+$pad: 15px;
+
+$bigDesktop: 1600px;
+$tabletPortrait: 1100px;
+$phonePortrait: 650px;
+
+$light: 300;
+$normal: 400;
+$bold: 700;
+
+$radius: 4px;

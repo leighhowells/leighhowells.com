@@ -1,0 +1,15 @@
+email: leigh.howells@gmail.com
+fullname: Leigh
+title: kentonme
+state: enabled
+access:
+  admin:
+    super: 'true'
+    login: 'true'
+  site:
+    login: 'true'
+language: en
+hashed_password: $2y$10$c6SDEO3zvG3C5Zr/l3SraOZf1j..296hUlhEiDtWzGzFaWhy4n7oa
+login_attempts: {  }
+twofa_secret: 23CQM53FROO5JAJ6W4HWLMXEARNY6KIA
+twofa_enabled: false

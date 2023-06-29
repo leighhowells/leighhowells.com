@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js">   
+<!--Produced by Leigh Howells 2011 - www.headscape.co.uk -->  
+  <head> 
+  <title>Headscape wish you a Merry Christmas and a Responsive New Year!</title>
+     <meta charset="utf-8" />
+     <title>Snowflake</title>
+    <meta name="description" content="**Description appears here**" />
+    <meta name="keywords" content="**Keywords appear here**" />
+    <link rel="author" href="http://www.headscape.co.uk/" title="Headscape Web design: strategy, usability, design, development, marketing." />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
+    
+    <link rel="stylesheet" href="styles/media.css">
+    
+	<!--[if IE 9]><link href="styles/ie9.css" rel="stylesheet" type="text/css" media="screen" /><![endif]-->
+	<!--[if IE 8]><link href="styles/ie8.css" rel="stylesheet" type="text/css" media="screen" /><![endif]-->
+	<!--[if IE 7]><link href="styles/ie8.css" rel="stylesheet" type="text/css" media="screen" /><![endif]-->
+
+    <script type="text/javascript" src="scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/modernizr.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
+   
+    <script type="text/javascript">
+		// Snowflakes created by Natalie Downe
+		// http://webcache.googleusercontent.com/search?q=cache:_zwSQqkgYEAJ:natbat.net/2010/Jan/15/+natbat+snowflakes&cd=1&hl=en&ct=clnk&gl=uk
+		// http://natbat.net/2010/Jan/15/
+     
+   	 	const SNOWFLAKES = 100;
+   	 	function init() {
+   	 	var first = true;
+   	 		for (var i = 0; i < SNOWFLAKES; i++) {
+   	 			document.body.appendChild(createASnowflake(first));
+   	 			first = false;
+   	 		}
+   	 	}
+   	 	function randomInteger(low, high) {
+   	 		return low + Math.floor(Math.random() * (high - low));
+   	 	}
+   	 	function randomFloat(low, high) {
+   	 		return low + Math.random() * (high - low);
+   	 	}
+   	 	function randomItem(items) {
+   	 		return items[randomInteger(0, items.length - 1)]
+   	 	}
+   	  	function durationValue(value) {
+   	 		return value + 's';
+   	 	}
+   	 	function createASnowflake(is_first) {
+   	 		var flakes = ['2746', '2745', '2744', '2733'];
+   	 		var superFlakes = ['2746', '2745', '2744', 'fc7', '274b', '2749', '2747', '2746', '273c', '273b', '2734', '2733', '2732', '2731', '2725'];
+   	 		var sizes = ['tiny', 'tiny', 'small', 'small', 'small', 'medium', 'medium', 'medium', 'medium', 'large', 'large', 'large', 'massive', 'massive', 'massive'];
+   	  		var snowflakeElement = document.createElement('div');
+   	 		snowflakeElement.className = 'snowflake ' + randomItem(sizes);
+   	 		var snowflake = document.createElement('span');
+   	 		snowflake.innerHTML = '&#x' + randomItem(flakes) + ';';
+   	 		snowflakeElement.appendChild(snowflake);
+   	  		var spinAnimationName = (Math.random() < 0.5) ? 'clockwiseSpin' : 'counterclockwiseSpin';
+   	  		 var anchorSide = (Math.random() < 0.5) ? 'left' : 'right';
+   	  		var fadeAndDropDuration = durationValue(randomFloat(5, 19));
+   	  		var spinDuration = durationValue(randomFloat(4, 19));
+   	  		var flakeDelay = is_first ? 0 : durationValue(randomFloat(0, 5));
+   	 		snowflakeElement.style.webkitAnimationName = 'fade, drop';
+   	 		snowflakeElement.style.webkitAnimationDuration = fadeAndDropDuration + ', ' + fadeAndDropDuration;
+   	 		snowflakeElement.style.webkitAnimationDelay = flakeDelay;
+   	 		snowflakeElement.style[anchorSide] = randomInteger(0, 60) + '%';
+   	 		snowflake.style.webkitAnimationName = spinAnimationName;
+   	 		snowflake.style.webkitAnimationDuration = spinDuration;
+   	 		return snowflakeElement;
+   	 	} 	 
+   	 	window.onload = init;
+   	 	
+   </script>
+   
+</head>
+
+<body>
+
+  <div id="plax1" style="background: url(flakelayer2.png) -64% -64%;">
+	  <div id="plax2" style="background: url(flakelayer3.png) -16% -16%;">
+	     <div id="plax3" style="background: url(flakelayer4.png) -2% -2%;">
+			  <div id="rotator">
+
+			  <!--[if ! lte IE 8]><!-->
+			  	  <object data="snowflake.xml" type="image/svg+xml" /><param name="color" value="#ffffff" /></object>
+			  <!--<![endif]-->
+			 
+			  </div>
+		 </div>  	
+	  </div>
+  </div>
+  
+ <div id="noSVG"><a href="http://www.headscape.co.uk" border="0"></a><img src="nonsvg.jpg" border="0" width="100%"></img></a>
+
+ 	<h4>No SVG snowflakey goodnes for you alas!</h4>
+ 	   	<span class="link top"><a href="http://www.headscape.co.uk">Learn about Headscape</a></span><br/>
+ 	   </div>
+
+ </div>
+
+</body>
+</html>

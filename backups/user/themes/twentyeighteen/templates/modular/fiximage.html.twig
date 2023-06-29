@@ -1,0 +1,8 @@
+{% set image = page.media.images|first %}
+<div class="mFullimageFixed" style="background-image: url('{{ image.url }}');">
+  {% if page.header.position %}
+  <div class="overlay {{ page.header.position }} {{ page.header.colour }}">
+    {{ content }}
+  </div>
+  {% endif %}
+</div>

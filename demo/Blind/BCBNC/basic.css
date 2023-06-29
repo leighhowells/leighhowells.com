@@ -1,0 +1,230 @@
+/* @license
+ * MyFonts Webfont Build ID 2106089, 2012-02-21T05:33:39-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed fonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: VAG Rundschrift D Light by URW++
+ * URL: http://www.myfonts.com/../fonts/urw/vag-rundschrift/d-light/
+ * Copyright: (URW)++,Copyright 2008 by (URW)++ Design &amp; Development
+ * Licensed pageviews: 10,000,000
+ * 
+ * Webfont: VAG Rundschrift D by URW++
+ * URL: http://www.myfonts.com/../fonts/urw/vag-rundschrift/d/
+ * Copyright: (URW)++,Copyright 2006 by (URW)++ Design &amp; Development
+ * Licensed pageviews: unspecified
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2106089
+ * 
+ * © 2012 Bitstream Inc
+*/
+@font-face {
+  font-family: 'VAGRundschriftD';
+  src: url('../fonts/v003000d-webfont.eot');
+  src: url('../fonts/v003000d-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/v003000d-webfont.woff') format('woff'), url('../fonts/v003000d-webfont.ttf') format('truetype'), url('../fonts/v003000d-webfont.svg#VAGRundschriftD') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'VAGRundschriftD-Lig';
+  src: url('../fonts/v003002d-webfont.eot');
+  src: url('../fonts/v003002d-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/v003002d-webfont.woff') format('woff'), url('../fonts/v003002d-webfont.ttf') format('truetype'), url('../fonts/v003002d-webfont.svg#VAGRundschriftD-Lig') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* 
+=============================================================================
+
+	basic.css
+	v1.0
+	2008/01/21
+
+	Headscape
+	Written by Ed Merritt (ed.merritt@headscape.co.uk)
+
+	This stylesheet is offered to every browser. 
+	It contains very basic styling 
+
+=============================================================================
+*/
+/*
+	Eric Meyer's Universal Reset Reloaded (http://meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+body {
+  line-height: 1;
+  color: black;
+  background: white;
+}
+ol,
+ul {
+  list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+}
+/* 
+removes all default quote marks from all browsers. Add quotes to css as required 
+eg.
+&ldquo;<q>This is a quote</q>&rdquo;
+*/
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+}
+blockquote,
+q {
+  quotes: "" "";
+}
+/*
+=============================================================================
+*/
+/*
+	Basic Screen Styling
+*/
+* {
+  line-height: 1.3em;
+}
+body {
+  position: relative;
+  font: 75% Helvetica, Arial, sans-serif;
+}
+img {
+  -ms-interpolation-mode: bicubic;
+}
+hr {
+  height: 0;
+  line-height: 0;
+  overflow: hidden;
+  background: transparent;
+  border: none;
+  border-top: 1px solid #000;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  margin-top: 1em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.5em;
+}
+p,
+blockquote {
+  margin-bottom: 0.8em;
+}
+h1 {
+  font-size: 2.2em;
+}
+h2 {
+  font-size: 1.8em;
+}
+h3 {
+  font-size: 1.5em;
+}
+h4 {
+  font-size: 1.3em;
+}
+h5 {
+  font-size: 1.2em;
+}
+h6 {
+  font-size: 1.1em;
+}
+acronym,
+abbr {
+  border-bottom: 1px dotted #333;
+}

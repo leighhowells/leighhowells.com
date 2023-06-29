@@ -1,0 +1,415 @@
+/* @override 
+	http://localhost:8888/wp-content/themes/boagworldV3/css/typography.css
+	http://192.168.2.2:8888/wp-content/themes/boagworldV3/css/typography.css
+	http://boagworld-air.local:8888/wp-content/themes/boagworldV3/css/typography.css
+	http://hello.boagworld.com/wp-content/themes/boagworldV3/css/typography.css
+*/
+
+/*
+Site: Boagworld
+Type: Typography
+Version: 3.0
+Author: Paul Boag
+URL: http://boagworld.com
+
+For information on REMs see: http://snook.ca/archives/html_and_css/font-size-with-rem
+
+### TABLE OF CONTENTS ############################
+
+    BASE
+    HEADINGS
+    POST STYLING
+    SIDEBAR
+    NAVIGATION
+    COMMUNITY
+    SECONDARY
+    ARCHIVE
+    ANNOUNCEMENTS
+
+################################################*/
+
+/* @group BASE */
+
+html { font-size: 62.5%; } 
+
+body, input {
+	font-family:"Museo Sans 300", 'Helvetica Neue', Helvetica, Arial,  sans-serif; font-weight:300; font-style:normal;
+	line-height: 1.5;
+	font-size: 14px; font-size: 1.4rem;
+	-webkit-font-smoothing: antialiased;
+}
+
+footer .people ul li {
+	font-size: 11px; font-size:1.1rem;
+}
+
+footer .people li a {
+	font-size: 12px; font-size:1.2rem;
+}
+
+
+/* @end */
+
+/* @group HEADINGS */
+
+.post aside, .post h1 {
+	display: inline;
+}
+
+#featuredPost h1 a, body.single article header h1, body.archive h1.page-title span, body.page article header h1, body.search h1.page-title span {
+	font-family:"Museo Sans Rounded 900", Arial, 'Helvetica Neue', Helvetica, sans-serif; 
+	font-size-adjust:0.52; font-weight:900; font-style:normal;
+	text-decoration: none;
+	font-size: 42px; font-size: 4.2rem;
+	line-height: 1;
+}
+
+#featuredPost h1 span.cat, #featuredPost h1 span.cat a, body.single article header h1 span.cat, body.archive h1.page-title, body.search h1.page-title {
+	font-family:"Museo Sans Rounded 100", Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size-adjust:0.5; font-weight:100; font-style:normal;
+	text-decoration: none;
+	font-size: 42px; font-size: 4.2rem;
+	line-height: 1;
+}
+
+#otherPosts h1 a {
+	font-family:"Museo Sans Rounded 900", Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size-adjust:0.52; font-weight:900; font-style:normal;
+	text-decoration: none;
+	font-size: 24px; font-size: 2.4rem;
+	line-height: 1;
+}
+
+#otherPosts h1 span.cat, #otherPosts h1 span.cat a, body.archive article h1, .search article h1 {
+	font-family:"Museo Sans Rounded 100", Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size-adjust:0.5; font-weight:100; font-style:normal;
+	text-decoration: none;
+	font-size: 24px; font-size: 2.4rem;
+	line-height: 1;
+}
+
+#community h1 {
+	font-family:"Museo Sans Rounded 100", Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size-adjust:0.5; font-weight:100; font-style:normal;
+	font-size: 42px; font-size: 4.2rem;
+	line-height: 1;
+	color: #4e473e;
+}
+
+#community h1 strong {
+	font-family:"Museo Sans Rounded 900", Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size-adjust:0.52; font-weight:900; font-style:normal;
+}
+
+body.single aside.side section.new h1 {
+	position: static;
+	font-family:"Museo Sans Rounded 900", Arial, 'Helvetica Neue', Helvetica, sans-serif; 
+	font-size-adjust:0.52; font-weight:900; font-style:normal;
+	font-size:22px; font-size:2.2rem;
+	margin-top: 20px;
+}
+
+.entry-content h3 {
+	font-size: 36px; font-size:3.6rem;
+	font-family:"Museo Sans Rounded 900", Arial, 'Helvetica Neue', Helvetica, sans-serif; 
+	font-size-adjust:0.52; font-weight:900; font-style:normal;
+	color: #563821;
+	line-height: 1;
+	margin:1em 0;
+	clear: both;
+	letter-spacing: -1px;
+}
+
+.entry-content h4 {
+	font-size: 24px; font-size:2.4rem;	
+	line-height: 1.2;
+	margin:1em 0;
+	letter-spacing: -1px;
+	clear: left;
+}
+
+
+
+body.single section.entry-content > p:first-child:first-letter {
+	font-size: 36px; font-size: 3.6rem;
+	float: left;
+	display: block;
+	margin: 0.5rem 5px 5px 0;
+	padding: 0 10px;
+	background: #ccc;
+}
+
+/* @end */
+
+/* @group POST */
+
+section.entry-content small {
+	display: block;
+	margin: 1em 0;
+}
+
+section.entry-content p small a {
+	font-size: 11px; font-size: 1.1rem;
+	color: #C0C0C0;
+}
+section.entry-content p small a:hover {
+	color: #4D4D4D;	
+}
+
+#featuredPost .entry-summary, body.single #summary p, body.page #summary p {
+	font-size: 16px; font-size: 1.6rem;
+}
+
+.entry-content figure, #callsToAction .intro {
+	font-family:"Reminder Pro Regular", Georgia, 'Comic Sans MS', sans-serif; 
+	font-size-adjust:0.44; font-weight:normal; font-style:normal;
+	font-size: 16px; font-size:1.6rem;
+}
+
+
+#callsToAction .intro {
+	font-size: 18px; font-size:1.8rem;
+}
+
+.entry-content blockquote, .entry-content .bob {
+	font-family:"Reminder Pro Regular", Georgia, 'Comic Sans MS', sans-serif; 
+	font-size-adjust:0.44; font-weight:normal; font-style:normal;
+	font-size: 18px; font-size:1.8rem;
+}
+
+.entry-content strong, .entry-content h5 {
+	font-weight:bold;
+	font-family:"Museo Sans Rounded 900", Arial, 'Helvetica Neue', Helvetica, sans-serif; 
+	font-size-adjust:0.52; font-weight:900; font-style:normal;
+	color: #4e473e;
+}
+
+.entry-content h5 {
+	font-size: 16px; font-size: 1.6rem;
+	margin: 1em 0;
+}
+
+section.entry-content ol li {
+	clear:both;	
+	margin: 1em 0;
+	list-style-position: inside;
+}
+
+.entry-content th strong {
+	color: white;
+	text-shadow: #A6A9A9 0 1px 0;
+}
+
+#othersharing h1, #related h3 {
+	font-size: 16px; font-size:16px;
+	font-family:"Museo Sans Rounded 900", Arial, 'Helvetica Neue', Helvetica, sans-serif; 
+	font-size-adjust:0.52; font-weight:900; font-style:normal;
+}
+
+
+
+/* @end */
+
+/* @group SIDEBAR */
+
+
+.side p.intro {
+	font-size: 16px; font-size: 1.6rem;
+	line-height:1.6;
+	margin-top: 5px;
+}
+.intro strong {
+	font-family:"Museo Sans Rounded 900", Arial, 'Helvetica Neue', Helvetica, sans-serif; 
+	font-size-adjust:0.52; font-weight:900; font-style:normal;
+	color: #4e473e;
+}
+
+.side p strong {
+	font-family:"Museo Sans Rounded 900", Arial, 'Helvetica Neue', Helvetica, sans-serif; 
+	font-size-adjust:0.52; font-weight:900; font-style:normal;
+	color: #4e473e;
+}
+
+.side p {
+	margin-top: 10px;
+}
+
+#main aside.side ul li, section#othersharing li {
+	font-size: 12px; font-size:1.2rem;
+}
+
+section.author p:first-child {
+	font-size:16px; font-size:1.6rem;
+	margin-top: 20px;
+}
+
+/* @end */
+
+/* @group NAVIGATION */
+
+header nav a {
+	font-family:"Museo Sans 300", 'Helvetica Neue', Helvetica, Arial,  sans-serif; font-weight:300; font-style:normal;
+	text-decoration: none;
+	display:block;
+	text-shadow: #0f0f0f 0 1px 0;
+	color:#ccc;
+	font-size: 16px; font-size:1.6rem;
+}
+
+header nav ul a {
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+}
+
+header nav a:hover {
+	background-color:#3E3F3F;
+	color: white;
+	text-decoration: none;
+}
+
+header nav a:visited {
+	color: #fff;
+}
+
+label.screen-reader-text {
+	color: white;
+}
+body nav a.skip {
+	position: absolute;
+	top: -5000em;
+}
+body nav a.skip:focus {
+	position: relative;
+	display: block;
+	top:0;
+	width: auto;
+	padding: 3px 3px 3px 40px;
+	margin: 0 0 10px 0;
+	background: #FFFFE2 url(http://hello.boagworld.com/wp-content/themes/boagworldV3/media/skip.gif) no-repeat 5px center;
+	color: black;
+	font-size: 12px; font-size:1.2rem;
+	text-shadow: none;
+	text-align: left;
+	border: 1px solid #E1DA65;
+	border-radius:3px;
+}
+
+/* @end */
+
+/* @group COMMUNITY */
+
+#twitter_favourites_widget-3 h2, #vf-widget-discussions h2 {
+	margin-bottom:15px;
+	font-family:"Museo Sans Rounded 900", Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size-adjust:0.52; font-weight:900; font-style:normal;
+	font-size:18px; font-size:1.8rem;
+}
+
+
+
+section#community ul li a, aside.side ul li, #popularPosts ul li a {
+	line-height: 1.2;
+	display: block;
+	margin: 7px 0;
+	
+	
+}
+
+
+
+section#community ul li a, #popularPosts ul li a {
+	padding: 7px 5px;
+	display: block;
+	margin: 0;
+}
+
+
+section#community ul li a:hover, #popularPosts ul li a:hover {
+	text-decoration: none;
+	color: black;
+}
+
+#dsq-new-post h3 {
+	position: absolute;
+	top: -5000em;
+}
+
+#dsq-comments-title h3 {
+	font-family:"Museo Sans Rounded 900", Arial, 'Helvetica Neue', Helvetica, sans-serif; 
+	font-size-adjust:0.52; font-weight:900; font-style:normal;
+	font-size: 16px; font-size:1.6rem;
+	margin: 1em 0;
+}
+
+
+
+/* @end */
+
+/* @group SECONDARY */
+
+#secondary h1 {
+	font-size: 24px; font-size:2.4rem;
+	font-family:"Museo Sans Rounded 100", Arial, 'Helvetica Neue', Helvetica, sans-serif; 
+	font-size-adjust:0.5; font-weight:100; font-style:normal;
+	line-height: 1;
+	min-height: 100px;
+}
+
+
+
+
+#secondary h1 strong {
+	display: block;
+	font-family:"Museo Sans Rounded 900", Arial, 'Helvetica Neue', Helvetica, sans-serif; 
+	font-size-adjust:0.52; font-weight:900; font-style:normal;
+	margin-bottom: 10px;
+}
+
+#secondary ul li aside {
+	font-size: 12px; font-size: 1.2rem;
+}
+
+#secondary ul li aside a {
+	color: #4B473E;
+}
+
+#secondary ul li aside a:hover {
+	color: black;
+}
+
+/* @end */
+
+
+/* @group ARCHIVE */
+
+h1.section-heading {
+	display: none;
+}
+
+body.archive .cat {
+	display:none;
+}
+
+body.archive h1.page-title, .search h1.page-title {
+	margin-top: 28px;
+}
+
+/* @end */
+
+
+/* @group ANNOUCNEMENTS */
+
+#firstTime {
+	text-align: center;
+}
+
+#firstTime strong {
+	font-family:"Museo Sans Rounded 900", Arial, 'Helvetica Neue', Helvetica, sans-serif; 
+	font-size-adjust:0.52; font-weight:900; font-style:normal;
+	color: #5A6526;
+	font-size: 16px; font-size: 1.6rem;
+}
+	
+/* @end */
+
+
+
+#narrowNav {
+	display: none;
+}
+

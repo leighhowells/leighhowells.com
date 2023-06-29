@@ -1,0 +1,11 @@
+email: leigh.howells@gmail.com
+fullname: leighhowells
+title: Administrator
+state: enabled
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+hashed_password: 

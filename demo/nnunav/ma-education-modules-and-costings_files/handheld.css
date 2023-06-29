@@ -1,0 +1,24 @@
+#accessibility, #tools, #footerMaps, #related, #branding h2 {display: none;}
+a img { border: none;}
+img	{ max-width: 100%;}
+body { border-top: none; font-family: sans-serif; padding-bottom: 5px; }
+#surround { margin: 3px auto; border: 1px solid #007ea2; border-top: medium solid #007ea2; width: auto; max-width: 597px; }
+
+#search form, #users {  padding:1% 2%; border-bottom: 1px solid #007ea2; font-size: 0.9em;}
+#search form legend {display:none}
+#search form fieldset {border:none;}
+#pNavigation { padding: 2%; border-bottom: 1px solid #007ea2;} 
+#pNavigation ul { margin: 0; padding: 0;}
+#pNavigation ul li {float: none; list-style: none; display: inline; padding: 3px;}
+#pNavigation ul li a {width: auto;height: 1.5em; margin: 1px 0;line-height: 1.5em;}
+
+#content { float: none; padding: 2%; width: auto; max-width: 597px; }
+
+#breadcrumbs h3 { display: none; }
+#breadcrumbs ul {margin: 0; padding:0;}
+#breadcrumbs ul li { display: inline; list-style:none; padding: 2px;}
+
+#sNavigation {  padding:1% 2%; border-bottom: 1px solid #007ea2; font-size: 0.9em; margin: 0 0 1em 0;}
+#footer {  padding:1% 2%; border-top: 1px solid #007ea2; font-size: 0.9em;}
+
+#branding {padding: 1em;}

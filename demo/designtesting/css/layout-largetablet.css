@@ -1,0 +1,319 @@
+/*  Interxion Large Tablet Stylesheet
+ *  Created by Dan Sheerman for Headscape
+ *  dan@headscape.co.uk
+ *
+ *  This stylesheet served to viewports defined as 'large tablet' and up
+ *  should be used for layout styles.
+*/
+
+
+body {
+	position: relative;
+	padding: 0px;
+	border: 0px;
+	}
+
+.wrap, #main, #copyright p {
+	max-width: 970px;
+	padding: 0px 2%;
+	margin: auto;
+	background: #fff;
+	}
+
+
+#header {
+	margin-bottom: 0px;
+	}
+	
+	#header > .wrap {
+		padding-top: 5em;
+		padding-bottom: 0em;
+		}
+	
+	#branding {
+		width: 25%;
+		float: left;
+		}
+
+	#mobileNav {
+		display: none !important;
+		}
+	
+	#pNav, #toolsNav, #countryNav, #siteSearch {
+		display: block !important;
+		margin-bottom: 0px;
+		}
+	
+	#tools {
+		position: fixed;
+		background: #003176;
+		margin: 0px;
+		padding: 0px;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		z-index: 9000;
+		}
+		
+		#tools .wrap {
+			padding: 0px;
+			background: transparent;
+			}
+		
+		#tools .wrap:after {
+			content: '';
+			display: table;
+			clear: both;
+			}
+
+		#pNav li, #toolsNav li, #countryNav li, #pNav a, #toolsNav a {
+			display: inline;
+			border-bottom: 0px;
+			}
+			
+		#toolsNav {
+			float: left;
+			}
+			
+			#toolsNav li {
+				border-left: 1px solid #325990;
+				float: left;
+				}
+			
+			#toolsNav a {
+				float: left;
+				padding: 0.75em 1em;
+				text-transform: lowercase;
+				}
+			
+		#siteSearch {
+			float: right;
+			border: 0px;
+			width: 17.5%;
+			position: relative;
+			}
+			
+			#siteSearch input[type=text] {
+				float: right;
+				background: #fff;
+				border: 0px;
+				border-radius: 5px;
+				font-size: 0.9em;
+				margin: 0.5em 0.5em 0px 1em;
+				padding: 0.5em 25% 0.5em 2.5%;
+				width: 60%;
+				}
+			
+			#siteSearch input[type=image] {
+				position: absolute;
+				right: 0.5em;
+				top: 0.5em;
+				font-size: 0.85em;
+				padding: 0.35em;
+				text-transform: uppercase;
+				color: #111;
+
+				}
+		
+		#countryNav {
+			position: relative;
+			float: right;
+			border-left: 1px solid #325990;
+			border-right: 1px solid #325990;
+			padding-right: 10px;
+			background: url('../img/darr-white-tiny.png') no-repeat 95% center;
+			}
+			
+			#countryNav.noJS:hover, #countryNav.active {
+				background: #0058AD url('../img/darr-lime-tiny.png') no-repeat 95% center;
+				}
+			
+			#countryNav .selectCountry {
+				font-size: 0.9em;
+				display: block;
+				padding: 1.1em 20px 0.9em 25px;
+				text-transform: capitalize;
+				}
+				
+				#countryNav.noJS:hover .selectCountry, #countryNav.active .selectCountry {
+					color: #fff;
+					}
+			
+			#countryNav ul {
+				background: #0058AD;
+				position: absolute;
+				top: 2.85em;
+				width: 100%;
+				display: none;
+				padding-bottom: 0.25em;
+				}
+				
+				#countryNav.noJS:hover ul, #countryNav.active ul {
+					display: block;
+					}
+			
+			#countryNav ul li {
+				}
+			
+			#countryNav ul a {
+				border-top: 1px solid #2F6CA7;
+				padding-top: 0.25em;
+				padding-bottom: 0.25em;
+				font-size: 0.85em;
+				color: #fff;
+				text-transform: none;
+				padding-left: 28px;
+				}
+			
+	
+	#pNav {
+		}
+		
+	#pNav li img {
+				display: none;
+	}
+	
+		#pNav ul {
+			display: table;
+			margin: 0px 0px 10px 28%;
+			width: 72%;
+			}
+		
+		#pNav li {
+			display: table-cell;
+			text-align: center;
+			border-right: 1px solid #eee;
+			font-size: 0.9em;
+			}
+			
+			#pNav li:first-child {
+				border-left: 1px solid #eee;
+				}
+				
+		    #pNav li:hover img {
+				position:absolute;
+				top:110px;
+				display: block;
+				width: 966px;
+				margin-left: -301px;
+			}
+			
+			#pNav li.locations:hover img {
+				margin-left: -411px;	
+			}
+			
+			#pNav li.datacentres:hover img {
+				margin-left: -545px;	
+			}
+			
+			#pNav li.whyinterxion:hover img {
+				margin-left: -708px;
+				top: 109px;	
+			}
+		
+		#pNav a {
+			padding: 1em 5px 0.5em 5px;
+			display: block;
+			}
+			
+			#pNav li li a {
+			padding: 0;
+			display: block;
+			}
+		
+		#pNav li a:hover {
+			color: #99C23A !Important;
+		}
+			
+			
+
+
+#main {
+	padding-top: 0em;
+	padding-bottom: 1em;
+	min-height: 500px;
+	}
+
+
+#footer {
+	margin-top: 0px;
+	padding: 0px 0px 0px;
+	margin: 0px auto;
+	background: rgb(77,77,77); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(77,77,77,1) 0%, rgba(28,28,28,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(77,77,77,1)), color-stop(100%,rgba(28,28,28,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(77,77,77,1) 0%,rgba(28,28,28,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(77,77,77,1) 0%,rgba(28,28,28,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(77,77,77,1) 0%,rgba(28,28,28,1) 100%); /* IE10+ */
+	background: linear-gradient(top, rgba(77,77,77,1) 0%,rgba(28,28,28,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d4d4d', endColorstr='#1c1c1c',GradientType=0 ); /* IE6-9 */
+	}
+	
+	#footer .wrap {
+		background: transparent url('../img/bg-footer.png') no-repeat center top;
+		padding-top: 1em;
+		}
+		
+		#footer .wrap:after {
+			content: '';
+			display: table;
+			clear: both;
+			}
+	
+	#footer section {
+		margin: 0px 2%;
+		float: left;
+		width: 30.6%;
+		}
+		
+		#footer .contact {
+			margin-left: 0%;
+			}
+		
+		#footer .techExcellence {
+			margin-right: 0px;
+			}
+		
+		#copyright {
+			position: relative;
+			margin: 0px auto;
+			}
+			
+			#copyright p {
+				background: transparent;
+				}
+
+
+#transparentMask {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	z-index: 998;
+	background: transparent;
+	display: none;
+	}
+	
+	
+.sectors #pNav li.sectors a { color: #FD8E00;}
+.locations #pNav li.locations a { color: #FD8E00;}
+.aboutus li.aboutus a { color: #c7dc2a !important; }
+.customers li.customers a { color: #FD8E00 !important; }
+
+#contactus { 
+	position: absolute; 
+	top: 38px;
+	margin-left: -332px;
+	display: none;
+	height: 418px;
+	
+    -moz-box-shadow:    0 5px 5px -3px black;
+    -webkit-box-shadow: 0 5px 5px -3px black;
+    box-shadow:         0 5px 5px -3px black;
+	
+}
+
+li.contact:hover #contactus { 
+	display: block;
+}

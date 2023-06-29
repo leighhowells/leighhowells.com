@@ -1,0 +1,63 @@
+{% extends 'partials/base.html.twig' %} {% block content %}
+
+
+<div class="page-width">
+
+  <div class="grid designList">
+
+
+    {% for p in page.find('/articles/').children %} {% if p.header.featured == 'true' %}
+
+    <article class="list-panel contained">
+      <div class="design-panel-content">
+        <div>
+          <a href="/articles" class="home-links">ARTICLES</a>
+          <h2 style="margin:0;"><a href="{{ p.url }}">{{ p.title }}</a></h2>
+          <time>{{ p.date|date("M jS, Y") }}</time>
+        </div>
+        <div>
+          {{ p.summary }}
+          <a href="{{ p.url }}">
+            <div class="more">MORE</div>
+          </a>
+        </div>
+
+      </div>
+    </article>
+
+    {% endif %} {% endfor %} {% for p in page.find('/design/').children %} {% if p.header.featured == 'true' %}
+
+    <article class="list-panel contained">
+      <div class="design-panel-content">
+        <div>
+          <a href="/design" class="home-links">DESIGNS</a>
+          <h2 style="margin:0;"><a href="{{ p.url }}">{{ p.title }}</a></h2>
+          <time>{{ p.date|date("M jS, Y") }}</time>
+          {{ p.summary }}
+        </div>
+
+        <div class="design-panel-image">
+          <a href="{{ p.url }}"><img style="border:none; padding:0; margin:0;" src="{{ p.url }}/thumb.jpg"></a>
+        </div>
+      </div>
+    </article>
+
+    {% endif %} {% endfor %} {% for p in page.find('/music/').children %} {% if p.header.featured == 'true' %}
+
+    <article class="list-panel contained">
+      <div class="music-panel-content">
+        <a href="/articles" class="home-links">MUSIC</a>
+        <h2 style="margin:0;"><a href="{{ p.url }}">{{ p.title }}</a></h2>
+        <time>{{ p.date|date("M jS, Y") }}</time>
+        <iframe width="100%" height="166" frameborder="0" src="{{ p.header.link }}"></iframe>
+        {{ p.summary }}
+      </div>
+    </article>
+
+    {% endif %} {% endfor %}
+
+  </div>
+
+</div>
+
+{% endblock %}

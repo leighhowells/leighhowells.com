@@ -1,0 +1,23 @@
+/* @override 
+	http://hello.boagworld.com/wp-content/themes/boagworldV3/style.css */
+
+/*
+Theme Name: Boagworld
+Author: Automattic and Paul Boag
+Author URI: http://automattic.com/
+Description: A semantic, HTML5, canvas for CSS artists and an ultra-minimal set of super-clean templates for your own WordPress theme development.
+Version: 1.1
+License: GNU General Public License
+Tags: custom-menu, sticky-post, microformats
+
+*/
+
+
+@import "reset000.css";
+@import "layout00.css";
+@import "typograp.css";
+@import "styling0.css";
+@import url("smartpho.css") screen and (max-width:480px);
+
+
+

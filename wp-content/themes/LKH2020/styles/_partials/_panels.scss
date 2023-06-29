@@ -1,0 +1,114 @@
+.panel-container {
+  display: block;
+  background: rgba(30, 30, 30, 0.95);
+  padding: 4em;
+  //border-bottom: 4px solid rgba(0,0,0,0.8);
+  margin-bottom: 1em;
+  @media(min-width: 1400px){
+    display: flex;
+  }
+
+  > div {
+    flex: 1;
+    width: 100%;
+    margin-top: 2em;
+    @media(min-width: 1400px){
+      margin-top: 0;
+      width: 50%;
+    }
+  }
+
+
+  .thumb {
+    border: 2em solid rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-height: 400px !important;
+    overflow: hidden;
+    img {
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  p,a {
+    color: #eee;
+  }
+
+  blockquote p {
+    color: #aaa;
+  }
+  blockquote,p {
+    margin-right: 1em;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  p:last-of-type {
+    margin-bottom:0;
+  }
+
+  a.link-more {
+    color: #aaa;
+    margin: 1em 0 0 0;
+    display: block;
+    font-size: 0.8em;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    padding: 0.25em 0;
+    color: #888;
+    a {
+      color: #888;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  h4 {
+    a {
+      color: white;
+    }
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  time {
+    display: block;
+    margin: 0 0 2em 0;
+  }
+
+  &.panel-music {
+    display: block;
+    .wp-block-audio {
+      background: #000000;
+      margin-top: 1em;
+    }
+  }
+
+}
+
+
+
+
+
+.panel-darken {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, black 500px);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ffffff", endColorstr="#000000",GradientType=0 );
+  padding: 0 0 5% 0;
+  display: block;
+}
+
+
+.home {
+  background: #000 url('img/banner2.jpg') 50% 50% fixed no-repeat;
+  background-size: cover;
+}
+

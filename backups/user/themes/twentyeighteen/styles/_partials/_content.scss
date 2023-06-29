@@ -1,0 +1,154 @@
+
+.article_heading {
+  margin: 0em 0.5em 0 0;
+}
+
+.article_date {
+  margin: 0 0 0.5em 0;
+}
+
+.article_main p:first-of-type {
+  font-size: 1.3em;
+}
+
+.article_main {
+  max-width: 900px;
+  margin: auto;
+}
+
+.article_main img {
+  width: 100%;
+}
+
+@media(min-width: 1500px) {
+  .img-full {
+    width: 100vw !important;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-bottom: 1em;
+    margin-left: -50vw;
+    margin-right: -50vw;
+  }
+}
+
+.img-pagewidth {
+  width: 166.666% !important;
+  margin-left: -33.333%;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.img-half-left {
+  display: block;
+  height: auto;
+  width: 49% !important;
+  float: left;
+  margin-right: 1%;
+}
+
+.img-half-right {
+  display: block;
+  height: auto;
+  width: 49% !important;
+  float: right;
+  margin-left: 1%;
+}
+
+.img-margin-top {
+  padding-top: 1em !important;
+}
+
+.img-stretch {
+  width: 100%;
+}
+
+.max-width {
+  width: 70%;
+}
+
+.design #page article img {
+  -webkit-box-shadow: 0 0 2.5vw rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 2.5vw rgba(0, 0, 0, 0.15);
+  margin-top: 5em;
+  margin-bottom: 0em;
+}
+
+.design #page article img.no-effect {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+.img-screenshot {
+  @media(max-width: 800px) {
+    width: 100%;
+    margin: 0;
+    max-width: 100%;
+  }
+}
+
+h4 {
+  text-align: center;
+  margin: 0em;
+  color: #aaa;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+
+.metablock {
+  float:left;
+  text-align: left;
+  @media(max-width: 1500px ){
+    margin: 0 2em 0em auto;
+  }
+}
+
+p.caption {
+  clear: left;
+  display: block;
+  padding-top: 1em;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.reading-time {
+  font-size: 80%;
+  color: white;
+}
+
+.prev-next {
+  margin: 4em 0 0 0;
+}
+
+////////
+
+body.cv {
+
+  #header {
+    height: 15vh;
+  }
+
+  time, .article-meta, p.reading-time, .reading-time, nav, .prev-next, footer {
+    display: none;
+  }
+
+  h1.article_heading, #page h1 {
+    font-size: 1.8em;
+  }
+
+  h2 {
+    font-size: 2.5em;
+    font-weight: 100;
+    margin-top: 1em;
+  }
+
+  h3 {
+    //font-weight: bold;
+    margin: 1em 0 0 0;
+  }
+
+  ul {
+    margin-top: 0.5em;
+  }
+
+}

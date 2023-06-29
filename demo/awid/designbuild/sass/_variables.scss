@@ -1,0 +1,95 @@
+// ======================================================================================
+// SCSS VARIABLES
+// ======================================================================================
+
+// INTERFACE
+
+$black 						: rgb(0, 0, 0);
+$grey 						: lighten($black, 50%);
+$lightGrey 					: lighten($black, 90%);
+$lighterGrey 				: lighten($black, 80%);
+$white 						: rgb(255, 255, 255);
+
+$lightBeige 				: #F3F2E7;
+$lightBeige2				: #F4F3EC;
+$panelGrey					: #94948F;
+$darkGrey					: #33383A;
+$lightBeige 				: #efefef;
+$lightBeige2				: #ededed; 
+$backgroundBeige			: #B3B4AE;
+$background					: #cccccc;
+
+// AWID PALETTE
+
+$palettePink				: #D60270;
+$paletteBrown				: #6D3321;
+$paletteBlue				: #00bce2;
+$paletteOrange				: #e87511;
+$paletteGreen				: #7fba00;
+$palettePurple				: #59118e;
+$paletteRed					: #CE1126;
+$paletteGrey				: #818286;
+
+$highlightA					: $paletteBrown;
+$highlightB					: $lightGrey;
+$highlightC					: $palettePink;
+$tileCategory				: $darkGrey*2;
+
+
+// LINKS
+
+$normal						: #000000;
+$hover						: $palettePink;
+$active						: $palettePink;
+$visited					: $palettePink;
+$focus						: $palettePink;
+
+$mainNavHighlight			: #ccc;
+$mainNavText				: #333;
+
+
+// RESPONSIVE
+
+$bigDesktop					: 1600px;
+$tabletPortrait				: 1200px;
+$phonePortrait				: 650px;
+
+// MISC
+
+$light 						: 300;
+$normal						: 400;
+$bold						: 700;
+
+$pad 						: 15px;
+$radius						: 4px;
+
+
+// SOCIAL COLOURS
+ 
+$facebook_color				: #365397;
+$twitterBlue				: #00a9f1;
+$linkedin_color				: #006db3;
+$apple_color				: #737373;
+$google_plus_color			: #4285f4;
+$google_plus_color			: #e0452c;
+$youtube_color				: #ff3333;
+$vimeo_color				: #48b6ed;
+$pinterest_color			: #ce1a19;
+$yelp_color					: #c30f00;
+$dribbble_color				: #ed4584;
+$amazon_color				: #ff9700;
+$ebay_color					: #083790;
+$skype_color				: #00acf4;
+$instagram_color			: #396d9a;
+$dropbox_color				: #0d84de;
+$flickr_color				: #ea0066;
+$github_color				: #2f2f2f;
+$basecamp_color				: #6bbd6d;
+$tumblr_color				: #304c68;
+$foursquare_color			: #207dc5;
+$box_color					: #1277bc;
+
+
+
+
+// ======================================================================================

@@ -1,0 +1,58 @@
+/* 
+==========================================================================
+Common mixins and classes
+*/
+
+@function headings($from:1, $to:6) {
+  @if $from == $to {
+    @return 'h#{$from}, .h#{$from}';
+  } @else {
+    @return 'h#{$from}, .h#{$from},' + headings($from+1, $to);
+  }
+}
+
+
+@mixin placeholder() {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}  
+}
+
+
+@mixin box-sizing() {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box; 
+}
+@mixin no-box-sizing() {
+	-webkit-box-sizing: auto;
+	-moz-box-sizing: auto;
+	box-sizing: auto; 
+}
+
+
+@mixin clearfix() {
+	&:after {
+		content: ''; 
+		display: table;
+		clear: both;
+	}
+}
+
+%clearfix {
+  @include clearfix();
+}
+
+@mixin pseudo($display: block, $pos: absolute, $content: ''){
+  content: $content;
+  display: $display;
+  position: $pos;
+}
+
+@mixin hardware($backface: true, $perspective: 1000) {
+  @if $backface {
+    backface-visibility: hidden;
+  }
+  perspective: $perspective;
+}

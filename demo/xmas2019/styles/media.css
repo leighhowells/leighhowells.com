@@ -1,0 +1,434 @@
+body { 	top: 0;  margin: 0; padding: 0; background: #000; font-family: helvetica, arial, sans-serif !important;  height: 100%;} 
+
+a { color: #aaa; }
+a:hover { color: #777 !important; }
+
+object { margin: 0 0 0 0; padding: 0;  top: 0px;  height: 100%; width: 100%; }
+object#video { margin: 0px !important; }
+
+html { }
+
+#noSVGIE8 { display: none; }
+
+
+#nyRes h2 strong {
+	font-size: 13px; ;
+}
+
+#nyRes p {
+	 display: block;
+	 float: left;
+	 font-size:  13px;
+	 width: 55%;
+	 color: #777777;
+}
+
+#mobileInfo {
+	color: #fff;
+    padding: 20px;
+}
+
+/*mobile users panel*/
+
+#nyResNarrow {
+	text-align: left;
+	z-index: 50000;
+	color: #777777;
+	width: 100%;
+	font-weight: normal;
+	font-family: helvetica, arial, sans-serif;
+	background: rgba(22,22,22,0.8);
+	padding:10px;
+	border-top: 1px solid #333333;
+	display: none;
+	position: fixed;
+	bottom: 0;
+}
+
+#nyResInfo {
+	width:  90%;
+}
+
+#nyResNarrow h1 {
+	font-size: 15px;	display: inline;
+}
+#nyResNarrow h2 {
+	font-size: 15px;  color: ddd;	display: inline; float: left;
+}
+#nyResNarrow p {
+	font-size: 12px;	color: #eee;   display: inline;
+}
+
+/*main snowflake divs*/
+
+#Happy_Christmas {
+	fill: #ffffff;
+}
+
+#snowflake1, #snowflake2, #snowflake3, #snowflake4, #snowflake5, .snowflake.massive, .snowflake.large, .snowflake.medium {
+	fill: #ffffff !important; color: #ffffff !important;  -webkit-tap-highlight-color: rgba (255, 255, 255, 1);
+}
+
+#nyResTitle {
+	display: none;
+}
+
+#plax1{
+	z-index: 0;
+	position: relative;
+	top: 0;
+}
+
+#noSVG, #noSVG a {
+	color: #ffffff;
+	text-align: center;
+	font-family:arial, helvetica, sans-serif;
+}
+
+#videoRes {
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	padding-left: 20px;
+	display: block;
+}
+
+#videoRes img {
+	border: 1px solid #444;
+	display:  block;
+}
+
+#videoRes a, #videoRes .link, .link {
+	display: block;
+	font-size: 11px;
+	color: #aaa;
+	display: inline;
+}
+
+#videoRes .top { display: block;
+	margin: 7px 0 1px 0;
+}
+
+h5 { font-size: 12px; font-weight: bold; color: #bbb;
+	margin: 0; padding: 10px 0 0 0;
+}
+
+#videoBlock { color: #fff; font-size: 13px; margin: auto; width:60%; text-align: left; padding: 10% 0 0 0;}
+.videoWrapper {  position: relative;  padding-bottom: 60%;  padding-top: 25px; height: 0;  }
+.videoWrapper object,
+.videoWrapper embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+
+
+/*DEFAULT*/
+
+@media only screen and (max-width: 10000px) {
+	body { background-color: #033B6D;
+		 background-image: linear-gradient(bottom, #000000,#055B6D);
+		 background-image: -o-linear-gradient(bottom, #000000, #055B6D);
+		 background-image: -moz-linear-gradient(bottom, #000000, #055B6D);
+		 background-image: -webkit-linear-gradient(bottom, #000000,#055B6D);
+		 background-image: -ms-linear-gradient(bottom, #000000, #055B6D);
+		 background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, #000000), color-stop(0.75, #055B6D));	
+	}
+	#snowflake5, #snowflake4, .snowflake.massive, .snowflake.large, .snowflake.medium { display: none; }
+    #snowflake2 { opacity: 0.6; }
+    #snowflake3 { opacity: 0.1; }  
+   
+    #res1, #res2, #res3, #res4, #res5, #res6, #res7 { display: none;  }
+}
+
+/*STEP 2*/
+
+@media only screen and (max-width: 1200px) {
+	body {
+		 background-image: linear-gradient(bottom, #000000,#0D326E);
+		 background-image: -o-linear-gradient(bottom, #000000, #0D326E);
+		 background-image: -moz-linear-gradient(bottom, #000000, #0D326E);
+		 background-image: -webkit-linear-gradient(bottom, #000000,#0D326E);
+		 background-image: -ms-linear-gradient(bottom, #000000, #0D326E);
+		 background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, #000000), color-stop(0.75, #0D326E));	
+	}    
+}
+
+/*STEP 2*/
+
+@media only screen and (max-width: 1150px) {
+	body {
+		 background-image: linear-gradient(bottom, #000000,#16296E);
+		 background-image: -o-linear-gradient(bottom, #000000, #16296E);
+		 background-image: -moz-linear-gradient(bottom, #000000, #16296E);
+		 background-image: -webkit-linear-gradient(bottom, #000000,#16296E);
+		 background-image: -ms-linear-gradient(bottom, #000000, #16296E);
+		 background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, #000000), color-stop(0.75, #16296E));	
+	}
+}
+
+/*STEP 3*/
+
+@media only screen and (max-width: 1100px) {
+	body {
+		 background-image: linear-gradient(bottom, #000000,#20206F);
+		 background-image: -o-linear-gradient(bottom, #000000, #20206F);
+		 background-image: -moz-linear-gradient(bottom, #000000, #20206F);
+		 background-image: -webkit-linear-gradient(bottom, #000000,#20206F);
+		 background-image: -ms-linear-gradient(bottom, #000000, #20206F);
+		 background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, #000000), color-stop(0.75, #20206F));	
+	}
+	
+	    
+}
+
+/*STEP 4*/
+
+@media only screen and (max-width: 1050px) {
+	body {
+		 background-image: linear-gradient(bottom, #000000,#2A166F);
+		 background-image: -o-linear-gradient(bottom, #000000, #2A166F);
+		 background-image: -moz-linear-gradient(bottom, #000000, #2A166F);
+		 background-image: -webkit-linear-gradient(bottom, #000000,#2A166F);
+		 background-image: -ms-linear-gradient(bottom, #000000, #2A166F);
+		 background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, #000000), color-stop(0.75, #2A166F));	
+	}
+	
+}
+
+/*STEP 5*/
+
+@media only screen and (max-width: 1000px) {
+	body {
+		 background-image: linear-gradient(bottom, #000000,#330D70);
+		 background-image: -o-linear-gradient(bottom, #000000, #330D70);
+		 background-image: -moz-linear-gradient(bottom, #000000, #330D70);
+		 background-image: -webkit-linear-gradient(bottom, #000000,#330D70);
+		 background-image: -ms-linear-gradient(bottom, #000000, #330D70);
+		 background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, #000000), color-stop(0.75, #330D70));	
+	}
+	.snowflake.large { display: block; }
+}	
+
+/*STEP 6*/
+
+@media only screen and (max-width: 950px) {
+	body {
+		 background-image: linear-gradient(bottom, #000000,#3D0470);
+		 background-image: -o-linear-gradient(bottom, #000000, #3D0470);
+		 background-image: -moz-linear-gradient(bottom, #000000, #3D0470);
+		 background-image: -webkit-linear-gradient(bottom, #000000,#3D0470);
+		 background-image: -ms-linear-gradient(bottom, #000000, #3D0470);
+		 background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, #000000), color-stop(0.75, #3D0470));	
+	}
+	#snowflake5 { display: block; opacity: 0.01; }
+}
+
+/*STEP 7*/
+
+@media only screen and (max-width: 900px) {
+	body {
+		 background-image: linear-gradient(bottom, #000000,#58056D);
+		 background-image: -o-linear-gradient(bottom, #000000, #58056D);
+		 background-image: -moz-linear-gradient(bottom, #000000, #58056D);
+		 background-image: -webkit-linear-gradient(bottom, #000000,#58056D);
+		 background-image: -ms-linear-gradient(bottom, #000000, #58056D);
+		 background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, #000000), color-stop(0.75, #58056D));	
+	}
+	.snowflake.medium, #snowflake1_1_ { display: block; } 
+	#snowflake5 { opacity: 0.014; }
+}
+
+/*STEP 8*/
+
+@media only screen and (max-width: 850px) {
+	body {
+		 background-image: linear-gradient(bottom, #000000,#5D055C);
+		 background-image: -o-linear-gradient(bottom, #000000, #5D055C);
+		 background-image: -moz-linear-gradient(bottom, #000000, #5D055C);
+		 background-image: -webkit-linear-gradient(bottom, #000000,#5D055C);
+		 background-image: -ms-linear-gradient(bottom, #000000, #5D055C);
+		 background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, #000000), color-stop(0.75, #5D055C));	
+	}
+	.snowflake.massive { display: block; }	
+	 #snowflake5 { opacity: 0.018; }
+}
+
+/*STEP 9*/
+
+@media only screen and (max-width: 800px) {
+	body {
+		 background-image: linear-gradient(bottom, #000000,#62044C);
+		 background-image: -o-linear-gradient(bottom, #000000, #62044C);
+		 background-image: -moz-linear-gradient(bottom, #000000, #62044C);
+		 background-image: -webkit-linear-gradient(bottom, #000000,#62044C);
+		 background-image: -ms-linear-gradient(bottom, #000000, #62044C);
+		 background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, #000000), color-stop(0.75, #62044C));	
+	}
+	#snowflake5 { opacity: 0.022; }
+}
+
+/*STEP 10*/
+
+@media only screen and (max-width: 750px) {
+	body {
+		 background-image: linear-gradient(bottom, #000000,#68043B);
+		 background-image: -o-linear-gradient(bottom, #000000, #68043B);
+		 background-image: -moz-linear-gradient(bottom, #000000, #68043B);
+		 background-image: -webkit-linear-gradient(bottom, #000000,#68043B);
+		 background-image: -ms-linear-gradient(bottom, #000000, #68043B);
+		 background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, #000000), color-stop(0.75, #68043B));	
+	}
+	#snowflake5 { opacity: 0.026; }
+}
+
+/*STEP 11*/
+
+@media only screen and (max-width: 700px) {
+	body {
+		 background-image: linear-gradient(bottom, #000000,#6D042A);
+		 background-image: -o-linear-gradient(bottom, #000000, #6D042A);
+		 background-image: -moz-linear-gradient(bottom, #000000, #6D042A);
+		 background-image: -webkit-linear-gradient(bottom, #000000,#6D042A);
+		 background-image: -ms-linear-gradient(bottom, #000000, #6D042A);
+		 background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, #000000), color-stop(0.75, #6D042A));	
+	}
+	#snowflake5 { opacity: 0.030; }
+}
+
+
+@media only screen and (max-width: 650px) {	
+	body {
+		 background-image: linear-gradient(bottom, #000000,#72031A);
+		 background-image: -o-linear-gradient(bottom, #000000, #72031A);
+		 background-image: -moz-linear-gradient(bottom, #000000, #72031A);
+		 background-image: -webkit-linear-gradient(bottom, #000000,#72031A);
+		 background-image: -ms-linear-gradient(bottom, #000000, #72031A);
+		 background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, #000000), color-stop(0.75, #72031A));	
+	}
+	#snowflake5 { opacity: 0.034; }
+	#nyRes p {  width: 40%; 	}		
+}
+
+/* STEP 12*/
+
+@media only screen and (max-width: 600px) {	
+
+	body { 
+		 background-image: linear-gradient(bottom, #000000,#770309);
+		 background-image: -o-linear-gradient(bottom, #000000, #770309);
+		 background-image: -moz-linear-gradient(bottom, #000000, #770309);
+		 background-image: -webkit-linear-gradient(bottom, #000000,#770309);
+		 background-image: -ms-linear-gradient(bottom, #000000, #770309);
+		 background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, #000000), color-stop(0.75, #770309));	
+	}
+	#snowflake5 { opacity: 0.038; }
+	#nyRes p {  width: 40%; 	}		
+}
+
+
+
+/*Snowing stlyes*/
+
+.snowflake {
+	position: absolute; text-align: center; z-index: 9999; top: -100px;
+	width: 1em; height: 1em; color: white; font-size: 16px;
+	-webkit-animation-iteration-count: infinite, 20;
+	-webkit-animation-direction: normal, normal;
+	-webkit-animation-timing-function: linear, ease-in;
+}
+
+.snowflake span {
+	position: absolute; display: block;  width: 1em;  height: 1em;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-transform-origin: 60% -100%;
+}
+
+.snowflake.tiny { font-size: 0.3em;	}
+.snowflake.small { font-size: 1em;  }
+.snowflake.medium { font-size: 1.8em; }
+.snowflake.large { font-size: 3em; }
+.snowflake.massive { font-size: 5em; }
+
+@-webkit-keyframes fade {
+	0%   { opacity: .2; }
+	85%  { opacity: .4; }
+	100% { opacity: 0; }
+}
+
+@-webkit-keyframes drop {
+	0%   { -webkit-transform: translate(0px, -50px); }
+	100% { -webkit-transform: translate(0px, 650px); }
+}
+
+@-webkit-keyframes clockwiseSpin {
+	0%   { -webkit-transform: rotate(-50deg); }
+	100% { -webkit-transform: rotate(50deg); }
+}
+
+@-webkit-keyframes counterclockwiseSpin  {
+	0%   { -webkit-transform: rotate(50deg); }
+	100% { -webkit-transform: rotate(-50deg); }
+}
+
+
+@media screen and (min-width: 1650px) and (max-width: 1920px) {
+    #res1, #res2, #res3, #res4, #res5, #res6, #res7, #res8, #res9, #nyResNarrow { display: none;  }
+    #res1 { display: block; }
+    #nyRes h2 {  background: #0A4071; }    
+}   
+
+@media screen and (min-width: 1280px) and (max-width: 1650px) {
+    #res1, #res2, #res3, #res4, #res5, #res6, #res7, #res8, #res9, #nyResNarrow  { display: none;  }
+    #res2 { display: block; }
+    #nyRes h2 {  background: #022F57; }      
+} 
+
+@media screen and (min-width: 1152px) and (max-width: 1280px) {
+    #res1, #res2, #res3, #res4, #res5, #res6, #res7, #res8, #res9, #nyResNarrow  { display: none;  }
+    #res3 { display: block; }
+    #nyRes h2 {  background: #081F43; }
+} 
+  
+@media screen and (min-width: 1024px) and (max-width: 1152px) {
+    #res1, #res2, #res3, #res4, #res5, #res6, #res7, #res8, #res9, #nyResNarrow  { display: none;  }
+    #res4 { display: block; }
+    #nyRes h2 {  background: #262673; }
+    object {  height: 800px;  width: 100%;  }
+  
+}
+
+@media screen and (min-width: 800px) and (max-width: 1024px) {
+    #res1, #res2, #res3, #res4, #res5, #res6, #res7, #res8, #res9, #nyResNarrow  { display: none;  }
+    #res5 { display: block; }
+    #nyRes h2 {  background: #5D0D72; }
+     object {  height: 800px;  width: 100%;  }
+} 
+
+@media screen and (min-width: 640px) and (max-width: 800px) {
+    #res1, #res2, #res3, #res4, #res5, #res6, #res7, #res8, #res9, #nyResNarrow  { display: none;  }
+    #res6 { display: block; }
+    #nyRes h2 {  background: #6B0A3F; }
+    #nyres p { width: 50%;   }
+    object {  height: 750px;  width: 100%;  } 
+} 
+
+@media screen and (min-width: 481px) and (max-width: 640px) {
+    #res1, #res2, #res3, #res4, #res5, #res6, #res7, #res8, #res9, #nyResNarrow  { display: none;  }
+    #res7 { display: block; }
+    #nyRes h2 {  background: #7B0B11; }
+    #nyres p { width: 30%;   }
+    object {  height: 650px;  width: 100%;  }  
+} 
+
+@media screen and (min-width: 200px) and (max-width: 480px) {
+    #fadeMessage, #res1, #res2, #res3, #res4, #res5, #res6, #res7, #res8, #res9, #nyResNarrow, #nyRes, #nyRes h1 { display: none;  }
+	#nyResNarrow, #res9 { display: block;  text-align:center; }
+	#res9, #res9 a,#res9 p a {	color: #eeeeee;  font-size: 12px; text-decoration: none;	}
+	#videoRes {  display: none;	}	
+	object { margin: 10px 0 0 0; }
+	#nyRes { min-height: 0px;	}
+    object {  height: 350px;  width: 100%;  }
+    #videoBlock { width:90%; }
+    .videoWrapper { padding-bottom: 60%;  } 
+}
+

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js">     
+  <head> 
+  <title>Headscape wish you a Merry Christmas and a Responsive New Year!</title>
+     <meta charset="utf-8" />
+     <title>Snowflake</title>
+    <meta name="description" content="**Description appears here**" />
+    <meta name="keywords" content="**Keywords appear here**" />
+    <link rel="author" href="http://www.headscape.co.uk/" title="Headscape Web design: strategy, usability, design, development, marketing." />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
+    
+    <link rel="stylesheet" href="styles/media.css">
+    <script type="text/javascript" src="scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.sound.js"></script>
+    <script type="text/javascript" src="scripts/modernizr.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
+   
+    <script type="text/javascript">
+   	 	const SNOWFLAKES = 30;
+   	 	function init() {
+   	 	var first = true;
+   	 		for (var i = 0; i < SNOWFLAKES; i++) {
+   	 			document.body.appendChild(createASnowflake(first));
+   	 			first = false;
+   	 		}
+   	 	}
+   	 	function randomInteger(low, high) {
+   	 		return low + Math.floor(Math.random() * (high - low));
+   	 	}
+   	 	function randomFloat(low, high) {
+   	 		return low + Math.random() * (high - low);
+   	 	}
+   	 	function randomItem(items) {
+   	 		return items[randomInteger(0, items.length - 1)]
+   	 	}
+   	  	function durationValue(value) {
+   	 		return value + 's';
+   	 	}
+   	 	function createASnowflake(is_first) {
+   	 		var flakes = ['2746', '2745', '2744', '2733'];
+   	 		var superFlakes = ['2746', '2745', '2744', 'fc7', '274b', '2749', '2747', '2746', '273c', '273b', '2734', '2733', '2732', '2731', '2725'];
+   	 		var sizes = ['tiny', 'tiny', 'tiny', 'small', 'small', 'small', 'small', 'medium', 'medium', 'medium', 'medium', 'medium', 'medium', 'large', 'massive'];
+   	  		var snowflakeElement = document.createElement('div');
+   	 		snowflakeElement.className = 'snowflake ' + randomItem(sizes);
+   	 		var snowflake = document.createElement('span');
+   	 		snowflake.innerHTML = '&#x' + randomItem(flakes) + ';';
+   	 		snowflakeElement.appendChild(snowflake);
+   	  		var spinAnimationName = (Math.random() < 0.5) ? 'clockwiseSpin' : 'counterclockwiseSpin';
+   	  		 var anchorSide = (Math.random() < 0.5) ? 'left' : 'right';
+   	  		var fadeAndDropDuration = durationValue(randomFloat(5, 11));
+   	  		var spinDuration = durationValue(randomFloat(4, 8));
+   	  		var flakeDelay = is_first ? 0 : durationValue(randomFloat(0, 10));
+   	 		snowflakeElement.style.webkitAnimationName = 'fade, drop';
+   	 		snowflakeElement.style.webkitAnimationDuration = fadeAndDropDuration + ', ' + fadeAndDropDuration;
+   	 		snowflakeElement.style.webkitAnimationDelay = flakeDelay;
+   	 		snowflakeElement.style[anchorSide] = randomInteger(0, 60) + '%';
+   	 		snowflake.style.webkitAnimationName = spinAnimationName;
+   	 		snowflake.style.webkitAnimationDuration = spinDuration;
+   	 		return snowflakeElement;
+   	 	} 	 
+   	 	window.onload = init;
+   	 	
+   </script>
+   
+</head>
+
+<body>
+
+<div id="fadeMessage"> Resize your browser window, nice and slow </div>
+ 
+ <div id="nyRes">   
+ 	   <h1>Your New Year Resolutions</h1>
+ 	   <div id="res1">
+ 		   <h2>1650 <strong>to</strong> 1920 <strong>pixels</strong></h2>
+ 		   <p>At large monitor sizes, you have probably fixed your content to a maximum width.  Or can you use all this love extra space creatively?  (without really long line lengths! cough!)</p>
+ 	   </div>
+ 	   
+ 	   <div id="res2">
+ 	   	   <h2>1280 <strong>to</strong> 1650 <strong>pixels</strong></h2>
+ 	   	   <p>A wide-screen resolution and now 16% of</p>
+ 	   </div>
+ 	   
+ 	   <div id="res3">
+ 	   	   <h2>1152 <strong>to</strong> 1280 <strong>pixels</strong></h2>
+ 	   	   <p>This range of screen widths is becoming ever more prolific beyond 1024x768</p>
+ 	   </div>
+ 	   
+ 	   <div id="res4">
+ 	   	   <h2>1024 <strong>to</strong> 1152 <strong>pixels</strong></h2>
+ 	   	   <p>In late 2011, 1024x768 is still the most commonly viewed resolution, with 24% of worldwide users.</p>
+ 	   </div>
+ 	   
+ 	   <div id="res5">
+ 	   	   <h2>800 <strong>to</strong> 1024 <strong>pixels</strong></h2>
+ 	   	   <p>Up to 1024 pixels wide, your users could now be using a tablet, such as an iPad</p>
+ 	   </div>
+ 	   
+ 	   <div id="res6">
+ 	   	   <h2>640 <strong>to</strong> 800 <strong>pixels</strong></h2>
+ 	   	   <p>Now your users can see much less, and content must be tailored to fit and be usable. In 2011 users are this resolution are likely to be using a touch screen mobile device, thought needs to be given to these users.</p>
+ 	   </div>
+ 	   
+ 	   <div id="res7">
+ 	   	   <h2>480 <strong>to</strong> 640 <strong>pixels</strong></h2>
+ 	   	   <p>NHmmmmmmoopu pou pou pou pou </p>
+ 	   </div>
+ 	  
+ </div>
+
+  <div id="plax1" style="background: url(flakelayer2.png) -64% -64%;">
+	  <div id="plax2" style="background: url(flakelayer3.png) -16% -16%;">
+	     <div id="plax3" style="background: url(flakelayer4.png) -2% -2%;">
+			  <div id="rotator">
+				   <object data="snowflake.xml" type="image/svg+xml" /></object>
+			  </div>
+		 </div>  	
+	  </div>
+  </div>
+  
+  <div id="noSVG"><a href="http://www.boagworld.com" border="0"><img src="nonsvg.jpg" width="100%"></img></div>
+  
+  <div id="nyResNarrow">
+	  <div id="res9">
+	 	 <strong><a href="http://www.boagworld.com" style="color:#ffffff;"></strong>And a '<u>Responsive</u>' New Year!</a>
+	  </div>
+  </div> 
+  
+  <div id="mobileInfo">
+	  <h2>640 <strong>to</strong> 800 <strong>pixels</strong></h2>
+	  <p>Now your users can see much less, and content must be tailored to fit and be usable. In 2011 users are this resolution are likely to be using a touch screen mobile device, thought needs to be given to these users.</p>
+	  
+	  <h2>640 <strong>to</strong> 800 <strong>pixels</strong></h2>
+	  <p>Now your users can see much less, and content must be tailored to fit and be usable. In 2011 users are this resolution are likely to be using a touch screen mobile device, thought needs to be given to these users.</p>
+	  
+	  <h2>640 <strong>to</strong> 800 <strong>pixels</strong></h2>
+	  <p>Now your users can see much less, and content must be tailored to fit and be usable. In 2011 users are this resolution are likely to be using a touch screen mobile device, thought needs to be given to these users.</p>
+  </div>
+	   
+</body>
+</html>

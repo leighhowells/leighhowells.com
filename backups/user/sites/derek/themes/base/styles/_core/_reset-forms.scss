@@ -1,0 +1,149 @@
+
+form {
+	margin: 1em 0;
+	
+	small {
+		display: block;
+	}
+}
+
+label {
+	margin-top: 1em;
+}
+
+input,
+textarea,
+select {
+	vertical-align: middle;
+	white-space: normal;
+	line-height: normal !important;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border-radius: 0;
+}
+
+input[type=text],
+input[type=number],
+input[type=email],
+input[type=password],
+input[type=search],
+input[type=tel],
+textarea {
+  display: block;
+	padding: 0.35em;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+		
+	@media (-webkit-min-device-pixel-ratio:0) {
+		font-size: 16px !important;
+		-webkit-text-size-adjust: 100% !important;
+  }
+}
+
+input {
+	&:-webkit-autofill {
+		background-color: none !important;
+		-webkit-box-shadow: 0 0 0px 500px transparentize($base, 0.95) inset, 0 0 0px 500px white inset;
+	}
+}
+
+textarea {
+	width: 100%;
+	max-width: 25em;
+	height: 6em;
+}
+
+input[type=search] {
+	-webkit-appearance: textfield;
+	appearance: textfield;
+}
+
+*[type=submit] {
+	cursor: pointer;
+	-webkit-appearance: none;
+}
+
+form {
+  label,
+  .label {
+  	display: block;
+  	font-weight: bold;
+  	clear: both;
+  	margin-top: 1em;
+  }
+}
+
+input[type=radio] {
+	display: inline-block;
+	
+	+ label {
+		margin: 0 2em 0 0;
+		display: inline-block;
+	}
+}
+
+select {
+	height: 2.35em;
+	width: 17.5em;
+	max-width: 90%;
+	background: #fefefe;
+	border-color: rgba(0,0,0,0.25);
+		
+	@media (-webkit-min-device-pixel-ratio:0) {
+		font-size: 16px !important;
+		-webkit-text-size-adjust: 100% !important;
+  }
+}
+
+
+input[type=checkbox],
+input[type=radio] {
+	position: relative;
+	display: inline-block;
+	z-index: 2;
+	margin-left: 0.625em;
+	margin-top: 1.25em;
+	cursor: pointer;
+	vertical-align: top;
+	
+	+ label {
+		cursor: pointer;
+		position: relative;
+		margin: 0.5em 1em 0.25em -2em;
+		display: inline-block;
+		vertical-align: middle;
+  	background: #f4f4f4;
+  	font-weight: normal;
+  	font-size: 0.9em;
+		padding: 0.5em 1em 0.5em 2.25em;
+		border-radius: 2px;
+		z-index: 1;
+		max-width: 90%;
+		box-sizing: border-box;
+	
+		.sub {
+			margin: 0.25em 0;
+			font-weight: normal;
+		}
+	}
+	
+	&:hover + label,
+	+ label:hover,
+	&:focus + label,
+	+ label:focus {
+  	cursor: pointer;
+  	background: #ddd;
+	}
+	
+	&:checked {
+  	+ label {
+    	background: #ddd;
+    	font-weight: bold;
+  	}
+	}
+	
+	label & {
+  	margin: 0.5em 0.5em 0.5em 0;
+	}
+}

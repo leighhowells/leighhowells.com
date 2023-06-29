@@ -1,0 +1,211 @@
+
+a {
+  text-decoration-skip: ink;
+}
+
+#page  {
+  margin: 2em 0;
+
+  h1 {
+    font-size: 3em;
+    font-weight: normal;
+    line-height: 1.1em;
+    color: black;
+    margin-bottom: 0.5em;
+  }
+
+}
+
+blockquote {
+  margin-top: 0.2em;
+  margin-right: -30%;
+  float: right;
+  margin-left: 2em;
+  margin-bottom: 2em;
+  width: 50%;
+  background: darken($theme,5%);
+  color: white;
+  padding: 1em;
+  line-height: 1.3em;
+  @media (max-width: 60em){
+    float: none;
+    margin: 1em 0;
+    width: auto;
+    display: block;
+  }
+}
+
+.design-listing blockquote {
+  float: none;
+  margin: 1em 0;
+  width: auto;
+  display: block;
+  font-size: 1.4em;
+  background: none;
+  padding:0;
+  color: #555;
+}
+
+.page-width {
+  max-width: $pagewidth;
+  margin: 0 auto;
+  @media (max-width: 900px) {
+    max-width: $pagewidthMob;
+  }
+  @media (max-width: 1680px) {
+    max-width: 85%;
+  }
+}
+
+
+.articles #page, .about #page, .design #page, .blog #page, .music #page, .page #page {
+
+  h1.donthide {
+    display: block !important;
+  }
+
+  margin-top: 3em;
+  margin-bottom: 3em;
+  background: #fff;
+  padding: 5% 20%;
+  a {
+    color: #222;
+  }
+
+  @media (max-width: 1024px) {
+    padding: 5%;
+  }
+
+}
+
+
+.articleList article {
+  margin-bottom: 0.6em;
+}
+
+
+//////// photoblog styles
+
+
+.page-width.photoblog {
+  max-width: 100%;
+}
+
+.page-width.photoblog #page {
+
+  padding: 10% 0%;
+
+  h1.donthide {
+    display: block;
+    margin: 0em 25% 1em 25%;
+  }
+
+  h2, p {
+    padding: 0em 25% 1em 25%;
+
+    @media (max-width: 1024px) {
+      padding: 1em 2%;
+    }
+  }
+
+  p.intro {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin:0;
+  }
+
+  img {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .displaywidth {
+    max-width: 50%;
+    width: 50%;
+  }
+
+  .caption {
+    p {
+      font-size: 0.9em;
+      font-style: italic;;
+      text-align: center;
+      padding: 0em 25% 2em 25%;
+      border-bottom: 2px solid #efefef;
+
+      @media (max-width: 1024px) {
+        padding: 0em 5% 2em 5%;
+      }
+    }
+
+    margin-bottom: 1em;
+  }
+}
+
+.pageContainer {
+  margin:2em 0;
+}
+
+#page #item article {
+  padding: 4em 0;
+  margin-top: 2em;
+}
+
+.search-row {
+  display: block;
+  background: white;
+  padding: 2em;
+  margin-bottom: 0.5em;
+}
+
+
+article {
+  background: white;
+  padding: 1.5em 1.5em 0.5em 1.5em;
+  margin-bottom: 5px;
+  h3 {
+    font-size: 1.2em;
+    margin: 0 0 0.5em 0 !important;
+  }
+  time, date {
+    display: block;
+    margin: 0;
+    color: $theme;
+  }
+  img{
+    max-width: 100%;
+    padding: 1em;
+    border: 1px solid #eee;
+    margin: 4em auto 2em auto;
+  }
+}
+
+
+.col-1\/4:nth-child(5),.col-1\/4:nth-child(9),.col-1\/4:nth-child(13),.col-1\/4:nth-child(17) {
+  clear: left !important;
+}
+
+.articleList article img, .home article img {
+  padding:0;
+  border: none;
+  margin-top:0;
+}
+
+main {
+  background: none;
+}
+
+.visually-hidden {
+  display:none;
+}
+
+
+.term {
+  margin: 3em 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.feed-icons {
+  display: none;
+}
+
+

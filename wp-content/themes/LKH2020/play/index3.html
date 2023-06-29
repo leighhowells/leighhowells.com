@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>A grouped pure CSS parallax demo by Keith Clark</title>
+<meta name="description" content="Demonstration of grouping content in pure CSS parallax scrolling website">
+<style>
+
+  body {
+    margin:0;
+    padding:0;
+  }
+  .parallax {
+    height: 500px; /* fallback for older browsers */
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-perspective: 300px;
+    perspective: 300px;
+  }
+
+  .parallax__group {
+    position: relative;
+    height: 500px; /* fallback for older browsers */
+    height: 100vh;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+
+  .parallax__layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+
+  .parallax__layer--1 {
+    -webkit-transform: translateZ(-1200px) translateY(0vh) scale(5);
+    transform: translateZ(-1200px) translateY(0vh) scale(5);
+    z-index: 2;
+  }
+
+  .parallax__layer--2 {
+    -webkit-transform: translateZ(-900px) translateY(-100vh) scale(4);
+    transform: translateZ(-900px) translateY(-100vh) scale(4);
+    z-index: 3;
+  }
+
+  .parallax__layer--3 {
+    -webkit-transform: translateZ(-600px) translateY(-190vh) scale(3);
+    transform: translateZ(-600px) translateY(-190vh) scale(3)
+    z-index: 4;
+  }
+
+  .parallax__layer--4 {
+    -webkit-transform: translateZ(-300px) translateY(-300vh) scale(2);
+    transform: translateZ(-300px) translateY(-320vh) scale(2);
+    z-index: 1;
+  }
+
+  .parallax__layer--5 {
+    -webkit-transform: translateZ(-200px) translateY(-420vh) scale(1.7);
+    transform: translateZ(-200px) translateY(-420vh) scale(1.7);
+    z-index: 1;
+  }
+
+  .parallax__layer--6 {
+    -webkit-transform: translateZ(-90px) translateY(-510vh) scale(1.3);
+    transform: translateZ(-90px) translateY(-510vh) scale(1.3);
+    z-index: 1;
+  }
+
+  .parallax__layer--7 {
+    -webkit-transform: translateZ(-20px) translateY(-620vh) scale(1.5);
+    transform: translateZ(-20px) translateY(-620vh) scale(1.5);
+    z-index: 1;
+  }
+
+
+  /* Debugger styles - used to show the effect
+  --------------------------------------------- */
+
+  .parallax__group {
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+  }
+
+
+  /* demo styles
+  --------------------------------------------- */
+
+  body, html {
+    overflow: hidden;
+  }
+
+  body {
+    font: 100% / 1.5 Arial;
+  }
+
+  .parallax {
+    font-size: 200%;
+  }
+
+   /* centre the content in the parallax layers */
+  .title {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+
+.parallax__layer--1 {
+  z-index: 1;
+  background-image: url("layerbg.svg");
+  background-size: cover;
+  background-position-x: center;
+}
+
+.parallax__layer--2 {
+  z-index: 2;
+  background-image: url("layer1.svg");
+  background-size: cover;
+  background-position-x: center;
+}
+
+.parallax__layer--3 {
+  z-index: 3;
+  background-image: url("layer2.svg");
+  background-size: cover;
+  background-position-x: center;
+}
+
+.parallax__layer--4 {
+  z-index: 3;
+  background-image: url("layer3.svg");
+  background-size: cover;
+  background-position-x: center;
+}
+
+.parallax__layer--5 {
+  z-index: 4;
+  background-image: url("layer4.svg");
+  background-size: cover;
+  background-position-x: center;
+}
+
+.parallax__layer--6 {
+  z-index: 5;
+  background-image: url("layerme.svg");
+  background-size: cover;
+  background-position-x: center;
+}
+
+.parallax__layer--7 {
+  z-index: 6;
+  background-image: url("layer5.svg");
+  background-size: cover;
+  background-position-x: center;
+}
+
+
+  /* misc
+  --------------------------------------------- */
+  .demo__info {
+    position: absolute;
+    z-index:100;
+    bottom: 1vh;
+    top: auto;
+    font-size:80%;
+    text-align:center;
+    width: 100%;
+  }
+</style>
+</head>
+
+<body>
+
+  <div class="parallax" >
+    <div id="group1" class="parallax__group" >
+      <div class="parallax__layer parallax__layer--1">
+      </div>
+    </div>
+    <div id="group2" class="parallax__group" >
+      <div class="parallax__layer parallax__layer--2">
+      </div>
+    </div>
+    <div id="group3" class="parallax__group" >
+      <div class="parallax__layer parallax__layer--3">
+      </div>
+    </div>
+    <div id="group4" class="parallax__group" >
+      <div class="parallax__layer parallax__layer--4">
+      </div>
+    </div>
+    <div id="group5" class="parallax__group" >
+      <div class="parallax__layer parallax__layer--5">
+      </div>
+    </div>
+    <div id="group6" class="parallax__group" >
+      <div class="parallax__layer parallax__layer--6">
+      </div>
+    </div>
+    <div id="group7" class="parallax__group" >
+      <div class="parallax__layer parallax__layer--7"></div>
+      <div style="background: black;">
+      <p>osug soifusdg osigudf oigudf goidfug dfogiud foigua g;hadf dfgd gdflkj osug soifusdg osigudf oigudf goidfug dfogiud foigua 
+        g;hadf dfgd gdflkj osug soifusdg osigudf oigudf goidfug dfogiud foigua g;hadf dfgd gdflkj osug soifusdg osigudf oigudf goidfug dfogiud foigua g;hadf dfgd gdflkj osug soifusdg osigudf oigudf goidfug dfogiud foigua g;hadf dfgd gdflkj osug soifusdg osigudf oigudf goidfug dfogiud foigua g;hadf dfgd gdflkj osug soifusdg osigudf oigudf goidfug dfogiud foigua g;hadf dfgd gdflkj osug soifusdg osigudf oigudf goidfug dfogiud foigua g;hadf dfgd gdflkj osug soifusdg osigudf oigudf goidfug dfogiud foigua g;hadf dfgd gdflkj osug soifusdg osigudf oigudf goidfug dfogiud foigua g;hadf dfgd gdflkj osug soifusdg osigudf oigudf goidfug dfogiud foigua g;hadf dfgd gdflkj osug soifusdg osigudf oigudf goidfug dfogiud foigua g;hadf dfgd gdflkj osug soifusdg osigudf oigudf goidfug dfogiud foigua g;hadf dfgd gdflkj osug soifusdg osigudf oigudf goidfug dfogiud foigua g;hadf dfgd gdflkj osug soifusdg osigudf oigudf goidfug dfogiud foigua g;hadf dfgd gdflkj osug soifusdg osigudf oigudf goidfug dfogiud foigua g;hadf dfgd gdflkj osug soifusdg osigudf oigudf goidfug dfogiud foigua g;hadf dfgd gdflkj osug soifusdg osigudf oigudf goidfug dfogiud foigua g;hadf dfgd gdflkj osug soifusdg osigudf oigudf goidfug dfogiud foigua g;hadf dfgd gdflkj osug soifusdg osigudf oigudf goidfug dfogiud foigua g;hadf dfgd gdflkj osug soifusdg osigudf oigudf goidfug dfogiud foigua g;hadf dfgd gdflkj osug soifusdg osigudf oigudf goidfug dfogiud foigua g;hadf dfgd gdflkj osug soifusdg osigudf oigudf goidfug dfogiud foigua g;hadf dfgd gdflkj osug soifusdg osigudf oigudf goidfug dfogiud foigua g;hadf dfgd gdflkj osug soifusdg osigudf oigudf goidfug dfogiud foigua g;hadf dfgd gdflkj osug soifusdg osigudf oigudf goidfug dfogiud foigua g;hadf dfgd gdflkj osug soifusdg osigudf oigudf goidfug dfogiud foigua g;hadf dfgd gdflkj osug soifusdg osigudf oigudf goidfug dfogiud foigua g;hadf dfgd gdflkj osug soifusdg osigudf oigudf goidfug dfogiud foigua g;hadf dfgd gdflkj 
+</p>
+      </div>
+    </div>
+  </div>
+
+
+
+</body>
+</html>

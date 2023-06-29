@@ -1,0 +1,10 @@
+{% set image = page.media.images|first %}
+<div class="mFullStickyimage" >
+  <div class="imgScaler" style="background-image: url('{{ image.forceResize(2000,1300).url }}'"></div>
+  {%  if page.header.caption =='' %}
+  <p class="caption">{{ image.filename|trim('.jpg', 'right') }}</p>
+  {%  endif %}
+  <div class="overlay {{ page.header.position }} {{ page.header.colour }}">
+    {{ content }}
+  </div>
+</div>

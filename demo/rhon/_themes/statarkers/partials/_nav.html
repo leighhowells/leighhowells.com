@@ -1,0 +1,29 @@
+<div class="constrain" style="padding:0; margin-left:0;">
+	
+	<nav role="navigation" class="nav--primary" style="padding-top:0; margin-top: 70px; width: 100%; margin-left: auto; margin-right: auto;">
+		
+		<div class="constrain">
+		    	
+		<ul class="nav__list nav_list--primary closeButton" > 
+	 
+		 <div class="disease-list" style="clear:left !important; padding-top: 10px; width: 100%;">
+	
+				<ul style="margin:0;padding:0;">
+					
+				{{ entries:listing folder="diseases" sort_by="title" }}
+				
+				<li ><div class="ctabullets"><img src="{{ _site_url }}assets/bullet1.svg"></div><a href="{{ url }}">{{ title }}</a></li>
+				
+				{{ /entries:listing }}
+				
+				</ul>
+				
+			</div>
+		 
+		</ul>
+		
+		</div>
+		   
+	</nav>
+
+</div><!-- END .constrain -->

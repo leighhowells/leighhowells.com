@@ -1,0 +1,130 @@
+html, body {
+  font-size: 9pt !important;
+}
+
+nav,
+.nav-site,
+.nav-sub,
+.tabcordion-nav {
+  display: none !important;
+}
+
+body {
+  background: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.toggle-nav-site,
+.toggle-search-site,
+.overlay-search-site {
+  display: none !important;
+}
+
+img {
+  width: auto;
+  height: auto;
+}
+
+main .wrap-content {
+  margin: 0 auto;
+  padding: 1px 0 2em;
+}
+
+.grid .col-1\/3,
+.grid .col-2\/3,
+.grid .col-1\/4,
+.grid .col-3\/4 {
+  display: block !important;
+  float: none !important;
+  width: auto !important;
+}
+
+.bleed-left,
+.bleed-right,
+.bleed-x {
+  margin: 1em !important;
+}
+
+@media (min-width: 75em) {
+  .bleed-left,
+  .bleed-right,
+  .bleed-x {
+    max-width: 45%;
+  }
+  .bleed-left.size-full,
+  .bleed-right.size-full,
+  .bleed-x.size-full {
+    width: 100%;
+    max-width: 100%;
+  }
+  .bleed-left.size-full img,
+  .bleed-right.size-full img,
+  .bleed-x.size-full img {
+    max-height: 30em;
+    max-height: 50vh;
+  }
+  .bleed-left.size-medium,
+  .bleed-right.size-medium,
+  .bleed-x.size-medium {
+    width: 45%;
+    max-width: 45%;
+  }
+  .bleed-left.size-small,
+  .bleed-right.size-small,
+  .bleed-x.size-small {
+    width: 30%;
+    max-width: 30%;
+  }
+}
+
+@media (min-width: 90em) {
+  .bleed-left,
+  .bleed-right,
+  .bleed-x {
+    max-width: 60%;
+  }
+  .bleed-left.size-full,
+  .bleed-right.size-full,
+  .bleed-x.size-full {
+    width: 100%;
+    max-width: 100%;
+  }
+  .bleed-left.size-full img,
+  .bleed-right.size-full img,
+  .bleed-x.size-full img {
+    max-height: 30em;
+    max-height: 50vh;
+  }
+  .bleed-left.size-medium,
+  .bleed-right.size-medium,
+  .bleed-x.size-medium {
+    width: 60%;
+    max-width: 60%;
+  }
+  .bleed-left.size-small,
+  .bleed-right.size-small,
+  .bleed-x.size-small {
+    width: 30%;
+    max-width: 30%;
+  }
+}
+
+.accordion-content,
+.tabcordion-header,
+.tabcordion-content {
+  display: block !important;
+}
+
+.accordion-toggle,
+.tabcordion-header a {
+  background: none !important;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
+.accordion-toggle:before,
+.tabcordion-header a:before {
+  display: none !important;
+}
+/*# sourceMappingURL=print.css.map */

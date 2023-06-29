@@ -1,0 +1,37 @@
+header ul#menu-main {
+  font-weight: 400;
+  height: 120px;
+  float: right;
+
+  li {
+   display: inline-block;
+
+    a {
+      display: inline-block;
+      padding: 1em;
+      text-decoration: none;
+      color: #ccc;
+
+      &:hover {
+        color: $primary;
+        border-radius: 3px;
+        background: rgba(0,0,0,0.8);
+      }
+
+    }
+
+    li:last-child {
+      a {
+        padding-right: 0;
+      }
+    }
+  }
+}
+
+body.design nav a.navDesign,
+body.about nav a.navAbout,
+body.articles nav a.navArticles,
+body.blog nav a.navBlog,
+body.music nav a.navMusic {
+  color: $secondary;
+}

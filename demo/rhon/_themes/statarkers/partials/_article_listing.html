@@ -1,0 +1,58 @@
+{{ entries:listing folder="{fold}" limit="{lim}" taxonomy="{tax}" sort_dir="asc" }}
+  
+			<section style="margin-bottom: 10px;" class="modListNews {{ if template=='light' }}staticPanel-light{{ endif }} {{ if template=='dark' }}staticPanel-dark{{ endif}}">
+							
+					{{ if template }}
+					<div class="onethird"><img src="{{ _site_url }}{{ thumb }}"></div>
+					{{ else }}
+					  <a href="{{ url }}" class="onethird"><img src="{{ _site_url }}{{ thumb }}"></a>
+					{{ endif }}
+					
+					<div class="twothirds last">
+						{{ if template }}
+						<h4>{{ title }}</h4>
+						{{ else }}
+						<h4><a style="text-decoration: none;" href="{{ url }}">{{ title }}</a></h4>
+						{{ endif }}
+						
+					    {{ if tags_list }}
+					      <span style="font-size: 0.8em;">DISEASES:</span> <span class="article__tax-light" style="font-size:0.9em;">{{ tags_url_list }}</span>&nbsp;&nbsp;
+					    {{ endif }}
+					    {{ if categories_list }}
+					      <span style="font-size: 0.8em;">THEMES:</span> <span class="article__tax-light" style="font-size:0.9em;">{{ categories_url_list }}</span>
+					    {{ endif }}
+					    <br/><br/>
+					      
+						{{ if template }}
+							{{ content }}
+						{{ else }}
+							<p>{{ excerpt }}</p>
+							<a href="{{ url }}">Read more</a> &raquo;
+						{{ endif }}
+					</div>				
+			
+			</section>
+
+{{ /entries:listing }}
+
+{{# Add simple pagination: limit must equal entries limit #}}
+
+{{ entries:pagination
+  folder="{fold}"
+  limit="{lim}"
+  taxonomy="{tax}"
+}}
+  {{ if total_pages > 1 }}
+  <div class="pagination">
+    {{ if previous_page }}
+      <a href="{{ previous_page }}" class="pagination__prev">&larr; Prev</a>
+    {{ endif }}
+
+    <span class="pagination__number">Page {{ current_page }} of {{ total_pages }}</span>
+    
+    {{ if next_page }}
+      <a href="{{ next_page }}" class="pagination__next">Next &rarr;</a>
+    {{ endif }}
+  </div><!-- END .pagination -->
+  {{ endif }}
+{{ /entries:pagination }}

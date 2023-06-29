@@ -1,0 +1,1753 @@
+/* Mix base grey with a hint of palette Brown REMOVED */
+/* Mix base grey with a hint of palette Brown ADDED */
+/*$darkGrey: lighten($black, 20%)+($paletteBrown*0.18);
+$backgroundBeige: #B3B4AE+($paletteBrown*0.14); */
+/*! normalize.css v2.1.2 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+/* line 11, ../sass/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+/* line 30, ../sass/_normalize.scss */
+audio,
+canvas,
+video {
+  display: inline-block; }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 41, ../sass/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 50, ../sass/_normalize.scss */
+[hidden] {
+  display: none; }
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 64, ../sass/_normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+/* line 74, ../sass/_normalize.scss */
+body {
+  margin: 0; }
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+/* line 86, ../sass/_normalize.scss */
+a:focus {
+  outline: thin dotted; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 94, ../sass/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 108, ../sass/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+/* line 117, ../sass/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 125, ../sass/_normalize.scss */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+/* line 134, ../sass/_normalize.scss */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 142, ../sass/_normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 152, ../sass/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+/* line 161, ../sass/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+/* line 173, ../sass/_normalize.scss */
+pre {
+  white-space: pre-wrap; }
+
+/**
+ * Set consistent quote types.
+ */
+/* line 181, ../sass/_normalize.scss */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019"; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 189, ../sass/_normalize.scss */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 197, ../sass/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 205, ../sass/_normalize.scss */
+sup {
+  top: -0.5em; }
+
+/* line 209, ../sass/_normalize.scss */
+sub {
+  bottom: -0.25em; }
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+/* line 221, ../sass/_normalize.scss */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+/* line 229, ../sass/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+/* line 241, ../sass/_normalize.scss */
+figure {
+  margin: 0; }
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 253, ../sass/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 264, ../sass/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 275, ../sass/_normalize.scss */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 289, ../sass/_normalize.scss */
+button,
+input {
+  line-height: normal; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+/* line 301, ../sass/_normalize.scss */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 314, ../sass/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 326, ../sass/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ */
+/* line 336, ../sass/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 348, ../sass/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+/* line 360, ../sass/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 369, ../sass/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+/* line 380, ../sass/_normalize.scss */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */ }
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 393, ../sass/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 6, ../sass/_base.scss */
+body {
+  line-height: 1.5;
+  color: #33383a;
+  background: #b9b9b9;
+  margin: 0;
+  padding: 0; }
+
+/* line 13, ../sass/_base.scss */
+small {
+  display: block;
+  text-align: left;
+  font-size: 70%; }
+
+/* line 19, ../sass/_base.scss */
+button {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  padding: 15px;
+  border: none;
+  margin-top: 15px;
+  background: #85756e;
+  background: gray;
+  color: #ddd;
+  -moz-transition: background-color 0.35s 0s, color 0.35s;
+  -o-transition: background-color 0.35s 0s, color 0.35s;
+  -webkit-transition: background-color 0.35s, color 0.35s;
+  -webkit-transition-delay: 0s, 0s;
+  transition: background-color 0.35s 0s, color 0.35s; }
+
+/* line 32, ../sass/_base.scss */
+button:hover {
+  background: #d60270;
+  color: white; }
+
+/* line 38, ../sass/_base.scss */
+input[type=search] {
+  position: relative;
+  margin-right: 2px;
+  top: -13px;
+  color: red;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 1em;
+  -moz-border-radius: 8px / 8px;
+  -webkit-border-radius: 8px 8px;
+  border-radius: 8px / 8px;
+  border: 1px solid rgba(255, 255, 255, 0.6); }
+
+/* line 9, ../sass/_layout.scss */
+.container {
+  margin: 0 auto;
+  padding: 0 1em;
+  max-width: 40em; }
+
+/* line 14, ../sass/_layout.scss */
+header[role="banner"] {
+  padding: 2em 0; }
+
+/* line 15, ../sass/_layout.scss */
+footer[role="contentinfo"] {
+  padding: 2em; }
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?-phukie");
+  src: url("../fonts/icomoon.eot?#iefix-phukie") format("embedded-opentype"), url("../fonts/icomoon.woff?-phukie") format("woff"), url("../fonts/icomoon.ttf?-phukie") format("truetype"), url("../fonts/icomoon.svg?-phukie#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/* line 12, ../sass/_fonts.scss */
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  font-size: 2.5em;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/* line 26, ../sass/_fonts.scss */
+.icon-image:before {
+  content: "\e600"; }
+
+/* line 29, ../sass/_fonts.scss */
+.icon-library:before {
+  content: "\e601"; }
+
+/* line 32, ../sass/_fonts.scss */
+.icon-coin:before {
+  content: "\e602"; }
+
+/* line 35, ../sass/_fonts.scss */
+.icon-bell:before {
+  content: "\e603"; }
+
+/* line 38, ../sass/_fonts.scss */
+.icon-bubbles:before {
+  content: "\e604"; }
+
+/* line 41, ../sass/_fonts.scss */
+.icon-bubbles2:before {
+  content: "\e605"; }
+
+/* line 44, ../sass/_fonts.scss */
+.icon-user:before {
+  content: "\e606"; }
+
+/* line 47, ../sass/_fonts.scss */
+.icon-users:before {
+  content: "\e607"; }
+
+/* line 50, ../sass/_fonts.scss */
+.icon-spinner:before {
+  content: "\e608"; }
+
+/* line 53, ../sass/_fonts.scss */
+.icon-cog:before {
+  content: "\e609"; }
+
+/* line 56, ../sass/_fonts.scss */
+.icon-stats:before {
+  content: "\e60a"; }
+
+/* line 59, ../sass/_fonts.scss */
+.icon-trophy:before {
+  content: "\e60b"; }
+
+/* line 62, ../sass/_fonts.scss */
+.icon-accessibility:before {
+  content: "\e60c"; }
+
+/* line 65, ../sass/_fonts.scss */
+.icon-globe:before {
+  content: "\e60d"; }
+
+/* line 68, ../sass/_fonts.scss */
+.icon-earth:before {
+  content: "\e60e"; }
+
+/* line 71, ../sass/_fonts.scss */
+.icon-eye:before {
+  content: "\e60f"; }
+
+/* line 74, ../sass/_fonts.scss */
+.icon-heart:before {
+  content: "\e610"; }
+
+/* line 77, ../sass/_fonts.scss */
+.icon-googleplus:before {
+  content: "\e611"; }
+
+/* line 80, ../sass/_fonts.scss */
+.icon-facebook:before {
+  content: "\e612"; }
+
+/* line 83, ../sass/_fonts.scss */
+.icon-twitter:before {
+  content: "\e613"; }
+
+/* line 86, ../sass/_fonts.scss */
+.icon-vimeo2:before {
+  content: "\e614"; }
+
+/* line 89, ../sass/_fonts.scss */
+.icon-flickr:before {
+  content: "\e615"; }
+
+/* line 92, ../sass/_fonts.scss */
+.icon-linkedin:before {
+  content: "\e616"; }
+
+/* line 95, ../sass/_fonts.scss */
+.icon-pencil:before {
+  content: "\e617"; }
+
+/* line 98, ../sass/_fonts.scss */
+.icon-image2:before {
+  content: "\e618"; }
+
+/* line 101, ../sass/_fonts.scss */
+.icon-busy:before {
+  content: "\e619"; }
+
+/* line 104, ../sass/_fonts.scss */
+.icon-wrench:before {
+  content: "\e61a"; }
+
+/* line 107, ../sass/_fonts.scss */
+.icon-play:before {
+  content: "\e61b"; }
+
+/* line 110, ../sass/_fonts.scss */
+.icon-arrow-right:before {
+  content: "\e61c"; }
+
+/* line 113, ../sass/_fonts.scss */
+.icon-arrow-right2:before {
+  content: "\e61d"; }
+
+/* line 116, ../sass/_fonts.scss */
+.icon-arrow-left:before {
+  content: "\e61e"; }
+
+/* line 119, ../sass/_fonts.scss */
+.icon-googleplus2:before {
+  content: "\e61f"; }
+
+/* line 122, ../sass/_fonts.scss */
+.icon-facebook2:before {
+  content: "\e620"; }
+
+/* line 125, ../sass/_fonts.scss */
+.icon-twitter2:before {
+  content: "\e621"; }
+
+/* line 128, ../sass/_fonts.scss */
+.icon-vimeo:before {
+  content: "\e622"; }
+
+/* line 131, ../sass/_fonts.scss */
+.icon-libreoffice:before {
+  content: "\e623"; }
+
+/* line 134, ../sass/_fonts.scss */
+.icon-mail:before {
+  content: "\e639"; }
+
+/* line 137, ../sass/_fonts.scss */
+.icon-youtube:before {
+  content: "\e63a"; }
+
+/* line 140, ../sass/_fonts.scss */
+.icon-vimeo22:before {
+  content: "\e638"; }
+
+/* line 143, ../sass/_fonts.scss */
+.icon-github:before {
+  content: "\e63b"; }
+
+/* line 146, ../sass/_fonts.scss */
+.icon-tumblr:before {
+  content: "\e63c"; }
+
+/* line 149, ../sass/_fonts.scss */
+.icon-lastfm:before {
+  content: "\e63d"; }
+
+/* line 152, ../sass/_fonts.scss */
+.icon-pinterest:before {
+  content: "\e63e"; }
+
+/* line 155, ../sass/_fonts.scss */
+.icon-arrow-left2:before {
+  content: "\e624"; }
+
+/* line 158, ../sass/_fonts.scss */
+.icon-arrow-down:before {
+  content: "\e625"; }
+
+/* line 161, ../sass/_fonts.scss */
+.icon-arrow-up:before {
+  content: "\e626"; }
+
+/* line 164, ../sass/_fonts.scss */
+.icon-arrow-right3:before {
+  content: "\e627"; }
+
+/* line 167, ../sass/_fonts.scss */
+.icon-arrow-left3:before {
+  content: "\e628"; }
+
+/* line 170, ../sass/_fonts.scss */
+.icon-arrow-down2:before {
+  content: "\e629"; }
+
+/* line 173, ../sass/_fonts.scss */
+.icon-arrow-up2:before {
+  content: "\e62a"; }
+
+/* line 176, ../sass/_fonts.scss */
+.icon-arrow-right4:before {
+  content: "\e62b"; }
+
+/* line 179, ../sass/_fonts.scss */
+.icon-arrow-left4:before {
+  content: "\e62c"; }
+
+/* line 182, ../sass/_fonts.scss */
+.icon-arrow-down3:before {
+  content: "\e62d"; }
+
+/* line 185, ../sass/_fonts.scss */
+.icon-arrow-up3:before {
+  content: "\e62e"; }
+
+/* line 188, ../sass/_fonts.scss */
+.icon-arrow-right5:before {
+  content: "\e62f"; }
+
+/* line 191, ../sass/_fonts.scss */
+.icon-arrow-left5:before {
+  content: "\e630"; }
+
+/* line 194, ../sass/_fonts.scss */
+.icon-arrow-down4:before {
+  content: "\e631"; }
+
+/* line 197, ../sass/_fonts.scss */
+.icon-arrow-up4:before {
+  content: "\e632"; }
+
+/* line 200, ../sass/_fonts.scss */
+.icon-uniE633:before {
+  content: "\e633"; }
+
+/* line 203, ../sass/_fonts.scss */
+.icon-arrow-left6:before {
+  content: "\e634"; }
+
+/* line 206, ../sass/_fonts.scss */
+.icon-arrow-down5:before {
+  content: "\e635"; }
+
+/* line 209, ../sass/_fonts.scss */
+.icon-arrow-up5:before {
+  content: "\e636"; }
+
+/* line 212, ../sass/_fonts.scss */
+.icon-arrow-right6:before {
+  content: "\e637"; }
+
+/* line 6, ../sass/_typography.scss */
+body {
+  line-height: 1.5; }
+
+/* line 10, ../sass/_typography.scss */
+a:hover {
+  text-decoration: underline; }
+
+/* line 14, ../sass/_typography.scss */
+h1, h2, h3 {
+  font-family: Nunito;
+  font-weight: 400;
+  text-decoration: none;
+  letter-spacing: -1px; }
+
+/* line 22, ../sass/_typography.scss */
+h1 em {
+  color: #666;
+  font-size: 16px;
+  font-weight: bold; }
+
+/* line 29, ../sass/_typography.scss */
+header h2 {
+  font-family: Nunito;
+  font-weight: 300;
+  color: white;
+  bottom: 0px;
+  position: relative;
+  top: 70px;
+  font-size: 1.8em;
+  line-height: 1.3em;
+  padding-right: 75px !important; }
+
+/* line 42, ../sass/_typography.scss */
+h2, h3 {
+  padding: 15px 0 30px 0; }
+
+/* line 44, ../sass/_typography.scss */
+h2 strong {
+  font-weight: 400; }
+
+/* line 48, ../sass/_typography.scss */
+h2 small {
+  padding-top: 7.5px;
+  font-size: 88%;
+  line-height: 110%; }
+
+/* CONTENT ------------------------------------------------ */
+/* line 58, ../sass/_typography.scss */
+.pageContent p {
+  padding: 0 0 25.5px 0;
+  font-size: 1.3em; }
+
+/* line 63, ../sass/_typography.scss */
+.comments {
+  clear: left; }
+
+/* line 67, ../sass/_typography.scss */
+blockquote {
+  font-size: 1.8em;
+  line-height: 1.2em;
+  padding: 60px 60px 60px 120px;
+  margin: 15px 0 30px 0;
+  background: #d9d9d9 url(../img/cork_1.png);
+  font-family: Nunito;
+  font-weight: 300; }
+
+/* line 77, ../sass/_typography.scss */
+.pageContent h3 {
+  margin: 30px 0 45px 0;
+  font-size: 2.2em;
+  font-weight: 300;
+  line-height: 1.2em; }
+
+/* BANNER HERO IMAGES */
+/* line 3, ../sass/_banners.scss */
+.hero {
+  max-width: 1600px;
+  margin: 0 auto 0 auto;
+  width: 100%;
+  background: url(../img/banner1.jpg) center -180px no-repeat fixed;
+  /* background: url(/img/banner6.jpg) center 0px no-repeat; */
+  background-size: 1600px; }
+
+/* line 12, ../sass/_banners.scss */
+body.news .hero {
+  background: url(../img/banner2.jpg) center -200px no-repeat fixed;
+  background-size: 1600px;
+  /*height: 570px;*/ }
+
+/* line 18, ../sass/_banners.scss */
+body.news .headerDesc {
+  position: relative;
+  /*top: -50px;*/ }
+
+/* line 23, ../sass/_banners.scss */
+body.getinvolved .hero {
+  background: url(../img/banner6.jpg) center -20px no-repeat fixed;
+  background-size: 1600px;
+  /*height: 570px;*/ }
+
+/* line 29, ../sass/_banners.scss */
+body.getinvolved .headerDesc {
+  position: relative;
+  /*top: -50px;*/ }
+
+/* line 34, ../sass/_banners.scss */
+body.areasfocus .hero {
+  background: url(../img/banner5.jpg) center -70px no-repeat fixed;
+  background-size: 1600px;
+  /*height: 570px;*/ }
+
+/* line 40, ../sass/_banners.scss */
+body.areasfocus .headerDesc {
+  position: relative;
+  /*top: -50px;*/ }
+
+/* line 46, ../sass/_banners.scss */
+body.resources .hero {
+  background: url(../img/banner4.jpg) center 20px no-repeat fixed;
+  background-size: 1600px;
+  /*height: 570px;*/ }
+
+/* line 52, ../sass/_banners.scss */
+body.resources .headerDesc {
+  position: relative;
+  /*top: -50px;*/ }
+
+/*************** */
+/* line 12, ../sass/_modules.scss */
+.pagination {
+  text-align: center; }
+
+/* --------------------------------------------------------------- */
+/*  BOX SIZING THINGY */
+/* line 16, ../sass/styles.scss */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 22, ../sass/styles.scss */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+/* GRID ------------------------------------------------------------- */
+/* line 32, ../sass/styles.scss */
+.grid {
+  max-width: 1600px;
+  margin: 0 auto 15px auto; }
+  /* line 36, ../sass/styles.scss */
+  .grid:after {
+    /* Or @extend clearfix */
+    content: "";
+    display: table;
+    clear: both; }
+
+/* line 44, ../sass/styles.scss */
+[class*='col-'] {
+  float: left;
+  padding-right: 15px; }
+  /* line 47, ../sass/styles.scss */
+  .grid [class*='col-']:last-of-type {
+    padding-right: 0; }
+
+/* line 51, ../sass/styles.scss */
+.col-2-3 {
+  width: 66.66%; }
+
+/* line 54, ../sass/styles.scss */
+.col-1-3 {
+  width: 33.33%; }
+
+/* line 57, ../sass/styles.scss */
+.col-1-2 {
+  width: 50%; }
+
+/* line 60, ../sass/styles.scss */
+.col-1-4 {
+  width: 25%; }
+
+/* line 63, ../sass/styles.scss */
+.col-1-5 {
+  width: 20%; }
+
+/* line 66, ../sass/styles.scss */
+.col-1-8 {
+  width: 12.5%; }
+
+/* Opt-in outside padding */
+/* line 71, ../sass/styles.scss */
+.grid-pad {
+  padding: 15px 0 15px 15px; }
+  /* line 73, ../sass/styles.scss */
+  .grid-pad [class*='col-']:last-of-type {
+    padding-right: 15px; }
+
+/* line 78, ../sass/styles.scss */
+.gridLast {
+  padding-right: 15px !important; }
+
+/* line 81, ../sass/styles.scss */
+.nopad {
+  padding-right: 7.5px; }
+
+/* line 84, ../sass/styles.scss */
+.nopad2 {
+  padding-right: 0 !important; }
+
+/* HEADER ------------------------------------------------------- */
+/* line 91, ../sass/styles.scss */
+header {
+  width: 100%; }
+
+/* line 95, ../sass/styles.scss */
+header h2 {
+  font-size: 2.2em;
+  margin-top: -20px; }
+
+/* line 100, ../sass/styles.scss */
+.blackFade {
+  padding: 0 53.33333px;
+  height: 650px;
+  background: linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.8) 100%); }
+
+/* line 106, ../sass/styles.scss */
+.nav__list li {
+  display: inline;
+  padding-right: 15px; }
+
+/* line 111, ../sass/styles.scss */
+.logoBlock {
+  margin-top: 45px;
+  background: rgba(0, 0, 0, 0.6);
+  /*was 0.7*/
+  padding: 19.5px;
+  width: 20%;
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px; }
+
+/* line 119, ../sass/styles.scss */
+.logo img {
+  width: 100%;
+  margin-top: -20px; }
+
+/* line 124, ../sass/styles.scss */
+.logo:hover img {
+  -webkit-filter: hue-rotate(300deg);
+  filter: hue-rotate(300deg);
+  -webkit-filter: brightness(0.75);
+  filter: brightness(0.75); }
+
+/* line 129, ../sass/styles.scss */
+nav {
+  margin-top: -10px; }
+  /* line 132, ../sass/styles.scss */
+  nav li {
+    background: #33383a;
+    margin-top: 2px;
+    list-style: none;
+    text-transform: uppercase;
+    font-family: Nunito;
+    -moz-border-radius: 4px / 4px;
+    -webkit-border-radius: 4px 4px;
+    border-radius: 4px / 4px; }
+  /* line 141, ../sass/styles.scss */
+  nav li a {
+    display: block;
+    padding: 15px 15px 15px 40px;
+    text-decoration: none;
+    font-weight: 400;
+    color: white;
+    font-size: 1em;
+    -moz-border-radius: 4px / 4px;
+    -webkit-border-radius: 4px 4px;
+    border-radius: 4px / 4px;
+    -moz-transition: background-color 0.5s 0s, color 0.5s;
+    -o-transition: background-color 0.5s 0s, color 0.5s;
+    -webkit-transition: background-color 0.5s, color 0.5s;
+    -webkit-transition-delay: 0s, 0s;
+    transition: background-color 0.5s 0s, color 0.5s; }
+  /* line 151, ../sass/styles.scss */
+  nav li a:hover {
+    background: #d60270;
+    text-decoration: none; }
+
+/* line 157, ../sass/styles.scss */
+.icon-arrow-right4 {
+  font-size: 1.5em;
+  line-height: 0em;
+  top: 6px;
+  position: relative;
+  color: #d60270;
+  padding-left: 0;
+  -moz-transition: padding-left 0.5s 0s;
+  -o-transition: padding-left 0.5s 0s;
+  -webkit-transition: padding-left 0.5s;
+  -webkit-transition-delay: 0s;
+  transition: padding-left 0.5s 0s; }
+
+/* line 167, ../sass/styles.scss */
+nav li a:hover .icon-arrow-right4 {
+  padding-left: 5px; }
+
+/* line 171, ../sass/styles.scss */
+button .icon-arrow-right4 {
+  color: white; }
+
+/* line 175, ../sass/styles.scss */
+nav li a:hover .icon-arrow-right4 {
+  color: white; }
+
+/* line 180, ../sass/styles.scss */
+.hero button {
+  padding: 22.5px 30px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #ccc;
+  color: #e6e6e6;
+  font-family: Nunito;
+  font-weight: 700;
+  margin: 110px 0 0 90px;
+  width: 80%; }
+
+/* line 191, ../sass/styles.scss */
+.hero button:hover {
+  background: #d60270; }
+
+/* SEARCH BAR ------------------------------------------------ */
+/* line 198, ../sass/styles.scss */
+.searchbar {
+  height: 30px;
+  float: right;
+  padding-top: 80px; }
+  /* line 204, ../sass/styles.scss */
+  .searchbar .icon {
+    color: rgba(255, 255, 255, 0.9);
+    -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    -moz-border-radius: 10px 10px / 10px 10px;
+    -webkit-border-radius: 10px 10px;
+    border-radius: 10px 10px / 10px 10px; }
+  /* line 210, ../sass/styles.scss */
+  .searchbar .icon:hover {
+    color: white; }
+  /* line 214, ../sass/styles.scss */
+  .searchbar input {
+    -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    opacity: 0.9; }
+  /* line 218, ../sass/styles.scss */
+  .searchbar input:hover {
+    opacity: 1; }
+
+/* FOOTER ---------------------------------------------------- */
+/* line 229, ../sass/styles.scss */
+footer {
+  clear: left;
+  float: left;
+  margin: 2px 0 0 0;
+  background: #e6e6e6;
+  width: 100%;
+  padding: 15px; }
+  /* line 237, ../sass/styles.scss */
+  footer .container {
+    max-width: 1600px;
+    margin: 0 auto;
+    background: #e6e6e6; }
+
+/* SECTIONS ----------------------------------------------- */
+/* line 248, ../sass/styles.scss */
+.banner {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 15px 53.33333px 45px 53.33333px;
+  background: #efefef;
+  display: block; }
+
+/* line 257, ../sass/styles.scss */
+.articleList {
+  list-style: none; }
+  /* line 260, ../sass/styles.scss */
+  .articleList article {
+    /*border: 2px solid white;*/
+    height: 300px;
+    /*@include box-shadow( 0 12px 10px -12px rgba(0,0,0,0.3) );*/
+    position: relative; }
+  /* line 268, ../sass/styles.scss */
+  .articleList article:hover .category {
+    background: #d60270; }
+  /* line 272, ../sass/styles.scss */
+  .articleList article.large {
+    height: 630px; }
+  /* line 276, ../sass/styles.scss */
+  .articleList p {
+    padding: 1px 0 5px 0; }
+  /* line 280, ../sass/styles.scss */
+  .articleList p a {
+    text-decoration: none;
+    color: #707b7f;
+    font-size: 0.75em; }
+  /* line 286, ../sass/styles.scss */
+  .articleList p a:hover {
+    text-decoration: underline; }
+  /* line 290, ../sass/styles.scss */
+  .articleList h3 {
+    color: #667074;
+    font-size: 2.3em;
+    font-weight: 300; }
+  /* line 296, ../sass/styles.scss */
+  .articleList h3 a {
+    text-decoration: none;
+    color: #666; }
+
+/* line 303, ../sass/styles.scss */
+.overlay {
+  padding: 22.5px;
+  height: 100%;
+  width: 100%;
+  color: white;
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0.7) 80%);
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0.7) 80%);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0.7) 80%);
+  -moz-transition: background 0.6s 0s;
+  -o-transition: background 0.6s 0s;
+  -webkit-transition: background 0.6s;
+  -webkit-transition-delay: 0s;
+  transition: background 0.6s 0s; }
+
+/* line 313, ../sass/styles.scss */
+article:hover .overlay {
+  height: 100%;
+  background: rgba(214, 2, 112, 0.6);
+  cursor: pointer;
+  padding-bottom: 10px; }
+
+/* line 320, ../sass/styles.scss */
+.sfa {
+  color: white;
+  height: 100%; }
+  /* line 324, ../sass/styles.scss */
+  .sfa h4 {
+    font-size: 1.8em;
+    font-weight: 300;
+    padding-bottom: 15px; }
+
+/* line 331, ../sass/styles.scss */
+.sfa .overlay {
+  background: rgba(8, 154, 199, 0.7);
+  background: rgba(214, 2, 112, 0.9); }
+
+/* line 336, ../sass/styles.scss */
+.sfa .tiletext {
+  padding: 20% 45px 15% 30px; }
+
+/* line 340, ../sass/styles.scss */
+article .category {
+  background: #667074;
+  color: #e6e6e6;
+  padding: 5px 15px 5px 15px;
+  -moz-border-radius: 4px 4px / 0 0;
+  -webkit-border-radius: 4px 0;
+  border-radius: 4px 4px / 0 0;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 28px;
+  font-weight: bold; }
+
+/* line 354, ../sass/styles.scss */
+article .tiletext {
+  position: absolute;
+  bottom: 15px;
+  padding-right: 15px; }
+
+/* line 360, ../sass/styles.scss */
+article h4 {
+  font-size: 1.2em;
+  line-height: 1.2em;
+  line-height: 1.1em;
+  padding-bottom: 0px;
+  -moz-transition: padding-bottom 0.5s 0s;
+  -o-transition: padding-bottom 0.5s 0s;
+  -webkit-transition: padding-bottom 0.5s;
+  -webkit-transition-delay: 0s;
+  transition: padding-bottom 0.5s 0s; }
+
+/* line 368, ../sass/styles.scss */
+article:hover h4 {
+  padding-bottom: 7.5px; }
+
+/* line 372, ../sass/styles.scss */
+date {
+  color: #bfbfbf;
+  font-size: 0.8em; }
+
+/* line 379, ../sass/styles.scss */
+.cta {
+  font-size: 1em;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  float: right;
+  padding-top: 37.5px;
+  color: #d60270; }
+
+/* line 387, ../sass/styles.scss */
+.cta.left {
+  float: left;
+  padding-top: 22.5px; }
+
+/* line 391, ../sass/styles.scss */
+.cta:hover {
+  color: #6b0138; }
+
+/* line 394, ../sass/styles.scss */
+.socialmedia .cta {
+  padding-top: 21px; }
+
+/* line 397, ../sass/styles.scss */
+.socialmedia .feedText {
+  background: white;
+  padding: 5px; }
+
+/* line 401, ../sass/styles.scss */
+.socialmedia .feedText a {
+  text-decoration: none;
+  color: #d60270; }
+
+/* TOOLBAR ------------------------------------------------ */
+/* line 410, ../sass/styles.scss */
+.toolbar {
+  display: block;
+  position: fixed;
+  height: 45px;
+  background: #33383a;
+  width: 100%;
+  padding: 7.5px;
+  z-index: 99; }
+  /* line 419, ../sass/styles.scss */
+  .toolbar .toolbarContainer {
+    max-width: 1600px;
+    background: black;
+    text-align: right;
+    margin: 0 auto; }
+  /* line 426, ../sass/styles.scss */
+  .toolbar ul {
+    background: #33383a;
+    text-align: right; }
+  /* line 431, ../sass/styles.scss */
+  .toolbar li {
+    display: inline;
+    padding: 0 10px 0 10px;
+    border-right: 1px solid #4c5457; }
+    /* line 436, ../sass/styles.scss */
+    .toolbar li a {
+      color: #e6e6e6;
+      text-decoration: none; }
+    /* line 441, ../sass/styles.scss */
+    .toolbar li a:hover {
+      color: #ff0286;
+      text-decoration: underline; }
+  /* line 447, ../sass/styles.scss */
+  .toolbar li:nth-last-child(2) {
+    border-right: none;
+    padding-right: 5px; }
+  /* line 452, ../sass/styles.scss */
+  .toolbar li:last-child {
+    border-right: none;
+    padding-right: 0; }
+    /* line 455, ../sass/styles.scss */
+    .toolbar li:last-child a {
+      background: #030404;
+      padding: 16px 8px 16px 8px;
+      color: #9f9f9f;
+      margin-left: 1px;
+      font-size: 0.7em;
+      font-weight: bold; }
+    /* line 463, ../sass/styles.scss */
+    .toolbar li:last-child a:hover {
+      color: #ff0286;
+      background: #222526; }
+    /* line 467, ../sass/styles.scss */
+    .toolbar li:last-child a.current {
+      color: white; }
+
+/* HOME PAGE ----------------------------------------------- */
+/* line 477, ../sass/styles.scss */
+.banner.atawid {
+  background: #482216;
+  color: white; }
+  /* line 481, ../sass/styles.scss */
+  .banner.atawid h3 {
+    color: #efefef; }
+
+/* line 486, ../sass/styles.scss */
+.banner.focusareas {
+  background: #55002c;
+  color: white;
+  font-size: 1.4em;
+  font-family: Nunito;
+  font-weight: 300;
+  padding-bottom: 0px;
+  margin-bottom: 0; }
+  /* line 495, ../sass/styles.scss */
+  .banner.focusareas ul li {
+    list-style: none;
+    margin-bottom: 45px; }
+  /* line 500, ../sass/styles.scss */
+  .banner.focusareas .articleList {
+    padding-top: 30px; }
+  /* line 504, ../sass/styles.scss */
+  .banner.focusareas .icon {
+    font-size: 2.5em;
+    position: relative;
+    top: -.1em;
+    margin-right: -15px;
+    color: #d60270;
+    padding-right: 10px; }
+  /* line 513, ../sass/styles.scss */
+  .banner.focusareas h3 {
+    font-size: 1.6em;
+    padding: 0 0 1em 0;
+    color: white; }
+
+/* line 521, ../sass/styles.scss */
+.banner.partners {
+  background: #dddddd;
+  border-top: 1px solid #cfcfcf; }
+
+/* line 526, ../sass/styles.scss */
+.banner.othernews {
+  background: #d9d9d9; }
+
+/* line 530, ../sass/styles.scss */
+.banner.darker {
+  background: #d9d9d9; }
+
+/* line 535, ../sass/styles.scss */
+article.textTile {
+  background: white;
+  height: auto;
+  margin-bottom: 10px;
+  -moz-border-radius: 4px / 4px;
+  -webkit-border-radius: 4px 4px;
+  border-radius: 4px / 4px;
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); }
+  /* line 542, ../sass/styles.scss */
+  article.textTile p {
+    padding: 0; }
+  /* line 546, ../sass/styles.scss */
+  article.textTile .category {
+    top: 0px;
+    left: 0px; }
+  /* line 551, ../sass/styles.scss */
+  article.textTile .content {
+    font-size: 1em;
+    padding: 33px 30px 15px 15px;
+    line-height: 1.45em; }
+  /* line 557, ../sass/styles.scss */
+  article.textTile h4 {
+    font-size: 1.2em;
+    font-weight: light;
+    line-height: 1.1em; }
+
+/* line 566, ../sass/styles.scss */
+.memberspotlight h4 {
+  font-size: 1.4em;
+  color: #d60270; }
+
+/* FOOTER ----------------------------------------------- */
+/* line 577, ../sass/styles.scss */
+footer {
+  margin-top: 30px;
+  padding: 0; }
+  /* line 581, ../sass/styles.scss */
+  footer .joinus {
+    color: #9f9f9f;
+    padding: 45px 0 45px 0;
+    background: #383d3f url(../img/footflags2.png) center bottom no-repeat;
+    background-size: 100%; }
+  /* line 588, ../sass/styles.scss */
+  footer h3 {
+    color: #e6e6e6 !important;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 15px;
+    margin-bottom: 0; }
+
+/* line 597, ../sass/styles.scss */
+.joinus .member > p, .joinus .conversation > p {
+  width: 80%; }
+
+/* line 601, ../sass/styles.scss */
+.linkslist {
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-image: -moz-linear-gradient(#2a2e30, #33383a);
+  background-image: -webkit-linear-gradient(#2a2e30, #33383a);
+  background-image: linear-gradient(#2a2e30, #33383a); }
+  /* line 607, ../sass/styles.scss */
+  .linkslist .grid {
+    margin-bottom: 0; }
+  /* line 611, ../sass/styles.scss */
+  .linkslist ul {
+    border-left: 1px dashed #474e51;
+    padding-left: 15px; }
+  /* line 616, ../sass/styles.scss */
+  .linkslist ul li {
+    list-style: none;
+    font-size: 0.8em;
+    line-height: 1.7em; }
+    /* line 621, ../sass/styles.scss */
+    .linkslist ul li a {
+      text-decoration: none;
+      color: #aaaaaa; }
+    /* line 625, ../sass/styles.scss */
+    .linkslist ul li a:hover {
+      text-decoration: underline; }
+  /* line 630, ../sass/styles.scss */
+  .linkslist h4 {
+    text-transform: uppercase;
+    color: #999999;
+    font-size: 1em;
+    padding-bottom: .5em; }
+
+/* line 638, ../sass/styles.scss */
+.copyright {
+  margin: 0;
+  width: 100%;
+  background: #222526; }
+
+/* line 644, ../sass/styles.scss */
+.copyright .copyrightContainer {
+  display: block;
+  max-width: 1600px;
+  padding: 22.5px 0;
+  margin: 0 auto;
+  color: #efefef;
+  font-size: .9em;
+  color: #737373; }
+
+/* line 655, ../sass/styles.scss */
+.blank {
+  background: #efefef;
+  color: #33383a !important; }
+  /* line 659, ../sass/styles.scss */
+  .blank h4 {
+    color: #33383a;
+    font-size: 1.7em;
+    font-family: Nunito;
+    font-weight: 300;
+    padding-bottom: 0%;
+    width: 90%; }
+
+/* line 669, ../sass/styles.scss */
+.pink {
+  background: #c20165; }
+  /* line 672, ../sass/styles.scss */
+  .pink h4 {
+    color: white; }
+
+/* line 679, ../sass/styles.scss */
+.footicon {
+  font-size: 3em;
+  background: #00aced;
+  color: #272b2c;
+  -moz-border-radius: 12px / 12px;
+  -webkit-border-radius: 12px 12px;
+  border-radius: 12px / 12px;
+  margin-right: 7.5px;
+  margin-top: 15px; }
+
+/* line 688, ../sass/styles.scss */
+.footicon.icon-facebook {
+  background: #3b5998; }
+
+/* line 692, ../sass/styles.scss */
+.footicon.icon-linkedin {
+  background: #007bb6; }
+
+/* line 696, ../sass/styles.scss */
+.footicon.icon-googleplus {
+  background: #dd4b39; }
+
+/* line 700, ../sass/styles.scss */
+.footicon.icon-youtube {
+  font-size: 4.1em;
+  background: none;
+  position: relative;
+  top: 8px; }
+
+/* line 708, ../sass/styles.scss */
+.joinus .member {
+  border-right: 1px dashed #5b5b5b;
+  padding-right: 45px; }
+
+/* line 713, ../sass/styles.scss */
+.joinus .conversation {
+  padding-left: 30px; }
+
+/* line 717, ../sass/styles.scss */
+.exhibit {
+  background: #272b2c;
+  padding: 15px;
+  float: left;
+  margin: 7.5px 0;
+  -moz-border-radius: 4px / 4px;
+  -webkit-border-radius: 4px 4px;
+  border-radius: 4px / 4px;
+  width: 80%; }
+
+/* MEMBER SPOTLIGHT ------------------------------------------------ */
+/* line 730, ../sass/styles.scss */
+.memberspotlight {
+  background: #667074 url(../img/cork_1.png);
+  padding: 20px;
+  display: inline-block; }
+  /* line 735, ../sass/styles.scss */
+  .memberspotlight h4 {
+    color: white;
+    padding-bottom: 7.5px; }
+  /* line 740, ../sass/styles.scss */
+  .memberspotlight img {
+    border: none; }
+  /* line 744, ../sass/styles.scss */
+  .memberspotlight p {
+    line-height: 1.3em; }
+  /* line 748, ../sass/styles.scss */
+  .memberspotlight a {
+    text-decoration: none;
+    color: #d60270; }
+  /* line 753, ../sass/styles.scss */
+  .memberspotlight a:hover {
+    color: white; }
+  /* line 757, ../sass/styles.scss */
+  .memberspotlight .icon {
+    font-size: 1em !important; }
+
+/* TWITTER PANEL ------------------------------------------------- */
+/* line 766, ../sass/styles.scss */
+.tweets {
+  padding: 37.5px;
+  height: 275px;
+  background: #00aced;
+  color: white;
+  font-size: 1.5em;
+  line-height: 1.2em;
+  position: relative; }
+  /* line 776, ../sass/styles.scss */
+  .tweets strong, .tweets a {
+    color: #33383a; }
+  /* line 780, ../sass/styles.scss */
+  .tweets .icon {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.3em;
+    position: absolute;
+    top: 15px;
+    right: 15px; }
+
+/* -------------------------------------------------------------- */
+/* Smartphones (portrait and landscape) ---------------------------------- */
+@media only screen and (min-width: 0px) and (max-width: 650px) {
+  /* line 10, ../sass/_responsive.scss */
+  body {
+    font-size: 0.9em; }
+
+  /* line 13, ../sass/_responsive.scss */
+  .col-1-3 {
+    width: 100%; }
+
+  /* line 17, ../sass/_responsive.scss */
+  .col-2-3 {
+    width: 100%; }
+
+  /* line 20, ../sass/_responsive.scss */
+  .col-1-2 {
+    width: 100%; }
+
+  /* line 23, ../sass/_responsive.scss */
+  .col-1-4 {
+    width: 100%; }
+
+  /* line 26, ../sass/_responsive.scss */
+  .col-1-5 {
+    width: 100%; }
+
+  /* line 30, ../sass/_responsive.scss */
+  footer {
+    padding: 0 15px; }
+
+  /* line 32, ../sass/_responsive.scss */
+  .toolbar {
+    display: none; }
+
+  /* line 34, ../sass/_responsive.scss */
+  header .col-2-3 {
+    padding: 0;
+    height: 200px; }
+
+  /* line 39, ../sass/_responsive.scss */
+  .blackFade {
+    height: 450px; }
+
+  /* line 41, ../sass/_responsive.scss */
+  .logo {
+    width: 60%;
+    float: left;
+    padding-right: 10px; }
+
+  /* line 47, ../sass/_responsive.scss */
+  nav {
+    float: left;
+    width: 100%;
+    font-size: 0.9em; }
+
+  /* line 52, ../sass/_responsive.scss */
+  nav li a {
+    padding: 10px 20px; }
+
+  /* line 56, ../sass/_responsive.scss */
+  .logoBlock {
+    margin-top: 0; }
+
+  /* line 57, ../sass/_responsive.scss */
+  .hero {
+    background-size: cover; }
+
+  /* line 61, ../sass/_responsive.scss */
+  .headerDesc h2.col-2-3 {
+    font-size: 1.2em;
+    padding-right: 0 !important;
+    margin-top: -55px !important;
+    margin-bottom: -25px !important; }
+
+  /* line 62, ../sass/_responsive.scss */
+  .blackFade {
+    padding: 1em; }
+
+  /* line 64, ../sass/_responsive.scss */
+  .searchbar {
+    display: none; }
+
+  /* line 65, ../sass/_responsive.scss */
+  .headerDesc button {
+    width: 100%;
+    padding: 9px;
+    clear: left;
+    margin-left: 0;
+    margin-top: 0;
+    padding-left: 0;
+    float: left; }
+
+  /* line 67, ../sass/_responsive.scss */
+  .banner {
+    padding: 15px; } }
+@media all and (min-width: 650px) and (max-width: 1100px) {
+  /* line 74, ../sass/_responsive.scss */
+  body {
+    font-size: 0.75em; }
+
+  /* line 77, ../sass/_responsive.scss */
+  .col-1-3 {
+    width: 50%; }
+
+  /* line 80, ../sass/_responsive.scss */
+  .col-2-3 {
+    width: 100%; }
+
+  /* line 83, ../sass/_responsive.scss */
+  .col-1-2 {
+    width: 50%; }
+
+  /* line 86, ../sass/_responsive.scss */
+  .col-1-4 {
+    width: 50%; }
+
+  /* line 89, ../sass/_responsive.scss */
+  footer {
+    padding: 0 15px; } }
+@media all and (min-width: 1100px) and (max-width: 1600px) {
+  /* line 96, ../sass/_responsive.scss */
+  body {
+    font-size: 0.875em; }
+
+  /* line 99, ../sass/_responsive.scss */
+  .col-1-3 {
+    width: 33.33%; }
+
+  /* line 103, ../sass/_responsive.scss */
+  header .col-1-3 {
+    width: 25%; }
+
+  /* line 107, ../sass/_responsive.scss */
+  .col-2-3 {
+    width: 75%; }
+
+  /* line 110, ../sass/_responsive.scss */
+  .col-1-2 {
+    width: 50%; }
+
+  /* line 113, ../sass/_responsive.scss */
+  .col-1-4 {
+    width: 25%; }
+
+  /* line 116, ../sass/_responsive.scss */
+  .col-1-8 {
+    width: 12.5%; }
+
+  /* line 120, ../sass/_responsive.scss */
+  footer .joinus, footer .linkslist {
+    padding: 15px 45px; }
+
+  /* line 121, ../sass/_responsive.scss */
+  footer .grid {
+    margin-bottom: 0 !important; }
+
+  /* line 122, ../sass/_responsive.scss */
+  header {
+    height: 550px; }
+
+  /* line 123, ../sass/_responsive.scss */
+  header h2 {
+    margin-top: -60px;
+    line-height: 1.2em; }
+
+  /* line 124, ../sass/_responsive.scss */
+  .hero button {
+    margin-top: 40px; }
+
+  /* line 125, ../sass/_responsive.scss */
+  body.news .hero {
+    background-position: center -250px; } }

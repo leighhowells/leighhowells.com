@@ -1,0 +1,1893 @@
+// =====================================================================
+
+@import "variables";
+@import "compass";
+@import "normalize";
+@import "layout";
+@import "fonts";
+@import "banners";
+
+
+// =====================================================================
+// BASE RULES
+// =====================================================================
+
+
+body {
+  line-height: 1.5;
+  color: $darkGrey*1.3;
+  background: $background/1.1;
+  margin:0;padding:0;
+  -webkit-font-smoothing: antialiased;
+}
+
+small {
+  display: block;
+  text-align: left;
+  font-size: 70%;
+}
+
+button {
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
+    padding: $pad;
+    border: none;
+    margin-top: $pad;
+    background: $highlightC;
+    color: #ddd;
+    @include transition(background-color 0.35s 0s, color 0.35s);
+}
+
+button:hover {
+  background: #aaa;;
+  color: white;
+}
+
+footer button {
+  background: darken($darkGrey,15%);
+}
+footer button:hover {
+  background:  $highlightC;
+}
+
+input[type=search] { 
+  position: relative;
+  margin-right: 2px;
+  top:-13px;
+  color: red;  
+  cursor: pointer;
+  padding: 10px;  
+  font-size: 1em;
+  @include border-radius($radius*2,$radius*2);       
+  border: 1px solid rgba(255,255,255,0.6);   
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 1em;
+  max-width: 40em;
+}
+
+header[role="banner"] { padding: 2em 0; }
+footer[role="contentinfo"] { padding: 2em; }
+
+
+
+
+
+// ==================================================================
+
+//  BOX SIZING THINGY 
+
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box; 
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+// =====================================================================
+
+
+.grid {
+  max-width: $bigDesktop;
+  margin: 0 auto $pad auto;
+  
+  &:after {
+    /* Or @extend clearfix */
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+[class*='col-'] {
+	float: left;
+  padding-right: $pad;
+  .grid &:last-of-type {
+  	padding-right: 0;
+  }
+}
+
+.col-1 { 
+  width: 100%;
+}
+.col-2-3 {
+	width: 66.66%;
+}
+.col-1-3 {
+	width: 33.33%;
+}
+.col-1-2 {
+	width: 50%;
+}
+.col-1-4 {
+	width: 25%;
+}
+.col-3-4 {
+  width: 75%;
+}
+.col-1-5 {
+  width: 17%;
+  margin-left: 0%;
+}
+.col-7-12 {
+  width: 60%;
+  padding-right: 2.333333;
+}
+.col-1-6 {
+  width:  15%;
+  margin-right: 1.666666;
+}
+.col-1-7 {
+  width:  11%;
+  margin-right: 3%;
+}
+
+.col-3-5 {
+  width: 60%;
+}
+.col-4-5 {
+  width: 80%;
+}
+.col-1-8 {
+	width: 12.5%;
+}
+
+.col-3-10 {
+  width: 33%;
+  padding-right: 0%;
+}
+
+.col-7-10 {
+  width: 66%;
+  padding-right: 0%;
+}
+
+figure {
+  margin: $pad*2 0;
+  legend {
+    width: 100%;
+    font-size: 0.9em;
+    background: white;
+    border-bottom: 1px solid $lightGrey;
+    margin-top:-5px;
+    padding:$pad/1.5;
+    line-height: 1.1em;
+    color: $darkGrey*2;
+  }
+  img { width: 100%;}
+}
+
+figure.huge {
+  width: 130%; 
+}
+
+figure.big {
+  width: 100%;
+}
+
+figure.medium {
+  width: 50%;
+}
+
+figure.small {
+  width: 25%;
+}
+
+figure.normal {
+  width: 40%;
+}
+
+figure.right {
+  float: right;
+  margin: $pad/2 0 0 $pad*2;
+}
+
+figure.left {
+  float: left;
+  margin: $pad/2 $pad*2 0 0;
+}
+
+
+/* Opt-in outside padding */
+.grid-pad {
+  padding: $pad 0 $pad $pad;
+  [class*='col-']:last-of-type {
+    padding-right: $pad;
+  }
+}
+
+.gridLast {
+  padding-right: $pad !important;
+}
+
+.pad { padding-right: $pad;}
+
+.nopad {
+  padding-right: $pad/2;
+}
+.nopad2 {
+  padding-right: 0 !important;
+}
+
+
+// HEADER ===============================================================
+
+
+header {
+  width: 100%;
+}
+
+header h2 {
+  font-size: 2.2em;
+  margin-top: -20px;
+}
+
+.blackFade {
+  padding: 0 $bigDesktop/30;
+  height: 650px;
+  background: linear-gradient(rgba(0,0,0,0) 50%, rgba(0,0,0,0.9) 100%);
+}
+
+.nav__list li {
+  display: inline;
+  padding-right: $pad;
+}
+
+.logoBlock {
+  margin-top: 45px;
+  background: rgba(255,255,255,0.3);
+  background: rgba(0,0,0,0.5);
+  padding: $pad*1.3;
+  width: 20%;
+  @include border-bottom-radius($radius)
+}
+
+.logo img {
+  width: 100%;
+  margin-top: -30px;
+  //@include filter(unquote("brightness(0)"));
+}
+
+.logo:hover img {
+   @include filter(hue-rotate(300deg) );
+   @include filter(unquote("brightness(0.75)"));
+}
+
+nav { 
+  margin-top: -20px;
+
+  li {
+    background: $darkGrey/1.6;
+    background: #33383A;
+    margin-top: 3px;
+    list-style: none;
+    text-transform: uppercase;
+    font-family: Nunito;
+    @include border-radius($radius,$radius);
+  }
+
+  li a {
+      display: block;
+      padding: 15px 10px 15px 30px;
+      text-decoration: none;
+      font-weight: 400;
+      color: white;
+      //color: $darkGrey;
+      font-size: 1em;
+      @include border-radius($radius,$radius);
+      @include transition(background-color 0.5s 0s, color 0.5s);
+  }
+
+  li a:hover {
+      background: $highlightC;
+      text-decoration: none;
+  }
+}
+
+.icon-arrow-right4, .icon-arrow-left4  { 
+  font-size: 1.5em;
+  line-height: 0em;
+  top: 6px;
+  position: relative;
+  color: $highlightC;
+  //color: $paletteBlue;
+  padding-left:0;
+  @include transition(padding-left 0.5s 0s);
+}
+
+nav li a:hover .icon-arrow-right4, nav li a:hover .icon-arrow-left4 {
+  padding-left: 5px;
+}
+
+button .icon-arrow-right4, button .icon-arrow-left4 {
+    color: white;
+}
+
+nav li a:hover .icon-arrow-right4, nav li a:hover .icon-arrow-left4{  
+  color: white;
+}
+
+.hero button {
+  padding: $pad*1.5 $pad*2;
+  background: rgba(0,0,0,0.3);
+  border: 1px solid #888;
+  color: $lightGrey;
+  font-family: Nunito;
+  font-weight: 700;
+  margin: 90px 0 0 120px;
+  width: 80%;
+}
+
+.hero button:hover {
+  background: $highlightC;
+}
+
+
+// SEARCH BAR ==========================================================
+
+
+.searchbar {
+  height: 30px; 
+  float: right; 
+  padding-top: 80px;
+
+
+  .icon {
+    color: rgba(255,255,255,0.9);
+    @include box-shadow( 0 0 5px rgba(0,0,0,0.4) );
+    @include border-radius(10px 10px, 10px 10px);
+  }
+
+  .icon:hover {
+    color: rgba(255,255,255,1);
+  }
+
+  input { 
+    @include box-shadow( 0 0 5px rgba(0,0,0,0.4) );
+    opacity: 0.9;
+  }
+  input:hover { 
+    opacity: 1;
+  }
+
+}
+
+
+// FOOTER ===============================================================
+
+
+
+footer {
+  clear: left;
+  float:left;
+  margin: 2px 0 0 0;
+  background: $lightGrey;
+  width: 100%;
+  padding: $pad;
+
+  .container {
+    max-width: $bigDesktop;
+    margin: 0 auto;
+    background: $lightGrey;
+  }
+}
+
+
+
+// =====================================
+// TYPE RULES
+// =====================================
+
+
+body {
+  line-height: 1.5;
+}
+
+a:hover { 
+  text-decoration: underline;
+}
+
+a { color: #222;}
+
+h1,h2,h3 { 
+  font-family: Nunito; 
+  font-weight: 400;
+  text-decoration: none;
+  letter-spacing: -0.5px;
+  }
+
+h1 {
+  em {
+    color: #666;
+    font-size: 16px;
+    font-weight: bold;
+  }
+} 
+
+header h2 {
+  font-family: Nunito;
+  font-weight: 300;
+  color: white;
+  bottom: 0px;
+  position: relative;
+  top: 100px;
+  font-size: 1.8em;
+  line-height: 1.3em;
+  padding-right: $pad*5 !important;
+}
+
+
+h2, h3 { padding: $pad 0 $pad 0;}
+
+h2 strong {
+  font-weight: $normal;
+  font-size: 1.4em;
+}
+
+h2 em {
+  font-style: normal;
+  font-weight: $light;
+}
+
+
+h2 small {
+  padding-top: $pad/2;
+  font-size: 95%;
+  line-height: 110%;
+}
+
+/* CONTENT ------------------------------------------------ */
+
+
+
+.pageContent p { 
+  padding: 0 $pad $pad*1.7 0;
+  font-size: 1.3em;
+}
+
+.pageContent .publication a {
+  color: $darkGrey;
+}
+.pageContent .publication p {
+  font-size: 1em;
+}
+
+
+.comments {
+  clear: left;
+}
+
+blockquote {
+  font-size: 1.6em;
+  line-height: 1.4em;
+  padding: $pad*4 $pad*4 $pad*4 $pad*5;
+  margin: $pad 0 $pad*2 0;
+  background: $lightBeige url(../img/cork_1.png);
+  font-family: Nunito;
+  font-weight: $light;
+  border-top: 5px solid $lightBeige/1.1;
+  border-bottom: 5px solid $lightBeige/1.1;
+
+  h3 { font-weight: 300; }
+
+  cite {
+    margin-top: $pad;
+    clear: left;
+    font-size: 0.6em;
+    color: $palettePink;
+    display: block;
+  }
+
+  q:before, q:after {
+    font-size: 1.5em;
+    color: $lightGrey/1.5;
+  }
+
+  q:after {
+    font-size: 1.5em;
+    line-height: 0em;
+  }
+
+  &.tweet {
+    background: $twitterBlue;
+    border-left: 5px solid $twitterBlue/1.3;
+    color: white;
+    small {
+      color: $twitterBlue/1.5;
+    }
+  }
+}
+
+body.article .mainBody h2 {
+  margin-top:0 !important;
+  padding-top: $pad*2 !important;
+}
+
+.mainBody { 
+
+  h1 {
+    margin: 0;
+    font-size: 2.2em;
+    font-weight: $light;
+    line-height: 1.2em;
+    padding-bottom: $pad*3;
+    border-bottom: 1px solid #ddd;
+    display: block;
+  }
+
+  p.intro {
+    font-size: 1.6em;
+    line-height: 1.4;
+    padding-top: $pad*2;
+    padding-bottom: $pad*2;
+    color: $darkGrey*2;
+  }
+
+  h2 {
+    font-size: 2em;
+    padding-bottom: $pad;
+    margin-top:0;
+  }
+
+  h3 {
+    font-size: 1.7em;
+    padding-bottom: $pad;
+  }
+
+  h4 {
+    font-size: 1.2em;
+    padding-bottom: $pad;
+    color: $palettePink;
+  }
+
+  h5 {
+    font-size: 1em;
+    font-family: arial;
+    padding-bottom: $pad;
+    color: $palettePink;
+  }
+
+  .tweets {
+    margin: $pad 0 $pad*2 0;
+    height: auto;
+    a {
+      color: $palettePink;
+    }
+  }
+  .feedText {
+    margin-top: $pad;
+    font-size: 0.8em;
+  }
+
+
+  ul { 
+    list-style:none;
+    margin: $pad 0 $pad*2 0;
+
+    li {
+      padding: $pad/2 0 $pad/2 0;
+      font-size: 1.2em;
+      border-bottom: 1px dashed $lightGrey;
+      text-indent: -22px;
+    }
+
+    li:before {
+        content: "•";
+        color: $palettePink;
+        padding-right: $pad;
+    }
+  }
+
+
+
+  ol.boxes-list {
+    list-style-type: none;
+     
+    margin: 0;
+    margin-left: 2em;
+    padding: 0;
+     
+    counter-reset: li-counter;
+    }
+    ol.boxes-list > li {
+        position: relative;
+        padding: 1em;
+        border-bottom: 1px dashed $lightGrey;
+        font-size: 1.2em;
+    }
+    ol.boxes-list > li:before {
+        position: absolute;
+        top: 0.7em;
+        left: -1em;
+        width: 0.98em;
+        height: 0.98em;
+         
+        font-size: 1.4em;
+        line-height: 0.98;
+        text-align: center;
+        color: #f5f5f5;
+     
+        background-color: $palettePink;
+        content: counter(li-counter);
+        counter-increment: li-counter;
+    }
+
+}
+
+
+////===================  TABLES =====================////
+
+
+
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; 
+}
+
+table {
+  font-size: 0.8em;
+  max-width: 100%;
+  width: 100%;
+  margin: 1em 0;
+  border-collapse: collapse;
+  line-height: 1.2; 
+
+  th, td {
+    border: 1px solid #fff;
+    background: #f4f4f4;
+    padding: 0.75em;
+    text-align: left; 
+  }
+  th {
+    background: $lightGrey;
+  }
+  .highlight {
+    font-weight: bold;
+    background: #d83b5b;
+    color: #fff; 
+  }
+
+  .highlight-alt {
+    font-weight: bold;
+    background: #00768a;
+    color: #fff; 
+  }
+}
+
+@media (min-width: 45em) {
+    table {
+      font-size: 0.925em; } 
+}
+
+
+
+
+
+// SECTIONS  ============================================================
+
+
+
+.banner { 
+  max-width: $bigDesktop;
+  margin: 0 auto;
+  padding: $pad $bigDesktop/30 $pad*3 $bigDesktop/30;
+  background: #ddd;
+  display: block;
+}
+
+.banner.promotion {
+  background: #065c77; /*guardian blue*/
+  background: #888; /*grey..*/
+  background: $palettePink/2;
+  color: white;
+  padding-top: $pad*3;
+  padding-bottom: $pad*11;
+}
+
+.banner.promotion.newsletter {
+  background: $palettePink/2;
+  padding-bottom: 200px;
+}
+
+.banner.promotion.text {
+  padding-bottom: 280px;
+}
+
+.articleList {
+  list-style: none;
+
+     article {
+      /*border: 2px solid white;*/
+      height: 300px;
+      /*@include box-shadow( 0 12px 10px -12px rgba(0,0,0,0.3) );*/
+      position: relative;
+
+    }
+
+    article.large {
+      height: 630px;
+    }
+
+    p {
+      padding: 2px 0 $pad 0;
+      margin-right: $pad*2.5;
+        &.intro {
+          font-size: 1.6em;
+          line-height: 1.4;
+          padding-bottom: $pad*2;
+          color: $darkGrey*2;
+        }
+    }
+
+    p a {
+      text-decoration: none;
+      color: $darkGrey*1.5;
+      opacity: 0.6;
+      font-size: 0.75em;
+    }
+
+    p a:hover {
+      text-decoration: underline;
+    }
+
+    h3 {
+      color: $darkGrey*2;
+      font-size: 2.3em;
+      font-weight: $light;
+    }
+
+    h3 a {
+      text-decoration: none;
+      color: #666;
+    }
+}
+
+.donorslist {
+  padding: $pad*2;
+}
+
+
+.overlay {
+  padding: $pad*1.5;
+  height: 100%;
+  width: 100%;
+  color: $lightGrey;
+  @include background-image(linear-gradient(top, rgba(0,0,0,0) 40%,rgba(0,0,0,0.7) 90%));
+  @include transition(background 0.6s 0s);
+}
+
+article:hover .overlay {
+    height: 100%;
+    background: rgba(214,2,112,0.6);
+    cursor: pointer;
+    padding-bottom: 10px;
+}
+
+.sfa {
+  color: white;
+  height: 100%;
+
+  h4 {
+    font-size: 1.8em;
+    font-weight: 300;
+    padding-bottom: $pad;
+  }
+}
+
+.sfa .overlay {
+  background: rgba(214,2,112, 0.7);
+}
+
+.sfa .tiletext { 
+    padding: 20% $pad*3 15% $pad*2;
+}
+
+article .category {
+  color: black;
+  padding: $pad/3 $pad/1 $pad/3 0;
+  font-size:0.8em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+article .tiletext {
+  padding: $pad $pad $pad*1.5 $pad;
+  background: white;
+  @include box-shadow( 1px 1px 1px rgba(0,0,0,0.1));
+}
+
+article h4 {
+    font-size: 1.2em;
+    line-height: 1.2em;
+    line-height: 1.1em;
+    padding-bottom:0px;
+    font-weight: 400;
+    @include transition(padding-bottom 0.5s 0s);
+}
+
+
+date {
+  color: $highlightC/1.5;
+  font-size: 0.8em;
+}
+
+.urgentaction date {
+  visibility: visible;
+}
+
+.textTile date {
+  visibility: visible;
+}
+
+.cta {
+  font-size: 1em;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  padding-top: $pad;
+  color: $highlightC;
+  //color: $paletteBlue/1.1;
+  float:left;
+}
+.cta.left {
+  float:left;
+  padding-top: $pad*1.5;
+}
+.cta:hover {
+  color: $highlightC/2;
+}
+.socialmedia .cta {
+ padding-top: $pad*1.4;
+}
+.socialmedia .feedText { 
+  background: white;
+  padding: $pad/3;
+}
+.socialmedia .feedText a {
+  text-decoration: none;
+  color: $highlightC;
+}
+
+
+
+// TOOLBAR ===============================================================
+
+
+.toolbar {
+  display: block;
+  position: fixed;
+  height:45px;  
+  width: 100%;  
+  padding: $pad/2;
+  z-index: 99;
+ // @include box-shadow( 0 3px 3px rgba(0,0,0,0.2) );
+ box-shadow: 3px 2px 9px rgba(0,0,0,0.1);
+
+  .toolbarContainer {
+    max-width: $bigDesktop;
+    text-align: right;
+    margin: 0 auto;
+  }
+
+   ul { 
+    text-align: right;
+    background:none;
+  }
+
+  li {
+    display: inline;
+    padding: 0 10px 0 10px;
+    border-right: 1px solid $darkGrey*1.5;
+    border-right: 1px solid #bbb;
+
+    a { 
+      color: $lightGrey;
+      color: $darkGrey;
+      text-decoration: none;
+    }
+
+    a:hover {
+        color: $highlightC*1.2;
+        text-decoration: underline;
+    }
+  }
+
+  .toolbarRight li:nth-last-child(2) {
+    border-right: none;
+    padding-right: 5px;
+  }
+
+  .toolbarRight li:last-child { 
+  border-right: none;
+  padding-right: 0;
+    a {
+      background: $darkGrey/14;
+      background: #aaa;
+      padding:19px 8px 16px 8px;
+      color: $lightBeige/1.5;
+      color: #555;
+      margin-left: 1px;
+      font-size: 0.7em;
+      font-weight: bold;
+    }
+    a:hover {
+      color: $highlightC*1.2;
+      background: $darkGrey/1.5;
+    }
+    a.current {
+      color: white;
+    }
+  }
+}
+
+
+// HOME PAGE ==========================================================
+
+
+.banner.atawid {
+  background: $paletteBrown/1.5;
+  color: white;
+
+  h3 {
+    color: $lightBeige;
+  }
+}
+
+.banner.focusareas {
+  background: $palettePink/2.5;
+  color: white;
+  font-size: 1.4em;
+  font-family: Nunito;
+  font-weight: $light;
+  padding-bottom: 0px;
+  margin-bottom:0;
+
+  ul li {
+    list-style: none;
+    margin-bottom: $pad*3;
+    width:98%;
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline !important;
+    }
+  }
+
+  .articleList {
+    padding-top: $pad*2;
+  }
+
+  .icon {
+    font-size: 2.4em;
+    position: relative;
+    margin-right: -10px;
+    color: $highlightC/1.1;
+    padding-right: 6px;
+    padding-left:0;
+    margin-left:0;
+  }
+
+  h3 {
+    font-size: 1.6em;
+    padding:0 0 1em 0;
+    color: white;
+  }
+}
+
+.areasfocus {
+  h4 {
+    font-weight: bold;
+  }
+}
+
+.banner.partners {
+  background: $lightBeige2/1.07;
+  border-top: 1px solid $lightBeige2/1.14;
+}
+
+.banner.othernews {
+  background: $lightBeige2/1.02;
+}
+
+.banner.darker {
+    background: #ccc;
+}
+
+.banner.subnav {
+  background: #efefef;
+  padding-bottom:0;
+  h3 {
+    padding-bottom: 5px;
+  }
+}
+
+.banner.muchdarker {
+    background: #cdcdcd;
+
+}
+
+
+article.textTile {
+  background: white;
+  height: auto;
+  margin-bottom: $pad/2.2;
+  @include border-radius($radius,$radius);
+  @include box-shadow( 0 1px 1px rgba(0,0,0,0.1) );
+
+  date {
+    color: $highlightC/1.5;
+  }
+
+  p {
+    padding:0;
+  }
+
+  .content {
+    font-size: 1em;
+    padding: $pad;
+    line-height: 1.2em;
+  }
+
+  h4 {
+    font-size: 1.3em;
+    font-weight: 500;
+    line-height: 1.1em;
+    padding: 6px 0 6px 0;
+    width: 95%;
+  }
+}
+
+.pagelisting article.textTile .content { padding: 10px;}
+
+.memberspotlight {
+  h4 {
+    font-size: 1.4em;
+    color: $highlightC;
+  }
+}
+
+
+
+// FOOTER =============================================================
+
+
+footer {
+  margin-top: $pad*2;
+  padding:0;
+
+  .joinus {
+    color: $lightGrey/1.6;
+    padding: $pad*2.5 0 $pad*3 0;
+    background: $darkGrey*1.4 url(../img/footflags2.png) center bottom no-repeat;
+    background: #fff;
+    background: #222;
+    background-size: 100%;
+  }
+
+  h3 {
+    color: $lightGrey !important;
+    color: $palettePink !important;
+    margin-top:0;
+    padding-top:0;
+    padding-bottom: $pad;
+    margin-bottom:0;
+  }
+}
+
+
+.joinus .member > p, .joinus .conversation > p {
+  width: 80%;
+}
+
+
+.linkslist { 
+  width: 100%;
+  padding-top: $pad*2;
+  padding-bottom: $pad*2;
+  padding-bottom: $pad*1;
+  @include background-image(linear-gradient($darkGrey/1.1 $darkGrey*1.2));
+
+  .grid {
+    margin-bottom: 0;
+  }
+
+  ul { 
+    border-left: 1px dashed $darkGrey*1.4;
+    padding-left: $pad; 
+  }
+
+  ul li {
+    list-style: none;
+    font-size: 0.9em;
+    line-height: 1.2em;
+    padding-bottom: $pad/1.5;
+
+    a {
+      text-decoration: none;
+      color: $lightBeige/1.4;
+    }
+    a:hover {
+     text-decoration: underline;
+    }
+  }
+
+  h4 {
+  text-transform: uppercase;
+  color: $lightGrey/1.2;
+  font-size: 1em;
+  padding-bottom: .5em;
+  }
+}
+
+.copyright {
+  margin:0;
+  width: 100%;
+  background: $darkGrey/1.2;
+  font-size:0.8em;
+
+  a {
+    color: $lightGrey/1.6;
+  }
+}
+
+.copyright .copyrightContainer {
+    display: block;
+    max-width: $bigDesktop;
+    padding: $pad $pad $pad 0;
+    margin: 0 auto;
+    color: $lightBeige;
+    font-size: .9em;
+    color: $lightGrey/2;
+}
+
+
+.blank {
+  background: #efefef;
+  color: $darkGrey !important;
+  color: white;
+  background: white;
+  border-top: 5px solid $palettePink;
+
+  &.white .overlay {
+
+  }
+
+  h4 {
+    color: $darkGrey;
+    //font-size: 1.7em;
+    //font-family: Nunito;
+    //font-weight: 300;
+    padding-bottom: 0%;
+    width: 90%;
+  }
+}
+
+
+
+.pink { 
+  .overlay {
+    background: $highlightC;
+  }
+  h4 {
+    color: white;
+  }
+}
+
+.darkpink { 
+  .overlay {
+    background: $highlightC/2;
+  }
+  h4 {
+    color: white;
+  }
+}
+
+
+.grey {
+  .overlay {
+    background: #666;
+  }
+
+  h4 {
+    color: white;
+  }
+
+}
+
+
+
+
+.overlay {
+  &.watermark {
+    background: none;
+     h4 {
+    color: $darkGrey;
+    }
+  }
+}
+
+
+
+
+.footicon {
+  font-size: 3em;
+  background: #00aced;
+  background: none;
+  color: $darkGrey*1.4;
+  @include border-radius($radius*3,$radius*3);
+  margin-right: $pad/2;
+  margin-top: $pad;
+}
+
+.footicon.icon-facebook {  
+    background: #3b5998;
+    background:none;
+  }
+
+  .footicon.icon-linkedin {  
+    background: #007bb6;
+    background: none;
+  }
+
+  .footicon.icon-googleplus {  
+    background: #dd4b39;
+    background: none;
+  }
+
+  .footicon.icon-youtube { 
+    font-size: 4.1em; 
+    background: none;
+    position: relative;
+    top: 8px;
+  }
+
+
+.joinus .member {
+  border-right: 1px solid darken($darkGrey,2%);
+  padding-right: $pad*3;
+}
+
+.joinus .conversation {
+  padding-left: $pad*2;
+}
+
+.exhibit {
+  background: $darkGrey;
+  padding: $pad*0.75;
+  float:left;
+  margin: $pad 0 $pad/2 0;
+  font-size: 1em;
+  @include border-radius($radius, $radius);
+  width: 90%;
+}
+
+
+// MEMBER SPOTLIGHT ==========================================================
+
+
+.memberspotlight {
+
+  background: $darkGrey;
+  padding: $pad $pad $pad $pad*2;
+  display: inline-block; 
+
+  h4 {
+    color: white;
+    padding: $pad $pad $pad/4 0;
+  }
+
+  img {
+    border: none;
+  }
+
+  p {
+    line-height: 1.3em;
+    color: $lightGrey/1.5;
+  }
+
+  a { 
+    text-decoration: none;
+    color: white;
+    margin-bottom: $pad;
+    display: block;
+  }
+
+  a:hover {
+    color: white;
+  }
+
+  .icon {
+    font-size: 1em !important;
+  }
+}
+
+
+// TWITTER PANEL ==========================================================
+
+
+.tweets {
+  padding: $pad*3 $pad*6 $pad*3 $pad*3;
+  background: $twitterBlue;
+  color: white;
+  font-family: nunito;  
+  font-weight: 300; 
+  font-size: 2em;
+  line-height: 1.3em;
+  position: relative;
+
+  &.home {
+    font-size: 1.6em;
+    line-height: 1.2em;
+    padding: $pad*2 $pad*3 $pad*3 $pad*2;
+  }
+
+
+  strong, a {
+      color: $darkGrey;
+  }
+
+  a {
+    color: $twitterBlue/2 !important;
+  }
+
+  .icon {
+    color: rgba(255,255,255,0.8);
+    font-size: 1.3em;
+    position: absolute;
+    top: $pad;
+    right: $pad;
+
+  }
+
+  .feedText {
+    font-weight: 500;
+  }
+
+}
+
+dt { display: none;}
+
+
+.tweetthis {
+  display: block;
+  padding: $pad*3; 
+  background: #00a9f1; 
+  margin: $pad 0 $pad*2 0; 
+  color: white;
+  font-family: nunito;  
+  font-weight: 300; 
+  font-size: 1.6em; 
+  line-height: 1.6em; 
+
+  p {
+    padding:0;
+  }
+
+  button {
+    bottom:0; 
+    font-size: 0.7em;
+    background: white;
+
+    span {
+      font-size: 1em; 
+      margin-right: 10px; 
+      margin-top:0;
+      color: $twitterBlue;
+    }
+      a {
+        color: $palettePink;
+        border-bottom: none;
+        color: $twitterBlue/2;
+      }
+  
+  }
+
+  &.right {
+    margin-right: -30%;
+    margin-left: 40px;
+    float: right;
+    width: 80%;
+  }
+
+}
+
+
+
+
+
+.pageContent {
+  padding-top: $pad*4;
+}
+
+.meta  h3 {
+  font-size: 1em;
+  margin:0;padding:0;
+  font-weight: $normal;
+}
+
+.meta  h4 {
+  font-size: 1.1em;
+  margin:0;padding:0;
+  font-weight: $normal;
+  padding-bottom: $pad*2;
+  color: $highlightC;
+}
+
+.pageContent a {
+  color: $highlightC;
+  text-decoration: none;
+  border-bottom: 1px dotted rgba(214, 2, 112, 0.3);
+  padding-bottom: 3px;
+}
+
+.breadcrumbs  {
+  background: white;
+  width: 100%;
+  clear: left;
+
+  li {
+    display: inline;
+    padding-right: $pad;
+  }
+
+  a { 
+    color: $highlightC;
+    text-decoration: none;
+  }
+
+  .container {
+    max-width: $bigDesktop;
+    margin: 0 auto;
+    padding: $pad $pad $pad 0;
+  }
+}
+
+
+.toolbar {
+  padding: 9px 0 $pad 0;
+  background: $darkGrey;
+  background: #fff;
+  //background: #efefef;
+}
+
+.toolbarContainer {
+  max-width: $bigDesktop;
+  margin: 0 auto;
+}
+
+.toolbar .toolbarLeft {
+  float: left;
+  display: none;
+  padding: 7px 0;
+  padding-left: 45px;
+
+  li {
+    border: none;
+    font-size: 1.1em;
+    padding: $pad/2;
+    font-weight: $light;
+    font-weight: $normal;
+  }
+  li a {
+      color: white;
+      color: #444;
+  }
+  li a:hover {
+    text-decoration: none !important;
+  }
+
+}
+
+.toolbar.hide {
+  height: 45px;
+  @include transition(height 1s 1s);
+  @include transition(background-color 1.5s 1s);
+  .toolbarLeft {
+   display: none; 
+  }
+}
+.toolbar.show {
+  height: 65px;
+  @include transition(height 1s 1s);
+  @include transition(background-color 1.5s 1s);
+  background: $darkGrey/1.4;
+  background: white;
+  .toolbarLeft {
+   display: block;
+  }
+  .toolbarRight {
+    padding-top:10px;
+    padding-bottom: 10px;
+    li:last-child { 
+      border-right: none;
+      padding-right: 0;
+        a {
+           padding:25px 8px 25px 8px;
+         }
+       }
+  }
+}
+
+
+ul.pagination { 
+  padding-top: $pad*2;
+  display: block;
+  margin: $pad 0;
+  float: left;
+
+  li {
+    display: inline;
+  }
+  li:before { display: none;}
+  li a { 
+    padding: $pad/1.5;
+    background: white;
+    font-weight: normal;
+    text-decoration: none;
+  }
+  li a:hover { background: $darkGrey; color: white;}
+}
+
+
+/* FEATURES - AREAS OF FOCUS -------------------------------------- */
+
+.feature {
+  margin: 0 0 $pad 0;
+  h4 {
+    padding: 0 $pad $pad 0;
+    font-size: 1.4em;
+  }
+  .icon { 
+    font-size: 1em;  
+    color: #ddd;
+  }
+  .more { 
+    color: $highlightC; 
+    //color: $paletteBlue;
+    padding-top: $pad/2; 
+    display: block;
+    .icon {
+      color: $highlightC;
+      //color: $paletteBlue;
+    }
+  }
+}
+
+.feature article:hover h4 {
+  padding-bottom: $pad;
+}
+
+.feature article {
+  background: white;
+    padding: $pad*1.5 $pad*2 $pad $pad*1.5;
+    line-height: 1.3em;
+    margin-right: -$pad;
+ }
+
+ .feature .featureImage {
+  margin-right: -$pad;
+ }
+
+ .feature a  {
+  text-decoration: none !important;
+ }
+
+ .feature.pad { padding-right: $pad !important;}
+
+
+
+/* SUBNAV  -------------------------------------- */
+
+.subnav { 
+
+    overflow-x: scroll !important;
+    width: 100%;
+    padding-bottom: 30px;
+
+    &.issues li a {
+      text-align: left;
+      font-size: 0.9em;         
+    }
+    &.issues li span {
+      text-align: right;
+      color: white;
+      font-size: 1.9em;
+      line-height: 1em;
+      vertical-align: middle;
+    }
+    &.issues li em {
+      font-style: normal;
+      margin-left: 10px;
+      display: table-cell;
+      float: left;
+      height: 40px;
+    }
+    &.issues .icon {
+      font-size: 2.3em;
+      color: #444;
+      float: left;
+    }
+
+  ul { 
+    clear:left;
+    display: block;
+    padding: $pad*2 0 $pad 0;
+    margin-bottom: $pad*3;
+  }
+
+  li {
+    float: left;
+    list-style: none;
+    margin-bottom: 3px;
+    margin-right: 2px;
+
+    a {
+      display: table-cell;
+      padding: $pad;
+      text-decoration: none;
+      line-height: 1.2em;
+      font-size: 1em;
+      text-align: center;
+      vertical-align: middle;
+      height: 40px;
+      background: #ddd;
+      color: $darkGrey;
+
+       &.current {
+        color: $palettePink/1.3;
+      }
+    }
+
+    &.current a {
+      color: $darkGrey;
+    }
+    &.current .icon {
+      color: $palettePink;
+    }
+
+
+  }
+
+  li a:hover {
+    text-decoration: underline;
+  }
+
+}
+
+.filter {   
+  margin-bottom: $pad*2;
+  
+  ul { 
+    padding: 4px;
+  }
+
+  li a { 
+    padding: 10px;
+    height: auto;
+    background: $darkGrey;
+  }
+}
+
+.article .filter h2 {
+  margin-top:0;
+  padding:0 0 5px 0;
+}
+
+
+
+// FORMS =================================================================
+
+
+form input, form textarea, form select { 
+    padding: $pad/1.5;
+    border: 1px solid rgba(0,0,0,0.2);
+    margin-top: 3px;
+}
+
+form select {
+  height: 42px;
+  color:$lightGrey/1.5;;
+}
+
+form label {
+  color: $lightGrey/1.2;
+  margin-top: $pad/3;
+  display: block;
+  padding-top: 5px;
+}
+
+
+// NEWSLETTER MODULE =====================================================
+
+
+.newsletter article {
+  background: darken($palettePink,20%);
+  color:white;
+  padding: $pad*2;
+
+  h4 {
+    color: white;
+    margin:0;padding:0;
+    font-size: 1.5em;
+  }
+
+  p { 
+    color: $lightGrey/1.2;
+    margin: 0 0 0 0;
+
+  }
+}
+
+
+// SHARE MODULE ==========================================================
+
+
+.sharethis {
+
+  margin: $pad*2 0;
+  border-top: 1px solid #ddd;
+
+  .icon {
+    font-size: 2em;
+    margin-right: 5px;
+
+    &.icon-twitter {
+      color: $twitterBlue;
+      &:hover {
+        color: lighten($twitterBlue,10%);
+      }
+    }
+    &.icon-facebook {
+      color: $facebook-color;
+      &:hover {
+        color: lighten($facebook-color,10%);
+      }
+    }
+    &.icon-googleplus {
+      color: $google-plus-color;
+       &:hover {
+        color: lighten($google-plus-color,10%);
+      }
+    }
+  }
+}
+
+iframe {
+  margin: $pad*2 0;
+  padding: $pad/2;
+  background: #D9D9D9;
+}
+
+
+
+.feature article {
+ background: white;
+  margin-right: 0 !important;
+}
+
+// ==========================================================================
+
+
+.form { 
+  background: $lightGrey;
+  padding: $pad*2 $pad*2 $pad*4 $pad*2;
+  display: block;
+  float:left;
+  width: 100%;
+  margin-bottom: $pad;
+  color: $darkGrey;
+
+  h3 { padding: 0;}
+  p { padding: 0;}
+  label { color: #999;  }
+  input { margin: 0;}
+  textarea {
+    width: 95%;
+  }
+
+
+  ul { list-style: none;}
+
+  li { list-style: none;}
+
+
+  .info { 
+    background: $darkGrey;
+    color: white;
+    width: 20px;
+    display: table-cell;
+    text-align: center;
+  }
+
+  .icon-info {
+    font-size: 1em;
+
+  }
+}
+
+
+.memorials .pageContent section { 
+
+  background: #000 !important;
+  
+  h1 { 
+    color: white !important;
+    margin-bottom: 20px;
+  }
+
+  p { 
+    color: #999;}
+}
+
+
+.memorials .headerDesc h2 {
+  margin-top: -20px;
+}
+
+
+.boxyCTA {
+  padding: $pad*2;
+  background: $palettePink url(../img/tile19.png) top right no-repeat;
+  background-size: cover;
+  color: white;
+  @include border-radius($radius, $radius);
+
+  &.diff {
+  background: $palettePink/1.5 url(../img/tile20.png) bottom right no-repeat;
+  }
+}
+
+
+.pipe {
+  color: #bbb;
+  font-weight: 300;
+}
+
+
+
+.toc {
+  margin: $pad*2 0;
+}
+
+.toc ul {
+  list-style: none;
+}
+.toc li { padding: 5px;
+border-bottom: 1px dashed #ddd;
+}
+
+
+
+@import "responsive";

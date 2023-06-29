@@ -1,0 +1,20 @@
+#header {
+  background: black url("../img/header.jpg") center top no-repeat;
+}
+
+.about #header {
+  background: black url("../img/bridge.gif") center top no-repeat;
+}
+
+.archive #header {
+  background: black url("../img/archive-footer.jpg") center top no-repeat;
+}
+
+footer {
+  background: #000 url("../img/footer.jpg") bottom center fixed no-repeat;
+}
+
+footer .container {
+  background: #041a34;
+}
+/*# sourceMappingURL=theme.css.map */

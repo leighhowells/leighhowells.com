@@ -1,0 +1,338 @@
+//  COMMON TYPOGRAPHY
+
+body {
+  @include font-primary;
+  font-size: 1.4em;
+  color: $text-color;
+  font-weight: 400;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparentize($base, 0.75);
+}
+
+#{headings()} {
+  @include font-secondary;
+  font-weight: 500;
+  line-height: 1.25;
+  margin: 1em 0 1em;
+  margin: 1rem 0 1rem;
+  color: #ccc;
+  transition: font-size 250ms linear, opacity 250ms linear;
+
+  a, a & {
+    color: $base;
+    text-decoration: none;
+  }
+  a:hover, a:hover & {
+    color: $base-alt;
+  }
+}
+
+#{headings(5,6)} {
+  color: #555;
+}
+
+
+h1, .h1 {
+  font-size: 1.5em;
+  margin-top: 0rem;
+  color: $base;
+  font-weight: bold;
+
+  @media (min-width: 35em) {
+    font-size: 1.6em;
+  }
+
+  @media (min-width: 45em) {
+    font-size: 1.8em;
+  }
+
+  @media (min-width: 85em) {
+    font-size: 2em;
+  }
+
+  + h2,
+  + .h2,
+  + h3,
+  + .h3,
+  + h4,
+  + .h4,
+  + h5,
+  + .h5,
+  + h6,
+  + .h6, {
+    margin-top: -0.5em;
+    margin-top: -1.5rem;
+  }
+}
+
+h2, .h2 {
+  font-weight: 350;
+  line-height: 1.2em;
+  color: black;
+
+  @media (min-width: 45em) {
+    font-size: 1.7em;
+  }
+
+  @media (min-width: 85em) {
+    font-size: 2em;
+  }
+
+  + h3,
+  + .h3,
+  + h4,
+  + .h4,
+  + h5,
+  + .h5,
+  + h6,
+  + .h6, {
+    margin-top: -0.5em;
+    margin-top: -1.5rem;
+  }
+}
+
+h3, .h3 {
+  font-size: 1.5em;
+
+  @media (max-width: 45em) {
+    font-size: 1.1em;
+  }
+
+  @media (max-width: 85em) {
+    font-size: 1.3em;
+  }
+
+  + h4,
+  + .h4,
+  + h5,
+  + .h5,
+  + h6,
+  + .h6, {
+    margin-top: -0.5em;
+    margin-top: -1.5rem;
+  }
+}
+
+h4, .h4 {
+  font-size: 1.2em;
+  color: #000;
+
+  + h5,
+  + .h5,
+  + h6,
+  + .h6, {
+    margin-top: -0.5em;
+    margin-top: -1.5rem;
+  }
+}
+
+h5, .h5 {
+  font-size: 1em;
+  color: #000;
+
+  + h6,
+  + .h6, {
+    margin-top: -0.5em;
+    margin-top: -1.5rem;
+  }
+}
+
+h6, .h6 {
+  font-size: 0.95em;
+  font-weight: 400;
+  line-height: 1.25;
+  color: #000;
+}
+
+@media (max-width: 15em) {
+  #{headings()} {
+    font-size: 1.1em !important;
+  }
+}
+
+@media (max-height: 12.5em) {
+  #{headings()} {
+    font-size: 1.1em !important;
+  }
+}
+
+acronym, abbr {
+  border-bottom: 1px dotted #333;
+}
+
+ul ul, ul ol, ol ul, ol ol {
+  margin-top: 1em;
+  margin-bottom: 0;
+}
+
+strong {
+  font-weight: 700;
+}
+
+em {
+  font-style: italic;
+}
+
+
+ul {
+
+  list-style-type: none;
+
+  li {
+    position: relative;
+    color: #00A59B;
+    margin: 0 0 0 -0.9em;
+
+    &:before {
+      position: absolute;
+      border-bottom: 1px solid #aaa;
+      content: "";
+      display: block;
+      top: 0.7em;
+      left: -1.3em;
+      width: 0.8em;
+    }
+  }
+}
+
+ol {
+  margin: 2rem 0;
+  padding-left: 1.5em;
+  list-style-type: none;
+  counter-reset: ol;
+
+  > li {
+    &:before {
+      content: counter(ol);
+      counter-increment: ol;
+      color: #000;
+      margin-left: -1.25em;
+      margin-right: 0.5em;
+      float: left;
+      clear: left;
+    }
+  }
+}
+
+dl {
+  @include clearfix;
+  margin: 1em 0;
+  margin: 2rem 0;
+}
+
+hr {
+  margin: 2rem auto;
+  @media (min-height: 45em) {
+    margin: 2rem auto;
+  }
+
+  &.compact {
+    margin: 2rem auto;
+  }
+}
+
+blockquote {
+  position: relative;
+  padding: 2em;
+  margin: 1em 0;
+  font-size: 1.6em !important;
+  line-height: 1.4em;
+  background: rgba(0,0,0,0.75);
+  color: #ccc;
+  border-top: 3px solid #000;
+  border-bottom: 3px solid #000;
+
+  @media (min-width: 45em) {
+    font-size: 1.3em;
+  }
+
+  &.long, &.small {
+    font-size: 1.1em;
+
+    @media (min-width: 45em) {
+      font-size: 1em;
+    }
+
+  }
+
+  &.plain {
+    padding: 0;
+    border: 0;
+  }
+
+  p {
+    margin: 0 0 0.5em 0;
+
+    &:only-child {
+      margin-bottom: 0;
+    }
+  }
+
+  cite,
+  .cite {
+    color: $base;
+    display: block;
+    margin: 0.5em 0 1em 0;
+    font-size: 0.5em;
+
+  }
+}
+
+time {
+  font-size: .9em;
+  color: $secondary;
+}
+
+.listing blockquote, .home blockquote {
+  padding: 1em;
+  margin: 1em 0;
+  font-size: 1.3em !important;
+  line-height: 1.3em;
+  background: #000;
+  color: #aaa;
+}
+
+.tweetable {
+  background: $base;
+  font-size: 1.35em;
+  color: #fff;
+  border: 0;
+
+  cite {
+    color: #fff;
+  }
+}
+
+pre {
+  clear: both;
+  font-size: 0.8em;
+  margin: 0.5em 0 2em;
+  margin: 0.5rem 0 4rem;
+  padding: 1em;
+  tab-size: 2;
+  background: transparentize(darken($base, 5%), 0.25);
+  color: #fff;
+  max-width: 100%;
+  overflow: auto;
+}
+
+// helper classes for styling
+
+.caps {
+  @include caps;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.home-links {
+  text-decoration: none;
+  font-size: 0.8em;
+  color: white;
+}
+
+.home-subtitle {
+  color: $grey-verylight;
+}

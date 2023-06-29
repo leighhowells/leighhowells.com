@@ -1,0 +1,21 @@
+Last night I listened to Unifinished Business, the weekly web business podcast from Andy Clarke and Anna Debenham.  They were discussing privacy, non-disclosure agreements and client confidentiality. This got me thinking about a number of times where I have been caught out over things that either didn't cross my mind at the time as being wrong or I simply thought I'd get away with.
+
+The first was a really simple case of Instagramming a non specific scene from a wireframing workshop session.  In a bid to add more 'action' type images to the selection of images we have at our disposal to make reports and web pages more visually engaging, I thought it was a good idea to start grabbing images of the invisible parts of the design process.  I was very surprised when I was contacted by the client, disgruntled that on my photo, part of their wireframe was visible.  I hasten to add that there were no logos visible, nor was the content in any way discernible or linked to them, but still the client was not happy.  The mistake here was not the photo itself, but making it public whilst working on the session.  I was more than happy to delete the tweet and Instagram image.
+
+Another memorable occasion, I produced a demo of a parallax site for a pitch to demonstrate how the highly visual technique might be applicable to the client site.  We didn't win the pitch in the end (although another company was commissioned to produce a parallax site!).  Not wanting to have completely wasted my time on the demo I thought it would at the very least make an interesting blog post showing the result.  This time, I made the mistake of leaving the client logo at the top, and soon enough was contacted and asked to take the post down. I had foolishly thought that a) my post would be of no interest to anyone but a handful of designers, b) that no-one would find it  anyway and c) it used no other collateral of the institution other than their public logo.  On this occasion I didn't remove the post, but simply invented a new 2 minute logo as the post was more about the visual idea than anything to do with their institution.
+
+The most recent occasion I was asked to remove something was after adding a  speculative design concept to my portfolio.  I was quite proud of the result, and although the design was not used, I decided it was pretty and I could safely add it to my portfolio as I had signed nothing during the design process.  One again I considered the chances of it ever being looked at by anyone who cared as minimal. Wrong.  I was contacted by the potential client a few months later saying that my concept was appearing as the number 1 Google image result when Googling the company name.  This was confusing potential customers and diluting their brand.  
+
+To be honest, my main thought was one of huge pride that I had ranked so highly in Google.  In the end I simply renamed the page and image itself to remove the company name as Google continued to rank my post higher than the clients own site.  
+
+So the simple lessons I've learnt are:
+
+1)  Never post photos from client sessions - even with permission.  It's just not worth it, and probably not very interesting to anyone else anyway.
+
+2) Never assume that your blog/portfolio will not be looked.  It's the internet after all.
+
+3) Google is not always your friend. Don't mention client names on any work that's not public elsewhere nor name images with the client name.  Or get better acquainted with your robots.txt file.
+
+4) Just because you haven't signed an NDA doesn't mean you are free to use anything you've created without potentially upsetting people.  Even with permission from the client contact involved, it doesn't mean that the permission extends higher into the client organisation.
+
+We live and learn.

@@ -1,0 +1,95 @@
+/* BANNER HERO IMAGES */
+
+.hero {
+  max-width: $bigDesktop;
+  margin: 0 auto 0 auto;
+  width: 100%;
+  background: url(../img/banner1.jpg) center -180px no-repeat fixed;
+  /* background: url(/img/banner6.jpg) center 0px no-repeat; */
+  background-size: 1600px;
+}
+
+body.news .hero {
+  background: url(../img/banner2.jpg) center -200px no-repeat fixed;
+  background-size:1600px;
+  /*height: 570px;*/
+}
+
+body.news .headerDesc {
+  position: relative;
+  /*top: -50px;*/
+}
+
+body.getinvolved .hero {
+  background: url(../img/banner6.jpg) center -20px no-repeat fixed;
+  background-size:1600px;
+  /*height: 570px;*/
+}
+
+body.getinvolved .headerDesc {
+  position: relative;
+  /*top: -50px;*/
+}
+
+body.areasfocus .hero {
+  background: url(../img/banner5.jpg) center -70px no-repeat fixed;
+  background-size:1600px;
+  /*height: 570px;*/
+}
+
+body.areasfocus .headerDesc {
+  position: relative;
+  /*top: -50px;*/
+}
+
+
+body.resources .hero {
+  background: url(../img/banner4.jpg) center 20px no-repeat fixed;
+  background-size:1600px;
+  /*height: 570px;*/
+}
+
+body.article .hero {
+  background: url(../img/banner4.jpg) center 20px no-repeat fixed;
+  background-size:1600px;
+  /*height: 570px;*/
+}
+
+
+
+body.resources .headerDesc {
+  position: relative;
+  /*top: -50px;*/
+}
+
+
+/*************** */
+
+
+
+
+body.news nav li.news a, body.getinvolved nav li.getinvolved a, body.areasfocus nav li.areasfocus a {
+  background: $mainNavHighlight;
+  color: $mainNavText;
+}
+
+
+body.news.article .pageContent {
+    background: black;
+    background: none;
+}
+
+/*body.news.memorial .pageContent {
+  background: black;
+}
+
+/* Well.. that could be a nice wide page effect.. hmmmm */
+/*.body.article .pageContainer {
+  background: $lightBeige;
+}*/
+
+body.memorial .pageContent {
+  background: $lightBeige;
+}
+
+

@@ -1,0 +1,32 @@
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr );
+  grid-column-gap: 1em;
+}
+
+
+.grid.articleList {
+  grid-template-columns: repeat(2, 1fr [col-start]);
+}
+
+.grid.designList {
+  grid-template-columns: 1fr;
+  margin-top: 0em;
+}
+
+.grid-spaced {
+  grid-column-gap: 1em;
+}
+
+.grid-spaced-more {
+  grid-column-gap: 2em;
+}
+
+.grid-flush {
+  gap:0;
+}
+
+.grid-flexbox {
+  display: flex;
+}

@@ -1,0 +1,85 @@
+// =============================================================================
+// All variables to be used in your theme go here.
+// =============================================================================
+
+// =============================================================================
+// COLOURS
+// =============================================================================
+
+// GREYSCALE ===================================================================
+
+$black             :  rgb(0, 0, 0);
+$darkGrey          :  lighten($black, 25%);
+$grey              :  lighten($black, 50%);
+$lightGrey         :  lighten($black, 75%);
+$lighterGrey       :  lighten($black, 90%);
+$white             :  rgb(255, 255, 255);
+
+// SITE COLOURS ================================================================
+
+
+
+$cs-facebook       : rgb(59, 89, 152);
+$cs-twitter        : rgb(0, 172, 237);
+$cs-linkedIn       : rgb(0, 123, 182);
+$cs-ivory          : rgb(255, 255, 250);
+
+$cs-error          : rgb(172, 18, 0);
+$cs-warning        : rgb(211, 82, 0);
+$cs-success        : rgb(113, 211, 112);
+
+$blf-blue		   :  #015CAB;
+$logo-blue		   :  #0D304F;
+$lightblue		   :  #F3F3FF;
+$lightblue2		   :  #d9dfeb;
+
+
+// LINKS =======================================================================
+
+$normal            :  $logo-blue;
+$hover             :  $logo-blue;
+$active            :  $logo-blue;
+$visited           :  $logo-blue;
+$focus             :  $logo-blue;
+
+// NAVIGATION ==================================================================
+
+$mobNavBg          : lighten($logo-blue, 5%);
+$navNormal         : $grey;
+$navHover          : lighten($navNormal, 10%);
+$navActive         : lighten($navNormal, 10%);
+$navVisited        : $navNormal;
+$navFocus          : $navHover;
+
+$navSelectColor    :  darken($grey, 5%);
+
+// TABLES ======================================================================
+
+$tableBg           :  $white;
+$tableBorderColor  :  $lightGrey;
+$tableFontColor    :  $logo-blue;
+
+// FORMS =======================================================================
+
+$formBg            :  $white;
+$formBorderColor   :  $lighterGrey;
+
+// HEADER & FOOTER BACKGROUNDS =================================================
+
+$headerBg          : $logo-blue;
+$footerBg          : lighten($logo-blue, 5%);
+
+// FONTS =======================================================================
+
+// ADD @fontface
+
+$font-serif          : serif;
+$font-sans           : sans-serif;
+$font-mono           : "Courier New", Courier, monospace;
+$font-sans-heading   : "Officina", sans-serif;
+//$font-sans-heading   : "ITC Officina Sans W01", "Myriad W01", helvetica, arial, sans-serif;
+$font-serif-heading  : $font-serif;
+
+$headingFontWeight: 700;
+$mainFontWeight   : 400;
+$boldFontWeight   : 700;

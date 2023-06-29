@@ -1,0 +1,51 @@
+<article class="article article-full">
+
+
+  <div class="page-width">
+    <p class="article_date">
+      <time>{{ page.date|date("M jS, Y") }}</time>
+    </p>
+
+    <h1 class="article_heading">{{ page.title }}</h1>
+
+    <div class="article_meta">
+
+      {% if page.taxonomy.tag %}
+        <span class="tags">
+								{% for tag in page.taxonomy.tag %}
+                  <a href="/{{ tag.url|rtrim('/') }}articles/tag{{ config.system.param_sep }}{{ tag }}">{{ tag }}</a>
+                {% endfor %}
+						</span> {% endif %} {% if page.taxonomy.genre %}
+        <span class="tags">
+							{% for genre in page.taxonomy.genre %}
+                <a href="/{{ genre.url|rtrim('/') }}music/genre{{ config.system.param_sep }}{{ genre }}">{{ genre }}</a>
+              {% endfor %}
+					</span> {% endif %} {% if page.taxonomy.industry %}
+        <span class="tags">
+            {% for industry in page.taxonomy.industry %}
+              <a href="/{{ industry.url|rtrim('/') }}design/industry{{ config.system.param_sep }}{{ industry }}">{{ industry }}</a>
+            {% endfor %}
+        </span> {% endif %}
+    </div>
+    <p class="reading-time">[{{ page.content|readingtime }} reading time]</p>
+    <hr/>
+  </div>
+
+    <div class="article_main">{{ page.content }}</div>
+    {% if page.header.link %}
+      <p style="margin:2em 0;">
+        <iframe width="100%" height="166" frameborder="0" src="{{ page.header.link }}"></iframe>
+      </p>
+    {% endif %}
+
+    <p class="prev-next">
+      {% if not page.isFirst %}
+        <a class="button button-next" href="{{ page.nextSibling.url }}">Next Post &raquo;</a>
+        <a class="button button-prev" href="{{ page.prevSibling.url }}">&laquo; Previous Post</a>
+      {% endif %} {% if not page.isLast %}
+      {% endif %}
+    </p>
+
+
+
+</article>

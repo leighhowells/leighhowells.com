@@ -1,0 +1,11 @@
+body { background: #000; }
+#plax1 { display: none;}
+#rotator { display: none !important; }
+#noSVG { display: none; }
+#noSVGIE8 { display: none; }
+#nyRes { display: none; }   
+#mobileInfo, #fadeMessage, #res1, #res2, #res3, #res4, #res5, #res6, #res7, #res8, 
+#res9, #nyResNarrow, #nyRes, #nyRes h1 { display: none !important; }
+
+#noSVG img { width: 40%; margin-top: 20px;}
+#noSVG a { font-family: helvetica, arial, sans-serif; font-size:12px; margin-top: -190px;}

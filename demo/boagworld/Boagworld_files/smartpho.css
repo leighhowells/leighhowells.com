@@ -1,0 +1,307 @@
+/* @override 
+	http://hello.boagworld.com/wp-content/themes/boagworldV3/css/smartphone.css */
+
+/*
+Site: Boagworld
+Type: Smartphone Styling
+Version: 3.0
+Author: Paul Boag
+URL: http://boagworld.com
+
+
+### TABLE OF CONTENTS ############################
+
+	LAYOUT
+	TYPOGRAPHY
+	STYLING
+
+################################################*/
+
+/* @group LAYOUT */
+
+	body {
+		padding: 0;
+	}
+	
+
+	body div#main div#primary {
+		width:auto;
+		padding: 0 20px;
+	}
+	
+	#branding, footer, .shameful, div#main {
+		padding:0;
+		margin: 0;
+	}
+	
+	header nav:before, header nav:after, footer:before, footer:after, .shameful:before, .shameful:after, #sharing, #comments, .tabNavigation, #main aside.side, #callsToAction p.intro, label.screen-reader-text, nav a#subscribe {
+		display: none;
+	}
+	
+	#branding nav form.searchform div span {
+		display: block;
+		margin: 20px auto;
+		background: none;
+	}
+	
+	body.single header.entry-header, body.single div#summary {
+		display: block;
+		width: 100%;	
+		background:none;
+		text-align: left;
+		margin: 0;
+		padding: 0;
+	}
+	
+	span.cat {
+		display: block;
+		clear: left !important;
+	}
+/* @end */
+
+
+
+/* @group TYPOGRAPHY */
+	html body div#main div#primary div#content div#summary p {
+		font-size: 25px;
+	}
+	
+	
+	
+/* @end */
+
+
+/* @group STYLING */
+	
+	
+	html body header#branding nav ul#menu-main-menu li {
+		display: inline;
+		width: auto;
+		border: none;
+		padding: 0;
+		margin: 0;
+	}
+	
+
+	html body header#branding nav ul#menu-main-menu li a {
+		display: inline-block;
+		white-space: nowrap;
+		padding: 10px;
+		font-size: 15px;
+		background: #222;
+		color: #fff;
+		width: 200px;
+		height: 20px;
+		text-indent: 0;
+	}
+	
+
+	header#branding nav ul#menu-main-menu {
+		border:none;
+		padding: 0;
+		margin: 0;
+		border-radius: none;
+		background: none;
+		-webkit-box-shadow: none;
+		width: auto;
+		display: inline;
+	}
+	
+	
+	
+/* @end */
+
+#otherPosts article, #communityModules section, #secondary section {
+	width: 100% !important;
+	clear: left ;
+	display: inline-block;
+	height: auto;
+	display: block;
+}
+
+#otherPosts {
+	background: none;
+}
+
+
+#otherPosts article:last-child header {
+    background-size: 40% auto;
+}
+
+#otherPosts articl header {
+	background: none;
+}
+
+
+#secondary section#popularPosts, #otherPosts article:last-child {
+    padding-right: 0;
+    width: 95%;
+    clear: left;
+}
+
+
+/**************/
+
+#wideNav nav {
+	display: none;
+}
+
+#narrowNav {
+	display: block;
+	width: 100%;
+	margin:0;
+	padding: 0;
+}
+
+header nav { padding: 10px 0 10px 0; }
+
+
+#narrowNav nav {
+	width: 100%;	
+}
+
+
+#narrowNav nav ul li { width: 100%;  }
+#narrowNav nav ul li a { display: block; width: 100%; font-size: 14px; text-align: left;  padding-left: 36px;  color: #fff;   
+    background: url(rssicon.png) 15px 14px no-repeat;
+    color: #FFFFFF;
+    width: 100%;
+	text-indent: 0;
+}
+
+
+#narrowNav ul.nrwMenu li a { display: block; width: 100%; font-size: 14px; text-align: left;  padding-left: 16px;  color: #fff;   
+    background: none;
+    color: #FFFFFF;
+    width: 100%;
+	text-indent: 0;
+}
+
+#narrowNav nav a:hover {
+	background-color: #444;
+}
+
+/*Starting state of narrow nav - hide panels*/
+#narrowNav ul, #nrwSearch  {
+	display: none;
+}
+
+
+#narrowNav li:first-child a {
+	width: 100%;
+	background: none;
+}
+
+a.nrwLogoLink, a.nrwSubscribeLink, a.nrwMenuLink, a.nrwSearchLink {
+	display: inline; 
+}
+
+.nrwLogo { 
+	
+	display: block;
+	clear: left;
+	text-align:center;
+	width:100%;
+}
+#narrowNav nav .nrwLogo  a {
+	display:block; 
+	width:100%;
+	background: none;
+	border: none;
+}
+
+#narrowNav nav {
+	width:100%;
+}
+
+#narrowNav .nrwMenu {
+	width: 100%;
+}
+
+
+#narrowNav nav a {
+	padding: 10px 0 2px 0;
+	border: 1px solid #000;
+	display: table-cell;
+	vertical-align:top;
+	background-color: #2C2C2C;
+	font-size: 13px;
+	width: 1%;
+}
+
+#narrowNav nav a.nrwSubscribeLink span {
+	margin-left: 22px;
+	display: block; 
+    border: 1px solid #e3a364;
+    border-radius: 5px 5px 5px 5px;
+    color: #421F00;
+    opacity: 0.7;
+	width: 65%;
+    padding: 5px 3px;
+    text-shadow: 0 -1px 0 rgba(171, 87, 13, 0.4), 0 1px 0 rgba(255, 255, 255, 0.3);
+	background: -moz-linear-gradient( top, #E6A560 0%, #CA6609);
+	background: -webkit-gradient( linear, left top, left bottom, from(#E6A560), to(#CA6609));
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid #FFD5AB;
+	-moz-box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px 2px rgba(66, 31, 0, 0.7);
+	-webkit-box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px 2px rgba(66, 31, 0, 0.7);
+	text-shadow: 0px -1px 0px rgba(171, 87, 13, 0.4), 0px 1px 0px rgba(255, 255, 255, 0.3);
+	opacity: 0.7;
+	-webkit-animation-name: buttonPulse;
+	-webkit-animation-duration: 4s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+
+#narrowNav nav a.nrwMenuLink {
+	font-size: 15px; 
+	font-weight: bold;
+	color: #bbb; 	
+}
+
+
+
+footer .people img {
+    border: 7px solid white;
+    margin-bottom: 5px;
+    opacity: 0.7;
+	width: 70px; 
+}
+
+#nrwSearch form div span {
+	width: 90%;
+}
+
+#nrwSearch form div span input.s {
+    display: block;
+    width: 60%;
+	background: white;
+}
+
+#nrwSearch form span {
+    width: 70%;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0 0 3px #000000 inset;
+}
+
+#nrwSearch form.searchform div span input {
+    font-size: 13px;
+}
+
+#featuredPost header, body.single header.entry-header, body.page header.entry-header {
+    padding-right: 5%;
+    text-align: right;
+    width: 60%;
+}
+
+#featuredPost h1 a, body.single article header h1, body.archive h1.page-title span, body.page article header h1, body.search h1.page-title span {
+    font-size: 3.4rem;
+    font-size-adjust: 0.52;
+}
+
+#featuredPost h1 span.cat, #featuredPost h1 span.cat a, body.single article header h1 span.cat, body.archive h1.page-title, body.search h1.page-title {
+    font-size: 3.4rem;
+}
+

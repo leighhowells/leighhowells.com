@@ -1,0 +1,16 @@
+<div class="panelflush {{ header.block }}">
+    <div class="grid grid-flush">
+      {% for image in page.media.images %}
+        <div class="col-1/2">
+          <img class="" style="max-width: 100%; width: 100%;" src="{{ image.forceResize(1100,620).url }}" alt="{{ image.filename|trim('.jpg', 'right') }}">
+          <p class="caption">{{ image.filename|trim('.jpg', 'right') }}</p>
+        </div>
+      {% endfor %}
+    </div>
+    <p class="narrow"{{ content }}</div>
+</div>
+
+
+
+
+

@@ -1,0 +1,264 @@
+body { 	margin: 0; padding: 0; background: #0F2431; } 
+
+object { height: 100%; width:100%; }
+
+#fadeMessage {
+	display: none;
+	position: fixed;
+	bottom: 0px;
+	text-align: center;
+	width: 100%;
+	z-index: 5000;
+	color: #BC7844;
+	font-weight: bold;
+	background: #D6E59B;
+	padding: 30px;
+}
+
+#rotator {
+	z-index: 9000;
+}
+
+/*DEFAULT*/
+
+@media only screen and (max-width: 10000px) {
+	body {
+		 background-image: linear-gradient(bottom, #000000,#033B6D);
+		 background-image: -o-linear-gradient(bottom, #000000, #033B6D);
+		 background-image: -moz-linear-gradient(bottom, #000000, #033B6D);
+		 background-image: -webkit-linear-gradient(bottom, #000000,#033B6D);
+		 background-image: -ms-linear-gradient(bottom, #000000, #033B6D);
+		 background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, #000000), color-stop(0.68, #033B6D));	
+	}
+	#snowflake5, #snowflake4, .snowflake.massive, .snowflake.large, .snowflake.medium, #Happy_Christmas { display: none; }
+    #Happy_Christmas { display: block; } 
+    #snowflake2 { opacity: 0.6; }
+    #snowflake3 { opacity: 0.1; }
+}
+
+/*STEP 2*/
+
+@media only screen and (max-width: 1200px) {
+	body {
+		 background-image: linear-gradient(bottom, #000000,#0D326E);
+		 background-image: -o-linear-gradient(bottom, #000000, #0D326E);
+		 background-image: -moz-linear-gradient(bottom, #000000, #0D326E);
+		 background-image: -webkit-linear-gradient(bottom, #000000,#0D326E);
+		 background-image: -ms-linear-gradient(bottom, #000000, #0D326E);
+		 background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, #000000), color-stop(0.68, #0D326E));	
+	}
+}
+
+/*STEP 2*/
+
+@media only screen and (max-width: 1150px) {
+	body {
+		 background-image: linear-gradient(bottom, #000000,#16296E);
+		 background-image: -o-linear-gradient(bottom, #000000, #16296E);
+		 background-image: -moz-linear-gradient(bottom, #000000, #16296E);
+		 background-image: -webkit-linear-gradient(bottom, #000000,#16296E);
+		 background-image: -ms-linear-gradient(bottom, #000000, #16296E);
+		 background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, #000000), color-stop(0.68, #16296E));	
+	}
+}
+
+/*STEP 3*/
+
+@media only screen and (max-width: 1100px) {
+	body {
+		 background-image: linear-gradient(bottom, #000000,#20206F);
+		 background-image: -o-linear-gradient(bottom, #000000, #20206F);
+		 background-image: -moz-linear-gradient(bottom, #000000, #20206F);
+		 background-image: -webkit-linear-gradient(bottom, #000000,#20206F);
+		 background-image: -ms-linear-gradient(bottom, #000000, #20206F);
+		 background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, #000000), color-stop(0.68, #20206F));	
+	}
+}
+
+/*STEP 4*/
+
+@media only screen and (max-width: 1050px) {
+	body {
+		 background-image: linear-gradient(bottom, #000000,#2A166F);
+		 background-image: -o-linear-gradient(bottom, #000000, #2A166F);
+		 background-image: -moz-linear-gradient(bottom, #000000, #2A166F);
+		 background-image: -webkit-linear-gradient(bottom, #000000,#2A166F);
+		 background-image: -ms-linear-gradient(bottom, #000000, #2A166F);
+		 background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, #000000), color-stop(0.68, #2A166F));	
+	}
+}
+
+/*STEP 5*/
+
+@media only screen and (max-width: 1000px) {
+	body {
+		 background-image: linear-gradient(bottom, #000000,#330D70);
+		 background-image: -o-linear-gradient(bottom, #000000, #330D70);
+		 background-image: -moz-linear-gradient(bottom, #000000, #330D70);
+		 background-image: -webkit-linear-gradient(bottom, #000000,#330D70);
+		 background-image: -ms-linear-gradient(bottom, #000000, #330D70);
+		 background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, #000000), color-stop(0.68, #330D70));	
+	}
+	.snowflake.large { display: block; }	
+}	
+
+/*STEP 6*/
+
+@media only screen and (max-width: 950px) {
+	body {
+		 background-image: linear-gradient(bottom, #000000,#3D0470);
+		 background-image: -o-linear-gradient(bottom, #000000, #3D0470);
+		 background-image: -moz-linear-gradient(bottom, #000000, #3D0470);
+		 background-image: -webkit-linear-gradient(bottom, #000000,#3D0470);
+		 background-image: -ms-linear-gradient(bottom, #000000, #3D0470);
+		 background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, #000000), color-stop(0.68, #3D0470));	
+	}
+	#snowflake5 { display: block; opacity: 0.01; }
+}
+
+/*STEP 7*/
+
+@media only screen and (max-width: 900px) {
+	body {
+		 background-image: linear-gradient(bottom, #000000,#58056D);
+		 background-image: -o-linear-gradient(bottom, #000000, #58056D);
+		 background-image: -moz-linear-gradient(bottom, #000000, #58056D);
+		 background-image: -webkit-linear-gradient(bottom, #000000,#58056D);
+		 background-image: -ms-linear-gradient(bottom, #000000, #58056D);
+		 background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, #000000), color-stop(0.68, #58056D));	
+	}
+	.snowflake.medium, #snowflake1_1_ { display: block; } 
+	#snowflake5 { opacity: 0.014; }
+}
+
+/*STEP 8*/
+
+@media only screen and (max-width: 850px) {
+	body {
+		 background-image: linear-gradient(bottom, #000000,#5D055C);
+		 background-image: -o-linear-gradient(bottom, #000000, #5D055C);
+		 background-image: -moz-linear-gradient(bottom, #000000, #5D055C);
+		 background-image: -webkit-linear-gradient(bottom, #000000,#5D055C);
+		 background-image: -ms-linear-gradient(bottom, #000000, #5D055C);
+		 background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, #000000), color-stop(0.68, #5D055C));	
+	}
+	.snowflake.massive { display: block; }	
+	#snowflake5 { opacity: 0.018; }
+}
+
+/*STEP 9*/
+
+@media only screen and (max-width: 800px) {
+	body {
+		 background-image: linear-gradient(bottom, #000000,#62044C);
+		 background-image: -o-linear-gradient(bottom, #000000, #62044C);
+		 background-image: -moz-linear-gradient(bottom, #000000, #62044C);
+		 background-image: -webkit-linear-gradient(bottom, #000000,#62044C);
+		 background-image: -ms-linear-gradient(bottom, #000000, #62044C);
+		 background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, #000000), color-stop(0.68, #62044C));	
+	}
+	#snowflake5 { opacity: 0.022; }
+}
+
+/*STEP 10*/
+
+@media only screen and (max-width: 750px) {
+	body {
+		 background-image: linear-gradient(bottom, #000000,#68043B);
+		 background-image: -o-linear-gradient(bottom, #000000, #68043B);
+		 background-image: -moz-linear-gradient(bottom, #000000, #68043B);
+		 background-image: -webkit-linear-gradient(bottom, #000000,#68043B);
+		 background-image: -ms-linear-gradient(bottom, #000000, #68043B);
+		 background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, #000000), color-stop(0.68, #68043B));	
+	}
+	#snowflake5 { opacity: 0.026; }	
+}
+
+/*STEP 11*/
+
+@media only screen and (max-width: 700px) {
+	body {
+		 background-image: linear-gradient(bottom, #000000,#6D042A);
+		 background-image: -o-linear-gradient(bottom, #000000, #6D042A);
+		 background-image: -moz-linear-gradient(bottom, #000000, #6D042A);
+		 background-image: -webkit-linear-gradient(bottom, #000000,#6D042A);
+		 background-image: -ms-linear-gradient(bottom, #000000, #6D042A);
+		 background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, #000000), color-stop(0.68, #6D042A));	
+	}
+	#snowflake5 { opacity: 0.030; }
+}
+
+
+@media only screen and (max-width: 650px) {	
+	body {
+		 background-image: linear-gradient(bottom, #000000,#72031A);
+		 background-image: -o-linear-gradient(bottom, #000000, #72031A);
+		 background-image: -moz-linear-gradient(bottom, #000000, #72031A);
+		 background-image: -webkit-linear-gradient(bottom, #000000,#72031A);
+		 background-image: -ms-linear-gradient(bottom, #000000, #72031A);
+		 background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, #000000), color-stop(0.68, #72031A));	
+	}
+	#snowflake5 { opacity: 0.034; }
+}
+
+@media only screen and (max-width: 600px) {	
+	body {
+		 background-image: linear-gradient(bottom, #000000,#770309);
+		 background-image: -o-linear-gradient(bottom, #000000, #770309);
+		 background-image: -moz-linear-gradient(bottom, #000000, #770309);
+		 background-image: -webkit-linear-gradient(bottom, #000000,#770309);
+		 background-image: -ms-linear-gradient(bottom, #000000, #770309);
+		 background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, #000000), color-stop(0.68, #770309));	
+	}
+	#snowflake5 { opacity: 0.038; }			
+}
+
+/*STEP 12*/
+
+@media only screen and (max-width: 550px) {
+}
+
+/*Snowing stlyes*/
+
+.snowflake {
+	position: absolute; text-align: center; z-index: 9999; top: -100px;
+	width: 1em; height: 1em; color: white; font-size: 16px;
+	-webkit-animation-iteration-count: infinite, 20;
+	-webkit-animation-direction: normal, normal;
+	-webkit-animation-timing-function: linear, ease-in;
+}
+
+.snowflake span {
+	position: absolute; display: block;  width: 1em;  height: 1em;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-transform-origin: 60% -100%;
+}
+
+.snowflake.tiny { font-size: 0.3em;	}
+.snowflake.small { font-size: 1em;  }
+.snowflake.medium { font-size: 1.8em; }
+.snowflake.large { font-size: 3em; }
+.snowflake.massive { font-size: 5em; }
+
+@-webkit-keyframes fade {
+	0%   { opacity: .2; }
+	85%  { opacity: .4; }
+	100% { opacity: 0; }
+}
+
+@-webkit-keyframes drop {
+	0%   { -webkit-transform: translate(0px, -50px); }
+	100% { -webkit-transform: translate(0px, 650px); }
+}
+
+@-webkit-keyframes clockwiseSpin {
+	0%   { -webkit-transform: rotate(-50deg); }
+	100% { -webkit-transform: rotate(50deg); }
+}
+
+@-webkit-keyframes counterclockwiseSpin  {
+	0%   { -webkit-transform: rotate(50deg); }
+	100% { -webkit-transform: rotate(-50deg); }
+}

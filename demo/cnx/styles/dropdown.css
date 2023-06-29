@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+/**
+ * Horizontal CSS Drop-Down Menu Module
+ * @link		http://www.lwis.net/
+ * @copyright	2006-2008 Live Web Institute. All Rights Reserved.
+ */
+ 
+#pNavigation 				 			{ position: relative; padding-left: 0;  margin-top: 0px;  z-index: 999; }
+.tHome #pNavigation 					{ margin-top: 0px; }
+
+ul.dropdown,
+ul.dropdown li,
+ul.dropdown ul 							{ list-style: none;  margin: 0;  padding: 0; }
+
+ul.dropdown 							{ position: relative; z-index: 597;font-weight: bold;}
+ul.dropdown li 							{ float: left; line-height: 1.3em; vertical-align: middle; zoom: 1; }
+ul.dropdown li.hover,
+ul.dropdown li:hover 					{ position: relative; z-index: 599; cursor: default; color: #000 !important;  }
+
+ul.dropdown ul 							{ visibility: hidden; position: absolute; top: 100%; left: 0; z-index: 598; 
+										  -moz-box-shadow: 0px 0px 12px #444;  -webkit-box-shadow: 3px 3px 3px #666;  box-shadow: 5px 5px 5px #222;  }
+
+ul.dropdown ul ul 						{ float: none; top: 1px; left: 99%; }
+ul.dropdown li:hover > ul 				{ visibility: visible; }
+
+/*visibile horiz menu*/
+	ul.dropdown li a					{ border-style: solid; border-width: 1px 1px 1px 0; border-color: #333; 
+	 									  font-size: 18px; font-weight: bold;  color: #fff; padding: 10px 20px; text-decoration: none; background: #000 url(../images/bgNav.jpg) 0 0 repeat-x; margin: 0; }			 							 
+	ul.dropdown li.hover,
+	ul.dropdown li a:hover 				{ background: #FEA32F; color: #000000 !Important;	}
+
+	ul.dropdown a:hover					{ color: #000000 !Important; }
+	ul.dropdown a:active				{ color: #000000; }
+
+/*hidden menus*/
+	ul.dropdown ul 						{ margin-top: 10px; }
+
+		ul.dropdown ul li				{ text-align: left;}
+		ul.dropdown ul li a				{ margin: 0; display: block; font-weight: normal; color: #fff !important;  text-align: left;  font-size: 14px; width: 200px !Important;}
+
+ul.dropdown *.dir 						{ background-image: url(../images/dropdowns/nav-arrow-down.png); background-position: 100% 50%; background-repeat: no-repeat; }
+
+
+/* -- Components override -- */
+
+ul.dropdown-upward *.dir 				{ background-image: url(../images/dropdowns/nav-arrow-top.png); }
+
+ul.dropdown-vertical *.dir,
+ul.dropdown-upward ul *.dir 			{ clear: left; float: left; background-image: url(../images/dropdowns/nav-arrow-right.png); }
+
+ul.dropdown-vertical-rtl *.dir 			{ padding-right: 10px; padding-left: 15px; background-image: url(../images/dropdowns/nav-arrow-left.png); background-position: 0 50%;}
+
+/*big visible menu*/
+ul.dropdown-vertical				    { margin-top: 10px; }
+ul.dropdown-vertical li	 		 	    { clear: left; display: block; }
+ul.dropdown-vertical li a	  			{ display: block; float: left; font-size: 33px; font-weight: bold;  padding: 25px 20px 0px 20px;  
+								          background: #000 url(../images/bgNav.jpg) 0 0 repeat-x; color: #fff;  width: 200px; height: 76px; }
+											  
+ul.dropdown-vertical li a:hover			{ background: #DC6400 url(../images/bgNavOver.jpg) 0 0 repeat-x; color: #000;   }
+ul.dropdown-vertical li a:hover small 	{ color: #fff !important; }
+
+/*hidden panel*/
+ul.dropdown-vertical ul 				{ margin-top:0px; visibility: hidden; position: absolute; top: 0; left: 240px; z-index: 598;  width: 405px; background: rgba(0, 0, 0, 0.95); 
+										  height: 402px;  padding:10px 0 0 0;   -moz-box-shadow: none;  -webkit-box-shadow: none;  box-shadow: none;  }
+										  
+ul.dropdown-vertical ul.courses			{ margin-top: -103px; }
+ul.dropdown-vertical ul.jobs			{ margin-top: -206px; }
+ul.dropdown-vertical ul.life			{ margin-top: -309px; }
+	
+/*inside hidden menus*/
+ul.dropdown-vertical ul li 				{  }									
+ul.dropdown-vertical ul li a			{ color: #ddd !important; border: none !important;  }
+
+ul.dropdown-vertical li:hover > ul 		{ visibility: visible; }
+
+ul.dropdown-vertical li:hover ul li a		{ width: 360px !Important; line-height: 45px; height: 45px; font-weight: bold; margin: 0 !important; font-size: 16px; padding: 1px 0 1px 15px !important; 
+											  border-top: 1px solid #ddd;  background: none; color: #000;  }
+
+ul.dropdown-vertical li:hover ul li img		{ float: left;  padding: 0 15px 0 0; }
+ul.dropdown-vertical li:hover ul li a:hover	{ font-weight: bold; font-size: 16px; color: #FEA32F !important;  }
+ul.dropdown-vertical li:hover ul li a:hover	{ font-weight: bold; font-size: 16px; color: #FEA32F !important;  }
+

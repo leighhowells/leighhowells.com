@@ -1,0 +1,426 @@
+blockquote {
+  font-size: 2em;
+}
+
+.article_heading {
+  margin: 0 0.5em 0 0;
+}
+
+.article_date {
+  margin: 0 0 0.5em 0;
+}
+
+.img-full {
+  display: block;
+  max-width: 300%;
+  max-height: none;
+  height: auto;
+  margin: 0 -20% 0 -20%;
+  width: 140%;
+  padding-bottom: 1em;
+}
+
+.img-half-left {
+  display: block;
+  height: auto;
+  width: 49%;
+  float: left;
+  margin-right: 1%;
+}
+
+.img-half-right {
+  display: block;
+  height: auto;
+  width: 49%;
+  float: right;
+  margin-left: 1%;
+}
+
+.img-stretch {
+  width: 100%;
+}
+
+.design #page article img {
+  -webkit-box-shadow: 0 0 2.5vw rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 2.5vw rgba(0, 0, 0, 0.15);
+  margin-top: 2em;
+  margin-bottom: 0;
+}
+
+.category-music article img {
+  margin-right: 1em;
+}
+
+.design #page article img.no-effect {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+.img-screenshot {
+
+  @media(max-width: 800px) {
+    width: 100%;
+    margin: 0;
+    max-width: 100%;
+  }
+}
+
+
+h4 {
+  text-align: center;
+  margin-top: 1.5em;
+  color: #aaa;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+
+p.caption {
+  clear: left;
+  display: block;
+  padding: 1.2em 0 1.2em 0;
+  margin: 0;
+  font-size: 0.8em;
+  text-align: center;
+  margin-top: 0em !important;
+}
+
+
+figcaption {
+  font-size: 0.7em;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  padding: 0.5em 0;
+}
+
+.max-width {
+  width: 60%;
+}
+
+
+.rt-reading-time {
+  font-size: 80%;
+  color: #aaa;
+  margin-bottom: 2em;
+
+  &:before {
+    content: '[';
+  }
+
+  &:after {
+    content: ']';
+  }
+}
+
+.prev-next {
+  margin: 4em 0 0 0;
+
+}
+
+
+body.cv {
+
+  .header {
+    height: 15vh;
+  }
+
+  time, .article-meta, p.reading-time, .reading-time, nav, .prev-next, footer {
+    display: none;
+  }
+
+  h1.article_heading, #page h1 {
+    font-size: 1.8em;
+  }
+
+  h2 {
+    font-size: 2.5em;
+    font-weight: 100;
+    margin-top: 1em;
+  }
+
+  h3 {
+    //font-weight: bold;
+    margin: 1em 0 0 0;
+  }
+
+  ul {
+    margin-top: 0.5em;
+  }
+
+
+}
+
+
+////// overides !!!
+
+
+@media(min-width: 1500px) {
+  .img-full {
+    width: 100vw !important;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-bottom: 1em;
+    margin-left: -50vw;
+    margin-right: -50vw;
+  }
+}
+
+.img-pagewidth {
+  width: 166.666% !important;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.img-half-left {
+  display: block;
+  height: auto;
+  width: 49% !important;
+  float: left;
+  margin-right: 1%;
+}
+
+.img-half-right {
+  display: block;
+  height: auto;
+  width: 49% !important;
+  float: right;
+  margin-left: 1%;
+}
+
+.img-margin-top {
+  padding-top: 1em !important;
+}
+
+.img-stretch {
+  width: 100%;
+}
+
+.max-width {
+  width: 70%;
+}
+
+.design #page article img {
+  -webkit-box-shadow: 0 0 2.5vw rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 2.5vw rgba(0, 0, 0, 0.15);
+  margin-top: 2em;
+  margin-bottom: 0em;
+}
+
+.design #page article img.no-effect {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+.img-screenshot {
+  @media(max-width: 800px) {
+    width: 100%;
+    margin: 0;
+    max-width: 100%;
+  }
+}
+
+
+///////////////////////////////////////
+
+.blank-section {
+  background: #fff;
+}
+
+.blank-section.dark {
+  background: #111 !important;
+
+  p {
+    color: #fff;
+  }
+
+}
+
+.fixed-image {
+  height: 100vh;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  @media (max-width: 1100px) {
+    background-attachment: scroll !important;
+  }
+}
+
+.two-columns {
+  column-count: 2;
+  column-gap: 4vw;
+}
+
+.two-columns-nogap {
+  column-count: 2;
+  column-gap: 0;
+}
+
+.two-columns-smallgap {
+  column-count: 2;
+  column-gap: 1em;
+}
+
+.sticky {
+  padding: 0.5em 1em;
+  background: #da0700;
+  color: #fff;
+  font-size: 2em;
+  margin-bottom: 1em;
+  top: 0;
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
+  position: sticky;
+  z-index: 99;
+}
+
+.sticky.blue {
+  background: #00589C;
+  opacity: 0.9;
+}
+
+.floating-content {
+  margin-top: 20vh;
+  width: 25vw;
+  height: 150px;
+  overflow: hidden;
+  display: table;
+  position: absolute;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.95);
+
+  h3 {
+    margin-top: 0;
+  }
+
+  p {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 800px) {
+  .floating-content {
+    width: 100%;
+    margin: 1em 0 0 0;
+    background: rgba(255, 255, 255, 1);
+    padding: 0;
+  }
+
+  .page-width {
+    max-width: 90% !important;
+    margin: 0 auto !important;
+  }
+
+  .two-columns {
+    column-count: 1;
+  }
+}
+
+.narrow {
+  max-width: 900px;
+  margin: 0 auto !important;
+}
+
+p.narrow {
+  margin-top: 1.5em !important;
+  margin-bottom: 1.5em !important;
+  padding: 0 !important;
+}
+
+img.narrow {
+  width: 100%;
+  padding: 0;
+}
+
+.floating-content.black {
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+}
+
+.floating-content.right {
+  right: 0;
+}
+
+.floating-content.massive {
+  background: none !important;
+  width: 100% !important;
+  text-align: center !important;
+  padding: 0 !important;
+  margin: 0 !important;
+
+  .floating-content-inner {
+    font-size: 4vh;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.9);
+    color: white;
+    text-align: center !important;
+    padding: 15% 0 0 0;
+    margin: 0;
+
+    &.dark {
+      color: #000 !important;
+      text-shadow: 0 0 3px rgba(255, 255, 255, 0.9);
+    }
+  }
+}
+
+.floating-content-inner {
+  width: 100%;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 2em
+}
+
+.superwide .page-width {
+  position: relative;
+}
+
+.margbottom {
+  margin-bottom: 0;
+}
+
+.os-animation {
+  opacity: 0;
+}
+
+.animated {
+  opacity: 0;
+}
+
+.os-animation.animated {
+  opacity: 1;
+}
+
+
+.category .rt-reading-time, .home .rt-reading-time, .page-id-108 .rt-reading-time {
+  display: none !important;
+}
+
+
+.iron_widget_radio {
+  min-height: auto !important;
+  background: linear-gradient(#f3f3f3, #ffffff);
+  border-radius: 0.2em;
+  padding: 2em 1em;
+  margin-bottom: 2em !important;
+  border: 1px solid #dedede;
+}
+
+.home .iron_widget_radio {
+  min-height: auto !important;
+  padding: 0;
+  background: none;
+  border: none;
+
+  .track-title {
+    display: none;
+  }
+
+  img {
+    display: none;
+  }
+  
+}
+

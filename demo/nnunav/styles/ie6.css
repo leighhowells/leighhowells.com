@@ -1,0 +1,34 @@
+/*  Information
+------------------------------------------------------------------------------------------------------------------*/
+/*  IE6 Styles for University of Northampton
+    By Leigh Howells (Headscape) leigh.howells@headscape.co.uk 2010
+------------------------------------------------------------------------------------------------------------------*/
+
+#sField			{ width: 115px !important; }
+#sButton		{ font-family: Verdana, Arial, Helvetica, sans-serif; margin-right: 0px !important; font-size: 0.7em !important; padding-left: 0 !important; }
+#pNavigation	{ padding: 5px 0 0 0; clear: left !important;  width: 100% !important;  }
+#pNavigation ul li a { padding: 15px 20px; }
+
+#users			{ width: 325px;}
+
+#leftCol 		{ margin: 0 0 0 0; float:left; width:200px !important; padding: 0 5px 5px 0 !important;}
+.secName		{ height: 50px; padding-top: 20px; }
+
+#mainColumn		{ width: 700px; }
+#contentCol		{ width: 480px; margin: 0 7px 0 0;  }
+#rightCol		{ width: 200px; }
+
+#pNavigation ul li a:hover	{ background: url(../images/bgPnavRight.jpg) top right no-repeat; color: #000; }
+
+#socialNets  	{ background: none; }
+#footerMaps		{ background: none; }
+
+.tHome .finderhome h3 		{ margin: 0 0 15px -10px; border: 1px solid #fff; }
+#sButton 					{ padding-top: 9px; font-family: Arial, Helvetica, sans-serif; }
+.tHome .finderhome #sField  { width: 135px !important; }
+.tHome .finderhome #crsList { padding-top: 8px !important; }
+.wt3 						{ padding:6px 0; }
+
+.linkImage 					{ left:0; top: 0; margin-top: 10px; }
+
+#contentCol .caption		{ padding: -30px 0 0 0 !important; }

@@ -1,0 +1,180 @@
+header {
+  height: 50vh;
+  min-height: 600px;
+  position: relative;
+  padding: 2em;
+}
+
+.home header {
+  height: 100vh;
+}
+
+.page-content {
+  background: -moz-linear-gradient(270deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 500px); /* ff3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255,255,255,0)), color-stop(500px, rgba(0,0,0,1))); /* safari4+,chrome */
+  background: -webkit-linear-gradient(270deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 500px); /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(270deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 500px); /* opera 11.10+ */
+  background: -ms-linear-gradient(270deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 500px); /* ie10+ */
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 500px); /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 ); /* ie6-9 */
+  padding-top: 0em;
+}
+
+.home .page-content, .listing .page-content {
+  background: -moz-linear-gradient(270deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 500px); /* ff3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255,255,255,0)), color-stop(500px, rgba(0,0,0,1))); /* safari4+,chrome */
+  background: -webkit-linear-gradient(270deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 500px); /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(270deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 500px); /* opera 11.10+ */
+  background: -ms-linear-gradient(270deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 500px); /* ie10+ */
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 500px); /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 ); /* ie6-9 */
+  padding-top: 0em;
+}
+
+
+.search-form {
+  display: none;
+}
+
+.logo {
+  display:block;
+  padding: 0;
+  width: 80px;
+  transition: all 0.5s;
+  fill: #ffffff;
+
+  &:hover {
+    animation-name: logopulse;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    transform: rotate(10deg);
+    fill: #888888;
+  }
+}
+
+@keyframes logopulse {
+  0% {
+    fill: #ffffff;
+  }
+
+  100% {
+    fill: #ffa700;
+  }
+}
+
+nav.main {
+  padding: 2em 0;
+  float: right;
+}
+
+
+/////////////////////////////
+
+
+/* Colors */
+$colorCollection: (#ffffff);
+
+/* Config */
+$lights: 12;
+$totalAnimation: 6;
+$lightSize: 130;
+$blurLevel: 5;
+
+
+.light{
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+////////
+
+@for $i from 1 through $lights{
+  $lightWidth: $lightSize + random(95);
+  $lightHeight: $lightWidth;
+  $lightVertical: random(140);
+  $lightHorizontal: random(60);
+  $lightBlur: $blurLevel + random($blurLevel);
+  $lightDelay: 0 + random(25);
+  $animation: 3 + random($totalAnimation);
+
+  .light:nth-child(#{$i}){
+    width: $lightWidth + px;
+    height: $lightHeight + px;
+    top: #{$lightVertical + "vh"};
+    left: #{$lightHorizontal + "vw"};
+    background: nth($colorCollection, random(length($colorCollection)));
+    filter: blur($lightBlur + px);
+    animation: #{$lightDelay + s} #{"light" + $animation} linear infinite;
+  }
+}
+
+@for $i from 1 through $totalAnimation{
+  @keyframes light#{$i} {
+    25%{
+      opacity: (0 + random(10)) * 0.01;
+    }
+    50%{
+      opacity: 0;
+    }
+    75%{
+      opacity: (0 + random(10)) * 0.01;
+    }
+    100%{
+      opacity: 0;
+    }
+  }
+}
+
+#bokeh.fadeout {
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+}
+
+#bokeh.fadein {
+  -webkit-transition: opacity 4s ease-in-out;
+  -moz-transition: opacity 4s ease-in-out;
+  -ms-transition: opacity 4s ease-in-out;
+  -o-transition: opacity 4s ease-in-out;
+  opacity: 1;
+}
+
+
+.page {
+  background-image: url('img/header-jungle.gif') !important;
+  footer {
+    background-image: url('img/footer-jungle.jpg');
+  }
+}
+
+.home.page {
+  background-image: url('img/banner-mugshot-dark.jpg') !important;
+  footer {
+    background-image: url('img/footer-feet.jpg');
+  }
+}
+
+
+
+.archive.category-articles {
+  background-image: url('img/banner1.jpg') !important;
+}
+
+.archive.category-music {
+  background-image: url('img/banner1.jpg') !important;
+}
+
+.archive.category-blog {
+  background-image: url('img/banner1.jpg') !important;
+}
+
+.archive.category-design {
+  background-image: url('img/banner-design.png') !important;
+}
+
+.archive.category-design {
+  background-image: url('img/banner1.jpg') !important;
+}

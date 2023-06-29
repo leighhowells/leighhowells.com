@@ -1,0 +1,19 @@
+.button-next, .button-prev {
+  text-decoration: none;
+  padding: 0.5em 1em;
+  border-radius: 01em;
+  background: #efefef;
+  @include font-secondary;
+  color: #aaa;
+  &:hover {
+    text-decoration: none;
+    background: #aaa;
+  }
+}
+.button-next {
+  float: right;
+}
+
+.wp-block-file__button {
+  color: white !important;
+}

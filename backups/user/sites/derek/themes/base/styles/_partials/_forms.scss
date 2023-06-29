@@ -1,0 +1,49 @@
+
+.form {
+	input[type=text],
+	input[type=number],
+	input[type=email],
+	input[type=password],
+	input[type=search],
+	input[type=tel],
+	textarea,
+	select {
+		width: 100%;
+		max-width: 25em;
+		padding: 0.5em;
+		margin: 0.25em 0 1em;
+		border: 1px solid #ccc;
+		color: #222;
+
+		&:focus {
+  		outline: none;
+  		border: 1px solid $base;
+		}
+	}
+
+	select {
+  	border-color: rgba(0,0,0,0.05);
+  	height: 3em;
+	}
+}
+
+.form-item {
+  margin: 1rem 0;
+}
+
+.form-fields-inline {
+  select,
+  input,
+  button {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0.25em 0.25em 0.25em 0;
+    width: auto;
+  }
+
+  input[type=submit],
+  button {
+    padding: 0.65em 1.2em;
+  }
+}
+

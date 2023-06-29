@@ -1,0 +1,133 @@
+{% set theme_config = attribute(config.themes, config.system.pages.theme) %}
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#">
+<head>
+  <meta http-equiv="Cache-control" content="public">
+  <meta http-equiv="Expires" content="7"/>
+  <meta name="generator" content="Grav"/>
+  <meta name="country" content="gb"/>
+  <meta name="author" content="Leigh Kenton Howells"/>
+  <meta name="keywords" content="{% if page.header.title and (page.url != base_url or 'error' == page.template) %}{{ page.header.title }} | {% endif %}web designer, web design, web, graphic, design, music, audio, composition, UX, user experience"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="{% if page.summary %}{{ page.summary|striptags|truncate(200) }}|{% endif %}Leigh Howells is a designer and creative type, currently near Cambridge, UK"/>
+  <meta charset="utf-8"/>
+  <meta property="og:title" name="og:title" content="Leigh Howells"/>
+  <meta property="og:type" name="og:type" content="website"/>
+  <meta property="og:url" name="og:url" content="http://www.leighhowells.com/"/>
+  <meta property="og:image" name="og:image" content="http://www.leighhowells.com/user/themes/jungle2/img/me.jpg"/>
+  <meta property="og:title" name="og:description" content="Leigh Howells is a designer and creative type, currently near Cambridge, UK"/>
+  <meta name="twitter:card" property="twitter:card" content="{{ page.summary|striptags|truncate(100) }}"/>
+  <meta name="twitter:site" property="twitter:site" content="{{ page.url }}"/>
+  <meta name="twitter:title" property="twitter:title" content="{{ page.header.title }}"/>
+  <meta name="twitter:description" property="twitter:description" content="{{ page.summary|striptags|truncate(200) }}"/>
+  <meta name="twitter:image" property="twitter:image" content="{{ theme_url }}/img/me.jpg"/>
+
+  <title>{% if page.header.title and (page.url != base_url or 'error' == page.template) %}{{ page.header.title }} | {% endif %}Leigh Howells</title>
+
+  <link rel="stylesheet" href="/user/themes/twentyeighteen/styles/grid.css" media="screen">
+  <link rel="stylesheet" href="/user/themes/twentyeighteen/styles/basic.css" media="screen">
+  <link rel="stylesheet" href="/user/themes/twentyeighteen/styles/deluxe.css" media="screen">
+  <link rel="stylesheet" href="/user/themes/twentyeighteen/styles/print.css" media="print">
+  <link rel="icon" type="image" href="/favicon.ico"/>
+
+</head>
+
+<body style="background: #000 url({{ theme_url }}/img/{{ page.header.banner }}) 50% 50% fixed no-repeat; background-size: cover;" class="{{ page.header.body_classes }} {% for tag in page.taxonomy.category %}{{ tag }}{% endfor %}">
+
+{% if page.header.homepage == 'true' %}
+<div id="bokeh">
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+</div>
+{%  endif %}
+
+
+<header role="banner" id="header">
+  <div class="image-banner">
+    <div class="page-width">
+      <nav role="navigation" class="main">
+        <a href="/about" class="navAbout">Leigh</a>
+        <a href="/design" class="navDesign">Designs</a>
+        <a href="/articles" class="navArticles">Writes</a>
+        <a href="/music" class="navMusic">Tinkles</a>
+        <a href="/blog" class="navBlog">Witters</a>
+      </nav>
+
+      <a class="logo" href="/"><img src="{{ theme_url }}/img/logo.svg"></a>
+      <div class="banner-text">
+        <h1>{{ page.title }}</h1>
+        <p class="home-subtitle">{{ page.header.bannertext }}</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="page-content">
+
+  {% block body %}
+    {% block content %} {% endblock %}
+  {% endblock %}
+</div>
+
+<footer>
+  <div class="container">
+    <div class="page-width">
+      <div class="grid">
+        <div class="col-1/3 col1">
+          <div class="module">
+            <ul>
+              <li><a href="/derek" target="new">LinkedIn</a></li>
+              <li><a href="/pamela/about" target="new">Twitter</a></li>
+              <li><a href="/archive" target="new">Archive</a></li>
+              <li><a href="http://www.headscape.co.uk" target="new">Headscape</a></li>
+            </ul>
+
+            <!--{% include 'partials/simplesearch_searchbox.html.twig' %}-->
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</footer>
+<div class="copyright">
+  <div class="page-width">
+    Leigh Howells 2018. Hand made using <a href="https://getgrav.org/" target="_blank">Grav</a> CMS.
+  </div>
+</div>
+</body>
+
+<!--[if gte IE 8]><!-->
+
+<!--<![endif]-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="/user/plugins/simplesearch/js/simplesearch.min.js"></script>
+<script type='text/JavaScript' src='/user/themes/twentyeighteen/js/script.min.js'></script>
+<script type='text/JavaScript' src='/user/themes/twentyeighteen/js/onscreen.min.js'></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-20119942-1"></script>
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-20119942-1');
+</script>
+
+</html>

@@ -1,0 +1,60 @@
+
+.ctablock {
+    background: rgba(0,0,0,0.2);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid black;
+    padding: 2em;
+    text-align: center;
+}
+
+h3 {
+    color: white;
+    font-weight: bold;
+}
+
+.button {
+    display: inline-block;
+    background: black;
+    color: white;
+    padding: 1em;
+    border-radius: 0.25em;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+a:hover.button, a.button:hover {
+    background: white;
+    color: black;
+}
+
+a.button.Blue {
+    background: #0000cc;
+    color: white;
+}
+a.button.Blue:hover {
+    background: white;
+    color: black;
+}
+
+
+a.button.Red {
+    background: #aa0000;
+    color: white;
+}
+a.button.Red:hover {
+    background: white;
+    color: black;
+}
+
+a.button.Green {
+    background: #00A0D2;
+    color: black;
+}
+a.button.Green:hover {
+    background: white;
+    color: black;
+}

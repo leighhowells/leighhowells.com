@@ -1,0 +1,559 @@
+{% embed 'partials/base.html.twig' %}
+
+    {% block content %}
+        <div class="container">
+
+            <div id="item" class="block">
+
+                <article class="article article-full">
+
+                    <div class="page-width">
+                        <p class="article_date">
+                            <time>{{ page.date|date("M jS, Y") }}</time>
+                        </p>
+                        <h1 class="article_heading">{{ page.title }}</h1>
+                        <div class="article_meta">
+                            {% if page.taxonomy.tag %}
+                                <span class="tags">
+								{% for tag in page.taxonomy.tag %}
+                                    cvb      <a
+                                        href="/{{ tag.url|rtrim('/') }}articles/tag{{ config.system.param_sep }}{{ tag }}">{{ tag }}</a>
+                                {% endfor %}
+						      </span> {% endif %} {% if page.taxonomy.genre %}
+                                <span class="tags">
+							{% for genre in page.taxonomy.genre %}
+                                <a href="/{{ genre.url|rtrim('/') }}music/genre{{ config.system.param_sep }}{{ genre }}">{{ genre }}</a>
+                            {% endfor %}
+					        </span> {% endif %} {% if page.taxonomy.industry %}
+                                <span class="tags">
+            {% for industry in page.taxonomy.industry %}
+                <a href="/{{ industry.url|rtrim('/') }}design/industry{{ config.system.param_sep }}{{ industry }}">{{ industry }}</a>
+            {% endfor %}
+            </span> {% endif %}
+                        </div>
+                        <hr/>
+                    </div>
+
+
+                    <div class="mFullimage blank-section">
+
+                        <div class="page-width">
+
+                            <img src="iceland/iceland-route.jpg">
+
+                            <p class="caption">My 2000+ km driving route, not exactly spoilt for options in Iceland.</p>
+
+                            <p class="intro narrow">
+                                I have always wanted to go to Iceland. But I've only wanted to go in the same sort of way that 'I have always wanted to go to' the Shetland Islands and lots of other less obvious 'holiday' places. Had I really wanted to go that much I'm pretty sure I wouldn't have taken 48 years to get on a plane to Keflavik.</p>
+
+
+                            <p class="narrow"><a class="button button-small" target="_blank"
+                                        href="/demo/iceland/index.html#"><strong>Mini 360 tour</strong></a>
+                            </p>
+                            <p class="narrow">
+                                The truth is that Iceland is one of those places that doesn't grab you for a summer get-away (it has the word 'ice' in it after all) and it doesn't appeal in the winter (we usually have enough ice of our own).</p>
+
+
+                            <img class="narrow" src="iceland/DSC_0164.jpg">
+                            <p class="caption">The 'Caddywagon' - with double bed, a fridge, chairs and table, lots of storage and a 'cooker'. Which I broke. </p>
+
+                        </div>
+                    </div>
+
+
+                    <div class="mFullimageFixed" style="background-image:url(iceland/DSC_0046.jpg);">
+                        <div class="page-width">
+
+                            <div class="overlay">
+                                <div class="overlay-inner">
+                                    <p>A wrong turn took us through Rejkavik's warehouse district, which was fortunate as I chanced upon some warehouse murals I'd wanted to see.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="blank-section">
+                        <div class="page-width">
+                            <div class="stickyBigTitle">Reyjkavik</div>
+
+                            <p class="narrow">Upon arrival we had an unfortunate wait for someone with a sign to appear in Keflavík arrivals hall. I had started to consider just how easy it would be to create a fake camper hire website for overly trusting tourists. Fortunately, Iceland being one of the least criminal nations in the world this was not the case and I suspect a disorganised youth had been made responsible for morning airport runs. He had probably just got up late.</p>
+
+                            <p class="narrow">Keflavík isn't too far from Rejkavik, so were soon in its midst. It's not very large and one of its main landmarks, Hallgrímskirkja, is clearly visible whislt driving in.</p>
+
+                            <img src="iceland/DSC_0060.jpg" class="img-half-right"> <img src="iceland/DSC_0033.jpg" class="img-half-left">
+                            <p class="caption">[Left] Hallgrímskirkja, the rocketey cathedral. [Right] Reykjavik concert hall interior.</p>
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="mFullimageFixed" style="background-image:url(iceland/DSC_0080.jpg);">
+                        <div class="page-width">
+                            <div class="overlay">
+                                <div class="overlay-inner">
+                                    <p>Reykjavik's colourful houses. It pays to brighten up such a harsh environment as best you can.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blank-section">
+                        <div class="page-width">
+
+                            <p class="narrow">And so we left Reykjavik and ventured into Þingvellir national park along empty roads and under heavy skies and with a general surprise at the lack of humans.</p>
+                            <img src="iceland/DSC_0081.jpg" class="img-full"> <img src="iceland/DSC_0097.jpg" class="img-half-right"> <img
+                                    src="iceland/DSC_0088.jpg" class="img-half-left">
+                            <p class="caption">[Left] The Rift walkway in Þingvellir national park. The first of many things used in Game of Thrones. [Right] One of many Þingvellir smaller waterfalls.
+                        </div>
+                    </div>
+
+
+                    <div class="mFullimageFixed" style="background-image:url(iceland/DSC_0114.jpg);">
+                        <div class="page-width">
+                            <div class="overlay black right ">
+                                <div class="overlay-inner">
+                                    <p>Gulfoss waterfall, about 10pm. No rest for the sun at this time of year, but with most of the natural attractions open 24/7 a great time to escape any crowds. (But you need a few people to understand the scale).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="blank-section">
+                        <div class="page-width">
+                            <div class="stickyBigTitle">Þingvellir National Park</div>
+
+
+                            <p class="narrow">Þingvellir national park is an active geothermal area, so hot springs and gisers are abound. This one builds to a hot watery fountain every five minutes or so</p>
+                            <img src="iceland/DSC_0142.jpg" class="img-pagewidth"> <img src="iceland/DSC_0472.jpg" class="img-half-right">
+                            <img src="iceland/DSC_0163.jpg" class="img-half-left">
+
+
+                            <p class="caption">Driving into the North West. The first of a couple of vistas where after driving over a ridge it took a while to understand what I was looking at. Here it was an enormous flat plain adjoining the sea. Enough flat space to see both ends of a rainbow.</p>
+
+                            <p class="narrow">The '1' is the main paved ring road, and most of the few interior roads need a 4X4 so can't be driven in the VW Caddy camper I hired. On leaving Þingvellir my only routing dilemma was whether to start clockwise or anti-clockwise. I decided on clockwise as good weather seemed to be moving around in that direction, which turned out to be a good decision.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="mFullimageFixed" style="background-image:url(iceland/DSC_0473.jpg); background-position: center bottom;">
+                        <div class="page-width">
+                            <div class="overlay black right ">
+                                <div class="overlay-inner">
+                                    <p>Glacial valley, Þjóðvegur with dramatic cloud shadows.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mFullimageFixed" style="background-image:url(iceland/DSC_0478.jpg); background-position: center bottom;">
+                        <div class="page-width">
+                            <div class="overlay">
+                                <div class="overlay-inner">
+                                    <p>Some beautiful roads in every respect up through this part of Iceland.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mFullimageFixed" style="background-image:url(iceland/DSC_0487.jpg); background-position: center bottom;">
+                        <div class="page-width">
+                            <div class="overlay right">
+                                <div class="overlay-inner">
+                                    <p>Huge plains amplify the enormous skies. Distant mountains loom... and odd things that looks like very steeply cliffed islands lurk on the horizon.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="blank-section">
+                        <div class="page-width">
+                            <div class="stickyBigTitle">The North</div>
+                            <img src="iceland/DSC_0493.jpg" class="img-pagewidth margbottom">
+                            <p class="caption">Camping for the night at the 'Camp site across the river' in Varmahlíð. It finaly decided to be really sunny at 11pm.</p>
+                            <hr/>
+                            <img src="iceland/DSC_0497.jpg" class="img-half-right"> <img src="iceland/DSC_0509.jpg" class="img-half-left">
+                            <p class="caption">Left] Cheap instant camp coffee time. [Right] Icelandic Horse farm</p>
+                        </div>
+                    </div>
+
+
+                    <div class="mFullimageFixed" style="background-image:url(iceland/DSC_0533.jpg); background-position: center bottom;">
+                        <div class="page-width">
+                            <div class="overlay right">
+                                <div class="overlay-inner">
+                                    <p>Another wide, and mostly empty glacial valley.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="two-columns-nogap">
+                        <img src="iceland/DSC_0522.jpg"> <img src="iceland/DSC_0527.jpg">
+                    </div>
+
+                    <div class="mFullimageFixed" style="background-image:url(iceland/DSC_0557.jpg); background-position: center bottom;">
+                        <div class="page-width">
+                            <div class="overlay left">
+                                <div class="overlay-inner">
+                                    <p>Goðafoss waterfall in the Bárðardalur district.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="blank-section dark">
+
+                        <p class="narrow"
+                                style="margin:0 auto !important; padding-top: 1.5em !important; padding-bottom: 1.5em !important;">Within a couple of days we were up in the north heading north east towards the geothermal region of Hverir.</p>
+                        <img src="iceland/DSC_0543.jpg" class="img-pagewidth margbottom" style="margin-top: 0 !important;">
+                        <p class="caption">Housing and farms in the north choose a toy-like shade of blue to contrast with the landscape. Beautiful landscapes, but teenagers still stare at phones.</p>
+
+                        <img src="iceland/DSC_0584.jpg" class="img-half-right"> <img src="iceland/DSC_0540.jpg" class="img-half-left">
+                        <p class="caption"></p>
+
+                    </div>
+
+                    <div class="blank-section">
+                        <div class="page-width">
+                            <div class="stickyBigTitle">Hverir and Myvatn</div>
+
+                            <img src="iceland/DSC_0629.jpg" class="img-pagewidth margbottom">
+                            <p class="caption"></p>
+
+                            <img src="iceland/DSC_0681.jpg" class="img-half-right"> <img src="iceland/DSC_0683.jpg" class="img-half-left">
+                            <p class="caption">Volcanic silhouettes and hot spring lava caves (featured in Game of Thrones of course...)</p>
+                        </div>
+                    </div>
+
+
+                    <div class="mFullimageFixed" style="background-image:url(iceland/DSC_0631.jpg); background-position: center bottom;">
+                        <div class="page-width">
+                            <div class="overlay right">
+                                <div class="overlay-inner">
+                                    <p>Hverfjell. A 2500 year old <a href="https://en.wikipedia.org/wiki/Tephra"
+                                                target="_blank">tephra</a> crater. 1000m across it's caldera and a 420 metres high. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="blank-section">
+                        <div class="page-width">
+                            <img src="iceland/DSC_0643.jpg" class="img-pagewidth margbottom">
+                            <p class="caption">Not the Blue Lagoon, instead <a href="https://www.myvatnnaturebaths.is/en"
+                                        target="blank">Myvatn Nature Baths</a>, a quieter and cheaper alternative.</p>
+
+                            <img src="iceland/DSC_0672.jpg" class="img-half-right"> <img src="iceland/DSC_0660.jpg" class="img-half-left">
+                            <p class="caption">Hot mud pools of Namafjall. A delicious honk of sulphur.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="mFullimageFixed" style="background-image:url(iceland/DSC_0695.jpg); background-position: center bottom;">
+                        <div class="page-width">
+                            <div class="overlay black">
+                                <div class="overlay-inner">
+                                    <p>Then suddenly... we're on Mars.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blank-section dark">
+                        <div class="page-width">
+                            <p class="stickyBigTitle">Vatnajökull National Park</p>
+
+                            <p>Mars, but with waterfalls. After a 28km drive down a rutted, gravel road which took ages, and was ludicrously dusty we eventually reached the jewel of the north, Detifoss waterall and the beautiful Selfoss.</p>
+
+                            <img src="iceland/DSC_0699.jpg" class="img-pagewidth margbottom">
+                            <p class="caption">Dettifoss. No safety rails here, and one of the reasons Ridley Scott filmed the start of Prometheus here, as there are no restrictions to standing right on the edge.</p>
+
+                            <!--
+                            <div class="grav-youtube" style="width: 100%; height: 640px; margin-bottom: 0em; padding-bottom: 2em; border: none;" >
+                            <iframe src="https://www.youtube.com/embed/FH9VoDZ9pAw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            </div>
+                            -->
+
+                            <iframe width="100%" height="800px"
+                                    style="width: 100%; height: 640px; margin-bottom: 0em; padding-bottom: 2em; border: none;"
+                                    frameborder="0" allow="vr,gyroscope,accelerometer,fullscreen" scrolling="no" allowfullscreen="true"
+                                    style="max-width: 100%;"
+                                    src="https://kuula.co/share/7PvpM?fs=1&vr=0&thumbs=1&chromeless=0&logo=0"></iframe>
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="mFullimageFixed" style="background-image:url(iceland/DSC_0710.jpg); background-position: center bottom;">
+                        <div class="page-width">
+                            <div class="overlay right black">
+                                <div class="overlay-inner">
+                                    <p>Selfoss, a 10 minutes walk up river from Detifoss. Simply stunning.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="blank-section">
+                        <div class="page-width">
+
+                            <img src="iceland/DSC_0748.jpg" class="img-pagewidth margbottom">
+                            <p class="caption">Curious rounded mountains in the East of Vatnajökull National Park </p>
+
+                        </div>
+                    </div>
+
+                    <div class="mFullimageFixed" style="background-image:url(iceland/DSC_0764.jpg);">
+                        <div class="page-width">
+                            <div class="overlay massive">
+                                <div class="overlay-inner">
+                                    <p>Lupins Lupins Everywhere...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="blank-section">
+                        <div class="page-width" style="margin-top: 2em;">
+
+
+                            <img src="iceland/DSC_0773.jpg" class="img-half-right"> <img src="iceland/DSC_0768.jpg" class="img-half-left">
+                            <p class="caption">Camping near Hofell with icelandic sheep keeping watch.</p>
+
+                            <img src="iceland/DSC_0771.jpg" class="img-pagewidth margbottom">
+                            <p class="caption">Looking serene, but just over those peaks is Katla, the most dangerous of icelandic volcano/glacier combinations.</p>
+
+                        </div>
+                    </div>
+
+                    <div class="mFullimageFixed" style="background-image:url(iceland/DSC_0817.jpg);"></div>
+
+                    <div class="two-columns-nogap">
+
+                        <img src="iceland/DSC_0788.jpg"> <img src="iceland/DSC_0794.jpg">
+                    </div>
+                    <p class="caption">Jökulsárlón Glacier Lagoon. The huge glacier, Vatnajökull has a meltwater lagoon into which large pieces of glacier break off and drift eventually out to sea. </p>
+
+                    <img src="iceland/DSC_0859.jpg" class="img-pagewidth margbottom">
+
+
+                    <div class="blank-section">
+                        <div class="page-width" style="margin-top: 2em;">
+
+
+                            <img src="iceland/DSC_0883.jpg" class="img-half-right"> <img src="iceland/DSC_0881.jpg" class="img-half-left">
+                            <p class="caption">[Left] A very high waterfall, and people living in a region that would be devastated by glacial floods if Katla blows. [Right] The vast Eldhraun lava fields in the south were created in one of the greatest eruptions in recorded history 1783 to 1784 - and is known as the Skaftareldar (The skafta River Fires). The moss loves it.</p>
+
+                            <img src="iceland/DSC_0890.jpg" class="img-pagewidth margbottom">
+                            <p class="caption">Vik beach, or 'black sand beach' as it is imaginatively known. A bit of an ominous evening light. Stacks loom just offshore.</p>
+
+
+                            <img src="iceland/DSC_0892.jpg" class="img-pagewidth margbottom">
+                            <p class="caption">Caves and bassalt volcanic rock formations.</p>
+
+                            <img src="iceland/DSC_0916.jpg" class="img-half-right"> <img src="iceland/DSC_0889.jpg" class="img-half-left">
+                            <p class="caption">The basalt rock formations at Vik beach and Seljalandsfoss.</p>
+
+                        </div>
+                    </div>
+
+                    <div class="mFullimageFixed" style="background-image:url(iceland/DSC_0906.jpg);">
+                        <div class="page-width">
+                            <div class="overlay black">
+                                <div class="overlay-inner">
+                                    <p>Skógafoss waterfall. We managed to camp for the night right next to it.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="mFullimageFixed" style="background-image:url(iceland/DSC_0926.jpg); background-position: center bottom;">
+                        <div class="page-width">
+                            <div class="overlay right">
+                                <div class="overlay-inner">
+                                    <p>We walked to Mýrdalsjökull, 'The Black Glacier', the icecap covering active volcano Katla which has a caldera 10 km across. Slightly worrisome.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="blank-section">
+                        <div class="page-width" style="margin-top: 2em;">
+                            <img src="iceland/DSC_0928.jpg" class="img-half-right"> <img src="iceland/DSC_0924.jpg" class="img-half-left">
+                            <p class="caption">[Left] The looming gorge draining down into the Mýrdalsjökull glacial lake.
+                                <br/>[Right] A 2 mile walk out to the wreck of a plane. </p>
+                            <img src="iceland/DSC_0945b.jpg" class="img-pagewidth margbottom">
+                            <p class="caption">In 1973 a United States Navy DC plane ran out of fuel and crashed on the huge black beach at Sólheimasandur, on the south coast of Iceland.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="mFullimageFixed" style="background-image:url(iceland/DSC_0972.jpg); background-position: center top;">
+                        <div class="page-width">
+                            <div class="overlay right white">
+                                <div class="overlay-inner">
+                                    <p>Finally, a decent coffee.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="mFullimageFixed" style="background-image:url(iceland/DSC_0959.jpg); background-position: center top;">
+                        <div class="page-width">
+                            <div class="overlay left black">
+                                <div class="overlay-inner">
+                                    <p>Bjarnarey island from the ferry out to Heimaey. I wonder who lives here. Turns out there's a lot of speculation on the internet for here and the next-door island of Elliðaey. Maybe one of them really is Björks retreat.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blank-section">
+                        <div class="page-width">
+                            <p class="stickyBigTitle">Vestmannaeyjar Islands</p>
+
+                            <img src="iceland/DSC_0961.jpg" class="img-pagewidth "> <img src="iceland/DSC_0954.jpg" class="img-half-right">
+                            <img src="iceland/DSC_0968.jpg" class="img-half-left">
+                            <p class="caption">[Top] Cliff birds.
+                                <br/>[Left] The mural painter has been to Heimaey too it seems. [Right] More Icelandic ponies. </p>
+
+                            <img src="iceland/DSC_0979.jpg" class="img-full">
+                            <p class="caption" style="padding-top:0 !important; margin-top:0 !important;">The colourful town on Heimaey</p>
+                        </div>
+                    </div>
+
+
+                    <div class="mFullimageFixed" style="background-image:url(iceland/DSC_0987.jpg); background-position: center top;">
+                        <div class="page-width">
+                            <div class="overlay left white">
+                                <div class="overlay-inner">
+                                    <p class="caption">Lovely coloured pummice and tephra.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="two-columns-nogap">
+
+                        <img src="iceland/DSC_1015.jpg"> <img src="iceland/DSC_1013.jpg">
+                    </div>
+
+
+                    <div class="blank-section">
+                        <div class="page-width">
+                            <p class="narrow">Heimaey is basically a massive volcano with a few vents. People live there. Sometimes they die. Only one person died during the last eruption of Eldfell in 1973. Worryingly, the town at it's foot is now much bigger.</p>
+                            <img src="iceland/DSC_0989.jpg">
+                            <p class="caption">Climbing Eldfell. We decided to take the path less travelled - i.e. straight up the side. The town sits right below. Pompeii and Naples it isn't, but it has potential to go badly at some point in the future.</p>
+
+                            <img src="iceland/DSC_0997.jpg" class="img-half-right"> <img src="iceland/DSC_1009.jpg" class="img-half-left">
+                            <p class="caption">[Left] A very peaceful Helgafell. [Right] More Icelandic ponies </p>
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="mFullimageFixed" style="background-image:url(iceland/DSC_0994.jpg); background-position: center bottom;">
+                        <div class="page-width">
+                            <div class="overlay white">
+                                <div class="overlay-inner">
+                                    <p>View from the top of Eldfell looking over Helgafell and the rest of the Vestmannaeyjar, including Surtsey. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="two-columns-nogap">
+                        <img src="iceland/DSC_1037.jpg"> <img src="iceland/DSC_1030.jpg">
+                    </div>
+                    <div class="page-width"><p
+                                class="caption">[Left] The Pompei of the North, as it's known. These crosses mark where houses and buildings once stood, before the lava swamped them.
+                            <br/>[Right] Randomly drying fish bits (for the tourists I presume?).</p></div>
+
+
+                    <img src="iceland/DSC_1023.jpg" class="img-pagewidth margbottom">
+                    <p class="caption">A bird. But it's not a puffin. Just call me an ornithologist.</p>
+
+                    <div class="two-columns-nogap">
+                        <img src="iceland/DSC_1067.jpg"> <img src="iceland/DSC_1078.jpg">
+                    </div>
+
+                    <div class="mFullimageFixed" style="background-image:url(iceland/DSC_1122.jpg); background-position: center bottom;">
+                        <div class="page-width">
+                            <div class="overlay black right">
+                                <div class="overlay-inner">
+                                    <p>Back inland, this time it is The Blue Lagoon.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blank-section">
+                        <div class="page-width">
+                            <p class="narrow">Having existed in a small van for eight days, the Blue Lagoon was a welcome treat to soak away the squalor of the miles.</p>
+
+                            <img src="iceland/DSC_1073.jpg" class="img-half-right"> <img src="iceland/DSC_1044.jpg" class="img-half-left">
+                            <p class="caption">[Left] Traditional stone sculpture. [Right] We attempted to climb a near vertical mountain by way of slippery ladders. After already climbing two volcanoes that day we gave up, it was a bit risky and we were a bit knackered.</p>
+
+                            <img src="iceland/DSC_1097.jpg" class="full-width">
+                            <p class="caption">If or when I ever return, I plan to do it in something a little more substantial so I can get into the centre of Iceland.</p>
+
+                            <img src="iceland/DSC_1129.jpg" class="img-half-right"> <img src="iceland/DSC_1126.jpg" class="img-half-left">
+                            <p class="caption">[Left] Some traditional turf roofed huts. [Right] The Viking Museum at Kef as we await to travel home, circuit complete.</p>
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="mFullimageFixed" style="background-image:url(iceland/DSC_0746.jpg); background-position: center bottom;">
+                        <div class="page-width">
+                            <div class="overlay">
+                                <div class="overlay-inner">
+                                    <p>Epic. Vast. Unpredictable. I hope I return.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    {% if page.header.link %}
+                        <p style="margin:2em 0;">
+                            <iframe width="100%" height="166" frameborder="0" src="{{ page.header.link }}"></iframe>
+                        </p>
+                    {% endif %}
+
+                    <div class="page-width">
+                        <p class="prev-next">
+                            {% if not page.isFirst %}
+                                <a class="button button-next" href="{{ page.nextSibling.url }}">Next Post &raquo;</a>
+                                <a class="button button-prev" href="{{ page.prevSibling.url }}">&laquo; Previous Post</a>
+                            {% endif %} {% if not page.isLast %}
+                            {% endif %}
+                        </p>
+                    </div>
+
+
+                </article>
+            </div>
+        </div>
+        </div>
+    {% endblock %}
+
+{% endembed %}
+
+

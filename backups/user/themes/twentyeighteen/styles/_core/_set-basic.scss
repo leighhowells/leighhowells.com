@@ -1,0 +1,9 @@
+/*
+  Base styles for:browsers that can't understand media queries -and/or aren't [gt IE 8]
+*/
+
+body {
+  background: #fff;
+  max-width: 50em;
+  margin: 1em auto;
+}

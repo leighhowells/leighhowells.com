@@ -1,0 +1,208 @@
+body { background: #ff0000;	} 
+
+object { height: 100%; width:100%; }
+
+
+#fadeMessage {
+	display: none;
+	position: fixed;
+	bottom: 0px;
+	text-align: center;
+	width: 100%;
+	z-index: 5000;
+	color: #BC7844;
+	font-weight: bold;
+	background: #D6E59B;
+	padding: 30px;
+}
+
+
+/*DEFAULT*/
+
+@media only screen and (max-width: 10000px) {
+	body { background: #000000;	}
+	.snowflake.massive, .snowflake.large, .snowflake.medium, #snowflake2, #snowflake3, #Happy_Christmas, #snowflake5, #snowflake1_1_, #background { display: none; }
+}
+
+
+/*STEP 2*/
+
+@media only screen and (max-width: 1200px) {
+	
+}
+
+/*STEP 2*/
+
+@media only screen and (max-width: 1150px) {
+}
+
+
+/*STEP 3*/
+
+@media only screen and (max-width: 1100px) {
+
+}
+
+/*STEP 4*/
+
+@media only screen and (max-width: 1050px) {
+	#snowflake3 { display: block; }		
+}
+
+/*STEP 5*/
+
+@media only screen and (max-width: 1000px) {
+	#background { display: block; opacity: 0.25; }
+	.snowflake.large { display: block; }	
+	#snowflake2 { display: block; }
+}	
+
+/*STEP 6*/
+
+@media only screen and (max-width: 950px) {
+	#background { display: block; opacity: 0.5;  }
+}
+
+/*STEP 7*/
+
+@media only screen and (max-width: 900px) {
+	#background { display: block; opacity: 0.75; }	
+	 .snowflake.medium, #snowflake1_1_ { display: block; } 
+}
+
+/*STEP 8*/
+
+@media only screen and (max-width: 850px) {
+	#background { display: block; opacity: 1; }	
+	.snowflake.massive { display: block; }	
+	 #Happy_Christmas { display: block; } 
+}
+
+/*STEP 9*/
+
+@media only screen and (max-width: 800px) {
+	#snowflake5 { display: block; }	
+}
+
+/*STEP 10*/
+
+@media only screen and (max-width: 750px) {
+				
+}
+
+/*STEP 11*/
+
+@media only screen and (max-width: 700px) {
+
+	
+			
+		}
+
+@media only screen and (max-width: 620px) {	
+		}
+@media only screen and (max-width: 680px) {	
+	
+}
+@media only screen and (max-width: 670px) {	
+	
+}
+@media only screen and (max-width: 660px) {	
+		}
+@media only screen and (max-width: 650px) {	
+		
+}
+@media only screen and (max-width: 640px) {	
+				
+}
+
+
+
+/*STEP 12*/
+
+@media only screen and (max-width: 490px) {
+
+}
+
+
+
+/*Snowing stlyes*/
+
+
+.snowflake {
+			position: absolute;
+			text-align: center;
+			z-index: 9999;
+			top: -100px;
+			width: 1em;
+			height: 1em;
+			color: white;
+			font-size: 16px;
+			-webkit-animation-iteration-count: infinite, 20;
+			-webkit-animation-direction: normal, normal;
+			-webkit-animation-timing-function: linear, ease-in;
+		}
+
+		.snowflake span {
+			position: absolute;
+			display: block;
+			width: 1em;
+			height: 1em;
+			/* We use the following properties to adjust the clockwiseSpin or counterclockwiseSpin
+			   animations on each snowflake.
+			   The createASnowflake function determines whether a flake has the 
+			   clockwiseSpin or counterclockwiseSpin animation.
+			*/
+			-webkit-animation-iteration-count: infinite;
+			-webkit-animation-direction: alternate;
+			-webkit-animation-timing-function: ease-in-out;
+			-webkit-transform-origin: 60% -100%;
+
+		}
+
+		.snowflake.tiny {
+			font-size: 0.3em;
+		}
+
+		.snowflake.small {
+			font-size: 1em;
+		}
+
+		.snowflake.medium {
+			font-size: 1.8em;
+		}
+
+		.snowflake.large {
+			font-size: 3em;
+		}
+
+		.snowflake.massive {
+			font-size: 5em;
+		}
+
+		/* Hides a snowflake towards the very end of the animation */
+		@-webkit-keyframes fade {
+			/* Show a snowflake while into or below 85 percent of the animation and hide it, otherwise */
+			0%   { opacity: .2; }
+			85%  { opacity: .4; }
+			100% { opacity: 0; }
+		}
+
+		/* Makes a snowflake fall from -50px to 650px pixels in the y-axis */
+		@-webkit-keyframes drop {
+			0%   { -webkit-transform: translate(0px, -50px); }
+			100% { -webkit-transform: translate(0px, 650px); }
+		}
+
+		/* Rotates a snowflake from -50 to 50 degrees in 2D space */
+		@-webkit-keyframes clockwiseSpin {
+			0%   { -webkit-transform: rotate(-50deg); }
+			100% { -webkit-transform: rotate(50deg); }
+		}
+
+
+		/* Rotates it from 50 to -50 degrees in 2D space */
+		@-webkit-keyframes counterclockwiseSpin  {
+			0%   { -webkit-transform: rotate(50deg); }
+			100% { -webkit-transform: rotate(-50deg); }
+		}
+

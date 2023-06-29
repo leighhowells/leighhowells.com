@@ -1,0 +1,12 @@
+{% set image = page.media.images|first %}
+<div class="mFullimage" >
+  <img src="{{ image.forceResize(2200,1000).url }}" alt="{{ image.filename|trim('.jpg', 'right') }}">
+  {%  if page.header.caption =='' %}
+  <p class="caption">{{ image.filename|trim('.jpg', 'right') }}</p>
+  {%  endif %}
+  <div class="overlay {{ page.header.position }} {{ page.header.colour }}"
+    {{ content }}
+  </div>
+</div>
+
+{% set justanexample = page.media.images|first.grayscale().contrast(0).brightness(-15).colorize(-35,81,122) %}

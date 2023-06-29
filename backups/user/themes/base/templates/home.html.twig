@@ -1,0 +1,60 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+
+  <div id="page-wrapper" class="page-width">
+    <div id="page">
+      <div class="grid-flexbox">
+
+        <div class="article">
+          <article class="article home">
+            {% for p in page.find('/articles/').children.order('date','desc').slice(0,1) %}
+              {% if p.header.published != 'false' %}
+              <a class="recent" href="/articles">Articles</a>
+              <h2><a href="{{ p.url }}">{{ p.title }}</a></h2>
+
+                <time>{{ p.date|date("M jS, Y") }}</time>
+
+              {{ p.summary }}
+              <a href="{{ p.url }}">
+                <div class="more"></div>
+              </a>
+              {% endif %}
+            {% endfor %}
+          </article>
+        </div>
+
+        <div class="article">
+          <article class="article home">
+            {% for p in page.find('/design/').children %}
+              {% if p.header.featured == 'true' %}
+                <a class="recent" href="/design">Designs</a>
+                <h2><a href="{{ p.url }}">{{ p.title }}</a></h2>
+                <a href="{{ p.url }}"><img src="{{ p.url }}/thumb.jpg"></a>
+                  <p style="margin-top:1em;">{{ p.header.intro }}</p>
+              {% endif %}
+            {% endfor %}
+          </article>
+        </div>
+
+        <div class="article">
+          <article class="article home">
+            {% for p in page.find('/music/').children.order('date','desc').slice(0,1) %}
+              {% if p.header.published != 'false' %}
+              <a class="recent" href="/music">Tunes</a>
+              <h2><a href="{{ p.url }}">{{ p.title }}</a></h2>
+         
+              <p>
+                <iframe width="100%" height="166" frameborder="0" src="{{ p.header.link }}"></iframe>
+              </p>
+                  <p style="margin-top:1em;">{{ p.header.intro }}</p>
+              {% endif %}
+            {% endfor %}
+          </article>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

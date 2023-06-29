@@ -1,0 +1,20 @@
+/* 
+=============================================================================
+
+	basicPrint.css
+	v1.0
+	2010/04/19
+
+	Headscape
+	Written by Chris Sanderson (chris.sanderson@headscape.co.uk)
+
+	This stylesheet combined with basic.css to provide styling for printed pages. 
+
+=============================================================================
+*/
+
+#search, #navigationContainer, #pageDescription, #accessibility {display: none;}
+body {font: 12pt Georgia, "Times New Roman", Times, serif;}
+body, #container {text-align: left; width: auto; border: 0; margin: 0 5%; padding: 0; float: none !important;}
+h1, h2, h3, h4, h5, h6 {page-break-after: avoid;} 
+p, blockquote, img {page-break-inside: avoid;}

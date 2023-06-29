@@ -1,0 +1,55 @@
+.banner-text, .banner-title {
+  position: absolute;
+  bottom: 0;
+  color: rgba(190, 190, 190, 0.9);
+  margin-left: -4px;
+
+  h1 {
+    font-size: 4.5em;
+    color: white;
+    letter-spacing: -0.02em;
+    font-weight: 700;
+    margin-bottom: 0.2em;
+  }
+  p {
+    padding: 10px 0 20% 0;
+  }
+}
+
+.banner-title {
+  position: relative;
+  margin-bottom: 5em;
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+body.home .banner-text p {
+  margin-bottom: 6em;
+}
+
+body.blog header, body.design header, body.music header, body.articles header, body.about header {
+  min-height: 70vh;
+}
+
+body.blog.superwide header {
+  min-height: 100vh;
+}
+
+body.blog.superwide img.img-pagewidth {
+  max-width: none !important;
+  @media(max-width: 1500px){
+    width: 100% !important;
+    margin: auto;
+  }
+}
+
+
+.single-post .image-darkener {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.4);
+  z-index: -1;
+}

@@ -1,0 +1,18 @@
+.tags {
+  display: inline-block;
+  margin: 0 0 1em 0;
+
+  a {
+    display: inline-block;
+    background: rgba($base,0.1);
+    border: 0;
+    border-radius: 1em;
+    font-size: 0.7em;
+    padding: 0em 0.6em;
+    text-decoration: none;
+    &:hover {
+      background: red;
+      color: white;
+    }
+  }
+}

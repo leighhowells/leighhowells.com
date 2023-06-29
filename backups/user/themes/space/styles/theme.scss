@@ -1,0 +1,42 @@
+
+$navcolr: #ff8900;
+
+
+#header {
+  background: black url('../img/header.jpg') center top no-repeat;
+}
+
+.about #header {
+  background: black url('../img/bridge.gif') center top no-repeat;
+}
+
+.archive #header {
+  background: black url('../img/archive-footer.jpg') center top no-repeat;
+}
+
+footer {
+  background: #000 url('../img/footer.jpg') bottom center fixed no-repeat;
+}
+
+footer .container {
+  background: lighten(#040b18,1%) !important;
+}
+
+nav.main {
+  li:hover {
+    background: #222 !important;
+    color: #888;
+  }
+  li:nth-child(1) a {
+    background-color: $navcolr !important;
+  }
+  li:nth-child(2) a {
+    background-color: darken($navcolr,3%) !important;
+  }
+  li:nth-child(3) a {
+    background-color: darken($navcolr,6%) !important;
+  }
+  li:nth-child(4) a {
+    background-color: darken($navcolr,9%) !important;
+  }
+}

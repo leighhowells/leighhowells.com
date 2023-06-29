@@ -1,0 +1,6 @@
+{% embed 'partials/base.html.twig' %}
+  {% block content %}
+    {% include 'partials/item.html.twig' with {'blog':page.parent, 'truncate':false} %}
+  {% endblock %}
+
+{% endembed %}

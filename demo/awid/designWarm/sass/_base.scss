@@ -1,0 +1,48 @@
+// =====================================
+// BASE RULES
+// =====================================
+
+
+body {
+  line-height: 1.5;
+  color: $darkGrey*1.3;
+  background: $backgroundBeige/1.1;
+  margin:0;padding:0;
+}
+
+small {
+  display: block;
+  text-align: left;
+  font-size: 70%;
+}
+
+button {
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
+    padding: $pad;
+    border: none;
+    margin-top: $pad;
+    background: darken(#B0A49F,18%);
+    /*background: darken($lightGrey,40%);*/
+    color: #ddd;
+    @include transition(background-color 0.35s 0s, color 0.35s);
+}
+
+button:hover {
+  background: $highlightC;
+  color: white;
+}
+
+
+input[type=search] { 
+  position: relative;
+  margin-right: 2px;
+  top:-13px;
+  color: red;  
+  cursor: pointer;
+  padding: 10px;  
+  font-size: 1em;
+  @include border-radius($radius*2,$radius*2);       
+  border: 1px solid rgba(255,255,255,0.6);   
+}

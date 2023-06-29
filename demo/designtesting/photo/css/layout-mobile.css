@@ -1,0 +1,231 @@
+/*  Interxion Mobile Stylesheet
+ *  Created by Dan Sheerman for Headscape
+ *  dan@headscape.co.uk
+ *
+ *  This stylesheet served to all devices,
+ *  should be used for (basic) layout styles for mobile viewport
+*/
+
+body {
+	margin: 0px auto;
+	padding: 0.5em 1em 0px;
+	border-top: 5px solid #BFE32A;
+	-webkit-text-size-adjust: none;
+	}
+
+#header {
+	margin-bottom: 2em;
+	}
+	
+	#branding {
+		max-width: 33%;
+		margin: 0px 0px 0.25em;
+		}
+	
+	#mobileNav {
+		display: none;
+		}
+	
+	#mobileNav ul {
+		border: 1px solid #ddd;
+		padding: 2px;
+		margin-bottom: 0.5em;
+		}
+
+	#mobileNav ul:after {
+		content: '';
+		display: table;
+		clear: both;
+		}
+	
+		#mobileNav li {
+			border-left: 1px solid #ddd;
+			float: left;
+			padding: 0px 4.5%;
+			width: 50%;
+			text-align: center;
+			}
+			
+			#mobileNav li.active {
+				background: #eee;
+				}
+			
+			#mobileNav li:first-child {
+				border-left: 0px;
+				}
+			
+			#mobileNav .selectCountry, #mobileNav .searchSite {
+				text-indent: -9999em;
+				width: 20%;
+				padding: 0px;
+				}
+			
+			#mobileNav .selectCountry a {
+				background-position: center center;
+				}
+			
+			#mobileNav .searchSite a {
+				background: url('../img/i-mag.png') no-repeat center center;
+				}
+
+	#pNav, #toolsNav, #countryNav, #siteSearch {
+		}
+
+	#toolsNav, #countryNav, #siteSearch {
+		margin-bottom: 2em;
+		}
+
+	#pNav li, #toolsNav li, #countryNav li {
+		border-bottom: 1px solid #ddd;
+		}			
+	
+	#pNav a, #toolsNav a, #mobileNav a, #countryNav a {
+		display: block;
+		color: #fff;
+		padding: 0.5em;
+		font-size: 0.95em;
+		text-transform: uppercase;
+		font-family:'HelveticaNeueW01-65Medi';
+	}
+		
+	#pNav a {
+		color: #333;
+	}
+	
+	#countryNav a {
+		padding-left: 35px;
+		}
+		
+		#countryNav .selectCountry {
+			display: none;
+			}
+		
+		#countryNav .austria, .selectCountry .austria {
+			background: url('../img/flag-austria.gif') no-repeat 5px center;
+			}
+		
+		#countryNav .belgium, .selectCountry .belgium {
+			background: url('../img/flag-belgium.gif') no-repeat 5px center;
+			}
+		
+		#countryNav .denmark, .selectCountry .denmark {
+			background: url('../img/flag-denmark.gif') no-repeat 5px center;
+			}
+		
+		#countryNav .england, .selectCountry .england {
+			background: url('../img/flag-england.gif') no-repeat 5px center;
+			}
+		
+		#countryNav .france, .selectCountry .france {
+			background: url('../img/flag-france.gif') no-repeat 5px center;
+			}
+		
+		#countryNav .germany, .selectCountry .germany {
+			background: url('../img/flag-germany.gif') no-repeat 5px center;
+			}
+		
+		#countryNav .ireland, .selectCountry .ireland {
+			background: url('../img/flag-ireland.gif') no-repeat 5px center;
+			}
+		
+		#countryNav .netherlands, .selectCountry .netherlands {
+			background: url('../img/flag-netherlands.gif') no-repeat 5px center;
+			}
+		
+		#countryNav .spain, .selectCountry .spain {
+			background: url('../img/flag-spain.gif') no-repeat 5px center;
+			}
+		
+		#countryNav .switzerland, .selectCountry .switzerland {
+			background: url('../img/flag-switzerland.gif') no-repeat 5px center;
+			}
+		
+		#countryNav .sweden, .selectCountry .sweden {
+			background: url('../img/flag-sweden.gif') no-repeat 5px center;
+			}
+	
+	
+	#siteSearch {
+		padding-bottom: 0.5em;
+		border-bottom: 1px solid #ddd;
+		}
+		
+		#siteSearch input[type=text] {
+			width: 70%;
+			}
+			
+
+
+
+
+
+#footer {
+	margin: 5em -1.1em 0px;
+	padding: 1em 1em 0px;
+	background: #444;
+	color: #ccc;
+	font-size: 0.9em;
+	}
+	
+	#footer section {
+		padding-bottom: 2em;
+		}
+	
+	#footer h3 {
+		color: #fff;
+		}
+	
+	#footer li {
+		border-top: 1px solid #4d4d4d;
+		padding: 0.55em 0px 0.45em 15px;
+		background: url('../img/gt-grey-tiny.png') no-repeat left center;
+		}
+	
+	#footer a {
+		color: #ccc;
+		}
+	
+	#footer .tel, #footer .tel a {
+		color: #C1E315;
+		font-size: 1.5em;
+		font-family:'HelveticaNeueW01-65Medi';
+		}
+		
+		#footer .tel a {
+			border-bottom: 1px dotted #C1E315;
+			}
+	
+	#footer address {
+		margin: 1em 0px 1.5em;
+		}
+	
+	#footer .btn {
+		font-family:'HelveticaNeueW01-65Medi';
+		text-transform: lowercase;
+		background: #0058AD;
+		padding: 0.5em 0.75em;
+		border-radius: 5px;
+		}
+		
+		#footer .btn b {
+			color: #C1E315;
+			}
+	
+	#copyright {
+		clear: both;
+		font-size: 0.8em;
+		background: #111;
+		color: #444;
+		margin: 0px -1.25em;
+		padding: 0.75em 1.2em;
+		}
+		
+		#copyright p {
+			margin: 0px;
+			}
+
+
+
+
+
+

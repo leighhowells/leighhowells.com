@@ -1,0 +1,571 @@
+/*!
+ * Yamm!3
+ * Yet another megamenu for Bootstrap
+ * http://geedmo.github.com/yamm3
+ *
+ * Demo styles
+ */
+
+/* layout */
+body {
+  padding-bottom: 40px;
+  color: #666;
+  background-color: #fff;
+}
+pre { margin: 0; padding: 10px 20px !important;}
+
+footer {
+  margin-top: 200px;
+}
+.container { width: auto; max-width: 1170px; }
+.jumbotron {
+  margin: 60px 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+  .jumbotron.intro {
+    margin-top: 80px;
+  }
+
+  .jumbotron .navbar {
+    font-size: 17px;
+    line-height: 1.6;
+  }
+
+.jumbotron h1 { 
+    font-size: 2.8em; 
+}
+
+@media (min-width: 320px) {
+  .header h1 {
+     font-size: 1.6em; 
+  }
+}
+
+/* menu styes */
+.list-unstyled,
+.list-unstyled ul { min-width: 120px }
+
+@media ( min-width: 767px ) {
+  .panel-group { width: 400px; }
+  .thumbnail { margin: 0; }
+}
+
+/* Grid demo styles */
+.grid-demo {
+  padding: 10px 30px;
+}
+
+  .grid-demo [class*="col-"] {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 1em;
+    text-align: center;
+    line-height: 2;
+    background-color: #e5e1ea;
+    border: 1px solid #d1d1d1;
+  }
+
+
+.navbar-default, .navbar-fixed-top {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+
+.nav>li>a {
+    font-size: 1.2em;
+    padding: 15px 60px 15px 0px;
+}
+
+@media ( max-width: 900px ) {
+  .nav>li>a {
+    font-size: 1em;
+    padding: 15px 60px 15px 0px;
+    }
+}
+
+.page-header {
+    margin: 20px 0 20px;
+}
+
+.carousel-caption { 
+    background: rgba(0,0,0,0.8); 
+}
+
+.vid {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+ 
+.vid iframe,
+.vid object,
+.vid embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.main-text
+{
+    position: absolute;
+    top: 50px;
+    width: 96.66666666666666%;
+    color: #FFF;
+}
+
+.btn-min-block
+{
+    min-width: 170px;
+    line-height: 26px;
+}
+
+.btn-clear
+{
+    color: #FFF;
+    background-color: transparent;
+    border-color: #FFF;
+    margin-right: 15px;
+}
+
+.btn-clear:hover
+{
+    color: #000;
+    background-color: #FFF;
+}
+
+
+.homeHero {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    padding-top: 0px; 
+    padding-bottom: 20px;
+    background: #555;
+    color: #eee;
+}
+
+.homeHero h1 { 
+    position: relative;
+    margin-top: -22px;
+    padding: 15px 18px 0px 20px;
+    margin-left: -20px;
+    margin-bottom: 0;
+    font-size: 2.2em;
+}
+.homeHero h3 a,.homeHero h4 a,.homeHero h5 a{
+    color: #aaa;
+}
+
+h1, h2, h3, h4 {
+font-family: Perpetua, Baskerville, "Big Caslon", "Palatino Linotype", Palatino, "URW Palladio L", "Nimbus Roman No9 L", serif;
+   
+}
+
+.homeHero p {
+    display: block; 
+    padding: 0 0 0px 0;
+}
+
+.homeHero img {
+    width: 100%;
+    margin-top: -120px;
+}
+
+/* **** *Navbar*****************/
+
+.navbar-default  {
+    background: #333;
+}
+
+.navbar-default .navbar-nav > li > a {
+    padding: 25px 30px 25px 25px;
+    background: #333;
+    color: #ddd;
+    border-left: 1px solid #444;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: #fff;
+}
+
+.navbar-default .navbar-nav > .active > a {
+    background: #666;
+    color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+color: #333;
+background-color: white;
+}
+
+
+/*******************************/
+
+
+.topsearch {
+    display: none;
+    padding-top: 10px;
+}
+
+@media ( min-width: 1100px ) {
+  .topsearch { display: block; }
+}
+
+.caret, .caret:hover {
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 14px solid #fff;
+    margin-left: 6px;
+    margin-top: -2px;
+}
+
+.form-control {
+    font-size: 14px;
+    line-height: 1.428571429;
+    background-color: #454545;
+    border: 1px solid #222;
+}
+
+.btn-default {
+    color: #fff;
+    background-color: #111;
+    border-color: #000;
+    border-radius: 2px;
+}
+
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .btn-default.dropdown-toggle {
+    color: #fff;
+    background-color: #111;
+    border-color: #000;
+}
+
+.navbar-collapse {
+    padding-left: 0;
+}
+
+
+.header img {
+    padding-bottom: 30px;
+    padding-left: 20px;
+    width: 130px;
+}
+
+.header { 
+    background: white !important;
+    position: relative;
+    height: 120px;
+}
+
+.header h1 { margin-top: 15px; margin-bottom: 0px;  }
+.header h2 { margin-top: 0px;  color: #aaa; }
+
+.peoplelist ul {
+    padding-top: 10px; 
+    list-style: none;
+    width: 100%;
+}
+.peoplelist ul li { 
+    padding: 3px 0;
+    border-top: 1px solid #efefef;
+    width: 80px
+}
+
+.img-thumbnail, .thumbnail {
+    padding: 0;
+    background-color: #e8e8e8;
+    border: 0px solid #dddddd;
+    border-radius: 4px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+/*****  Footer **********************/
+
+.footer { 
+	background: #222;  
+	color: #eee;
+	padding: 10px 0 40px 0; 
+	margin: 0;
+}
+
+.footer.container {
+	padding: 0;
+	margin: 0;
+}
+
+.footer ul li, .footerLower ul li  { 
+	list-style: none; 
+	font-size: 0.8em;
+	line-height: 1.8em;
+	border-bottom: 1px dotted #333; 
+}
+
+.footer h3 a { 
+    color: #efefef;
+}
+
+.footer ul li {
+        color: #888;
+}
+
+.footerLower { margin: 0; padding: 0;}
+.footerLower ul  {   
+	margin: 0; 
+	padding: 0;
+}
+
+.footerLower ul li  {  
+	display: inline;  
+	border: 0;  
+	margin: 0; 
+	padding: 0 15px 0 0; 
+	font-size: 0.7em;
+}
+
+.footer ul{ 
+	margin: 0;  
+	padding: 0 0 20px 0;
+}
+
+.footer h3 {
+    font-family: "arial";
+    font-size: 0.8em;
+}
+
+.discoverUni {
+	margin-bottom: 0;
+	padding: 0 0 10px 0;
+	background: #666;
+}
+
+.discoverUni.container {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.discoverUni h3 {
+	padding: 10px 0 0 0;
+    margin:0;
+	color: white;
+    font-size: 1.8em;
+}
+
+.dropdown-menu {
+	background: #111;
+}
+.dropdown-menu li {
+	border-bottom: 1px dotted #444;
+}
+.dropdown-menu li a {
+	color: #ddd;
+} 
+
+.spacer {
+    width: 100%;
+    clear: all;
+    display:block;
+    margin: 40px;
+    border: none;
+    background: none;
+}
+
+.navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    background-color: #000;
+    color: #fff;
+}
+
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+    background-color: #111;
+    border-color: #333;
+}
+
+
+.dropdown-header {
+    font-size: 1em;
+    color: #555;
+    padding-top: 15px;
+    width: 300px;
+
+}
+
+a.list-group-item.active { 
+    background-color: #555;
+    border-color: #555;
+}
+
+ol.breadcrumb { 
+    margin-top: 5px;
+    margin-right: 0;
+    background: none;
+    font-size: 0.9em;
+}
+
+.schools li { 
+    background: #efefef;
+    margin: 3px;
+    padding: 5px 15px;
+}
+
+
+.list-group-item .list-group-item {
+    font-size: 0.9em;
+    padding: 6px;
+    background: #efefef;
+    border: 1px solid #fff;
+}
+
+.current, .current .list-group-item { 
+    background: #bcbcbc; 
+}
+
+
+/*************************************************  accordion menu **********************************************/
+
+
+#leftMenu { margin-bottom: 20px; margin-top: 5px; }
+
+#leftMenu .accordion-group {
+    margin-bottom: 0px;
+    border:0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    background-color: #efefef; /* layer fill content */
+}  
+
+#leftMenu .accordion-heading:hover {
+    background-color: #ddd;
+}
+
+#leftMenu .accordion-heading {
+    border: 1px solid #ddd; /* inner stroke */
+    background-color: #efefef; /* layer fill content */
+    list-style-type:none;
+    border-bottom: none;
+}  
+
+#leftMenu .accordion-heading  a {
+    display: block;
+    padding: 15px 10px;
+    color: #555; /* text color */
+    text-decoration:none;
+}
+
+#leftMenu .accordion-heading  a:hover{  
+    color:#111     
+}
+
+#leftMenu .accordion-heading .active {
+    width: 182px;
+    height: 34px;
+    border: 1px solid #ddd; /* inner stroke */
+    background-color: #353535; /* layer fill content */
+}
+
+#leftMenu .accordion-inner {
+    background: #fff;
+    padding: 5px;
+    border: 1px solid #ddd; /* inner stroke */
+}
+
+#leftMenu .accordion-inner ul {
+    list-style:none;
+    margin: 0;
+    padding: 0;
+}
+
+#leftMenu .accordion-inner ul li {
+    border-bottom: 1px solid #dedede;
+    margin:0;
+    padding: 8px 0 8px 15px;
+    font-size: 0.9em;
+}
+
+.content h1 { 
+    margin-top: 0; padding-top: 0; 
+}
+
+h1 a { 
+    color: #ccc; 
+}
+h1 a:hover {
+    color: #fff;
+    text-decoration:none;
+}
+
+.affix {
+  z-index: 999;
+  position: fixed;
+  top: 40px !important;
+  margin:0 auto; 
+  height: 60px;
+  padding-bottom: 20px;
+}
+
+
+
+@media (max-width: 900px) {
+  .peoplelist, .header h2, .breadcrumb {
+    display: none;
+  }
+}
+
+
+.jumbotron.accredit {
+    margin:50px 0 -60px 0;  
+    padding: 30px 0 60px 0;
+}
+
+.jumbotron.accredit img {
+    padding-top: 50px;
+}
+
+.jumbotron.accredit p {
+    font-size: 0.8em;
+}
+
+
+
+.btn-default {
+   background-color: #ddd;
+    color: #666;
+    border: 1px solid #ccc;
+}
+
+
+.copyright {
+    padding-top: 20px;
+    font-size: 0.8em;
+    color: #999
+}
+
+#leftMenu .accordion-heading a.upto .up { color: #fff;  font-size: 1.2em;}
+
+#leftMenu .accordion-heading a.upto {
+    padding-top: 9px;
+    padding-bottom: 9px;
+    background: #222; color: #aaa;
+    font-size: 0.8em;
+}
+
+
+.header a h1 {
+    color:  #222; 
+}
+.header a h1:hover {
+    text-decoration: none;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+    color: #ddd;   
+}
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+    color: #fff;   
+}

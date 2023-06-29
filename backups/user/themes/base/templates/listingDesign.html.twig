@@ -1,0 +1,42 @@
+{% embed 'partials/base.html.twig' %}
+  {% set collection = page.collection() %}
+  {% block content %}
+    {{ page.content }}
+
+    <!--{% if config.plugins.breadcrumbs.enabled %}
+			{% include 'partials/breadcrumbs.html.twig' %}
+		{% endif %}-->
+
+    <div class="pageContainer">
+      <div class="page-width">
+        <ul class="grid articleList">
+
+          {% for child in collection %}
+            <div class="grid grid-flush">
+              <div class="design-listing">
+                <div class="col-1/2">
+                  <div class="inner">
+                    <h2><a href="{{ child.url }}">{{ child.title }}</a></h2>
+                    <time>{{ child.header.date|date('F Y') }}</time>
+                    <p>{{ child.summary }}</p>
+                    <a href="{{ child.url }}">
+                      <div class="more"></div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-1/2">
+                  <a href="{{ child.url }}"><img src="{{ child.url }}/thumb.jpg"></a>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+
+          {% if config.plugins.pagination.enabled and collection.params.pagination %}
+            {% include 'partials/pagination.html.twig' with {'base_url':page.url, 'pagination':collection.params.pagination} %}
+          {% endif %}
+        </ul>
+      </div>
+    </div>
+
+  {% endblock %}
+{% endembed %}

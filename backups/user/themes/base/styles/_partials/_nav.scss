@@ -1,0 +1,118 @@
+nav.main {
+  max-width: $pagewidth;
+  margin: 0 auto 0 auto;
+  padding: 0;
+  display: block;
+  @media (max-width: 800px) {
+    max-width: 90% !important;
+  }
+  @media (max-width: 1680px) {
+    max-width: 75%;
+  }
+  nav {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    max-width: $pagewidth;
+    @media (max-width: 900px) {
+      max-width: $pagewidthMob;
+    }
+    @media (max-width: 1680px) {
+      max-width: 75%;
+    }
+  }
+  margin-bottom: -0.5px;
+
+  ul {
+    display: table;
+    width: 100%;
+
+    li {
+      display: table-cell;
+      width: 25%;
+    }
+
+    li a {
+      font-family: 'Droid Sans', sans-serif;
+      font-size: 1.6em;
+      font-weight: normal;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #fff;
+      text-align: center;
+      padding: 16px 0 15px 0;
+      float: left;
+      width: 100%;
+
+      &:hover {
+        background: #222 !important;
+        color: #888;
+      }
+      @media (max-width: 900px) {
+        font-size: 1.1em;
+      }
+    }
+
+    li:nth-child(1) a {
+      background-color: #da0700;
+    }
+    li:nth-child(2) a {
+      background-color: #cb0000;
+    }
+    li:nth-child(3) a {
+      background-color: #c00006;
+    }
+    li:nth-child(4) a {
+      background-color: #a30000;
+    }
+
+  }
+}
+
+ul.nav.main {
+  padding:0;
+  margin:0;
+}
+
+.articles nav.main a.navArticles, .design nav.main a.navDesign, .music nav.main a.navMusic, .blog nav.main a.navBlog {
+  color: #222;
+  background-image: linear-gradient(top, white 60px, #efefef 100%);
+  background-image: -o-linear-gradient(top, white 60px, #efefef 100%);
+  background-image: -moz-linear-gradient(top, white 60px, #efefef 100%);
+  background-image: -webkit-linear-gradient(top, white 60px, #efefef 100%);
+  background-image: -ms-linear-gradient(top, white 60px, #efefef 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.3, white), color-stop(1, #efefef));
+  &:hover {
+    color: white;
+  }
+}
+
+
+.edit-menu {
+  clear: left;
+  display: block;
+  width: 100%;
+  margin: 3em 0 1em 0;
+  padding-top: 2em;
+  text-align: left;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0px;
+
+  li {
+    display: inline-block;
+    margin: 0 1px 0 0;
+    float: left !important;
+    a {
+      background: #da0700;
+      color: white !important;
+      padding: 0.5em 1em;
+      text-decoration: none;
+      &:hover {
+        background: #444;
+      }
+    }
+  }
+}

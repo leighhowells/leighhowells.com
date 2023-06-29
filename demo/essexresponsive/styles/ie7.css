@@ -1,0 +1,31 @@
+/* 
+=============================================================================
+
+	ie7.css
+	v1.0
+	2011/06/24
+
+	Headscape
+	Written by Chris Sanderson (chris.sanderson@headscape.co.uk)
+
+	This stylesheet is offered to IE7.
+
+=============================================================================
+*/
+
+.siteSearch button {padding: 1px 0;}
+
+.menu li a { float: left;  padding-bottom: 10px; padding-top: 5px; }
+
+#wrapper_menu {display: none; }
+#wrapper_menu.norm {display: block !important; }
+
+#ctaNav { display: none; }
+#ctaNav.norm { display: block !important; }
+
+
+#pageContent #carousel .container #slides {height: auto;}
+#pageContent #carousel .container #slides > div {top: -392px;}
+
+#pageContent #carousel .container #slides > div .caption h1 { letter-spacing: -0.2em; line-height: 1em;}
+#pageContent #modules .feature h2 { letter-spacing: -0.08em; }

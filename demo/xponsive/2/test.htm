@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>  
+  <title>JavaScript SVG Animation</title>
+  <!--  <meta http-equiv="X-UA-Compatible" content="IE=Edge"/> Remove this comment only if you have issues rendering this page on an intranet site. -->
+  <style>
+    /* CSS here. */
+  </style> 
+  <script>  
+    /* CONSTANTS */
+    var initialTheta = 0; // The initial rotation angle, in degrees.
+    var thetaDelta = 0.3; // The amount to rotate the square every "delay" milliseconds, in degrees.
+    var delay = 10; // The delay between animation stills, in milliseconds. Affects animation smoothness.
+    var angularLimit = 90; // The maximum number of degrees to rotate the square.
+    
+    /* 
+      Note that it will take the square (angularLimit/thetaDelta)*delay milliseconds to rotate an angularLimit
+      number of degrees. For example, (90/0.3)*10 = 3000 ms (or 3 seconds) to rotate the square 90 degrees.
+    */
+    
+    /* GLOBALS */
+    var timer; // Contains the setInterval() object, used to stop the animation.
+    
+    function init()
+    /*
+      Assumes that this function is called after the page loads.
+    */
+    {
+      var transformObject;
+      
+      snowflake5.currentTheta = initialTheta; // The initial rotation angle to use when the animation starts.
+      timer = setInterval(doAnim, delay); // Call the doAnim() function every "delay" milliseconds until "timer" is cleared.     
+      transformObject = svgElement.createSVGTransform(); // Create a generic SVG transform object so as to gain access to its methods and properties, such as setRotate().
+      snowflake5.transform.baseVal.appendItem(transformObject); // Append the transform object to the square object, now the square object has inherited all the transform object's goodness.
+    }
+    
+    function doAnim()
+    /*
+      This function is called by setInterval() every "delay" milliseconds.
+    */
+    { 
+      var transformObject;
+      
+      if (snowflake5.currentTheta > angularLimit)
+      {
+        clearInterval(timer); // Instruct the browser to stop calling the function indicated by setInterver();
+        return;
+      }
+      
+      snowflake5.transform.baseVal.getItem(0).setRotate(mySquare.currentTheta, 0, 0); // Access the transform object (that was appended to mySquare in the init() function) and use its setRotate method to rotate the square about the point (0, 0) (which is at the center of the SVG viewport).
+      snowflake5.currentTheta += thetaDelta; // Place this line here so that the square isn't over rotated on the last call to doAnim().
+    }
+  </script>  
+</head>
+
+<body onload="init(); doAnim();"> <!-- init() sets up the animation, doAnim() actually does the animation. -->
+  <svg id="svgElement" width="800px" height="800px" viewBox="0 0 800 800"> <!-- Give the svg element a name so that we can easily access it via JavaScript. -->
+
+    <g> <!-- Create a Cartesian coordinate system (with the y-axis flipped) for the animated square. That is, place the origin at the center of the 800 x 800 SVG viewport: -->
+  
+      <!-- A 200 x 200 square with the upper left-hand corner at (-100, -100). This places the center of the square 
+      at the origin (0, 0). Give the square a name so we can easily access it via JavaScript: -->  
+                 
+            <g id="snowflake5" fill="#000000" style="opacity:0.02;">
+            	<polygon   points="539.94,105.86 493.33,78.94 399.89,132.9 307.05,79.29 260.99,105.27 260.99,159.09 
+            		354.42,213.04 354.42,320.23 399.95,347.15 446.55,320.24 446.55,212.33 539.41,158.74 	"/>
+            	<polygon   points="215.36,132.22 168.75,159.12 168.75,267.03 75.91,320.62 75.37,373.5 121.99,400.42 
+            		215.42,346.48 308.26,400.07 354.33,374.1 354.33,320.27 260.89,266.31 260.89,159.12 	"/>
+            	<polygon   points="75.58,426.13 75.58,479.93 169.01,533.89 169.01,641.1 214.55,668 261.15,641.1 
+            		261.15,533.18 354,479.6 354.53,426.72 307.92,399.8 214.48,453.76 121.64,400.15 	"/>
+            	<polygon   points="260.22,694.13 306.83,721.06 400.26,667.11 493.11,720.71 539.16,694.73 539.17,640.9 
+            		445.74,586.96 445.74,479.75 400.2,452.85 353.59,479.75 353.59,587.66 260.75,641.26 	"/>
+            	<polygon   points="584.65,668.23 631.25,641.32 631.25,533.44 724.09,479.83 724.63,426.94 678.02,400.04 
+            		584.57,453.98 491.74,400.39 445.68,426.35 445.68,480.18 539.11,534.14 539.11,641.32 	"/>
+            	<polygon   points="724.42,374.33 724.42,320.52 630.99,266.56 630.99,159.37 585.45,132.46 538.84,159.37 
+            		538.84,267.27 446,320.86 445.47,373.75 492.09,400.65 585.52,346.72 678.36,400.3 	"/>		
+            </g>
+            
+            
+      <!-- Represents the x-axis: -->
+      <line x1="-400" y1="0" x2="400" y2="0" style="stroke: black;" /> 
+    
+      <!-- Represents the y-axis (although up is negative and down is positive): -->  
+      <line x1="0" y1="-400" x2="0" y2="400" style="stroke: black;" /> 
+                
+    </g>
+  </svg>
+</body>
+
+</html>

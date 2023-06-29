@@ -1,0 +1,40 @@
+I recently wrote a post on my personal blog about 'codesign' tools as I decided I would call them.  These are the new crop of visualised coding tools, such as Reflow, Weblow, Froont as well as the upcoming Macaw.  When I wrote my post I had only a limited use of these tools, but was very optimistic about their future role in my design process.
+
+So now I've spent a good period of time trying to use these tools to design some simple layout pages, and my conclusions are now a bit more mixed.    My main problems are not only with the two distinct approaches, native and web apps, the monthly subscription pricing of some of them, but also the kind of design you could find yourself pushing yourself into if you were trying to actually use one.
+
+Let's get some practical problems out of the way first.
+
+#Speed
+It's slow to work in code, compared to a visual tool, even if you can just draw divs onto the screen.   I've practiced quite a lot and although I'm getting much faster now I have got used to the idea, I would still lack confident to demonstrate design thinking quickly using one of these tools.   
+
+It does, on the other hand, have significant advantages for experimenting and demonstrating typography accurately.  This is because of the use of an actual browser rendering engine, and because a tweak of line-height does not lead to say moving a footer up and down manually as the page lengthens and shortens.
+
+#Flexibility
+Changing your mind is painful.  Major, sweeping changes of design approach can be time consuming, moving divs and containers around can lead to unexpected results, especially as they cascade across different widths of the design and I've felt like simply starting again rather attempting to alter my approach significantly.
+
+This can of course also be a pain in Photoshop or any other design tool for that matter.   Changing your mind in Photoshop can take a lot of work, manually changing widths and calculating dimensions.  Reflow at least takes care of some of this work for us, and the fact that text content actually flows properly pushing elements down the page as in a regular web page can save a lot of wasted time moving picture elements around.
+
+#Unexpected
+In Reflow, the unexpected happens, layouts get screwed up and margins and paddings get automatically written if you move elements in the design.  Content jumps around, and it can be stressful.  It takes a lot of getting used to, but with time, and saving many versions as you work, this starts to become a little easier and results become more predictable.  .
+
+#You still need to know CSS well.
+Just because you have a visual tool for layout,  it still requires a good knowledge of CSS to make everything work the way you expect.  It takes HTML out of the equation, however, which means that all the focus is on using CSS to achieve the design.  
+
+#Could it encourage 'safe' designs.  
+This could encourage Reflow users to keep designs simple.   But is that necessarily such a bad thing?  A simplified design equals a potentially streamlined experience, with light and faster code - especially good when accessing via mobile devices.
+
+Could it encourage 'dumbed down' design.  Opting to do easy stuff as it's easy.
+Does it discourage details, looking at the design as visual language that hangs together.
+Is that a good thing?
+Or is that a bad thing?**
+
+**Conclusion**
+It's going to get better. Getting started and trying out something like Reflow is a must if you've got a Creative Cloud subscription,  if only to understand the notion of the tool and how it will fit into the future of web design.
+
+
+
+
+
+
+
+

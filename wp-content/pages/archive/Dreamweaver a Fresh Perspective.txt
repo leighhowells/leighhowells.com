@@ -1,0 +1,125 @@
+*--------------Course Details--------------*
+
+## Course Title: 
+Dreamweaver a Fresh Perspective
+
+## Course Description: 
+DW, for anyone who is just beginning to code design in HTML/CSS as well as for the seasoned developer who may think they know all there is to know about DW.  Let's get a few things straight about what this tool can do.
+
+## Instructor: 
+Leigh Howells
+
+## Difficulty: 
+Easy
+
+## Topic: 
+Web Design
+
+*--------------Course Outline--------------*
+
+# Intro (1:30 minutes)
+
+## 01 Course Aims
+
+Hello, my name is Leigh Howells and I'd like to welcome you Dreamweaver A Fresh Perspective, brought to you by Tuts Plus.
+
+The aim of this short course is to take a new look at what Dreamweaver has to offer as one of the oldest and most established Web and HTML editing packages around. Dreamweaver has been around since the web was in its infancy - the first version being released in 1997 by Macrodia -  and it's been used by generations of Web designers since then. 
+
+Unfortunately over time, despite being popular and continuing to be actively developed and maintained by its new owners - Adobe -  it's built up a bit of a stigma. It seems that it's seen as some kind of beginners web design package that automatically generates terrible code for those who don't know how to code - and generally regarded as not something designers and developers want to be associated with as 'Web Professionals'.
+
+## 02 Why Dreamweaver?
+
+What's really interesting now that Dreamweaver is part of Adobe's Creative Cloud suite - is that many designers and developers gloss over it completely without ever taking another look at it, despite the fact they are paying for it monthyl!  They then pay for third part code editors, some of which are actually a lot less capable than Dreamweaver in many areas.  I know this, because I've done it myself! Why pay for another package - just because it's seen as the tool 'all the cool kids' are using.  It doesn't make much sense.
+
+So we're going to take a look into its depths as I've been doing over the last few months. We are going to see what tools are available to help with our modern web design workflow and see how it can be useful to you in your day-to-day work.
+
+
+## 03 Misconceptions - code output /  visual editor.
+Let's get this straight right from the start. Dreamweaver doesn’t create code unless you explicity tell it to. 
+
+In most respects Dreamweaver is simply another web coding environment.  The junk code creation legend has largely come about thanks to the Design view Dreamweaver has to preview your HTML/CSS.  But Design View  can be used as sparingly as you like or not at all, it's up to you.
+
+It does have some useful shortcuts though,  form elements, sepecial characters etc.		
+
+You can use Design view as a beginner and this could be a good way to learn, but you don’t have to use it this way.		
+
+
+# 01 Features
+
+## 01 Editor
+
+### 01 Design preview (2 minutes)		
+So yes, Dreamwaver has a visual editor. This doesn’t mean you have to use it to try and 'do design'.  		
+
+It’s a great way to jump around the code quickly and even to locate code to edit.		
+## 
+I’m a visual designer first and foremost - I like to see SOMETHING rather than just code.  The editor lets me visualise my code at least a bit.		
+I often keep it visible but zoomed out as a locator device to NAVIGATE long samey looking blocks of BORING CODE.  It's just text, and it's dull.
+### 02 Code re-formatting  (1min)		
+Dreamweaver is great for auto formatting messy code.  		
+Sorts out errors etc				
+Strips out crap such as pasted in content from Word 		
+### 03 Image preview (30 seconds)		
+Hover over an image link and you get a preview of the image		
+### 04 Colour preview (30 seconds)		
+Hover over a hex value and you get a preview of the colour in place.		
+### 05 Code Hints (2 minutes)		
+Useful code auto-completion etc.		
+HTML		
+CSS		
+### 06 Matching end tags  (1 minute)		
+Really useful to see the close tag from DIVS and other tags.   		
+Lots of editors don’t do this - and it’s such a time saver to coding for me as a designer.		
+Balance braces command selects code between braces - useful.		
+### 07 Quick code toolbar  (30 seconds)		
+Some useful shortcuts		
+Such as comments		
+### 08 Convert inline style to rule (30 seconds)		
+Really neat little feature.  Quickly styling up tags in place for fast visual design.		
+Contest the inline style quickly and efficiently to a new class in the css.		
+### 09 Use of the CSS Designer  (1 minute)		
+You can visual code using the CSS Designer - rather than code		
+It’s optional - can be useful to visualise.		
+### 10 Code Navigator (1 minute)		
+Jumping to CSS Rules from Code		
+Quick demo - right click on class jump to style in css file.		
+### 11DOM navigator (30 seconds)		
+Shows where you are in the DOM - bottom line of Dreamweaver GUI		
+Click to select divs, etc.  		
+	
+## 02 Other	
+
+### 01 Site-wide link updates (2 mins)		
+One of my favourite features.  Rename a link, move a file in the site file manage - automatically ripples and changes everywhere.		
+### 02 Code reformatting		
+Removing redundant tags, css styles etc		
+Useful to quickly reformat codes with proper indenting etc, removing any unnecessary if desired.		
+### 03 Responsive viewer  (3 minutes)		
+QR code to fast access on other devices		
+Quick demonstration of how this works - without any other software being installed.  Essentially it’s just a link the page is displayed on.		
+### 04 Snippets (1 minute)		
+Ideal for adding design patterns/atoms whatever you want to call them and encourage re-use		
+Useful for building a quick to access library of repeatable objects across projects.		
+### 05 Extensions  (30 seconds!)		
+There are lots of extensions to add functionality to Dreamweaver		
+Such as Frameworks (Bootstrap etc), Grid systems, Integratation with GIT  - Gitweaver		
+### 06 Emmet (new feature) (1 minute)		
+Quick example of how powerful it is - list of links		
+### 07 FTP / sync (2 minutes)		
+Still useful for static projects if not using GIT.  		
+Sync uploads new files, removes deleted files etc.		
+### 08 Extract (new feature)  (2 minutes)		
+Very quick explanation of extracting style information and assets from a PSD.  (maybe old fashioned but good for newbies)		
+### 09 Extras:  Code checking (30 seconds)		
+Browser compatability		
+W3C checking etc etc.
+
+
+# Conclusion (1 minute)		
+## Give it a go		
+You might be paying for it already, so why not try it.	See how it could help you even if it's just another tool in the tool box
+(example, how I used to pull it out for code reformatting and site wide link updates without eveng coding in it)
+## Keep revisiting		
+big changes coming		
+integration with Brackets		
+## 

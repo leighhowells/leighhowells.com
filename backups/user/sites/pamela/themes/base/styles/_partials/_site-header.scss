@@ -1,0 +1,109 @@
+#header {
+  height: 25vh;
+  min-height: 200px;
+  margin: 0 0 0 0;
+  padding: 0;
+  position: relative;
+  background-size: 80%;
+  background: url('../img/footer.jpg') no-repeat center center;
+}
+
+
+.home #header, .about #header {
+  height: 80vh;
+  min-height: 360px;
+  background-size: cover !important;
+  background: url('../img/header2.jpg') no-repeat center center;
+}
+
+.about #header {
+  height: 50vh;
+  background-size: cover !important;
+  background: url('../img/header3.jpg') no-repeat center center;
+}
+
+.archive #header {
+  height: 40vh;
+}
+
+
+#topbar {
+  z-index: 999;
+  position: fixed;
+  background: rgba(0,0,0,0.65);
+  color: white;
+  float: left;
+  width: 100%;
+  padding: 0.3em 0 0.9em 0;
+}
+
+#topbar .container {
+  margin: 0 auto 0 auto;
+}
+
+#topbar h1 {
+  margin: 0;
+  font-size: 2.8em;
+}
+
+#topbar h1 a {
+  width: 150px;
+  text-decoration: none;
+  color: white;
+  background: black;
+  padding: 5px 20px 0 20px;
+  letter-spacing: -1px;
+  text-align: center;
+  line-height: 1.8em;
+  float: left;
+}
+
+#topbar h1 a:hover {
+  background: white;
+  color: black;
+}
+
+@media (max-width: 900px) {
+  #topbar h1 a {
+    font-size: 0.7em;
+    padding: 5px;
+  }
+}
+
+#topbar h2 {
+  color: white;
+  font-weight: 600;
+  font-size: 1.5em;
+  margin: 0;
+  padding: 0 0 0 0;
+  line-height: 1.6em;
+}
+
+#topbar h2 a {
+  color: white;
+  text-decoration: none;
+}
+
+#topbar h3 {
+  color: white;
+  font-size: 0.8em;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  line-height: 1em;
+}
+
+#topbar h3 a {
+  color: white;
+  text-decoration: underline;
+}
+
+
+.topbarRight {
+  float: right;
+  text-align: right;
+}
+
+.more-link {
+  text-decoration: underline;
+}

@@ -1,0 +1,243 @@
+
+article h2 { font-family: 'Questrial', sans-serif; font-weight: normal; font-size: 65px; letter-spacing: -2px;  margin: 25px 0; line-height: 1em; }
+
+.story { height: 1500px; padding: 0; margin: 0; width: 100%; max-width: 1920px; position: relative; margin: 0 auto; border-top: 1px solid rgba(255,255,255,0.1); border-bottom: 1px solid #000; box-shadow: 0 0 80px rgba(0,0,0,0.9); }
+
+
+#start  { background: url(../images/slide0.jpg) 50% 0 no-repeat fixed; }
+#first  { background: url(../images/slide1.jpg) 50% 0 no-repeat fixed; }
+#second { background: url(../images/slide4.jpg) 50% 0 no-repeat fixed; }
+#third  { background: url(../images/slide2.jpg) 50% 0 no-repeat fixed; }
+#fourth { background: url(../images/slide3.jpg) 50% 0 no-repeat fixed; }
+#fifth  { background: url(../images/slide_concert.jpg) 50% 0 no-repeat fixed; }
+#sixth  { background: url(../images/slide_canteen.jpg) 50% 0 no-repeat fixed; }
+#seventh { background: url(../images/slide_countryside.jpg) 50% 0 no-repeat fixed; }
+#eigth { background: url(../images/slide_guildford.jpg) 50% 0 no-repeat fixed; }
+#ninth { background: url(../images/slide_accomodation.jpg) 50% 0 no-repeat fixed; }
+#tenth { background: url(../images/slide_bedroom.jpg) 50% 0 no-repeat fixed; }
+#eleventh { background: url(../images/slide_lecture_blur.jpg) 50% 0 no-repeat fixed; }
+#eleventh2{ background: url(../images/slide_lecture.jpg) 50% 0 no-repeat fixed; }
+#theend { background: url(../images/slide_explorer.jpg) 50% 0 no-repeat fixed; }
+
+/* Introduction */
+
+
+.logo { background: url(../images/logo.gif) 100px 200px  no-repeat fixed;  padding: 600px;   }
+
+
+#first article { width: 100%; top: 200px; position: absolute; text-align: center; }
+#first article p,
+#first article a { color: #ccc; }
+#first article a { text-decoration: underline; }
+#first article a:hover { color: #fff; }
+
+h2.intro { color: #fff; width: 44%; margin-left: 10%;  }
+
+h2.title {  clear: left; font-size: 100px; color: #333;  font-weight: normal !important; float: left; margin-left: 100px; text-align: left;  margin-bottom:0; 
+ margin-top: 0px; text-shadow: 0 3px 3px rgba(0,0,0,0.1); }
+h3.title {  clear: left; font-size: 30px; color: #aaa; float: left; margin-left: 100px; text-align: left;   margin-top: 10px; padding: 0; }
+
+
+.titleT { letter-spacing: -16px; }
+
+
+
+
+/* Background Only */
+
+#second article { background: rgba(0,0,0,0.8); color: #fff; float: right; width: 445px; margin: 50px 100px 0 0; padding: 10px 20px; line-height: 1.5em; box-shadow: 0 0 25px rgba(0,0,0,0.3); }
+#second article p { margin-bottom: 25px; }
+#second article a { color: #ddd;}
+
+/* Photograph */
+
+#third { padding: 50px 0;}
+#third article {  background: rgba(0,0,0,0.8); color: #fff; padding: 10px 20px; margin: 100px 0 0 60%; text-shadow: 0 -1px 0 rgba(0,0,0,0.5); line-height: 1.5em; color: #fff; position: absolute; top: 0; box-shadow: 0 0 25px rgba(0,0,0,0.3); border: 1px solid rgba(150,150,150,0.1); }
+#third .photograph { background: url(../images/photo.png) transparent 40% 100px no-repeat fixed; min-height: 1000px; padding: 0; margin: 0; width: 100%; max-width: 1920px; position: relative; margin: 0 auto; }
+#third article p { width: 300px; margin-bottom: 25px; }
+
+
+
+
+
+/* 5th */
+
+#fourth article {  background: rgba(0,0,0,0.8); margin-left: 10%; margin-top: 50px; text-shadow: 0 -1px 0 rgba(0,0,0,0.5);  padding: 10px 20px; line-height: 1.5em; color: #fff; position: absolute; top: 0; }
+#fourth article p { width: 300px; margin: 50px 0; }
+
+
+
+#fifth article {  background: rgba(0,0,0,0.8); margin-left: 10%; margin-top: 50px; text-shadow: 0 -1px 0 rgba(0,0,0,0.5);  padding: 10px 20px; line-height: 1.5em; color: #fff; position: absolute; top: 0; }
+#fifth article p { width: 600px; margin: 50px 0; }
+
+
+
+/* 6th canteen*/
+
+#sixth article {  right:0; background: rgba(0,0,0,0.8); margin-right: 10%; margin-top: 50px; text-shadow: 0 -1px 0 rgba(0,0,0,0.5);  padding: 10px 20px; line-height: 1.5em; color: #fff; position: absolute; top: 0; }
+#sixth article p { width: 400px; margin: 50px 0; }
+
+
+
+/* 7th countryside*/
+
+#seventh article {  background: rgba(0,0,0,0.5); margin-left: 10%; margin-top: 50px; text-shadow: 0 -1px 0 rgba(0,0,0,0.5);  padding: 10px 20px; line-height: 1.5em; color: #fff; position: absolute; top: 0; }
+#seventh article p { width: 400px; margin: 50px 0; }
+
+
+
+
+/* 8th*/
+
+#eigth article {  background: rgba(0,0,0,0.9); right: 10%; margin-top: 50px; text-shadow: 0 -1px 0 rgba(0,0,0,0.5);  padding: 10px 20px; line-height: 1.5em; color: #fff; position: absolute; top: 0; }
+#eigth article p { width: 400px; margin: 50px 0; }
+
+
+
+/* 9th*/
+
+#ninth article {  background: rgba(0,0,0,0.8); margin-left: 10%; margin-top: 50px; text-shadow: 0 -1px 0 rgba(0,0,0,0.5);  padding: 10px 20px; line-height: 1.5em; color: #fff; position: absolute; top: 0; }
+#ninth article p { width: 400px; margin: 50px 0; }
+
+
+
+
+/* 10th*/
+
+#tenth article {  background: rgba(0,0,0,0.8); margin-left: 10%; margin-top: 50px; text-shadow: 0 -1px 0 rgba(0,0,0,0.5);  padding: 10px 20px; line-height: 1.5em; color: #fff; position: absolute; top: 0; }
+#tenth article p { width: 400px; margin: 50px 0; }
+
+
+
+
+
+/* 11th*/
+
+#eleventh article {  background: rgba(0,0,0,0.8); margin-left: 10%; margin-top: 50px; text-shadow: 0 -1px 0 rgba(0,0,0,0.5);  padding: 10px 20px; line-height: 1.5em; color: #fff; position: absolute; top: 0; }
+#eleventh article p { width: 400px; margin: 50px 0; }
+
+#sixth video {  position: absolute; right: 100px; top: 200px; box-shadow: 0 0 25px rgba(0,0,0,0.7); z-index: 1;}
+
+
+
+
+
+
+#theend .byebye { background: url(../images/theend.png) 40% 100px no-repeat fixed; height: 1000px; padding: 0; margin: 0; width: 100%; max-width: 1920px; position: relative; margin: 0 auto; }
+#theend h2, #theend p { padding: 0 0 0 100px; }
+#theend h2 { padding-top: 900px; }
+
+
+
+/* Buttons in interface */
+
+
+#scrolldown { 
+	z-index: 50;
+	position: fixed;
+	text-align: center;
+	margin-left: 40%;
+	bottom: 0;
+	padding: 10px 0 30px 0;
+	color: rgba(255, 255, 255, 0.8);
+	background: url(../images/arrowdown.png) 0 0 no-repeat;
+	font-size: 14px;
+	font-weight: bold;
+	width: 300px; 
+}
+
+#placeNav { 
+	display:none;
+}
+
+#placeNav h3 { font-size: 15px; padding: 5px 0 0 0; }
+
+#placeNav a, #personNav a { cursor: pointer; float: left;  margin: 6px 10px 0 0;  color: #fff; }
+#placeNav a:hover, #personNav a:hover{ color: #ccc; }
+
+#placeNavButton a, #personNavButton a { cursor: pointer;  }
+
+#placeNav a img { border: 1px solid #ccc; }
+
+#placeNavButton { 
+	top: 50px;
+	position: fixed;
+	z-index: 100;
+	display: block;
+	width: 830px;
+	right: -750px;
+}
+
+#placeNav {
+	background: #90278E;
+	display: block;
+	height: 114px;
+	position: absolute;
+	width: 800px;
+	top: 0;
+	left: 79px;
+	padding: 10px;
+	color: #fff;
+	font-size: 11px;
+	line-height: 12px;
+}
+
+
+#personNavButton { 
+	top: 200px;
+	position: fixed;
+	z-index: 100;
+	display: block;
+	width: 800px;
+	right: -720px;
+}
+
+
+#personNav {
+	background: #0090B8;
+	display: block;
+	height: 113px;
+	position: absolute;
+	width: 700px;
+	top: 1px;
+	left: 79px;
+	padding: 10px;
+	color: #fff;
+}
+
+#personNav a { 
+	width: 145px; 
+	float: left; 
+	padding: 8px; 
+	background: rgba(0,0,0,0.1);
+	height: 60px;
+	font-weight: bold; 
+}
+
+
+
+@media only screen and (max-width:768px) {
+	
+	#start  { background: url(../images/slide0.jpg) 50% 0 no-repeat scroll;  height: 450px !Important; }
+	#first  { background: url(../images/slide1.jpg) 50% 0 no-repeat scroll; }
+	#second { background: url(../images/slide4.jpg) 50% 0 no-repeat scroll; }
+	#third  { background: url(../images/slide2.jpg) 50% 0 no-repeat scroll; }
+	#fourth { background: url(../images/slide3.jpg) 50% 0 no-repeat scroll; }
+	#fifth  { background: url(../images/slide_concert.jpg) 50% 0 no-repeat scroll; }
+	#sixth  { background: url(../images/slide_canteen.jpg) 50% 0 no-repeat scroll; }
+	#seventh { background: url(../images/slide_countryside.jpg) 50% 0 no-repeat scroll; }
+	#eigth { background: url(../images/slide_guildford.jpg) 50% 0 no-repeat scroll; }
+	#ninth { background: url(../images/slide_accomodation.jpg) 50% 0 no-repeat scroll; }
+	#tenth { background: url(../images/slide_bedroom.jpg) 50% 0 no-repeat scroll; }
+	#eleventh { background: url(../images/slide_lecture_blur.jpg) 50% 0 no-repeat scroll; }
+	#eleventh2{ display: none !important; }
+	#theend { background: url(../images/slide_explorer.jpg) 50% 0 no-repeat scroll; }
+	
+	
+	#first, #second, #third, #fourth, #fifth, #sixth, #seventh,#eigth, #ninth, #tenth, #eleventh, #twelth  { height: 550px !important; }
+	
+	h2 { font-size: 40px !Important; }
+	h3 { font-size: 30px !important; }
+}
+
+

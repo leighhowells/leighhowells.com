@@ -1,0 +1,34 @@
+/*  Interxion Desktop Stylesheet
+ *  Created by Dan Sheerman for Headscape
+ *  dan@headscape.co.uk
+ *
+ *  This stylesheet served to viewports wide enough to be considered 'desktop'
+ *  should be used for complex layout styles.
+*/
+
+body {
+	-webkit-text-size-adjust: auto;
+	background: url('../img/bg.png') repeat-x fixed;
+	}
+		
+#pNav li {
+	font-size: 1em;
+	}
+
+#footer section {
+	margin: 0px 2%;
+	float: left;
+	width: 22%;
+	}
+
+#countryNav {
+	padding-right: 25px;
+	}
+	
+#main { margin-top: -1em; margin-bottom: 0; }
+
+li#contactForm { 
+	background: url(../img/contactbutton.png) 10px 8px no-repeat; 
+	padding-left:5px; 
+	padding-right: 30px;
+}

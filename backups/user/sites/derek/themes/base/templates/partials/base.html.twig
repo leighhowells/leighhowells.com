@@ -1,0 +1,101 @@
+{% set theme_config = attribute(config.themes, config.system.pages.theme) %}
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#">
+<head>
+  <meta http-equiv="Cache-control" content="public">
+  <meta http-equiv="Expires" content="7"/>
+
+  <meta charset="utf-8"/>
+  <meta property="og:title" name="og:title" content="Derek Wyndham Howells"/>
+  <meta property="og:type" name="og:type" content="website"/>
+  <meta property="og:url" name="og:url" content="http://www.leighhowells.com/"/>
+  <meta property="og:image" name="og:image" content="http://www.leighhowells.com/user/themes/jungle2/img/me.jpg"/>
+  <meta property="og:title" name="og:description" content="Leigh Howells is a designer and creative type, currently near Cambridge, UK"/>
+
+  <meta name="generator" content="Grav"/>
+  <meta name="country" content="gb"/>
+  <meta name="author" content="Derek Wyndham Howells"/>
+  <meta name="keywords" content="{% if page.header.title and (page.url != base_url or 'error' == page.template) %}{{ page.header.title }} | {% endif %}web designer, web design, web, graphic, design, music, audio, composition, UX, user experience"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="{% if page.summary %}{{ page.summary|striptags|truncate(200) }}|{% endif %}Leigh Howells is a designer and creative type, currently near Cambridge, UK"/>
+
+  <meta name="twitter:card" property="twitter:card" content="{{ page.summary|striptags|truncate(100) }}"/>
+  <meta name="twitter:site" property="twitter:site" content="{{ page.url }}"/>
+  <meta name="twitter:title" property="twitter:title" content="{{ page.header.title }}"/>
+  <meta name="twitter:description" property="twitter:description" content="{{ page.summary|striptags|truncate(200) }}"/>
+  <meta name="twitter:image" property="twitter:image" content="{{ theme_url }}/img/me.jpg"/>
+
+  <title>{% if page.header.title and (page.url != base_url or 'error' == page.template) %}{{ page.header.title }} | {% endif %}Derek Wyndham Howells</title>
+
+  <link rel="icon" type="image" href="/favicon.ico"/>
+
+  <!--critical css-->
+  <style>
+    #topbar h1 a,#topbar h2 a{text-decoration:none;color:#fff}body{display:none}#header{min-height:200px;margin:0;padding:0;position:relative}.about #header{background:center top no-repeat #000}.about #header,.home #header{height:42vh;min-height:360px}#topbar{z-index:999;position:fixed;background:rgba(20,0,0,.5);color:#fff;float:left;width:100%;padding:0}#topbar .container{margin:0 auto}#topbar h1{margin:0;font-size:2.8em}#topbar h1 a{width:150px;background:#000;padding:5px 20px 0;letter-spacing:-1px;text-align:center;line-height:1.8em;float:left}#topbar h1 a:hover{background:#fff;color:#000}#topbar h2{color:#fff;font-weight:600;font-size:.9em;margin:0;padding:22.5px 0 0;line-height:1.6em}#topbar h3{color:#fff;font-size:.8em;margin:0;padding:0;font-weight:400;line-height:1em}#topbar h3 a{color:#fff;text-decoration:underline}.topbarRight{float:right;text-align:right}footer{background:url('{{ theme_url }}/img/footer2.jpg') center bottom no-repeat fixed #000}
+  </style>
+
+</head>
+
+<body class="{{ page.header.body_classes }} {% for tag in page.taxonomy.category %}{{ tag }}{% endfor %}">
+<header role="banner" id="header">
+  <div id="topbar">
+
+    <div class="page-width">
+
+      <div class="grid">
+        <div class="col-1/2">
+          <h2><a href="/derek/">Derek Wyndham Howells</a></h2>
+          <h3>CREATIVE WORK 1934-2009</h3>
+        </div>
+
+        <div class="col-1/2">
+          <nav role="navigation" class="main"">
+            <nav class="main">
+              <ul class="nav main">
+                <li class="menu-item">
+                  <a href="/derek/about">About</a>
+                </li>
+                <li class="menu-item">
+                  <a href="/derek/toys">Toys</a>
+                </li>
+                <li class="menu-item">
+                  <a href="/derek/sculpture">Sculpture</a>
+                </li>
+                <li class="menu-item">
+                  <a href="/derek/relief">Relief</a>
+                </li>
+                <li class="menu-item">
+                  <a href="/derek/painting">Painting</a>
+                </li>
+              </ul>
+            </nav>
+          </nav>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+</header>
+
+{% block body %}
+  {% block content %} {% endblock %}
+{% endblock %}
+
+<footer>
+  <div class="page-width">
+    <p class="copyright"><a href="/">Leigh Howells</a> 2018. Hand made using <a href="https://getgrav.org/" target="_blank">Grav</a> CMS.</p>
+  </div>
+</footer>
+</body>
+
+<!--[if gte IE 8]><!-->
+<link rel="stylesheet" href="/user/sites/derek/themes/base/styles/grid.css" media="screen">
+<link rel="stylesheet" href="/user/sites/derek/themes/base/styles/basic.css" media="screen">
+<link rel="stylesheet" href="/user/sites/derek/themes/base/styles/deluxe.css" media="screen">
+<link rel="stylesheet" href="/user/sites/derek/themes/base/styles/print.css" media="print">
+<!--<![endif]-->
+<script type="text/javascript" src="/user/sites/derek/themes/base/plugins/simplesearch/js/simplesearch.js"></script>
+
+</html>

@@ -1,0 +1,94 @@
+<section class="home-banner">
+
+	<div class="constrain">  
+		
+		<div class="introBlock">
+			<h1 class="homeIntro">{{ _site_name }}</h1>
+			<p class="intro">Recently diagnosed with a lung condition and looking for information? Are you a carer looking for support? Or perhaps you want information on treatment and diagnosis? Recently diagnosed with a lung condition and looking for information? Are you a carer looking for support&nbsp;&nbsp;<a href="/overview" style="color: white; font-weight: bold; text-transform: none;">More ></a></p>
+		</div>
+	
+	 </div>
+	 
+</section>
+
+<div class="constrain panel" style="border-top: none;">
+	<h2 class="homeGraph">What we die from in the UK</h2>
+	<h4 style="margin-top: 0;">All ages (>28 days) 2012</h4>
+	
+	<div class="chart">
+		<img src="{{ _site_root }}assets/homechart--left.jpg" class="chart-left"><img src="{{ _site_root }}assets/homechart--right.jpg" class="chart-right">
+	</div>
+</div>
+
+	<div class="constrain" style="clear: left;">
+			
+		<div class="disease-list">
+			
+			
+			<h1><a href="/diseases" style="text-decoration: none;">Lung diseases</a></h1>
+			<ul style="margin:0;padding:20px 0 0 0;">
+							
+			{{ entries:listing folder="diseases" sort_by="title" }}
+					
+			<li>
+			<div class="ctabullets"><img src="{{ _site_root }}assets/bullet1.svg"></div>
+			<a style="text-decoration: none; color: white;" href="{{ url }}">{{ title }}</a>
+			
+			</li>
+			
+			{{ /entries:listing }}a
+			
+			</ul>
+			
+		</div>
+		
+		<div style="clear: left; margin-bottom: 20px;"></div>
+			
+		
+		<h1><a href="/stories" style="text-decoration: none;">Stories</a></h1>
+		
+		
+		{{ entries:listing folder="stories" limit="7" sort_dir="asc" }}
+		
+			<section style="margin-bottom: 10px;" class="modListNews {{ if template=='light' }}staticPanel-light{{ endif }} {{ if template=='dark' }}staticPanel-dark{{ endif}}">
+							
+					{{ if template }}
+					<div class="onethird"><img src="{{ thumb }}"></div>
+					{{ else }}
+					  <a href="{{ url }}" class="onethird"><img src="{{ thumb }}"></a>
+					{{ endif }}
+					
+					<div class="twothirds last">
+						{{ if template }}
+						<h4>{{ title }}</h4>
+						{{ else }}
+						<h4><a style="text-decoration: none;" href="{{ url }}">{{ title }}</a></h4>
+						{{ endif }}
+						
+					    {{ if tags_list }}
+					      <span style="font-size: 0.8em;">DISEASES:</span> <span class="article__tax-light" style="font-size:0.9em;">{{ tags_url_list }}</span>&nbsp;&nbsp;
+					    {{ endif }}
+					    {{ if categories_list }}
+					      <span style="font-size: 0.8em;">THEMES:</span> <span class="article__tax-light" style="font-size:0.9em;">{{ categories_url_list }}</span>
+					    {{ endif }}
+					    <br/><br/>
+					      
+						{{ if template }}
+							{{ content }}
+						{{ else }}
+							<p>{{ excerpt }}</p>
+							<a href="{{ url }}">Read more</a> &raquo;
+						{{ endif }}
+					</div>				
+			
+			</section>
+			
+		{{ /entries:listing }}
+			
+			
+		<div style="clear: left; margin-bottom: 20px;"></div>	
+		
+</div>
+ 
+
+

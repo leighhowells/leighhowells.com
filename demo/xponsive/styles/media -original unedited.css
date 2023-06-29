@@ -1,0 +1,181 @@
+/* @override http://www5.essex.ac.uk/style/media.css */
+
+/* #Base 960 Grid 
+================================================== */
+
+	.wrapper { position: relative; width: 940px; margin: 0 auto; padding: 0; }
+	
+	#wrapper_menu.norm, 
+	#ctaNav.norm  {display: block; }
+	
+	
+/* #Tablet (Portrait)
+================================================== */	
+
+	/* Note: Design for a width of 768px */
+
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+		.wrapper { width: 768px; }
+		.wrapper .column, 
+		.wrapper .columns	 { margin-left: 10px; margin-right: 10px;  }
+		.menu  li  { padding-left: 0%;  padding-right: 0%;  font-size: 1.2em;}
+		.menu  li a { padding: 12px 9px 12px 9px; }
+		#pageContent #carousel .nav ul li .caption h1 { font-size: 1.3em; }
+	}
+	
+	
+/*	#Narrow screen devices (portrait)
+================================================== */
+	
+	/* Note: Design for a width of 320px */
+	
+	@media only screen and (max-width: 767px) {
+		.wrapper { width: 300px; }
+		#pageContent #carousel > ul > li { width: 292px; }
+	}
+	
+	
+/* #Narrow screen devices 
+================================================== */
+
+	/* Note: Design for a width of 480px */
+	
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+		.wrapper { width: 420px; }
+		#pageContent #carousel > ul > li { width: 412px; }
+	}
+
+	/* iPad Portrait/Browser */
+	@media only screen and (min-width: 768px) and (max-width: 991px) {}
+	
+	
+	/* Mobile/Browser */
+	@media only screen and (max-width: 767px) { 
+	
+	.has_js #wrapper_menu.norm { display: block; }
+	.has_js #ctaNav.norm { display: block; }
+		
+	#pageContent #carousel .container ul  { display: none; }  
+	.pageWidth, #pageHeader, #header .pageWidth { width:  98%;}
+		
+	#branding {  height: 80px; width: 98%; }
+	#branding #sitename { background: url(../../images/logonarrow.gif) no-repeat top left; width: 100%; margin-top: 10px; }
+
+	#pageHeader .siteTools { width: 40%; float: left; margin-top:0em;}
+	#pageHeader .siteTools ul li a {float: left; display: block; margin: 5px 10px 0 5px; padding: 0px; color: #78756B; text-transform: uppercase; font-size: 1.1em;}
+	
+	#pageHeader .siteSearch { width: 55%; float: right; position: relative; text-align: right;  padding: 0; margin: 0 4px 5px 0; }
+	#pageHeader .siteSearch input { margin: 0; width: 55%;}
+	
+	.menu { background: #fff;  width: auto; padding: 0;}
+	.menu  ul { display: block;  }
+	.menu  li a { background: #F9F4E8; font-size: 0.9em; margin:0 0 0.5% 0;  width: 92%; display: inline-block; padding: 3px; border: 1px solid #fff; }
+	.menu  li  {    margin:0; text-align: left; display: inline; width: 33.3%; }
+	
+	#pageContent, #pageContent .landing { float: left; width: 97%; margin-top: -10px; }
+	#pageContent #modules #twoCol.feature  { width: 100%; }
+	#pageContent #carousel .nav {display: none;}
+	#pageContent #carousel > ul > li .caption h1 { font-size: 220%; }
+	#pageContent #carousel > ul > li .caption p { font-size: 120%; }
+	#pageContent #carousel > ul > li .caption.bottom,
+	#pageContent #carousel > ul > li .caption.top { width: 94%; top: 0; bottom: auto; }
+	#pageContent #carousel > ul > li .image img { width: 100%; height: auto; }
+	#pageContent #carousel #pause { display: none; }
+
+	#pageContent .header .titleBox { position: relative; display: block; padding: 5px 0 10px 0; bottom: 0;}
+	#pageContent .header .titleBox h3 { padding: 20px 0 0 15px;}
+		
+	#pageContent .article  { width: 97% }
+	
+	#pageContent table { width: 97%; }
+	#pageContent .header .titleBox h2 { font-size: 2em; }
+	#pageContent .header .titleBox h3 { font-size: 1.3em; }
+	
+	#ctaNav { width: 99%; }
+	#ctaNav ul li {  margin: 4px 4px 0 0; width:100% ; }
+	#ctaNav ul li a {  clear: left; font-size: 120%; padding: 3px 3px 3px 15px; background: url(../../images/bullet_white.gif) no-repeat 5px 6px;  }
+	#ctaNav ul li.active a,
+	#ctaNav ul li a:hover { background: url(../../images/bullet_white.gif) no-repeat 5px 6px  !important;}
+	#ctaNav ul li .toolbox .container { width: 80%;  }
+	
+	#pageContent #modules .feature, #pageContent .landing #modules .feature {  width: 97%; } 
+	#pageContent #modules .feature img, #pageContent .landing #modules .feature img { width: 100%;  }
+	#pageContent #modules #chooseEssex.feature {  width: 97%; } 
+	#pageContent .header .feature .strap { display: none; }
+	
+	#pageFooter { width: 98%; float: left;  }
+	#pageFooter .container .col {width: 94%; margin-bottom: 20px;  }
+	#pageFooter .container { background: #F2ECDE; }
+	
+	#pageContent #sNav  { width: 98%; margin-bottom:0; }
+	#pageContent #sNav li  { width: 98%; display: inline; float: left; }
+	#pageContent #sNav li ul li { width: 100%;  }
+	#pageContent #sNav h3 { width: 98%; }
+	
+	#pageContent .header { width: 100%; clear: all !important;   }
+	#pageContent .header  .feature { width: 100%; border-left: none; }
+	#pageContent .header  .feature iframe, #pageContent .header  .feature img { max-width: 100%;  }
+	
+	#pageContent .article .tabbed-box { width: 95% !important; }
+	#pageContent .article .tabbed-box .sidepanel { float: none; padding:0; width: 100%; margin: 0; background: none; border: none; }
+	#pageContent .article .tabbed-box ul { width: 100%; }
+	#pageContent .article .applybutton { float: left !important; margin-bottom:20px; }
+	#pageContent .article .tabbed-box .tabs li { width: 100%; display: block;  }
+	#pageContent .article .tabbed-box .tabs li a  {  width: auto!important; display: block; margin:0; padding: 9px !important; 
+	height: auto !important; }
+	
+	#pageContent .header .titleBox h2 a { color: #FFFFFF; display: block;  font-size: 1.5em;  width: 90%;}	
+	#pageContent .header .titleBox { clear: both; padding-top: 10px; width: 100%; min-height: 100px; }
+	
+	#pageContent .article .isHelpful { display: none; }
+	#pageContent #sNav .feature.testimonial img { width: 100%;}
+	
+	#myTextarea {width: 220px;}
+	
+	#pageContent #sNav li.currentSub ul li.current {width: 249px;}
+	
+}
+	
+	
+	/* Mobile Landscape/Browser */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+		
+	.menu ul li {  width: 6%;  }
+	
+	#pageFooter .container .col {float: left; width: 47.5%; }
+	#pageFooter .container .col#socialMedia {clear: both; }
+	
+	#pageContent .header .titleBox h2 { font-size: 2.7em; }
+	#pageContent .header .titleBox h3 { font-size: 1.3em; }
+		
+	#pageContent #modules .feature, #pageContent .landing #modules .feature { width: 47.5%; } 
+	
+	#pageContent #modules #chooseEssex.feature {  width: 97%; } 
+	#pageContent #modules #chooseEssex.feature ol li {  width: 47.5%; }
+	#pageContent #modules #chooseEssex.feature ol li.two  { width: 49.5%; }
+	
+	#pageContent #sNav { width: 98%; }
+	#pageContent #sNav li  { width: 98%; display: inline; float: left; }
+	#pageContent #sNav li.currentSub ul li.current {width: 361px;}
+	#pageContent #sNav li ul li { width: 100%;  }
+	#pageContent #sNav h3 { width: 98%; }
+	
+	}
+	
+	/* Anything smaller than standard 960 */
+	@media only screen and (max-width: 959px) {
+
+		#wrapper_menu .dropdown_fullwidth, #ctaNav ul > li .toolbox .container { display: none; }
+	
+	}
+	
+	/* iPad Portrait Only */
+	@media only screen and (min-width: 768px) and (max-width: 991px) and (max-device-width: 1000px) {}
+	
+	/* Mobile Only */
+	@media only screen and (max-width: 767px) and (max-device-width: 1000px) {}
+	
+	/* Mobile Landscape Only */
+	@media only screen and (min-width: 480px) and (max-width: 767px) and (max-device-width: 1000px) {}
+	
+

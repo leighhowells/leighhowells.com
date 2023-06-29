@@ -1,0 +1,30 @@
+.list-panel {
+  background: rgba(30,30,30,0.95);
+  padding: 4em;
+  border-bottom: 4px solid #000;
+}
+
+.list-panel-content {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 1em;
+}
+
+.design-panel-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 4em;
+}
+
+.design-panel-image {
+  background: rgba(250,250,250,0.04);
+  padding: 1.5em;
+  opacity: 0.8;
+  img {
+    width: 100%;
+    border: 1px solid #000;
+  }
+  &:hover {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,6 @@
+enabled: true
+route: /admin/generator
+destination_folder: ../
+destination_domain: leighhowells.com
+exclude: "backup\r\naudio"
+cache_manifest: 'on'

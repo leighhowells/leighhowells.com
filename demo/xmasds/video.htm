@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js">     
+  <head> 
+  <title>Headscape wish you a Merry Christmas and a Responsive New Year!</title>
+     <meta charset="utf-8" />
+     <title>Snowflake</title>
+    <meta name="description" content="**Description appears here**" />
+    <meta name="keywords" content="**Keywords appear here**" />
+    <link rel="author" href="http://www.headscape.co.uk/" title="Headscape Web design: strategy, usability, design, development, marketing." />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
+    
+    <link rel="stylesheet" href="styles/media.css">
+       
+	<!--[if IE 9]><link href="styles/ie9.css" rel="stylesheet" type="text/css" media="screen" /><![endif]-->
+	<!--[if IE 8]><link href="styles/ie8.css" rel="stylesheet" type="text/css" media="screen" /><![endif]-->
+	<!--[if IE 7]><link href="styles/ie8.css" rel="stylesheet" type="text/css" media="screen" /><![endif]-->
+	
+	<script type="text/javascript">
+		 	const SNOWFLAKES = 30;
+		 	function init() {
+		 	var first = true;
+		 		for (var i = 0; i < SNOWFLAKES; i++) {
+		 			document.body.appendChild(createASnowflake(first));
+		 			first = false;
+		 		}
+		 	}
+		 	function randomInteger(low, high) {
+		 		return low + Math.floor(Math.random() * (high - low));
+		 	}
+		 	function randomFloat(low, high) {
+		 		return low + Math.random() * (high - low);
+		 	}
+		 	function randomItem(items) {
+		 		return items[randomInteger(0, items.length - 1)]
+		 	}
+		  	function durationValue(value) {
+		 		return value + 's';
+		 	}
+		 	function createASnowflake(is_first) {
+		 		var flakes = ['2746', '2745', '2744', '2733'];
+		 		var superFlakes = ['2746', '2745', '2744', 'fc7', '274b', '2749', '2747', '2746', '273c', '273b', '2734', '2733', '2732', '2731', '2725'];
+		 		var sizes = ['tiny', 'tiny', 'tiny', 'small', 'small', 'small', 'small', 'medium', 'medium', 'medium', 'medium', 'medium', 'medium', 'large', 'massive'];
+		  		var snowflakeElement = document.createElement('div');
+		 		snowflakeElement.className = 'snowflake ' + randomItem(sizes);
+		 		var snowflake = document.createElement('span');
+		 		snowflake.innerHTML = '&#x' + randomItem(flakes) + ';';
+		 		snowflakeElement.appendChild(snowflake);
+		  		var spinAnimationName = (Math.random() < 0.5) ? 'clockwiseSpin' : 'counterclockwiseSpin';
+		  		 var anchorSide = (Math.random() < 0.5) ? 'left' : 'right';
+		  		var fadeAndDropDuration = durationValue(randomFloat(5, 11));
+		  		var spinDuration = durationValue(randomFloat(4, 8));
+		  		var flakeDelay = is_first ? 0 : durationValue(randomFloat(0, 10));
+		 		snowflakeElement.style.webkitAnimationName = 'fade, drop';
+		 		snowflakeElement.style.webkitAnimationDuration = fadeAndDropDuration + ', ' + fadeAndDropDuration;
+		 		snowflakeElement.style.webkitAnimationDelay = flakeDelay;
+		 		snowflakeElement.style[anchorSide] = randomInteger(0, 60) + '%';
+		 		snowflake.style.webkitAnimationName = spinAnimationName;
+		 		snowflake.style.webkitAnimationDuration = spinDuration;
+		 		return snowflakeElement;
+		 	} 	 
+		 	window.onload = init;
+		 	
+	</script>
+  
+</head>
+
+<body style="text-align: center;  margin: 0 auto; height: 1900px;">
+
+  <div id="plax1" style="background: url(flakelayer2.png) -64% -64%;">
+	  <div id="plax2" style="background: url(flakelayer3.png) -16% -16%;">
+	     <div id="plax3" style="background: url(flakelayer4.png) -2% -2%;">
+			  <div id="rotator" style="text-align: center; height: 100%;">
+							
+							<div id="videoBlock">
+			 			  	  <div class="videoWrapper">
+			 			  	  	<object data="http://view.vzaar.com/878257/flashplayer" id="video" type="application/x-shockwave-flash"><param name="allowFullScreen" value="true" /><param name="allowScriptAccess" value="always" /><param name="wmode" value="transparent" /><param name="movie" value="http://view.vzaar.com/878257/flashplayer" /><param name="flashvars" value="endLink=www.headscape.co.uk&brandText=Headscape&brandLink=www.headscape.co.uk&endText=Headscape&showplaybutton=true"  /><video controls id="vzvid" onload="this.play();" poster="http://view.vzaar.com/878257/image" preload="none" src="http://view.vzaar.com/878257/video"></video>
+			 			  	    </object><br/><br/>
+							    
+						 	  </div>				 	  
+						 	  <p>A lot has been written about responsive web design in 2011. However, it all makes much more sense when you actually see it in action.</p><p>This short video demonstrates some of the projects Headscape have worked on recently and how they adapt or respond to different screen widths or heights.</p>
+						 	  <h5>Learn more about responsive design</h5>
+						 	  <a href="http://boagworld.com/mobile-web/mobile-maze/" target="new">Navigating the Mobile Maze</a><br/>
+						 	  <a href="http://www.alistapart.com/articles/responsive-web-design/" target="new">Responsive Web Design</a>
+						 	  
+						 	  <br/><br/>
+						 	  <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.headscape.co.uk/xmas" data-via="boagworld" data-text="Happy Christmas and a Responsive New Year:"  data-lang="en" data-size="large" data-count="none" data-hashtags="design">Tweet this</a>
+						 	  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+						 	  <!-- data-via="boagworld"-->
+						 	  <br/><br/><br/><br/>
+						 	 </div>
+						 	 
+						 	
+						 	 
+			  </div>
+		 </div>  	
+	  </div>
+  </div>
+     
+</body>
+</html>

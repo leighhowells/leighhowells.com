@@ -1,0 +1,42 @@
+/*
+  Base styles for:browsers that can't understand media queries -and/or aren't [gt IE 8]
+*/
+
+body {
+  background: #fff;
+  max-width: 50em;
+  margin: 1em auto;
+}
+
+.toggle-nav-site,
+.toggle-search-site,
+.overlay-search-site {
+  display: none;
+}
+
+img {
+  width: auto;
+  height: auto;
+  max-height: 10em;
+  max-width: 50%;
+}
+
+.branding-floating {
+  display: none;
+}
+
+.masthead,
+.footer-site {
+  text-align: center;
+  padding: 1em;
+}
+
+.header-banner {
+  blockquote {
+    display: none;
+  }
+}
+
+.debug * {
+  box-shadow: 0 0 3px #f00;
+}

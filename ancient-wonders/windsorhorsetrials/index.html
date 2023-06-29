@@ -1,0 +1,145 @@
+<html>
+<head>
+<title>Windsor Horse Trials</title>
+<script language="JavaScript">
+<!--
+function MM_swapImgRestore() { //v2.0
+  if (document.MM_swapImgData != null)
+    for (var i=0; i<(document.MM_swapImgData.length-1); i+=2)
+      document.MM_swapImgData[i].src = document.MM_swapImgData[i+1];
+}
+
+function MM_preloadImages() { //v2.0
+  if (document.images) {
+    var imgFiles = MM_preloadImages.arguments;
+    if (document.preloadArray==null) document.preloadArray = new Array();
+    var i = document.preloadArray.length;
+    with (document) for (var j=0; j<imgFiles.length; j++) if (imgFiles[j].charAt(0)!="#"){
+      preloadArray[i] = new Image;
+      preloadArray[i++].src = imgFiles[j];
+  } }
+}
+
+function MM_swapImage() { //v2.0
+  var i,j=0,objStr,obj,swapArray=new Array,oldArray=document.MM_swapImgData;
+  for (i=0; i < (MM_swapImage.arguments.length-2); i+=3) {
+    objStr = MM_swapImage.arguments[(navigator.appName == 'Netscape')?i:i+1];
+    if ((objStr.indexOf('document.layers[')==0 && document.layers==null) ||
+        (objStr.indexOf('document.all[')   ==0 && document.all   ==null))
+      objStr = 'document'+objStr.substring(objStr.lastIndexOf('.'),objStr.length);
+    obj = eval(objStr);
+    if (obj != null) {
+      swapArray[j++] = obj;
+      swapArray[j++] = (oldArray==null || oldArray[j-1]!=obj)?obj.src:oldArray[j];
+      obj.src = MM_swapImage.arguments[i+2];
+  } }
+  document.MM_swapImgData = swapArray; //used for restore
+}
+//-->
+</script>
+</head>
+<script language="JavaScript">
+<!--
+if (document.images) {
+   
+  out = new ImageArray(8)
+  over = new ImageArray(8)
+  imagepath = "images/"
+
+
+  out[0].src  = imagepath + "welcome1.gif"
+  over[0].src = imagepath + "contact-main-roll.gif"
+  out[1].src  = imagepath + "welcome2.gif"
+  over[1].src = imagepath + "guide-main-roll.gif"
+  out[2].src = imagepath + "latestnews1.gif"
+  over[2].src = imagepath + "latestnews2.gif"
+  out[3].src = imagepath + "latestresults1.gif"
+  over[3].src = imagepath + "latestresults2.gif"
+  out[4].src = imagepath + "welcome3.gif"
+  over[4].src = imagepath + "trade-main-roll.gif"
+  out[5].src = imagepath + "welcome4.gif"
+  over[5].src = imagepath + "timetable-main-roll.gif"
+  out[6].src = imagepath + "welcome5.gif"
+  over[6].src = imagepath + "special-main-roll.gif"
+  out[7].src = imagepath + "welcome6.gif"
+  over[7].src = imagepath + "sponsors-main-roll.gif"
+
+}
+
+function ImageArray(n) {
+  this.length = n
+  for (var i = 0; i<=n; i++) {
+    this[i] = new Image()
+    }
+  return this
+}
+
+function Over(num,pos) {
+  if (document.images) {
+    if ((over[num].src != "") ) {
+      document.images[pos].src = over[num].src;
+      }
+  }
+}
+
+function Out(num,pos) {
+  if (document.images) {
+    if ((out[num].src != "") ) {
+      document.images[pos].src = out[num].src;
+      }
+  }
+}
+
+//-->
+</script>
+<body bgcolor="#006600" topmargin="0" leftmargin="0" onLoad="MM_preloadImages('images/timetable-main-roll.gif','#936728185882')">
+<div align="center"><center> <P>&nbsp;</P><table border="0" width="541" cellspacing="0" cellpadding="0" bgcolor="#006600" height="279"> 
+<tr> 
+        <td width="151" height="88"> <a href="html/contact.htm" onMouseover="Over(0,0)" onMouseout="Out(0,0)"> 
+          <img src="images/welcome1.gif" alt="Enquiries" border="0" width="150" height="95" ></a></td>
+        <td width="151" height="88"> <a href="html/guide.htm" onMouseover="Over(1,1)" onMouseout="Out(1,1)"> 
+          <img src="images/welcome2.gif" alt="Guide to Horse Trials" border="0" WIDTH="150" HEIGHT="95"></a></td>
+        <td width="10" rowspan="4" valign="top" height="1" align="left">&nbsp;</td>
+        <td width="300" rowspan="4" valign="top" height="1" align="left"> 
+          <table border="0"
+    cellspacing="0" cellpadding="2" width="300"> <tr> <td width="153" height="90" valign="top" align="center" rowspan="3"> 
+<p><a href="html/news.htm" onMouseOver="Over(2,2)" onMouseOut="Out(2,2)"><img src="images/latestnews1.gif" alt="Latest News" border="0"></a> 
+</p><a href="html/results.htm" onMouseOver="Over(3,3)" onMouseOut="Out(3,3)"><img src="images/latestresults1.gif" alt="Latest Results" border="0"></a><font face="Arial" size="2" color="#FFFFFF"> 
+<img src="images/weWouldLike.gif" width="153" height="57" alt="We would like to welcome you to:" border="0" align="middle"></font></td>
+              <td height="136" valign="top" colspan="4" rowspan="3"><img src="images/welcomeLogo.gif" width="120" height="136"
+        alt="Windsor International Horse Trials"></td>
+            </tr> 
+<tr> </tr> <tr> </tr> <tr> <td colspan="5" height="22" width="278"><img src="images/windsorHorseTrials.gif"
+        width="278" height="22" alt="The Windsor Horse Trials"></td></tr> </table><table width="300" border="0" cellspacing="0" cellpadding="0"> 
+<tr> 
+              <td height="124" valign="middle"> 
+                <p><font face="Arial" size="2" color="#FFFFFF"><img src="images/bhta.gif" width="68" height="108" border="0" align="left" ALT="British Horse Trials Association"><b> 
+                  <br>
+                  Welcome to the Windsor International Horse Trials</b></font></p>
+                <p><b><font size="1" face="Arial, Helvetica, sans-serif" color="#FFFFFF">Windsor 
+                  International Horse Trials</font></b><font face="Arial, Helvetica, sans-serif" size="1" color="#FFFFFF"> 
+                  under the <br>
+                  presidency of HRH The Princess Royal</font><font face="Arial" size="1" color="#FFFFFF"> 
+                  is now one of the leading three day events in the country.</font></p>
+                </td>
+              <td height="124">&nbsp;</td>
+            </tr> </table><P align="right"><font face="Arial" size="2" color="#FFFFFF"></font></P><P align="right">&nbsp;</P><P align="right">&nbsp;</P></td></tr> 
+<tr> 
+        <td width="151" height="89"> <a href="html/trade.htm" onMouseover="Over(4,8)" onMouseout="Out(4,8)"> 
+          <img src="images/welcome3.gif" alt="Trade Stands" border="0" WIDTH="150" HEIGHT="95"></a></td>
+        <td width="151" height="89"><a href="html/timetable.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('document.Image13','document.Image13','images/timetable-main-roll.gif','#936728185882')"><img name="Image13" border="0" src="images/welcome4.gif" width="150" height="95"></a></td>
+      </tr> 
+<tr> 
+        <td width="151" height="96"> <a href="html/SpecialAttractions.htm" onMouseOver="Over(6,10)" onMouseOut="Out(6,10)"> 
+          <img src="images/welcome5.gif" alt="Special Attractions" border="0" width="150" height="95"></a></td>
+        <td width="151" height="96"><a href="html/sponsors.htm" onMouseOver="Over(7,11)" onMouseOut="Out(7,11)"> 
+          </a><img src="images/welcome6.gif" width="150" height="95"></td>
+      </tr> 
+<tr> 
+        <td height="98" colspan="2"> 
+          <p><font face="Arial" size="2" color="#FFFFFF"><a href="http://www.townpages.co.uk/" target="_top"> 
+            <img src="images/tplogo.gif" width="124" height="49" border="0" alt="Designed by Town Pages"></a></font></p>
+        </td></tr> 
+</table><DIV align="right"> <p>&nbsp;</p><p><BR> <BR> </p></DIV></center></div>
+</body>
+</html>

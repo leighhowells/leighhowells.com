@@ -1,0 +1,18 @@
+/* 
+=============================================================================
+
+	print.css
+	v1.0
+	2011/06/13
+
+	Headscape
+	Written by Chris Sanderson (chris.sanderson@headscape.co.uk)
+
+	This stylesheet combined with basic.css to provide styling for printed pages. 
+
+=============================================================================
+*/
+
+body {font-size: 85%;}
+abbr {border-bottom: none;}
+a {text-decoration: none; color: #000;}

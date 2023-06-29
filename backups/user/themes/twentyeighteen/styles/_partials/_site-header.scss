@@ -1,0 +1,131 @@
+header {
+  min-height: 100vh;
+  position: relative;
+}
+
+.banner-text {
+  position: absolute;
+  bottom: 0;
+  color:white;
+  margin-left: -4px;
+
+  h1 {
+    font-size: 5em;
+    color: white;
+    margin-bottom: 0;
+    letter-spacing: -0.02em;
+  }
+  p {
+    margin:0.5em 0 4em 0;
+    padding:0;
+  }
+}
+
+body.home .banner-text p {
+  margin-bottom: 12em;
+}
+
+body.blog header, body.design header, body.music header, body.articles header, body.about header {
+  min-height: 70vh;
+}
+
+body.blog.superwide header {
+  min-height: 100vh;
+}
+
+body.blog.superwide img.img-pagewidth {
+  max-width: none !important;
+  @media(max-width: 1500px){
+    width: 100% !important;
+    margin: auto;
+  }
+}
+
+.logo {
+  display:block;
+  padding-top: 1.5em;
+  padding-left: 0;
+  width: 65px;
+  float: left;
+}
+
+nav.main {
+  padding: 2em 0;
+  float: right;
+}
+
+
+/////////////////////////////
+
+
+/* Colors */
+$colorCollection: (#ffffff);
+
+/* Config */
+$lights: 12; // match lights in mark up
+$totalAnimation: 6;
+$lightSize: 130;
+$blurLevel: 5;
+
+/* Pretty Lights */
+
+.light{
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+////////
+
+@for $i from 1 through $lights{
+  $lightWidth: $lightSize + random(95);
+  $lightHeight: $lightWidth;
+  $lightVertical: random(85);
+  $lightHorizontal: random(60);
+  $lightBlur: $blurLevel + random($blurLevel);
+  $lightDelay: 0 + random(25);
+  $animation: 3 + random($totalAnimation);
+
+  .light:nth-child(#{$i}){
+    width: $lightWidth + px;
+    height: $lightHeight + px;
+    top: #{$lightVertical + "vh"};
+    left: #{$lightHorizontal + "vw"};
+    background: nth($colorCollection, random(length($colorCollection)));
+    filter: blur($lightBlur + px);
+    animation: #{$lightDelay + s} #{"light" + $animation} linear infinite;
+  }
+}
+
+@for $i from 1 through $totalAnimation{
+  @keyframes light#{$i} {
+    25%{
+      opacity: (0 + random(10)) * 0.01;
+    }
+    50%{
+      opacity: 0;
+    }
+    75%{
+      opacity: (0 + random(10)) * 0.01;
+    }
+    100%{
+      opacity: 0;
+    }
+  }
+}
+
+#bokeh.fadeout {
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+}
+
+#bokeh.fadein {
+  -webkit-transition: opacity 4s ease-in-out;
+  -moz-transition: opacity 4s ease-in-out;
+  -ms-transition: opacity 4s ease-in-out;
+  -o-transition: opacity 4s ease-in-out;
+  opacity: 1;
+}

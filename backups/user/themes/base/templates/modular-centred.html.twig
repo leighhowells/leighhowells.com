@@ -1,0 +1,46 @@
+{% embed 'partials/base.html.twig' %}
+
+  {% block content %}
+    <article>
+
+
+      <div style="text-align: center;">
+      <div class="page-width">
+        <p class="article_date">
+          <time>{{ page.date|date("M jS, Y") }}</time>
+        </p>
+        <h1 class="article_heading">{{ page.title }}</h1>
+        <div class="article_meta">
+          {% if page.taxonomy.tag %}
+            <span class="tags">
+								{% for tag in page.taxonomy.tag %}
+                  cvb      <a
+                    href="/{{ tag.url|rtrim('/') }}articles/tag{{ config.system.param_sep }}{{ tag }}">{{ tag }}</a>
+                {% endfor %}
+						      </span> {% endif %} {% if page.taxonomy.genre %}
+            <span class="tags">
+							{% for genre in page.taxonomy.genre %}
+                <a href="/{{ genre.url|rtrim('/') }}music/genre{{ config.system.param_sep }}{{ genre }}">{{ genre }}</a>
+              {% endfor %}
+					        </span> {% endif %} {% if page.taxonomy.industry %}
+            <span class="tags">
+            {% for industry in page.taxonomy.industry %}
+              <a href="/{{ industry.url|rtrim('/') }}design/industry{{ config.system.param_sep }}{{ industry }}">{{ industry }}</a>
+            {% endfor %}
+            </span> {% endif %}
+        </div>
+        <hr/>
+      </div>
+        <p class="narrow"{{ content }}</div>
+      </div>
+
+      {% for module in page.collection() %}
+        <div class="modular-anchor" id="{{ _self.pageLinkName(module.menu) }}"></div>
+        {{ module.content }}
+      {% endfor %}
+
+    </article>
+
+  {% endblock %}
+
+{% endembed %}

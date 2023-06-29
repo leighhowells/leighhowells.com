@@ -1,0 +1,48 @@
+{% embed 'partials/base.html.twig' %}
+
+	{% set collection = page.collection() %}
+
+	{% block content %}
+
+		{{ page.content }}
+
+		<div class="pageContainer">
+			<div class="page-width">
+			 <ul class="grid articleList">
+
+				 {% for child in collection %}
+						<div class="col-1/2">
+
+						 <li class="articleList_item">
+
+						 <article class="article">
+
+							 <h2><a href="{{ child.url }}">{{ child.title }}</a></h2>
+							 {% if child.header.link %}
+						   <p> <iframe width="100%" height="166" frameborder="0" src="{{ child.header.link }}"></iframe></p>
+							 {% endif %}
+							 
+							 
+							 <p>{{ child.header.intro }}</p>
+		
+
+							<a href="{{ child.url }}"><div class="more"></div></a>
+						</article>
+
+						</li>
+
+					</div>
+
+				 {% endfor %}
+
+					{% if config.plugins.pagination.enabled and collection.params.pagination %}
+						{% include 'partials/pagination.html.twig' with {'base_url':page.url, 'pagination':collection.params.pagination} %}
+					{% endif %}
+
+			</ul>
+			</div>
+		</div>
+
+	{% endblock %}
+
+{% endembed %}

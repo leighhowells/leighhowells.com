@@ -1,0 +1,45 @@
+###flow diagrams and reframing
+
+Summary.  I am currently redesigning buffer app.
+In part 1 
+
+Before rushing into the wireframing process, it makes a lot of sense to create a flow diagram of your proposed app to get an idea of what it's primary functions will be. 
+
+The flow diagram is just a set of boxes indicating possible screens and processes that need to be considered somewhere within the app.
+
+You don't need any special software to do this, a sketch on paper is fine - the ideas and content are what really matter. I used Axure as its a tool I use a lot and it happens to have flow diagram tools.  
+
+Finished flow diagram.  
+
+Ok.  So now have a plan to work from and we can start drawing up some wireframes.
+
+Normally I wireframe in Axure, which would have been perfectly fine for this project too as Axure has some fine iOS interface libraries (insert name of the one Paul emailed me).    
+
+But I decided it would be fitting and rather cool to use an iPad app for design work.   Yes, I love my iPad dearly for consumption, but it's very rarely found a use in any kind of production work.  So, basically I try to find an excuse to use it whenever I can.   
+
+My first wireframes used a very nice iPad wireframing tool I happened to have, iMockups, and looked like this:
+
+[insert montage]
+
+
+
+What I soon realised was that even though iMockups is a great 'sketching' tool, it wasn't locked down enough for me as a newbie iOS app designer.  I found myself drawing components at arbitrary sizes and making decisions based on bad information.  Yes, it's 'just a wireframe' - but if it feels like there isn't enough space for something to happen in the limited space available you can find yourself trying to make fundamental decisions simply because you don't have an accurate indication of sizes.   For example, I drew an account icon - it was fine.  But I assumed that an icon in the app header would not be large enough or visible enough to determine the account being used.  Looking back at various iPhone apps I realised that this is simply not true. 
+ 
+Then I was introduced to 'Blueprint' on the iPad.
+Bluprint is a very cool package, specifically aimed at wireframing iOS apps, it's preloaded with all the iOS interface elements to scale. It also provides a map of the interaction between the pages.
+
+What's especially useful is the preview mode which lets you navigate your app at iPhone size on the iPad. Even better  xxxx have created a free blueprint player for the iPhone to play your wireframe directly on the iphone.   What's great about this is the fact your client can download the app too and test the way your app works for themselves. 
+
+One drawback with Bluprint as it stands at the moment is the interface elements themselves.  They are the standard native interface components and one thing you soon realise once you start looking closely at more recent apps is that the user experience of apps like Sparrow and Tweetbot are some of the newer ways that have been devised to interact with a phone.  Examples?
+
+Also a bit slow and tedious
+
+Photo of my blueprint map and screens.
+
+
+
+
+
+
+It's a great tool etc but. 
+

@@ -1,0 +1,68 @@
+.debug {
+  * {
+    box-shadow: 0 0 0.5em rgba(255, 0, 0, 0.75), inset 0 0 0.5em rgba(0, 255, 0, 0.75) !important;
+  }
+}
+
+.clearfix {
+  @include clearfix;
+}
+
+.relative-wrapper {
+  position: relative;
+}
+
+
+.font-primary {
+  @include font-primary;
+}
+
+.font-secondary {
+  @include font-secondary;
+}
+
+
+.text-center {
+	text-align: center !important;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+
+.color-base {
+  color: $base !important;
+}
+
+.color-black {
+  color: #000 !important;
+}
+
+
+
+.margin-top-none {
+  margin-top: 0 !important;
+}
+
+.module-spaced {
+  margin: 2rem 0 !important;
+}
+
+.mobile-hide {
+  display: none !important;
+  
+  @media (min-width: 35em) and (min-height: 35em) {
+    display: block !important;
+  }
+}
+
+.mobile-only-display {
+  @media (min-width: 35em) and (min-height: 35em) {
+    display: none !important;
+  }
+}

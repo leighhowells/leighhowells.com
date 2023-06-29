@@ -1,0 +1,465 @@
+//  COMMON TYPOGRAPHY
+
+body {
+  @include font-primary;
+  font-size: 1.4em;
+  color: $text-color;
+  font-weight: 400;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparentize($base, 0.75);
+}
+
+#{headings()} {
+  @include font-secondary;
+  font-weight: 500;
+  line-height: 1.25;
+  margin: 2em 0 1em;
+  margin: 2rem 0 2rem;
+  color: $base;
+  transition: font-size 250ms linear, opacity 250ms linear;
+
+  a, a & {
+    color: $base;
+    text-decoration: none;
+  }
+  a:hover, a:hover & {
+    color: $base-alt;
+  }
+}
+
+#{headings(5,6)} {
+  color: #555;
+}
+
+p {
+  margin: 0 0 1.5em 0;
+
+  &:empty {
+    margin: 0;
+  }
+}
+
+main {
+  ul, ol {
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+h1, .h1 {
+  font-size: 1.5em;
+  margin-top: 0rem;
+  color: $base;
+  font-weight: bold;
+
+  @media (min-width: 35em) {
+    font-size: 1.6em;
+  }
+
+  @media (min-width: 45em) {
+    font-size: 1.8em;
+  }
+
+  @media (min-width: 85em) {
+    font-size: 2em;
+  }
+
+  + h2,
+  + .h2,
+  + h3,
+  + .h3,
+  + h4,
+  + .h4,
+  + h5,
+  + .h5,
+  + h6,
+  + .h6, {
+    margin-top: -0.5em;
+    margin-top: -1.5rem;
+  }
+}
+
+h2, .h2 {
+  font-weight: normal;
+  line-height: 1.2em;
+  color: black;
+
+  @media (min-width: 45em) {
+    font-size: 1.7em;
+  }
+
+  @media (min-width: 85em) {
+    font-size: 2em;
+  }
+
+  + h3,
+  + .h3,
+  + h4,
+  + .h4,
+  + h5,
+  + .h5,
+  + h6,
+  + .h6, {
+    margin-top: -0.5em;
+    margin-top: -1.5rem;
+  }
+}
+
+h3, .h3 {
+  font-size: 1.5em;
+
+  @media (max-width: 45em) {
+    font-size: 1.1em;
+  }
+
+  @media (max-width: 85em) {
+    font-size: 1.3em;
+  }
+
+  + h4,
+  + .h4,
+  + h5,
+  + .h5,
+  + h6,
+  + .h6, {
+    margin-top: -0.5em;
+    margin-top: -1.5rem;
+  }
+}
+
+h4, .h4 {
+  font-size: 1.2em;
+  color: #000;
+
+  + h5,
+  + .h5,
+  + h6,
+  + .h6, {
+    margin-top: -0.5em;
+    margin-top: -1.5rem;
+  }
+}
+
+h5, .h5 {
+  font-size: 1em;
+  color: #000;
+
+  + h6,
+  + .h6, {
+    margin-top: -0.5em;
+    margin-top: -1.5rem;
+  }
+}
+
+h6, .h6 {
+  font-size: 0.95em;
+  font-weight: 400;
+  line-height: 1.25;
+  color: #000;
+}
+
+@media (max-width: 15em) {
+  #{headings()} {
+    font-size: 1.1em !important;
+  }
+}
+
+@media (max-height: 12.5em) {
+  #{headings()} {
+    font-size: 1.1em !important;
+  }
+}
+
+.header-block {
+  font-size: 1.2em;
+  background: $blue-dark;
+  padding: 0.5em;
+
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    color: #fff;
+  }
+}
+
+acronym, abbr {
+  border-bottom: 1px dotted #333;
+}
+
+ul ul, ul ol, ol ul, ol ol {
+  margin-top: 1em;
+  margin-bottom: 0;
+}
+
+strong {
+  font-weight: 700;
+}
+
+em {
+  font-style: italic;
+}
+
+ul {
+  margin: 2rem 0;
+  padding-left: 1.5em;
+  list-style-type: square;
+}
+
+.ul {
+  list-style-type: none;
+
+  ul {
+    list-style-type: none;
+    font-size: 0.9em;
+  }
+
+  li {
+    &:before {
+      content: '•';
+      font-size: 1.6em;
+      float: left;
+      color: #00A59B;
+      margin: 0 0 0 -0.9em;
+    }
+  }
+}
+
+ol {
+  margin: 2rem 0;
+  padding-left: 1.5em;
+  list-style-type: none;
+  counter-reset: ol;
+
+  > li {
+    &:before {
+      content: counter(ol);
+      counter-increment: ol;
+      color: #000;
+      margin-left: -1.25em;
+      margin-right: 0.5em;
+      float: left;
+      clear: left;
+    }
+  }
+}
+
+dl {
+  @include clearfix;
+  margin: 1em 0;
+  margin: 2rem 0;
+}
+
+hr {
+  margin: 2rem auto;
+  @media (min-height: 45em) {
+    margin: 2rem auto;
+  }
+
+  &.compact {
+    margin: 2rem auto;
+  }
+}
+
+blockquote {
+  position: relative;
+  padding: 0.25em 1em;
+  margin: 2em 0;
+  font-size: 1.25em;
+  line-height: 1.5em;
+  //border-left: 2px solid $blue;
+
+  @media (min-width: 45em) {
+    font-size: 1.75em;
+  }
+
+  &.long, &.small {
+    font-size: 1.1em;
+
+    @media (min-width: 45em) {
+      font-size: 1.2em;
+    }
+
+  }
+
+  &.plain {
+    padding: 0;
+    border: 0;
+  }
+
+  p {
+    margin: 0 0 0.5em;
+
+    &:only-child {
+      margin-bottom: 0;
+    }
+  }
+
+  cite,
+  .cite {
+    color: $base;
+    display: block;
+    margin: 0.5em 0 1em 0;
+    font-size: 0.5em;
+
+  }
+}
+
+.tweetable {
+  background: $base;
+  font-size: 1.35em;
+  color: #fff;
+  border: 0;
+
+  cite {
+    color: #fff;
+  }
+
+  /*
+      @media (min-width: $wrap-width + 20em) {
+          padding: 1.5em;
+      }
+  */
+}
+
+pre {
+  clear: both;
+  font-size: 0.8em;
+  margin: 0.5em 0 2em;
+  margin: 0.5rem 0 4rem;
+  padding: 1em;
+  tab-size: 2;
+  background: transparentize(darken($base, 5%), 0.25);
+  color: #fff;
+  max-width: 100%;
+  overflow: auto;
+}
+
+// helper classes for styling
+
+.caps {
+  @include caps;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.intro {
+  font-size: 1.2em;
+
+  @media (min-width: 40em) {
+    font-size: 1.35em;
+  }
+}
+
+.intro-bordered {
+  max-width: none;
+  padding: 1.5em 0;
+  border-top: 1px solid $grey-borders;
+  border-bottom: 1px solid $grey-borders;
+
+  @media (min-width: 80em) {
+    padding-right: 20%;
+  }
+}
+
+.large {
+  font-size: 1.1em;
+
+  @media (min-width: 40em) {
+    font-size: 1.2em
+  }
+}
+
+.intro-super {
+  font-size: 1.2em;
+
+  @media (min-width: 40em) {
+    font-size: 1.35em
+  }
+
+  @media (min-width: 60em) {
+    font-size: 1.5em;
+  }
+}
+
+.sub {
+  @include sub;
+}
+
+.sub-super, small {
+  @include sub-super;
+}
+
+.above-related {
+  margin-top: -0.5em !important;
+  margin-top: -1.5rem !important;
+}
+
+.margin-compact {
+  margin: 0.5em 0 !important;
+}
+
+time,
+.date {
+  font-size: 0.85em;
+  color: $base;
+  display: block;
+}
+
+.subheading-above {
+  margin-top: 2em;
+  margin-top: 4rem;
+  margin-bottom: -2em;
+  margin-bottom: -3.5rem;
+}
+
+.list-inline {
+  margin-left: 0;
+  padding-left: 0;
+
+  li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 1em;
+  }
+}
+
+.list-unbulleted {
+  padding-left: 0;
+
+  li {
+    list-style-type: none;
+    margin: 0.5em 0;
+    padding-left: 0;
+  }
+
+  &.grid {
+    margin-top: 2em;
+  }
+}
+
+.list-links {
+  a {
+    text-decoration: none;
+  }
+}
+
+.list-block {
+  list-style-type: none;
+  font-size: 0.9em;
+  margin: 2em 0;
+  margin: 2rem 0;
+  padding: 0;
+
+  li {
+    border-top: 1px solid #e0e0e0;
+    padding: 1.5em 0;
+    padding: 2.5rem 0 1.5rem;
+  }
+
+  #{headings()} {
+    margin: 0.5rem 0;
+  }
+}

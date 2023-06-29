@@ -1,0 +1,58 @@
+.path-search ol {
+
+  padding:0;
+
+  li {
+    background: white;
+    padding: 5%;
+    margin-bottom: 0.5em;
+    &::before {
+      display: none;
+    }
+    h3 {
+      margin: 0 0 0.5em 0;
+    }
+  }
+}
+
+.more {
+  display: block;
+  background: url(../img/threedots.png) no-repeat 0 top;
+  width: 50px;
+  height: 12px;
+  margin: 0 0 1.5em 0;
+  &:hover {
+    background: url(../img/threedots.png) no-repeat 0 bottom;
+  }
+}
+
+.design-listing {
+  background: white;
+  margin-bottom: 1em;
+  padding: 4em;
+
+  .inner {
+    padding-right: 4em;
+  }
+
+  img {
+    border: none;
+    padding: 0;
+    margin: 0 0 1em 0;
+    width: 100%;
+    -webkit-box-shadow: 0 0 2.5vw rgba(0,0,0,0.15);
+    box-shadow: 0 0 2.5vw rgba(0,0,0,0.15);
+  }
+
+  h2 {
+    margin:0;
+  }
+
+  time {
+    margin:0.5em 0 0 0;
+  }
+
+  p {
+    margin-top: 2em;
+  }
+}

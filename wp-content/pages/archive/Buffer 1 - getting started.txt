@@ -1,0 +1,67 @@
+#Redesigning the Buffer iPhone App  - A Design Story
+##1. Getting Started
+
+I've recently started work on redesigning an iPhone app called Buffer founded by Joel Gascoigne (http://joel.is/).   Although Buffer currently has a very polished web appicaation, the iOS platform needs a little bit of help realigning its core focus and enhancing the user experience.   This is where Headscape have stepped in to help with streamlining  and redesigning it.
+
+###What's Buffer?
+ 
+Buffer, if you haven't heard of it is a neat little service allowing you to schedule tweets.  Although some may raise their hands in horror at the idea of scheduling a tweet, actually it makes a lot of sense - especially if you have lots of interesting links and articles to share.   I don't want to flood the timeline of others with what I have decided is fascinating in an endless stream when I happen to be in a 'reading the Internets' frame of mind.  Also anyone not paying attentiont to Twitter (shocking!) during that time could easily miss my pearls of wisdom and fascinating links I find. 
+
+Buffer allows me to add anything of interest to a predetermined schedule, which I don't even need to worry about once it has been set up.   I just know anything I schedule will be added to the next slot without worry about timings. It's all very quick and painless.
+
+###The task
+
+Although we've been working on mobile for many years at Headscape, this personally is my first piece of iPhone specific design work. So I thought I'd share the experience by blogging the steps of the design progress as the project develops.   
+
+The first step of the task following an initial kick-off meeting with Joel and the team, was to get to know the app itself and the anatomy of iOS apps in general.  I started the process by spending time using and poking the buffer service, the current app and identifying areas where the new incarnaton could potentially be improved.
+
+###Realisation
+
+What I realised very quickly is just how much I have used iPhone apps, yet have never really looked or considered them analytically.  The apps I use day-to-day on the iPhone are so intuitive that I have hardly considered how they work or how the user experience has been subtly crafted.  This was quite a revelation.  A good film score is often said to be the one you don't really notice, but it's constantly there in the background guiding the viewer on the mood of the scene.  In the same way I realised that iOS has subconsciously become such second nature to me that I don't differentiate that wildly between apps as I find the fundamental experiences between them so similar and intuitive. 
+
+###So many options
+
+When you start to analyse apps you realise just how many different techniques have been used to achieve the same result, and new innovations are being made all the time as we build up our small screen touch language.   Just consider the pull-down-to-refresh gesture, and how quickly this became part of our interaction repertoire.
+
+Let's consider for a moment the need to swap between two different streams of information such as accounts in an app.   This could be an Instant messaging app, or email, Twitter etc. There are many options;
+
+* using a whole screen menu selected from the app dock
+* swapping by touch avatar or button in the interface (this could result in overlaid panels, slide down panels, or a jump to a selection screen)
+* swiping the whole screen with page indicators (as used by the main OS app screens)
+* touching the page title banner itself 
+* swiping the title banner (as done in Sparrow mail - with small page indicators).
+
+But which way is most appropriate? Are they all valid? Is selecting one much more complex for the programmer than another?  Which is most intuitive? Which is best?   
+
+It's hard to know the answer to this when you have used so many ways without even thinking about the issue. If pushed, personal choice may come down to which were the quickest, most natural feeling and pleasurable to use.  The designer alone shouldn't be making firm decisions here either, the decision can only really be made in discussion with the programmer so huge development overheads aren't added unintentionally.
+
+###Reading
+
+This is the point at which I decided to do a spot of reading around the subject of app design to understand the different principles of interaction design on iOS.  The first port of call for many at this point may well be the HIG, Apple's own Human Interface Guidelines,  which is quite lenthy but summed up nicely by Timothy Wood at the start of his book 'WOW iOS Factor - Apps and UX Design Techniques for iPhone and iPad' . Here are some of the points that stood out for me, which I've summarised further:
+
+*Finite Navigation*:  allow users to follow a single path through your content or functionality. 
+
+*Constrained Control Mapping*: buttons, etc. should be perceived as secondary elements and maintain consistent positions.
+
+*Constrained Control Quantity*: keep the number of controls that you present to the user limited or reduced at every step. 
+
+*Control Clarity*: Limit the number of unique control types when possible to avoid confusing the user.
+
+*OS Offloading*: functionality can be removed from an application and migrated to the iOS settings.
+
+*User Interface Suppression*: Control elements do not need to be omnipresent. Simple actions can invoke controls as they are needed in the interface.
+
+*Progressive Disclosure*: Try to provide functionality only where and when it is needed within the flow of an application. 
+
+*Brand and Identity De-emphasis*:  only use brand and identity statements where it makes sense, and tone it down every-where else.
+
+*Gestural Restraint*: Limit the number of unique ges-tures required to interact with your application. 
+
+*Hierarchical Restraint*: a high degree of hierarchical structure makes it difficult to design a simple and easily understood path through an application. 
+
+
+###Apps aren't websites
+
+Ok, so that may sound obvious.  But the process of considering the Buffer app made me realise that my 17 years of web design experience was not going be that immediately helpful when tackling the interaction design of an iPhone app.  Most of that knowledge is immediately redundant, with experience of mobile app interfaces, interface guidelines, patterns, usage, trends, with a bit of knowledge of programming overheads being much more useful. 
+
+In the next part I will show how I got started on the flow of the application and began on the wireframing process.

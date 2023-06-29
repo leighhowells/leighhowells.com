@@ -1,0 +1,99 @@
+Movie Report
+------------
+
+Frame #    Frame Bytes    Total Bytes    Page
+-------    -----------    -----------    ---------------
+    1            34             34        preload
+    2            21             55          2
+    3            15             70          3
+    4            15             85          4
+    5           163            248        Scene 1
+    6             2            250          2
+    7             2            252          3
+    8             2            254          4
+    9           179            433          5
+   10            12            445          6
+   11         23293          23738          7
+   12            36          23774          8
+   13            63          23837          9
+   14            26          23863          10
+   15            27          23890          11
+   16            27          23917          12
+   17            27          23944          13
+   18            27          23971          14
+   19            27          23998          15
+   20            27          24025          16
+   21            27          24052          17
+   22            27          24079          18
+   23          4741          28820          19
+   24            28          28848          20
+   25            28          28876          21
+   26          1519          30395          22
+   27            13          30408          23
+   28            13          30421          24
+   29            13          30434          25
+   30            13          30447          26
+   31            13          30460          27
+   32          4131          34591          28
+   33            27          34618          29
+   34           796          35414          30
+   35          7094          42508          31
+   36          1081          43589          32
+   37          1017          44606          33
+   38            12          44618          34
+   39            12          44630          35
+   40            10          44640          36
+
+Page                       Shape Bytes    Text Bytes
+-----------------------    -----------    ----------
+preload                           0             0
+Scene 1                           0          1509
+
+Symbol                     Shape Bytes    Text Bytes
+-----------------------    -----------    ----------
+kiosk                           394             0
+text2                             0           907
+rollover2                        66             0
+roll                              0             0
+menu2                             0             0
+vertical line                     0             0
+Symbol 17                         0             0
+srv-des                           0             0
+box                              56             0
+srv-cns                           0             0
+srv-dat                           0             0
+srv-ec                            0             0
+srv-ext                           0             0
+srv-int                           0             0
+srv-mm                            0             0
+srv-prs                           0             0
+sevices-menu                      0             0
+rollover                        113             0
+lens                              0             0
+serv- textline1                   0            86
+serv- textline2                   0             0
+background1                     165             0
+follower                        108             0
+alien-panel-top                   0             0
+ring1 copy                        0             0
+Symbol 17 2                       0             0
+next-over                         0             0
+hoop1                            70             0
+next                             36             0
+loading                           0             0
+rotation1                     21674             0
+
+Bitmap                     Compressed  Original    Compression
+-----------------------    ----------  ----------  ------------
+Scan01TOWNPAGESRKIOSKS.jpg      6681       75200   JPEG Quality=80
+
+Event sounds: 11KHz Mono 16 kbps MP3
+
+Sound Name                 Bytes       Format
+-----------------------    --------    --------
+button1.wav                   639        11KHz Mono 16 kbps MP3
+
+Font Name                  Bytes       Characters
+-----------------------    --------    -----------
+Futura Md BT                 3154         (),./012345:ACIKPSTWabcdefghijklmnopqrstuvwxy
+Futura Md BT Bold            1409         IPSTacefgimnorstvw

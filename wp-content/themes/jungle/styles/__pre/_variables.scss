@@ -1,0 +1,26 @@
+
+$red:           #C82D2D;
+$orange:        #FF8C2D;
+
+$blue:          #279;
+$blue-light:    lighten($blue, 5%);
+$blue-dark:     darken($blue, 5%);
+$grey:          #bbb;
+$grey-med:      #111;
+$grey-borders:  #dfe3ea;
+$theme:         #df0008;
+
+// --
+
+$base:          $grey-med;
+$base-alt:      $grey-med;
+
+$primary:       $grey-med;
+$secondary:     $grey-med;
+$tertiary:      $orange;
+
+$page-bg:       #efefef;
+$text-color:    #555555;
+
+$pagewidth:     75%;
+$pagewidthMob:  95%;

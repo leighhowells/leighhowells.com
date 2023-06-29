@@ -1,0 +1,61 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+
+  <div id="page-wrapper" class="page-width">
+
+  <div id="page">
+    <div class="grid">
+
+      <div class="col-1/4">
+        {% for p in page.find('/toys/').children.order('date','desc').slice(0,3) %}
+          <div class="article" style="clear:left; display:block;">
+            <article class="article home">
+              <h3><a href="{{ p.url }}">{{ p.title }}</a></h3>
+              <a href="{{ p.url }}"> {{ p.summary }}</a>
+            </article>
+          </div>
+        {% endfor %}
+      </div>
+
+      <div class="col-1/4">
+        {% for p in page.find('/sculpture/').children.order('date','desc').slice(0,3) %}
+          <div class="article">
+            <article class="article home">
+              <h3><a href="{{ p.url }}">{{ p.title }}</a></h3>
+              <a href="{{ p.url }}">{{ p.summary }}</a>
+            </article>
+          </div>
+        {% endfor %}
+      </div>
+
+      <div class="col-1/4">
+        {% for p in page.find('/relief/').children.order('date','desc').slice(0,4) %}
+          <div class="article">
+            <article class="article home">
+              <h3><a href="{{ p.url }}">{{ p.title }}</a></h3>
+              <a href="{{ p.url }}">{{ p.summary }}</a>
+            </article>
+          </div>
+        {% endfor %}
+      </div>
+
+      <div class="col-1/4">
+        {% for p in page.find('/painting/').children.order('date','desc').slice(0,4) %}
+          <div class="article">
+            <article class="article home">
+              <h3><a href="{{ p.url }}">{{ p.title }}</a></h3>
+              <a href="{{ p.url }}">{{ p.summary }}</a>
+            </article>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <br/>
+    See more:  <a href="/derek/toys">Toys</a>, <a href="/derek/sculpture">Sculpture</a>, <a href="/derek/relief">Relief</a>, <a href="/derek/painting">Paintings</a>
+  </div>
+
+  </div>
+
+{% endblock %}

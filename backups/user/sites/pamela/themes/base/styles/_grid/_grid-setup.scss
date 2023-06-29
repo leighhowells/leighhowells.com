@@ -1,0 +1,66 @@
+@import "../__pre/_layout";
+
+// The following will enable ALL complex grid options below
+$complex-fractions: false;
+
+// toggle 'complex' fractions - 3/5, 5/6, 3/7, 5/8, 7/9, 3/10, 7/11, 5/12... etc.
+$complex-5ths: true;
+$complex-6ths: false;
+$complex-7ths: false;
+$complex-8ths: false;
+$complex-9ths: false;
+$complex-10ths: false;
+$complex-11ths: false;
+$complex-12ths: false;
+
+// define 'stages' breakpoints
+// for .col-1/2@s1, .col-1/4@s2 etc.
+
+$stages: (
+  // s1: 20em,
+  // s2: 25em,
+  // s3: 30em,
+  // s4: $half-breakpoint,
+  // s5: $third-breakpoint,
+  // s6: 60em,
+  // s7: $quart-breakpoint,
+  // s8: 80em,
+  // s9: 90em,
+  quarts: $quart-breakpoint,
+  fifths: $fifth-breakpoint,
+);
+
+$cols: (
+  2,
+  3,
+  4,
+//  5,
+  6,
+//  7,
+//  8,
+//   9,
+//   10,
+//   11,
+//   12,
+);
+
+$offsets: false;
+$complex-offsets: false;
+
+// ----
+// NOTES:
+/*
+
+  #1: 'Automagic' Columns
+
+  Define these vars for when it's 'normally' acceptable to break content into these column widths.
+  When using grid-x-cols they will 'advance' as content will 'normally' fit into these columns, eg.
+
+  grid-6-cols will:
+
+  - break to halves at the 'half' breakpoint
+  - break to thirds at the 'third' breakpoint
+  - break to quarters at the 'quart' breakpoint
+  - break to sixths at the 'sixth' breakpoint
+
+*/

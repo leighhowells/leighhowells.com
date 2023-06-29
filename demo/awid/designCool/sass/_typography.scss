@@ -1,0 +1,117 @@
+// =====================================
+// TYPE RULES
+// =====================================
+
+
+body {
+  line-height: 1.5;
+}
+
+a:hover { 
+  text-decoration: underline;
+}
+
+h1,h2,h3 { 
+  font-family: Nunito; 
+  font-weight: 400;
+  text-decoration: none;
+  letter-spacing: -1px;
+  }
+
+h1 {
+  em {
+    color: #666;
+    font-size: 16px;
+    font-weight: bold;
+  }
+} 
+
+header h2 {
+  font-family: Nunito;
+  font-weight: 300;
+  color: white;
+  bottom: 0px;
+  position: relative;
+  top: 70px;
+  font-size: 1.8em;
+  line-height: 1.3em;
+  padding-right: $pad*5 !important;
+}
+
+
+h2, h3 { padding: $pad 0 $pad*2 0;}
+
+h2 strong {
+  font-weight: $normal;
+}
+
+h2 small {
+  padding-top: $pad/2;
+  font-size: 88%;
+  line-height: 110%;
+}
+
+/* CONTENT ------------------------------------------------ */
+
+
+
+.pageContent p { 
+  padding: 0 0 $pad*1.7 0;
+  font-size: 1.3em;
+}
+
+.comments {
+  clear: left;
+}
+
+blockquote {
+  font-size: 1.8em;
+  line-height: 1.2em;
+  padding: $pad*4 $pad*4 $pad*4 $pad*8;
+  margin: $pad 0 $pad*2 0;
+  background: $lightBeige/1.1 url(../img/cork_1.png);
+  font-family: Nunito;
+  font-weight: $light;
+}
+
+.mainBody h1 { 
+  margin: 0;
+  font-size: 2.5em;
+  font-weight: $light;
+  line-height: 1.2em;
+  padding-bottom: $pad*3;
+  border-bottom: 1px solid #ddd;
+}
+
+
+.mainBody p.intro {
+  font-size: 1.6em;
+  line-height: 1.4;
+  padding-top: $pad*3;
+  padding-bottom: $pad*3;
+  color: $darkGrey*2;
+}
+
+
+.mainBody h2 {
+  font-size: 2em;
+  padding-bottom: $pad;
+}
+
+.mainBody h3 {
+  font-size: 1.7em;
+  padding-bottom: $pad;
+}
+
+.mainBody h4 {
+  font-size: 1.2em;
+  padding-bottom: $pad;
+}
+
+.mainBody h5 {
+  font-size: 1em;
+  font-family: arial;
+  padding-bottom: $pad;
+}
+
+

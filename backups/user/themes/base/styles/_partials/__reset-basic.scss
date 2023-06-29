@@ -1,0 +1,28 @@
+/*
+  
+  This is used to undo some of the base styles we set (in ../_core/_set-basic.scss) for: 
+  - browsers that can't understand media queries
+  - and/or aren't [gt IE 8]
+  
+*/
+
+	
+body {
+
+	z-index: 1;
+	margin: 0 auto;
+	max-width: none;
+	
+	@media screen {
+		background: $page-bg;
+	}
+}
+
+
+img {
+  display: block; 
+  max-width: 100%;
+  max-height: none;
+  height: auto; 
+  margin: 0 auto;
+}

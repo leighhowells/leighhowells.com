@@ -1,0 +1,100 @@
+debug {
+  * {
+    box-shadow: 0 0 0.5em rgba(255, 0, 0, 0.75), inset 0 0 0.5em rgba(0, 255, 0, 0.75) !important;
+  }
+}
+
+.clearfix {
+  @include clearfix;
+}
+
+.relative-wrapper {
+  position: relative;
+}
+
+.font-primary {
+  @include font-primary;
+}
+
+.font-secondary {
+  @include font-secondary;
+}
+
+
+.text-center {
+	text-align: center !important;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+
+.color-base {
+  color: $base !important;
+}
+
+.color-black {
+  color: #000 !important;
+}
+
+.img-stretch {
+  width: 100%;
+}
+
+.max-width {
+  width: 70%;
+}
+
+.img-pagewidth {
+  width: 166.666% !important;
+  margin-left: -33.333%;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.img-half-left {
+  display: block;
+  height: auto;
+  width: 49% !important;
+  float: left;
+  margin-right: 1%;
+}
+
+.img-half-right {
+  display: block;
+  height: auto;
+  width: 49% !important;
+  float: right;
+  margin-left: 1%;
+}
+
+.img-margin-top {
+  padding-top: 1em !important;
+}
+
+.margin-top-none {
+  margin-top: 0 !important;
+}
+
+.module-spaced {
+  margin: 2rem 0 !important;
+}
+
+.mobile-hide {
+  display: none !important;
+  
+  @media (min-width: 35em) and (min-height: 35em) {
+    display: block !important;
+  }
+}
+
+.mobile-only-display {
+  @media (min-width: 35em) and (min-height: 35em) {
+    display: none !important;
+  }
+}

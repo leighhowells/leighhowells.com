@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js">     
+  <head> 
+  <title>Headscape wish you a Merry Christmas and a Responsive New Year!</title>
+     <meta charset="utf-8" />
+     <title>Snowflake</title>
+    <meta name="description" content="**Description appears here**" />
+    <meta name="keywords" content="**Keywords appear here**" />
+    <link rel="author" href="http://www.headscape.co.uk/" title="Headscape Web design: strategy, usability, design, development, marketing." />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
+    
+    <link rel="stylesheet" href="styles/media.css">
+    
+	<!--[if IE 9]><link href="styles/ie9.css" rel="stylesheet" type="text/css" media="screen" /><![endif]-->
+	<!--[if IE 8]><link href="styles/ie8.css" rel="stylesheet" type="text/css" media="screen" /><![endif]-->
+	<!--[if IE 7]><link href="styles/ie8.css" rel="stylesheet" type="text/css" media="screen" /><![endif]-->
+
+    <script type="text/javascript" src="scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/modernizr.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
+   
+    <script type="text/javascript">
+   	 	const SNOWFLAKES = 30;
+   	 	function init() {
+   	 	var first = true;
+   	 		for (var i = 0; i < SNOWFLAKES; i++) {
+   	 			document.body.appendChild(createASnowflake(first));
+   	 			first = false;
+   	 		}
+   	 	}
+   	 	function randomInteger(low, high) {
+   	 		return low + Math.floor(Math.random() * (high - low));
+   	 	}
+   	 	function randomFloat(low, high) {
+   	 		return low + Math.random() * (high - low);
+   	 	}
+   	 	function randomItem(items) {
+   	 		return items[randomInteger(0, items.length - 1)]
+   	 	}
+   	  	function durationValue(value) {
+   	 		return value + 's';
+   	 	}
+   	 	function createASnowflake(is_first) {
+   	 		var flakes = ['2746', '2745', '2744', '2733'];
+   	 		var superFlakes = ['2746', '2745', '2744', 'fc7', '274b', '2749', '2747', '2746', '273c', '273b', '2734', '2733', '2732', '2731', '2725'];
+   	 		var sizes = ['tiny', 'tiny', 'tiny', 'small', 'small', 'small', 'small', 'medium', 'medium', 'medium', 'medium', 'medium', 'medium', 'large', 'massive'];
+   	  		var snowflakeElement = document.createElement('div');
+   	 		snowflakeElement.className = 'snowflake ' + randomItem(sizes);
+   	 		var snowflake = document.createElement('span');
+   	 		snowflake.innerHTML = '&#x' + randomItem(flakes) + ';';
+   	 		snowflakeElement.appendChild(snowflake);
+   	  		var spinAnimationName = (Math.random() < 0.5) ? 'clockwiseSpin' : 'counterclockwiseSpin';
+   	  		 var anchorSide = (Math.random() < 0.5) ? 'left' : 'right';
+   	  		var fadeAndDropDuration = durationValue(randomFloat(5, 11));
+   	  		var spinDuration = durationValue(randomFloat(4, 8));
+   	  		var flakeDelay = is_first ? 0 : durationValue(randomFloat(0, 10));
+   	 		snowflakeElement.style.webkitAnimationName = 'fade, drop';
+   	 		snowflakeElement.style.webkitAnimationDuration = fadeAndDropDuration + ', ' + fadeAndDropDuration;
+   	 		snowflakeElement.style.webkitAnimationDelay = flakeDelay;
+   	 		snowflakeElement.style[anchorSide] = randomInteger(0, 60) + '%';
+   	 		snowflake.style.webkitAnimationName = spinAnimationName;
+   	 		snowflake.style.webkitAnimationDuration = spinDuration;
+   	 		return snowflakeElement;
+   	 	} 	 
+   	 	window.onload = init;
+   	 	
+   </script>
+   
+</head>
+
+<body>
+
+<div id="fadeMessage"> Resize your browser window </div>
+ 
+ <div id="nyRes"> 
+ 
+ 	<div id="nyResInfo">  
+ 	   <h1>Your New Year Resolutions</h1>
+ 	   
+ 	   <div id="videoRes">
+ 	   	<a href="http://view.vzaar.com/878257/video" target="new" alt="A Responsive Demo"><img src="videoThumb.jpg" width="175" height="120"></a>
+ 	   	 	   	
+ 	   	<h5>Learn about Responsive Design</h5>
+ 		<span class="link top"><a href="http://view.vzaar.com/878257/video" target="new">Responsive Demo Video</a></span>
+ 	  	<span class="link"><a href="http://boagworld.com/mobile-web/mobile-maze/" target="new">Navigating the Mobile Maze</a></span><br/>
+ 	  	<span class="link"><a href="http://www.alistapart.com/articles/responsive-web-design/" target="new">Responsive Web Design</a></span>
+	   </div>
+ 	   
+ 	   <div id="res1">
+ 		   <h2>1650 <strong>to</strong> 1920</h2>
+ 		   <p>With only 11.5% of users using the largest range of screen resolutions, fixed width sites can find themselves swimming in lots of redundant screen space.  This is often not such a bad thing, it focuses the content area.  Worse, however, are sites set to use a fluid 100% screen width, as they can end up with <a href="http://www.w3.org/TR/WCAG10/">very long line lengths</a>, which is bad for readability.  Using media queries there is an opportunity to deliver an enhanced experience for these power users. </p>
+ 	   </div>
+ 	   
+ 	   <div id="res2">
+ 	   	   <h2>1280 <strong>to</strong> 1650</h2>
+ 	   	   <p>Resolutions on widescreen displays and larger monitors now accounts for 16% of the global audience.  There are opportunities to find creative techniques to make the most of the extra real estate available.  For example on the <a href="http://www.glasgow.ac.uk">Glasgow University site</a> images are used outside of the main content area, enriching the visual experience but they are not vital to the use of the site.</p>
+ 	   </div>
+ 	   
+ 	   <div id="res3">
+ 	   	   <h2>1152 <strong>to</strong> 1280</h2>
+ 	   	   <p>This range of screen widths is becoming ever more prolific beyond 1024x768, especially amongst lower end LCD panels and widescreen displays.  A fixed width or max-width 960px fluid site sits comfortably  in a frame at these widths.</p>
+ 	   </div>
+ 	   
+ 	   <div id="res4">
+ 	   	   <h2>1024 <strong>to</strong> 1152</h2>
+ 	   	   <p>In late 2011, 1024x768 is still a very commonly viewed resolution, with 14% of worldwide users. We still generally build site to cater for this fairly low common denominator.</p>
+ 	   </div>
+ 	   
+ 	   <div id="res5">
+ 	   	   <h2>800 <strong>to</strong> 1024</h2>
+ 	   	   <p>Up to 1024 pixels wide, your users are very likely to be using a tablet computer, such as an iPad or a higher specification smartphone. Old Desktop machines will be forced to horizontal scroll a standard 960px website.</p>
+ 	   </div>
+ 	   
+ 	   <div id="res6">
+ 	   	   <h2>640 <strong>to</strong> 800</h2>
+ 	   	   <p>In 2011 users in this range are likely to be using a mobile devices, so consideration for touch screen devices is vital.  There is a chance that very old Desktop or netbook users are trying to access your site, how will your site best cater these? See how the <a href="http://www.edf.org" target="new">EDF site</a> adapts to give a 'best fit' to this size. </p>
+ 	   </div>
+ 	   
+ 	   <div id="res7">
+ 	   	   <h2>480 <strong>to</strong> 640</h2>
+ 	   	   <p>The domain of many tablet devices and higher performance smartphones. Thought should be given to touch screens users.</p>
+ 	   </div>
+ 	 </div>
+
+ 	  
+ </div>
+ 
+
+
+  <div id="plax1" style="background: url(flakelayer2.png) -64% -64%;">
+	  <div id="plax2" style="background: url(flakelayer3.png) -16% -16%;">
+	     <div id="plax3" style="background: url(flakelayer4.png) -2% -2%;">
+			  <div id="rotator">
+
+			  <!--[if ! lte IE 8]><!-->
+			  	  <object data="snowflake.xml" type="image/svg+xml" /></object>
+			  <!--<![endif]-->
+			 
+			  </div>
+		 </div>  	
+	  </div>
+  </div>
+  
+ <div id="noSVG"><a href="http://www.boagworld.com" border="0"><img src="nonsvg.jpg" border="0" width="100%"></img></a>
+ <br/>For a more 'Responsive' Christmas, please update your browser!
+ 
+ 	<h4>Learn about Responsive Design</h4>
+ 	   	<span class="link top"><a href="http://view.vzaar.com/878257/video" target="new">Responsive Demo Video</a></span><br/>
+ 	  	<span class="link"><a href="http://boagworld.com/mobile-web/mobile-maze/" target="new">Navigating the Mobile Maze</a></span><br/>
+ 	  	<span class="link"><a href="http://www.alistapart.com/articles/responsive-web-design/" target="new">Responsive Web Design</a></span>
+ 	   </div>
+ 
+ </div>
+
+  <div id="nyResNarrow">
+	  <div id="res9">
+	 	 <strong><a href="http://www.boagworld.com" style="color:#ffffff;"></strong>And a '<u>Responsive</u>' New Year!</a>
+	  </div>
+  </div> 
+  
+
+  <div id="mobileInfo">
+  	  <h2>Your New Year Resolutions:</h2>
+			 <h3>1650 <strong>to</strong> 1920 pixels</h3>
+			  <p>With only 11.5% of users using the largest range of screen resolutions, fixed width sites can find themselves swimming in lots of redundant screen space.  This is often not such a bad thing, it focuses the content area.  Worse, however, are sites set to use a fluid 100% screen width, as they can end up with <a href="http://www.w3.org/TR/WCAG10/">very long line lengths</a>, which is bad for readability.  Using media queries there is an opportunity to deliver an enhanced experience for these power users.<p>
+	     	
+	         <h3>1280 <strong>to</strong> 1650 pixels</h3>
+	    	   <p>Resolutions on widescreen displays and larger monitors now accounts for 16% of the global audience.  There are opportunities to find creative techniques to make the most of the extra real estate available.  For example on the <a href="http://www.glasgow.ac.uk">Glasgow University site</a> images are used outside of the main content area, enriching the visual experience but they are not vital to the use of the site.</p>
+	   
+	    	 <h3>1152 <strong>to</strong> 1280 pixels</h3>
+	    	   <p>This range of screen widths is becoming ever more prolific beyond 1024x768, especially amongst lower end LCD panels and widescreen displays.  A fixed width or max-width 960px fluid site sits comfortably  in a frame at these widths.</p>
+	  
+	 
+	    	 <h3>1024 <strong>to</strong> 1152 pixels</h3>
+	    	   <p>In late 2011, 1024x768 is still a very commonly viewed resolution, with 14% of worldwide users. We still generally build site to cater for this fairly low common denominator.</p>
+	    
+	 
+	    	 <h3>800 <strong>to</strong> 1024 pixels</h3>
+	    	   <p>Up to 1024 pixels wide, your users are very likely to be using a tablet computer, such as an iPad or a higher specification smartphone. Old Desktop machines will be forced to horizontal scroll a standard 960px website.</p>
+	    
+	    	 <h3>640 <strong>to</strong> 800 pixels</h3>
+	    	   <p>In 2011 users in this range are likely to be using a mobile devices, so consideration for touch screen devices is vital.  There is a chance that very old Desktop or netbook users are trying to access your site, how will your site best cater these? See how the <a href="http://www.edf.org" target="new">EDF site</a> adapts to give a 'best fit' to this size. </p>
+	    
+	    	 <h3>480 <strong>to</strong> 640 pixels</h3>
+	    	   <p>The domain of many tablet devices and higher performance smartphones. Considerable attention should be given to touch screens users.<p>
+	    	   
+	    	 <br/>
+	    	 <h2>In 2012 Consider the width of your website, so it can be enjoyed at its best on all devices, whatever the display width!</h2> <br/>	   
+	  </div>
+	  
+	  
+  </div>
+  
+	   
+</body>
+</html>

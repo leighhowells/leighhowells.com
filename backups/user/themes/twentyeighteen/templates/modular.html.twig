@@ -1,0 +1,57 @@
+{% embed 'partials/base.html.twig' %}
+
+  {% block content %}
+
+    <article id="article">
+      {% set i=0 %}
+      <div style="width: 30px; z-index:99; position: fixed; right: 0; background: black; color: white;">
+        {% for module in page.collection() %}
+          {% set i=i+1 %}
+          <a class="modular-anchors" href="#modular-anchor{{ i }}">{{ i }}<br/></a>
+        {% endfor %}
+      </div>
+
+
+      <div class="page-width">
+        <p class="article_date">
+          <time>{{ page.date|date("M jS, Y") }}</time>
+        </p>
+        <h1 class="article_heading">{{ page.title }}</h1>
+        <div class="article_meta">
+          {% if page.taxonomy.tag %}
+            <span class="tags">
+								{% for tag in page.taxonomy.tag %}
+                  cvb      <a
+                    href="/{{ tag.url|rtrim('/') }}articles/tag{{ config.system.param_sep }}{{ tag }}">{{ tag }}</a>
+                {% endfor %}
+						      </span> {% endif %} {% if page.taxonomy.genre %}
+            <span class="tags">
+							{% for genre in page.taxonomy.genre %}
+                <a href="/{{ genre.url|rtrim('/') }}music/genre{{ config.system.param_sep }}{{ genre }}">{{ genre }}</a>
+              {% endfor %}
+					        </span> {% endif %} {% if page.taxonomy.industry %}
+            <span class="tags">
+            {% for industry in page.taxonomy.industry %}
+              <a href="/{{ industry.url|rtrim('/') }}design/industry{{ config.system.param_sep }}{{ industry }}">{{ industry }}</a>
+            {% endfor %}
+            </span> {% endif %}
+        </div>
+        <hr/>
+        <p class="narrow"{{ content }}</div>
+      </div>
+
+      {% set i=0 %}
+      {% for module in page.collection() %}
+        {% set i=i+1 %}
+        <a name="modular-anchor{{ i }}" id="waypoint" class="waypoint_{{ i }}"></a>
+        {{ module.content }}
+      {% endfor %}
+
+    </article>
+
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <!--<script src='https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js'></script>-->
+    <script type='text/JavaScript' src='/user/themes/base/js/waypoints.js'></script>
+    <script src='/user/themes/base/js/jungle.min.js'></script>
+  {% endblock %}
+{% endembed %}

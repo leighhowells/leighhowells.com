@@ -1,0 +1,28 @@
+<div class="panel {{ header.block }}">
+  <div class="page-width">
+    {% if page.header.stickytitle %}
+      <h1 class="sticky blue" style="margin-top: -0.65em;">{{ page.header.stickytitle }}</h1>
+    {% endif %}
+
+    <section class="staggered-animation-container2">
+      <div class="grid">
+        {% set i=0 %}
+        {% for image in page.media.images %}
+          {% if i==0 %}
+            <div class="col-1/2 staggered-animation2" data-os-animation="fadeInLeft" data-os-animation-delay="0" style="opacity:0;">
+              <img class="" style="max-width: 100%; width: 100%;" src="{{ image.forceResize(1100,620).url }}" alt="{{ image.filename|trim('.jpg', 'right') }}">
+              <p class="caption">{{ image.filename|trim('.jpg', 'right') }}</p>
+            </div>
+          {% endif %}
+          {% if i==1 %}
+            <div class="col-1/2 staggered-animation2" data-os-animation="fadeInRight" data-os-animation-delay="0" style="opacity:0;">
+              <img class="" style="max-width: 100%; width: 100%;" src="{{ image.forceResize(1100,620).url }}" alt="{{ image.filename|trim('.jpg', 'right') }}">
+              <p class="caption">{{ image.filename|trim('.jpg', 'right') }}</p>
+            </div>
+          {% endif %}
+          {% set i=i+1 %}
+        {% endfor %}
+      </div>
+    </section>
+    <p class="narrow"{{ content }}</div>
+</div>

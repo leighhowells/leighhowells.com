@@ -1,0 +1,198 @@
+/*  Interxion Brand Stylesheet
+ *  Created by Dan Sheerman for Headscape
+ *  dan@headscape.co.uk
+ *
+ *  This stylesheet used for brand styling of elements, no page layout should be applied here,
+ *  use the layout stylesheets for the screen view you wish to affect.
+*/
+
+/**  Palette  **
+ *	
+ *	Fresh Green:	rgb(221,215,51)
+ *	
+ *	Black:			rgb(39,37,38)
+ *	Dark Grey:		rgb(110,110,109)
+ *	Mid Grey:		rgb(176,176,177)
+ *	Light Grey:		rgb(226,226,226)
+ *	
+ *	Magenta:		rgb(193,28,128)
+ *	Cyan:			rgb(0,163,26)
+ *	Orange:			rgb(220,144,21)
+ *
+ *
+*/
+
+
+@font-face {
+    font-family: 'Museo-W01-900';
+    src: url('../fonts/museo900-regular-webfont.eot');
+    src: url('../fonts/museo900-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/museo900-regular-webfont.woff') format('woff'),
+         url('../fonts/museo900-regular-webfont.ttf') format('truetype'),
+         url('../fonts/museo900-regular-webfont.svg#Museo900') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+/*  HTML5 for old browsers  */
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { 
+    display:block;
+	}
+	
+/*  Resets + Element Defaults  */
+
+
+html, body, figure, fieldset, nav ul, nav li, #footer ul, #footer li
+{ margin: 0px; padding: 0px; }
+
+menu li, nav li, #footer li
+{ list-style-type: none }
+
+a { text-decoration: none; }
+a img {	border: 0px; }
+img { max-width: 100%; }
+figure img { display: block; }
+fieldset { border: 0px; }
+address { font-style: normal; }
+address span { display: block; }
+abbr {border-bottom: 1px dotted black;}
+
+::selection {
+	color: rgb(39,37,38);
+	background: rgba(180,255,50,0.2);
+	}
+::-moz-selection {
+	color: rgb(39,37,38);
+	background: rgba(180,255,50,0.2);
+	}
+
+body {
+	font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+	font-size: 85%;
+	-webkit-font-smoothing: antialiased;
+	color: #333;
+	}
+
+h1, h2, h3, h4, strong, em {
+	font-weight: normal;
+	font-style: normal;
+	}
+
+h1 {
+	font-family: 'Museo-W01-900';
+	font-size: 3em;
+	line-height: 0.95em;
+	color: rgb(110,110,109);
+	text-transform: uppercase;
+	}
+	
+	h1 strong {
+		color: rgb(39,37,38)
+		}
+	
+	header h1 + p {
+		margin-top: -1.5em;
+		font-size: 1.1em;
+		line-height: 1.1em;
+		font-family: 'Museo-W01-900';
+		color: rgb(110,110,109);	
+		}
+	
+h2 {
+	font-family:'HelveticaNeueW01-85Heav';
+	font-size: 1.5em;
+	line-height: 0.95em;
+	color: rgb(110,110,109);
+	text-transform: uppercase
+	}
+	
+	h2 strong {
+		color: rgb(39,37,38);
+		}
+	
+	header h2 + p {
+		margin-top: -1.1em;
+		font-size: 1.1em;
+		line-height: 1.1em;
+		font-family:'HelveticaNeueW01-65Medi';
+		color: rgb(110,110,109);	
+		}
+
+h3 {
+	text-transform: uppercase;
+	}
+	
+h3, h4 {
+	font-family:'HelveticaNeueW01-65Medi';
+	color: rgb(110,110,109);
+	line-height: 1.1em;
+	}
+	
+h3 strong, h4 strong {
+	color: rgb(39,37,38);
+	}
+
+p, li {
+	line-height: 1.5em;
+	}
+	
+p strong, li strong {
+	font-family:'HelveticaNeueW01-65Medi';
+	}
+
+em {
+	}
+
+.logo {
+	font-family: 'Museo-W01-900';
+	color: rgb(81,81,81);
+	text-transform: none;
+	}
+	
+	.logo b {
+		color: rgb(221,215,51);
+		}
+
+
+input[type=text], input[type=email], input[type=password], 
+textarea { 
+	font-family: inherit;
+	font-size: inherit;
+	padding: 0.35em;
+	background: #eee;
+	border: 1px solid #ccc;
+	outline: none;
+	-webkit-appearance: none;
+	border-radius: 0px;
+	}
+	
+	input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, 
+	textarea:focus {
+		border: 1px solid #999
+		}
+
+input[type=submit] {
+	font-family:'HelveticaNeueW01-65Medi';
+	font-size: inherit;
+	cursor: pointer;
+	padding: 0.4em 0.75em;
+	border: 0px;
+	border-radius: 5px;
+	color: #eee;
+	background: rgb(85,85,85); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(85,85,85,1) 0%, rgba(136,136,136,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(85,85,85,1)), color-stop(100%,rgba(136,136,136,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(85,85,85,1) 0%,rgba(136,136,136,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(85,85,85,1) 0%,rgba(136,136,136,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(85,85,85,1) 0%,rgba(136,136,136,1) 100%); /* IE10+ */
+	background: linear-gradient(top, rgba(85,85,85,1) 0%,rgba(136,136,136,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#555555', endColorstr='#888888',GradientType=0 ); /* IE6-9 */
+	-webkit-appearance: none;
+	}
+
+
+

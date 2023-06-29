@@ -1,0 +1,99 @@
+
+// Critical CSS - mostly the page header
+
+#header {
+  background: black url('img/jungle2020.gif') center top no-repeat;
+  background-size: cover;
+  height: 25vh;
+  min-height: 200px;
+  margin: 0 0 0 0;
+  padding: 0;
+  position: relative;
+}
+.about #header {
+  background: black url('img/bridge.gif') center top no-repeat;
+}
+.home #header, .about #header {
+  @media (max-width: 1024px) {
+    background-size: 2500px;
+  }
+  @media (max-height: 1024px) {
+    height: 50vh;
+  }
+  height: 42vh;
+  min-height: 360px;
+}
+#topbar {
+  z-index: 999;
+  position: fixed;
+  background: rgba(20, 0, 0, 0.5);
+  color: white;
+  float: left;
+  width: 100%;
+  padding: 0 0 0 0;
+
+  .container {
+    margin: 0 auto 0 auto;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 2.8em;
+    a {
+      width: 150px;
+      text-decoration: none;
+      color: white;
+      background: black;
+      padding: 5px 20px 0 20px;
+      letter-spacing: -1px;
+      text-align: center;
+      line-height: 1.8em;
+      float: left;
+      &:hover {
+        background: white;
+        color: black;
+      }
+      @media (max-width: 900px) {
+        font-size: 0.7em;
+        padding: 5px;
+      }
+    }
+  }
+
+  h2 {
+    color: white;
+    font-weight: 600;
+    font-size: 0.9em;
+    margin: 0;
+    padding: 22.5px 0 0 0;
+    line-height: 1.6em;
+    a {
+      color: white;
+      text-decoration: none;
+    }
+    @media (max-width: 900px) {
+      display: none;
+    }
+  }
+
+  h3 {
+    color: white;
+    font-size: 0.8em;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    line-height: 1em;
+    a {
+      color: white;
+      text-decoration: underline;
+    }
+    @media (max-width: 900px) {
+      padding-top: 2em;
+    }
+  }
+}
+
+.topbarRight {
+  float: right;
+  text-align: right;
+}

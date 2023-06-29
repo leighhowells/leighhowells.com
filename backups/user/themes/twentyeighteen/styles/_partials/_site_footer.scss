@@ -1,0 +1,33 @@
+footer {
+  clear: both;
+  background: #ffffff url(../img/footer.jpg) bottom right no-repeat fixed;
+  background-size: cover;
+  color: #aaa;
+  padding: 70vh 0 20vh;
+  border-top: 10em solid black;
+  a {
+    color: #aaa;
+    text-decoration: none;
+  }
+
+  p {
+    font-size: 1em;
+  }
+}
+
+.copyright {
+  background: #111;
+  font-size: 0.7em;
+
+  margin:0;
+  padding: 0.6em 0;
+  color: #999;
+  a {
+    color: #888;
+  }
+}
+
+.search-input {
+  background: black;
+  border: 1px solid #222222 !important;
+}

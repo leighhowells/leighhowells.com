@@ -1,0 +1,13 @@
+<div class="page-width">
+  {%  if page.header.stickytitle %}
+    <h1 class="sticky" style="margin-top: -0.65em;">{{ page.header.stickytitle }}</h1>
+  {% endif %}
+  {% set image = page.media.images|first %}
+  <div class="mFullimage">
+    <img style="max-width: 100%; width: 100%;" src="{{ image.forceResize(1200,700).url }}" alt="{{ image.filename|trim('.jpg', 'right') }}">
+    <p class="caption">{{ image.filename|trim('.jpg', 'right') }}</p>
+    <section class="staggered-animation-container">
+    {{ content }}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,41 @@
+
+/* ==========================================================================
+   @font-face includes
+   ========================================================================== */
+
+@font-face {
+	font-family: 'SourceSans';
+	src: url('../fonts/SourceSansVariable-Roman.ttf') format('truetype');
+	font-weight: 1 999;
+}
+
+///
+
+@mixin font-primary {
+	font-weight: 900;
+	font-family: 'SourceSans', sans-serif;
+}
+
+@mixin font-secondary {
+	font-family: 'SourceSans', sans-serif;
+}
+
+
+@mixin caps {
+	text-transform: uppercase;
+}
+
+@mixin sub {
+	font-size: 0.9em;
+	
+	@media (min-width:40em) {
+		font-size: 0.85em;
+	}
+}
+
+
+%sub {
+  @include sub;
+}
+
+p { margin-top: 0 !important; }

@@ -1,0 +1,42 @@
+
+{% embed 'partials/base.html.twig' %}
+  {% set collection = page.collection() %}
+  {% block content %}
+
+    <div class="page-width">
+
+      {{ page.content }}
+
+      <div class="designList">
+
+        {% for child in collection %}
+
+          <article class="list-panel">
+            <div class="list-panel-content">
+              <div>
+                <time>{{ child.date|date("M jS, Y") }}</time>
+              </div>
+
+              <div>
+                <h2 style="margin-top:0;"><a href="{{ child.url }}">{{ child.title }}</a></h2>
+                {{ child.summary }}
+                <a href="{{ child.url }}">
+                  <div class="more"></div>
+                </a>
+              </div>
+
+            </div>
+          </article>
+
+        {% endfor %}
+
+      </div>
+
+      {% if config.plugins.pagination.enabled and collection.params.pagination %}
+        {% include 'partials/pagination.html.twig' with {'base_url':page.url, 'pagination':collection.params.pagination} %}
+      {% endif %}
+
+    </div>
+
+  {% endblock %}
+{% endembed %}

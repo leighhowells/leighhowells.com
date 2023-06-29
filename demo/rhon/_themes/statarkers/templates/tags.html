@@ -1,0 +1,74 @@
+
+	<section class="home-banner">
+	
+	<div class="constrain">
+		
+		<div class="introBlock">
+	    <nav role="breadcrumbs" class="breadcrumbs">
+				<ul>
+			        <li><a href="{{ _site_url }}" style="color: white;">{{ _home_url_title }}</a>&nbsp;&raquo;</li>
+			        {{ nav:breadcrumbs include_home="no" }}
+			            {{ if is_current }}
+			                <li>{{ title }}</li>
+			            {{ else }}
+			                <li><a href="{{ url }}" style="color: white;">{{ title }}</a>&nbsp;&raquo;</li>
+			            {{ endif }}
+			        {{ /nav:breadcrumbs }}
+			    </ul>
+
+		</nav>		
+	
+		 <h4 style="color: white;">Related to {{ taxonomy_slug|deslugify|title }}{{ if get:page > 0 }} &ndash; Page {{ get:page }}{{ endif }}</h4>
+		  {{ content }}
+		  
+		  
+	  <header class="article__header">
+	 	    
+	    {{ if author || date || categories_list || tags_list }}
+	    <div class="article__meta">
+	
+	      {{ if author|not_empty }}
+	      {{ member:profile member="{author}" }}
+	      <p class="article__author">Posted by: {{ first_name }} {{ last_name }}</p>
+	      {{ /member:profile }}
+	      {{ endif }}
+	   
+	      {{ if categories_list && tags_list }}
+	      <p class="article__tax" style="font-size:0.9em;"><b>Category:</b> {{ categories_url_list }} | {{ tags_url_list }}</p>
+	      {{ endif }}
+	
+	      {{ if categories_list && !tags_list }}
+	      <p class="article__tax"><b>Category:</b> {{ categories_url_list }}</p>
+	      {{ endif }}
+	
+	      {{ if !categories_list && tags_list }}
+	      <p class="article__tax" style="font-size:0.9em;" >{{ tags_url_list }}</p>
+	      {{ endif }}
+
+
+		  {{ taxonomy:listing folder="/stories" type="tags" }}
+				
+			  <li style="text-transform: capitalize !important;">
+			     <a href="{{ url }}">{{ name }}</a>
+			  </li>
+				
+		  {{ /taxonomy:listing }}
+
+	    </div><!-- END .article__meta -->
+	    {{ endif }}
+	  </header>
+	</div>
+	</div>
+
+</section> 
+
+	<div class="constrain">
+		
+		<section class="articles">		
+												
+		{{ theme:partial src="_article_listing" fold="/stories" lim="12" tax="yes" }}		
+		
+		</section>
+	</div>
+	
+</div>

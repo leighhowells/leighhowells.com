@@ -1,0 +1,1 @@
+When starting a full page graphical story one might usually like some large intro text to help set the scene of the story. It is probably just a single paragraph or so really.  The question is, should it be centred - which looks odd with a left aligned title

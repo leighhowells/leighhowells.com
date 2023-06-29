@@ -1,0 +1,13 @@
+.breadcrumbs {
+  display:none;
+  font-size: 12px;
+  span, a, span {
+    font-size: 12px !important;
+  }
+  ul {
+    display: inline;
+    li {
+      display: inline;
+    }
+  }
+}

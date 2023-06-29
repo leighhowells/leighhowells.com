@@ -1,0 +1,158 @@
+/* BANNER HERO IMAGES */
+
+.hero {
+  max-width: $bigDesktop;
+  margin: 0 auto 0 auto;
+  width: 100%;
+    background: url(../img/banner1.jpg) center -190px no-repeat;
+  background: url(../img/banner11.jpg) center -220px no-repeat fixed;
+
+  background-size: 1600px;
+}
+
+
+body.news .hero {
+  background: url(../img/banner14.jpg) center -180px no-repeat fixed;
+  background-size:1600px;
+  /*height: 570px;*/
+}
+
+body.article.boag .hero {
+  background: url(../img/banner1.jpg) center -220px no-repeat fixed !important;
+  background-size:1600px;
+  /*height: 570px;*/
+}
+
+body.news .headerDesc {
+  position: relative;
+  /*top: -50px;*/
+}
+
+body.getinvolved .hero {
+  background: url(../img/banner6.jpg) center -20px no-repeat fixed;
+  background-size:1600px;
+  /*height: 570px;*/
+}
+
+body.getinvolved .headerDesc {
+  position: relative;
+  /*top: -50px;*/
+}
+
+body.areasfocus {
+  .hero {
+    background: url(../img/banner9.jpg) center -200px no-repeat fixed;
+    background-size:1600px;
+    /*height: 570px;*/
+  }
+  .headerDesc {
+    position: relative;
+    /*top: -50px;*/
+  }
+
+  .hero small {
+    width: 70%;
+  }
+}
+
+body.areasfocus.movebuild {
+    .hero {
+    background: url(../img/banner7.jpg) center -200px no-repeat fixed;
+  }
+}
+body.areasfocus.religious {
+    .hero {
+    background: url(../img/banner17.jpg) center -340px no-repeat fixed;
+  }
+}
+
+body.resources .hero {
+  background: url(../img/banner13.jpg) center -70px no-repeat fixed;
+  background-size:1600px;
+  /*height: 570px;*/
+}
+
+body.issue .hero {
+  background: url(../img/banner7.jpg) center -240px no-repeat fixed;
+  background-size:1600px;
+  /*height: 570px;*/
+}
+
+body.article {
+  .hero {
+    background: url(../img/banner13.jpg) center -180px no-repeat fixed;
+    background-size:1600px;
+  }
+  header {
+    height: 530px;
+  }
+  .blackFade {
+    height: 530px;
+  }
+  h2 { 
+    margin-top: -50px;
+  }
+  .hero button {
+    margin-top: $pad/2;
+  }
+}
+
+
+
+body.aboutus .hero {
+  background: url(../img/banner6.jpg) center -0px no-repeat fixed;
+  background-size:1600px;
+}
+
+
+body.article.person .hero {
+  background: url(../img/banner11.jpg) center -230px no-repeat fixed;
+  background-size:1600px;
+}
+
+body.article.memorials .hero {
+  background: url(../img/banner16.jpg) center -30px no-repeat fixed;
+  background-size:1600px;
+}
+
+
+
+body.resources .headerDesc {
+  position: relative;
+  /*top: -50px;*/
+}
+
+/*************** */
+
+
+body.news nav li.news a, body.getinvolved nav li.getinvolved a, body.areasfocus nav li.areasfocus a, body.issue nav li.areasfocus a{
+  background: $mainNavHighlight;
+  color: $mainNavText;
+}
+
+
+body.news.article .pageContent {
+    background: black;
+    background: none;
+}
+
+/*body.news.memorial .pageContent {
+  background: black;
+}
+
+/* Well.. that could be a nice wide page effect.. hmmmm */
+/*.body.article .pageContainer {
+  background: $lightBeige;
+}*/
+
+body.article .pageContent {
+  background: $lightBeige*1.03 !important;
+}
+
+
+body.news.article.forum .hero {
+  background: url(../img/banner20.jpg) center -80px no-repeat fixed;
+  background-size:1600px;
+  /*height: 570px;*/
+}
+

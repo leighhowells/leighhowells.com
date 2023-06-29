@@ -1,0 +1,28 @@
+<div class="search-row">
+  <div class="search-item">
+    <div class="search-title">
+      <h3 style="margin-top:0;"><a href="{{ page.url }}">{{ page.title }}</a></h3>
+    </div>
+    {% if page.taxonomy.tag %}
+      <span class="tags">
+								{% for tag in page.taxonomy.tag %}
+                  <a href="/{{ tag.url|rtrim('/') }}articles/tag{{ config.system.param_sep }}{{ tag }}">{{ tag }}</a>
+                {% endfor %}
+						</span> {% endif %} {% if page.taxonomy.genre %}
+      <span class="tags">
+							{% for genre in page.taxonomy.genre %}
+                <a href="/{{ genre.url|rtrim('/') }}music/genre{{ config.system.param_sep }}{{ genre }}">{{ genre }}</a>
+              {% endfor %}
+					</span> {% endif %} {% if page.taxonomy.industry %}
+      <span class="tags">
+            {% for industry in page.taxonomy.industry %}
+              <a href="/{{ industry.url|rtrim('/') }}design/industry{{ config.system.param_sep }}{{ industry }}">{{ industry }}</a>
+            {% endfor %}
+        </span> {% endif %}
+
+
+    <div class="search-details">
+      <date>{{ page.date|date(config.system.pages.dateformat.short) }}</date>
+    </div>
+  </div>
+</div>
